@@ -445,7 +445,7 @@ namespace Jotunnslayer
             bool basicHeavyStrike = kind is Skeleton1HSpawn.Kind.Guardian or Skeleton1HSpawn.Kind.NiflheimBossEasy or
                 Skeleton1HSpawn.Kind.AlfheimPhase1 or Skeleton1HSpawn.Kind.AlfheimPhase2 or Skeleton1HSpawn.Kind.SphinxGuardian;
             playMeleeSwingAudio = kind is Skeleton1HSpawn.Kind.Melee or Skeleton1HSpawn.Kind.Bow or Skeleton1HSpawn.Kind.SphinxSkeleton or
-                Skeleton1HSpawn.Kind.SphinxBow or Skeleton1HSpawn.Kind.Beetle or Skeleton1HSpawn.Kind.BeetleBig or Skeleton1HSpawn.Kind.BeetleDesert or Skeleton1HSpawn.Kind.BeetleDesertBig or Skeleton1HSpawn.Kind.BeetlePortal || basicSpider;
+                Skeleton1HSpawn.Kind.SphinxBow or Skeleton1HSpawn.Kind.Beetle or Skeleton1HSpawn.Kind.BeetleBig or Skeleton1HSpawn.Kind.BeetleDesert or Skeleton1HSpawn.Kind.BeetleDesertBig or Skeleton1HSpawn.Kind.BeetlePortal or Skeleton1HSpawn.Kind.BatPrototype or Skeleton1HSpawn.Kind.BatCombat or Skeleton1HSpawn.Kind.BatLarge || basicSpider;
             if (playMeleeSwingAudio || basicHeavyStrike || drider || stoneJotunn || elfRanged || elfMelee || sentinel || alfheimSpider ||
                 milipede || sphinxMiniBoss || hybBoss || hybCaster || GoatHasJumpAudio || ettinBoss ||
                 ettinEndless || muspelBoss || constructBoss || UsesDive || elementalMelee || elfWoman || ghostKing || jotunnWarrior)

@@ -1157,33 +1157,42 @@
   },
   {
     "id": "bat",
-    "name": "bat",
+    "name": "蝙蝠原型",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BatPrototypeFinalFrames/bat-idle.png",
+      "Docs/Validation/BatPrototypeFinalFrames/bat-attack.png"
+    ],
+    "note": "正常白盒 GM 重启实测，原模型和五段采样动作，每段 340 曲线。原包为无基础色贴图的占位材质，本次使用提亮纯色便于辨认。 已实际查看本体、移动与近身攻击画面；5 实伤、音源及监听器峰值各 0.033258、移除通过。近战参数为近似，SwingPlaceholder 占位音，未人工听辨。整体仍因14条keyword渲染错误 FAILED。",
+    "order": 1
   },
   {
     "id": "bat_large_sur",
-    "name": "bat_large_sur",
+    "name": "大型战斗蝙蝠",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BatCombatFrames/bat_large_sur-idle.png",
+      "Docs/Validation/BatCombatFrames/bat_large_sur-attack.png"
+    ],
+    "note": "正常白盒 GM 重启实测，原模型和五段采样动作，每段 870 曲线。保留原包基础色贴图，未复刻尖叫技能。 已实际查看本体、移动与近身攻击画面；5 实伤、音源及监听器峰值各 0.033224、移除通过。近战参数为近似，SwingPlaceholder 占位音，未人工听辨。整体仍因14条keyword渲染错误 FAILED。",
+    "order": 1
   },
   {
     "id": "bat_sur",
-    "name": "bat_sur",
+    "name": "普通战斗蝙蝠",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BatCombatFrames/bat_sur-idle.png",
+      "Docs/Validation/BatCombatFrames/bat_sur-attack.png"
+    ],
+    "note": "正常白盒 GM 重启实测，原模型和五段采样动作，每段 340 曲线。保留原包基础色贴图。 已实际查看本体、移动与近身攻击画面；5 实伤、音源及监听器峰值各 0.033241、移除通过。近战参数为近似，SwingPlaceholder 占位音，未人工听辨。整体仍因14条keyword渲染错误 FAILED。",
+    "order": 1
   },
   {
     "id": "beetle_big_explo_sur",

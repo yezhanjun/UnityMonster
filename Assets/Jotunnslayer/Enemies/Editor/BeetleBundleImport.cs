@@ -37,6 +37,10 @@ public static class BeetleBundleImport
         EditorApplication.Exit(0);
     }
     public static void Run() { Import(); EditorApplication.Exit(0); }
+    public static void ImportProfile(string profile, string folder, string[] wanted)
+    {
+        Profile = profile; Folder = folder; Wanted = wanted; Import();
+    }
     static void Import()
     {
         const string source = "E:/SteamLibrary/steamapps/common/Jotunnslayer Hordes of Hel/Jotunnslayer_Data/StreamingAssets/aa/StandaloneWindows64";
@@ -44,9 +48,16 @@ public static class BeetleBundleImport
         GameObject model = null;
         try
         {
+            AssetBundle main = null;
             foreach (string pattern in new[] { "*monoscripts*.bundle", "*unitybuiltinassets*.bundle", "duplicateassetisolation*.bundle", "enemies_assets_" + Profile + "_*.bundle" })
-                foreach (string file in Directory.GetFiles(source, pattern)) bundles.Add(AssetBundle.LoadFromFile(file));
-            var main = bundles.Last();
+                foreach (string file in Directory.GetFiles(source, pattern))
+                {
+                    bool actorBundle = pattern.StartsWith("enemies_assets_");
+                    if (actorBundle && !System.Text.RegularExpressions.Regex.IsMatch(Path.GetFileName(file), "^enemies_assets_" + System.Text.RegularExpressions.Regex.Escape(Profile) + @"_[a-f0-9]{32}\.bundle$")) continue;
+                    var loaded = AssetBundle.LoadFromFile(file); bundles.Add(loaded);
+                    if (actorBundle) { if (main) throw new Exception("Ambiguous actor bundle: " + Profile); main = loaded; }
+                }
+            if (!main) throw new Exception("Actor bundle not loaded: " + Profile);
             var prefab = main.GetAllAssetNames().Select(n => main.LoadAsset<GameObject>(n)).First(p => p && p.name == Profile);
             var originalAnimator = prefab.GetComponentsInChildren<Animator>(true).First(a => a.runtimeAnimatorController);
             var clips = originalAnimator.runtimeAnimatorController.animationClips.Where(c => c && Wanted.Contains(c.name)).GroupBy(c => c.name).Select(g => g.First()).ToArray();
@@ -113,7 +124,7 @@ public static class BeetleBundleImport
             var item = textures.GetArrayElementAtIndex(i);
             if (item.FindPropertyRelative("first").stringValue != "_AlbedoMap") continue;
             var texture = item.FindPropertyRelative("second.m_Texture").objectReferenceValue as Texture2D;
-            if (!texture) throw new Exception("Beetle original albedo missing");
+            if (!texture) continue;
             var rt = RenderTexture.GetTemporary(texture.width, texture.height, 0, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
             var previous = RenderTexture.active;
             var image = new Texture2D(texture.width, texture.height, TextureFormat.RGBA32, false);
@@ -122,7 +133,20 @@ public static class BeetleBundleImport
             finally { RenderTexture.active=previous; RenderTexture.ReleaseTemporary(rt); Object.DestroyImmediate(image); }
             AssetDatabase.ImportAsset(file); material.SetTexture("_BaseMap", AssetDatabase.LoadAssetAtPath<Texture2D>(file));
         }
-        if (!material.GetTexture("_BaseMap")) throw new Exception("Beetle converted albedo missing");
+        if (!material.GetTexture("_BaseMap"))
+        {
+            // Some original prototype actors intentionally use an untextured material.
+            var colors = new SerializedObject(original).FindProperty("m_SavedProperties.m_Colors");
+            for (int i = 0; i < colors.arraySize; i++)
+            {
+                var item = colors.GetArrayElementAtIndex(i);
+                string key = item.FindPropertyRelative("first").stringValue;
+                if (key == "_Color" || key == "_BaseColor" || key == "_AlbedoColor")
+                    material.SetColor("_BaseColor", item.FindPropertyRelative("second").colorValue);
+            }
+            Debug.Log("IMPORTED_SOLID_MATERIAL " + Profile + " " + original.name);
+            if (Profile == "bat") material.SetColor("_BaseColor", new Color(.7f, .75f, .8f));
+        }
         AssetDatabase.CreateAsset(material, Folder + "/" + material.name + ".mat"); return material;
     }
     static void Bake(GameObject model, AnimationClip original)
@@ -141,7 +165,7 @@ public static class BeetleBundleImport
         }
         var clip=new AnimationClip {name=original.name,frameRate=30};
         for(int i=1;i<bones.Length;i++)for(int axis=0;axis<10;axis++) AnimationUtility.SetEditorCurve(clip,EditorCurveBinding.FloatCurve(AnimationUtility.CalculateTransformPath(bones[i],model.transform),typeof(Transform),properties[axis]),curves[i*10+axis]);
-        clip.EnsureQuaternionContinuity();var settings=AnimationUtility.GetAnimationClipSettings(clip);settings.loopTime=original.name.EndsWith("idle")||(original.name.EndsWith("fly") || original.name.EndsWith("flying"));AnimationUtility.SetAnimationClipSettings(clip,settings);
+        clip.EnsureQuaternionContinuity();var settings=AnimationUtility.GetAnimationClipSettings(clip);settings.loopTime=original.name.EndsWith("idle")||original.name.EndsWith("stand")||original.name.EndsWith("run")||(original.name.EndsWith("fly") || original.name.EndsWith("flying"));AnimationUtility.SetAnimationClipSettings(clip,settings);
         AssetDatabase.CreateAsset(clip,Folder+"/"+clip.name+".anim");
         Debug.Log($"BEETLE_BAKED {clip.name} curves={AnimationUtility.GetCurveBindings(clip).Length} duration={clip.length}");
     }

@@ -1,0 +1,32 @@
+SOURCE bats-import-materials.log
+BEETLE_BAKED bat_simple_run curves=340 duration=0.7
+BEETLE_BAKED bat_simple_stand curves=340 duration=0.3333333
+BEETLE_BAKED bat_simple_init curves=340 duration=0.01666667
+BEETLE_BAKED bat_simple_attack_03 curves=340 duration=1.1
+BEETLE_BAKED bat_simple_hit_forward curves=340 duration=0.55
+IMPORTED_SOLID_MATERIAL bat dummy_enemy_mat
+BEETLE_IMPORTED bat standalone prefab and 5 sampled clips
+BEETLE_BAKED bat_simple_run curves=340 duration=0.7
+BEETLE_BAKED bat_simple_stand curves=340 duration=0.3333333
+BEETLE_BAKED bat_simple_init curves=340 duration=0.01666667
+BEETLE_BAKED bat_simple_attack_03 curves=340 duration=1.1
+BEETLE_BAKED bat_simple_hit_forward curves=340 duration=0.55
+BEETLE_IMPORTED bat_sur standalone prefab and 5 sampled clips
+BEETLE_BAKED bat_large_run curves=870 duration=0.6833333
+BEETLE_BAKED bat_large_stand curves=870 duration=0.6333333
+BEETLE_BAKED bat_large_init curves=870 duration=0.01666667
+BEETLE_BAKED bat_large_attack_03 curves=870 duration=1.116667
+BEETLE_BAKED bat_large_stun curves=870 duration=1.133333
+BEETLE_IMPORTED bat_large_sur standalone prefab and 5 sampled clips
+SOURCE bats-smoke.log
+MONSTER_PLAYTEST_ATTACK_DSP bat sourcePeak=0.033234 listenerMixPeak=0.033234
+MONSTER_PLAYTEST_PASS bat spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_ATTACK_DSP bat_sur sourcePeak=0.033241 listenerMixPeak=0.033241
+MONSTER_PLAYTEST_PASS bat_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_ATTACK_DSP bat_large_sur sourcePeak=0.033224 listenerMixPeak=0.033224
+MONSTER_PLAYTEST_PASS bat_large_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=3 failed=0, runtimeErrors=14, first=State comes from an incompatible keyword space
+SOURCE bat-prototype-final.log
+MONSTER_PLAYTEST_ATTACK_DSP bat sourcePeak=0.033258 listenerMixPeak=0.033258
+MONSTER_PLAYTEST_PASS bat spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=1 failed=0, runtimeErrors=14, first=State comes from an incompatible keyword space
