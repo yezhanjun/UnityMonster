@@ -29,6 +29,10 @@ git lfs pull
 
 以上是迁移前保留的验收记录，不表示在本次仓库迁移中重新验收了全部怪物。声音证据包含采样记录，尚不等于逐项人工听辨。已知 lilToon keyword space 渲染报错仍保留；部分怪物动作是简化实现，Bell、ClayBruiser、Grenadier 的原版动画持久化仍需后续处理。Goal 仍暂停，等待老师验收。
 
+## 资源清单
+
+查看 [分类资源清单与整理建议](Docs/Resources/资源清单.md)、[可搜索的逐文件清单](Docs/Resources/资源清单.html) 或 [完整 JSON](Docs/Resources/资源完整清单.json)。清单按用途与目录列出体积、资源类型、怪物资源组、包版本、重复候选及 meta 检查结果；保留现有资源路径和 GUID。
+
 ## 工程约定
 
 - `Assets/`、`Packages/`、`ProjectSettings/` 是完整工程入口；保留 `.meta` 与资源 GUID。
