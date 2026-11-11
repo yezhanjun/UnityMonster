@@ -2739,7 +2739,8 @@ namespace Jotunnslayer
                 bool impactFrameCaptured = false;
                 bool signatureFrameCaptured = false;
                 bool greaterWispShotLogged = false;
-                bool aimMeleeFrames = whiteboxOnly && (id is "CLAYBRUISER_BODY" or "elf_woman_sur" or "elf_woman_02_sur" or "skeleton_bow_VarRegular" or "skeleton_guardian_sur" or "skeleton_1h_sphinx_sur" or "hyb_sub_boss_sur_VarEasy" or "hyb_sub_boss_sur_VarNormal" or "jotunn_construct_sur" or "skeleton_goat_sur_boss_VarEasy" or "skeleton_goat_sur_boss_VarNormal" or
+                float cultistAttackStarted = -1f;
+                bool aimMeleeFrames = whiteboxOnly && (id is "cultist_1h_sur" or "cultist_bow_sur" or "CLAYBRUISER_BODY" or "elf_woman_sur" or "elf_woman_02_sur" or "skeleton_bow_VarRegular" or "skeleton_guardian_sur" or "skeleton_1h_sphinx_sur" or "hyb_sub_boss_sur_VarEasy" or "hyb_sub_boss_sur_VarNormal" or "jotunn_construct_sur" or "skeleton_goat_sur_boss_VarEasy" or "skeleton_goat_sur_boss_VarNormal" or
                     "jotunn_alfheim_boss_phase2_sur" or "ettin_boss" or "jotunn_warrior_sur" or "jotunn_warrior_v2_sur" or
                     "hyb_boss_sur_VarEasy" or "hyb_boss_sur_VarNormal" or "hyb_boss_sur_VarHard");
                 float requiredAudioPeak = id is "ACIDLARVA_BODY" or "LUNAREXPLODER_BODY" ? .003f : .0001f;
@@ -3044,6 +3045,18 @@ namespace Jotunnslayer
                         if (beetleExplosion && beetleExplosion.BurstVisible) {
                             beetleBurstSeen=true;
                             if(captureDirectory!=null && !signatureFrameCaptured && beetleExplosion.BurstDiameter>1.4f) {
+                                CaptureMonsterFrame(captureDirectory,id,"signature",actor); signatureFrameCaptured=true;
+                            }
+                        }
+                        if(id=="cultist_1h_sur" && jotunnVisual && jotunnVisual.CurrentMotion==Skeleton1HVisual.Motion.Attack) {
+                            if(cultistAttackStarted<0f) cultistAttackStarted=Time.time;
+                            if(captureDirectory!=null && !signatureFrameCaptured && Time.time-cultistAttackStarted>.45f) {
+                                CaptureMonsterFrame(captureDirectory,id,"signature",actor); signatureFrameCaptured=true;
+                            }
+                        }
+                        if(id=="cultist_bow_sur" && captureDirectory!=null && !signatureFrameCaptured) {
+                            var arrow=UnityEngine.Object.FindFirstObjectByType<SkeletonBowArrow>();
+                            if(arrow && (arrow.transform.position-actor.transform.position).sqrMagnitude>9f) {
                                 CaptureMonsterFrame(captureDirectory,id,"signature",actor); signatureFrameCaptured=true;
                             }
                         }
@@ -3416,6 +3429,7 @@ namespace Jotunnslayer
                         yield return null;
                         continue;
                     }
+                    if(captureDirectory!=null && id=="cultist_1h_sur" && !signatureFrameCaptured) { yield return null; continue; }
                     if (verifyChampionMissiles && combat.ChampionMissilesReleased >= 3 && combat.ChampionMissileDamage > 0 || !verifyChampionMissiles && (verifyElementalMelee || verifyElfWoman || verifyGhostKing) && combat.ElementalSpikeHits > 0 && cueSeen || verifyMageFire && mageFireDamage > 0 && cueSeen || (!verifyWarrior && !verifyMageFire && moved && damage > 0 && (!verifyBird || combat.DiveMoved && birdCastSound && birdImpactSound && cueSeen) && (!verifyPoisonMage || combat.PoisonOrbDamage > 0 && poisonOrbAudioPlayed && (!verifyPlagueSplash || combat.PlagueSplashLanded > 0)) && (!verifyMage || combat.DiveMoved && combat.DiveHits > 0 && cueSeen) && !verifyHorrorAlf && !verifyExplosiveBeetle && (!verifyTeleport || reappeared && cueSeen) && (!verifyGup || gupRelease) && (!verifyGoatNormal || goatJumpHit && goatJumpLaunchPlayed) && (!verifyMuspel || combat.MuspelWaveDamage > 0 && cueSeen && audioStarted) && (!verifyEttin || ettinBlastSources.Count == 15 && combat.EttinLightningDamage > 0) && (!verifyEttinEndless || novaImpact && novaLayer && combat.EttinNovaHits > 0 && maxPoisonShots == EttinPoisonVolley.ShotCount && poisonAudio && poisonWarning)) ||
                         verifyConstruct && (constructLaser ? combat.ConstructLaserHits > 0 : constructFlame ? combat.ConstructFlameHits > 0 : constructHammer ? attacked && damage > 0 : combat.ConstructSawHits >= 2) && cueSeen || target.CurrentHealth <= 0 || !actor) break;
                     yield return null;
@@ -3931,7 +3945,7 @@ namespace Jotunnslayer
                 "ele_mb_melee_champion_sur" or "ele_mb_melee_sur" => 17f,
                 "elf_woman_sur" or "elf_woman_02_sur" or "ghost_king_sur" => 10f,
                 "jotunn_warrior_sur" or "jotunn_warrior_v2_sur" => 10f,
-                "skeleton_bow_VarRegular" or "skeleton_bow_sphinx" or "elf_ranged_sur" => 16f,
+                "skeleton_bow_VarRegular" or "skeleton_bow_sphinx" or "elf_ranged_sur" or "cultist_bow_sur" => 16f,
                 "GOLEM_BODY" or "TITAN_BODY" or "TITANGOLD_BODY" or
                     "GM_SNOW_GOLEM" or "GM_NATURE_GOLEM" or "GM_SANDY_GOLEM" => 23f,
                 _ => 0f

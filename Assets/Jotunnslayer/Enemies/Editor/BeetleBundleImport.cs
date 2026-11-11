@@ -9,6 +9,7 @@ public static class BeetleBundleImport
 {
     static string Folder = "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/Beetle";
     static string Profile = "beetle_sur";
+    static Dictionary<Material, Material> MaterialCopies;
     static string[] Wanted = { "beetle_minion_idle", "beetle_minion_fly", "beetle_veteran_attack", "beetle_minion_stun", "beetle_minion_summon" };
     public static void RunVariants() {
         foreach (string id in new[] { "beetle_big_sur", "beetle_desert_sur" }) {
@@ -43,6 +44,7 @@ public static class BeetleBundleImport
     }
     static void Import()
     {
+        MaterialCopies = new Dictionary<Material, Material>();
         const string source = "E:/SteamLibrary/steamapps/common/Jotunnslayer Hordes of Hel/Jotunnslayer_Data/StreamingAssets/aa/StandaloneWindows64";
         var bundles = new List<AssetBundle>();
         GameObject model = null;
@@ -71,9 +73,22 @@ public static class BeetleBundleImport
             foreach (var c in model.GetComponentsInChildren<Collider>(true)) Object.DestroyImmediate(c);
             foreach (var r in model.GetComponentsInChildren<Rigidbody>(true)) Object.DestroyImmediate(r);
             foreach (var lod in model.GetComponentsInChildren<LODGroup>(true)) Object.DestroyImmediate(lod);
+            int staticMeshIndex = 0;
             foreach (var renderer in model.GetComponentsInChildren<Renderer>(true))
             {
-                if (!(renderer is SkinnedMeshRenderer skin)) { Object.DestroyImmediate(renderer); continue; }
+                if (!(renderer is SkinnedMeshRenderer skin))
+                {
+                    var filter = renderer.GetComponent<MeshFilter>();
+                    if (Profile.StartsWith("cultist_") && renderer is MeshRenderer && filter && filter.sharedMesh)
+                    {
+                        var staticMesh = Object.Instantiate(filter.sharedMesh);
+                        AssetDatabase.CreateAsset(staticMesh, Folder + "/StaticMesh_" + staticMeshIndex++ + ".asset");
+                        filter.sharedMesh = staticMesh;
+                        renderer.sharedMaterials = renderer.sharedMaterials.Select(Material).ToArray();
+                    }
+                    else Object.DestroyImmediate(renderer);
+                    continue;
+                }
                 var mesh = Object.Instantiate(skin.sharedMesh);
                 AssetDatabase.CreateAsset(mesh, Folder + "/" + mesh.name + ".asset"); skin.sharedMesh = mesh;
                 skin.sharedMaterials = skin.sharedMaterials.Select(Material).ToArray(); skin.updateWhenOffscreen = true;
@@ -117,6 +132,7 @@ public static class BeetleBundleImport
     }
     static Material Material(Material original)
     {
+        if (MaterialCopies.TryGetValue(original, out var cached)) return cached;
         var material = new Material(Shader.Find("Universal Render Pipeline/Lit")); material.name = original.name;
         var textures = new SerializedObject(original).FindProperty("m_SavedProperties.m_TexEnvs");
         for (int i = 0; i < textures.arraySize; i++)
@@ -147,7 +163,7 @@ public static class BeetleBundleImport
             Debug.Log("IMPORTED_SOLID_MATERIAL " + Profile + " " + original.name);
             if (Profile == "bat") material.SetColor("_BaseColor", new Color(.7f, .75f, .8f));
         }
-        AssetDatabase.CreateAsset(material, Folder + "/" + material.name + ".mat"); return material;
+        AssetDatabase.CreateAsset(material, Folder + "/" + material.name + ".mat"); MaterialCopies.Add(original, material); return material;
     }
     static void Bake(GameObject model, AnimationClip original)
     {
@@ -155,17 +171,21 @@ public static class BeetleBundleImport
         var curves=new AnimationCurve[bones.Length*10];for(int i=0;i<curves.Length;i++)curves[i]=new AnimationCurve();
         string[] properties={"m_LocalPosition.x","m_LocalPosition.y","m_LocalPosition.z","m_LocalRotation.x","m_LocalRotation.y","m_LocalRotation.z","m_LocalRotation.w","m_LocalScale.x","m_LocalScale.y","m_LocalScale.z"};
         int frames=Mathf.Clamp(Mathf.CeilToInt(original.length*30),2,180);
+        var initial = new Quaternion[bones.Length]; float maxAngle = 0f;
         for(int frame=0;frame<=frames;frame++) {
             float time=original.length*frame/frames; original.SampleAnimation(model,time);
             for(int i=1;i<bones.Length;i++) {
                 var t=bones[i];var p=t.localPosition;var q=t.localRotation;var s=t.localScale;
+                if(frame==0) initial[i]=q; else maxAngle=Mathf.Max(maxAngle,Quaternion.Angle(initial[i],q));
                 float[] values={p.x,p.y,p.z,q.x,q.y,q.z,q.w,s.x,s.y,s.z};
                 for(int axis=0;axis<10;axis++) {if(float.IsNaN(values[axis])||float.IsInfinity(values[axis]))throw new Exception("Invalid beetle sample");curves[i*10+axis].AddKey(new Keyframe(time,values[axis],0,0));}
             }
         }
+        Debug.Log($"IMPORTED_POSE {Profile} {original.name} maxAngle={maxAngle}");
+        if(Profile.StartsWith("cultist_") && (original.name.Contains("attack") || original.name.Contains("walk")) && maxAngle<.1f) throw new Exception("Cultist source sampling has no verified motion: "+original.name);
         var clip=new AnimationClip {name=original.name,frameRate=30};
         for(int i=1;i<bones.Length;i++)for(int axis=0;axis<10;axis++) AnimationUtility.SetEditorCurve(clip,EditorCurveBinding.FloatCurve(AnimationUtility.CalculateTransformPath(bones[i],model.transform),typeof(Transform),properties[axis]),curves[i*10+axis]);
-        clip.EnsureQuaternionContinuity();var settings=AnimationUtility.GetAnimationClipSettings(clip);settings.loopTime=original.name.EndsWith("idle")||original.name.EndsWith("stand")||original.name.EndsWith("run")||(original.name.EndsWith("fly") || original.name.EndsWith("flying"));AnimationUtility.SetAnimationClipSettings(clip,settings);
+        clip.EnsureQuaternionContinuity();var settings=AnimationUtility.GetAnimationClipSettings(clip);settings.loopTime=original.name.EndsWith("idle")||original.name.Contains("_stand")||original.name.Contains("_walk")||original.name.EndsWith("run")||(original.name.EndsWith("fly") || original.name.EndsWith("flying"));AnimationUtility.SetAnimationClipSettings(clip,settings);
         AssetDatabase.CreateAsset(clip,Folder+"/"+clip.name+".anim");
         Debug.Log($"BEETLE_BAKED {clip.name} curves={AnimationUtility.GetCurveBindings(clip).Length} duration={clip.length}");
     }

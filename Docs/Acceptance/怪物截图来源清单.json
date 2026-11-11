@@ -1347,23 +1347,29 @@
   },
   {
     "id": "cultist_1h_sur",
-    "name": "cultist_1h_sur",
+    "name": "单手邪教徒",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/CultistFinalFrames/cultist_1h_sur-idle.png",
+      "Docs/Validation/CultistFinalFrames/cultist_1h_sur-signature.png"
+    ],
+    "note": "正常白盒GM重启实测，原模型、武器、基础色材质和五段采样曲线，每段 600 条。近战挥剑、盾牌模型及动作已实际查看。 本体、移动、5 实伤、音源及监听器峰值各 0.033237、移除通过。SwingPlaceholder 占位音，未人工听辨；行为和参数为近似，整体仍有14条keyword错误 FAILED。",
+    "order": 1
   },
   {
     "id": "cultist_bow_sur",
-    "name": "cultist_bow_sur",
+    "name": "弓箭邪教徒",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/CultistFinalFrames/cultist_bow_sur-idle.png",
+      "Docs/Validation/CultistFinalFrames/cultist_bow_sur-signature.png"
+    ],
+    "note": "正常白盒GM重启实测，原模型、武器、基础色材质和五段采样曲线，每段 570 条。已实际查看弓和离弓箭矢；玩家移至16米后验证追击。 本体、移动、7 实伤、音源及监听器峰值各 0.020295、移除通过。SwingPlaceholder 占位音，未人工听辨；行为和参数为近似，整体仍有14条keyword错误 FAILED。",
+    "order": 1
   },
   {
     "id": "cultist_miniboss_sur",

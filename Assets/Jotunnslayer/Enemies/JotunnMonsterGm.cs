@@ -23,6 +23,8 @@ namespace Jotunnslayer
             ("bat", Skeleton1HSpawn.Kind.BatPrototype),
             ("bat_sur", Skeleton1HSpawn.Kind.BatCombat),
             ("bat_large_sur", Skeleton1HSpawn.Kind.BatLarge),
+            ("cultist_1h_sur", Skeleton1HSpawn.Kind.CultistMelee),
+            ("cultist_bow_sur", Skeleton1HSpawn.Kind.CultistBow),
             ("beetle_sur", Skeleton1HSpawn.Kind.Beetle),
             ("skeleton_1h_sur", Skeleton1HSpawn.Kind.Melee),
             ("skeleton_bow_VarRegular", Skeleton1HSpawn.Kind.Bow),

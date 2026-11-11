@@ -378,7 +378,7 @@ namespace Jotunnslayer
             driderVariant = kind == Skeleton1HSpawn.Kind.AlfheimDriderVariant;
             drider = driderVariant || kind == Skeleton1HSpawn.Kind.AlfheimDrider;
             bool sphinxBow = kind == Skeleton1HSpawn.Kind.SphinxBow;
-            archer = kind == Skeleton1HSpawn.Kind.Bow || sphinxBow || hybCaster || hybBoss || elfRanged;
+            archer = kind == Skeleton1HSpawn.Kind.Bow || kind == Skeleton1HSpawn.Kind.CultistBow || sphinxBow || hybCaster || hybBoss || elfRanged;
             elfMeleeInsane = kind == Skeleton1HSpawn.Kind.AlfheimElfMeleeInsane;
             elfMelee = elfMeleeInsane || kind == Skeleton1HSpawn.Kind.AlfheimElfMelee;
             bool sentinelVeteran = kind == Skeleton1HSpawn.Kind.AlfheimSentinelVeteran;
@@ -445,7 +445,7 @@ namespace Jotunnslayer
             bool basicHeavyStrike = kind is Skeleton1HSpawn.Kind.Guardian or Skeleton1HSpawn.Kind.NiflheimBossEasy or
                 Skeleton1HSpawn.Kind.AlfheimPhase1 or Skeleton1HSpawn.Kind.AlfheimPhase2 or Skeleton1HSpawn.Kind.SphinxGuardian;
             playMeleeSwingAudio = kind is Skeleton1HSpawn.Kind.Melee or Skeleton1HSpawn.Kind.Bow or Skeleton1HSpawn.Kind.SphinxSkeleton or
-                Skeleton1HSpawn.Kind.SphinxBow or Skeleton1HSpawn.Kind.Beetle or Skeleton1HSpawn.Kind.BeetleBig or Skeleton1HSpawn.Kind.BeetleDesert or Skeleton1HSpawn.Kind.BeetleDesertBig or Skeleton1HSpawn.Kind.BeetlePortal or Skeleton1HSpawn.Kind.BatPrototype or Skeleton1HSpawn.Kind.BatCombat or Skeleton1HSpawn.Kind.BatLarge || basicSpider;
+                Skeleton1HSpawn.Kind.SphinxBow or Skeleton1HSpawn.Kind.Beetle or Skeleton1HSpawn.Kind.BeetleBig or Skeleton1HSpawn.Kind.BeetleDesert or Skeleton1HSpawn.Kind.BeetleDesertBig or Skeleton1HSpawn.Kind.BeetlePortal or Skeleton1HSpawn.Kind.BatPrototype or Skeleton1HSpawn.Kind.BatCombat or Skeleton1HSpawn.Kind.BatLarge or Skeleton1HSpawn.Kind.CultistMelee or Skeleton1HSpawn.Kind.CultistBow || basicSpider;
             if (playMeleeSwingAudio || basicHeavyStrike || drider || stoneJotunn || elfRanged || elfMelee || sentinel || alfheimSpider ||
                 milipede || sphinxMiniBoss || hybBoss || hybCaster || GoatHasJumpAudio || ettinBoss ||
                 ettinEndless || muspelBoss || constructBoss || UsesDive || elementalMelee || elfWoman || ghostKing || jotunnWarrior)

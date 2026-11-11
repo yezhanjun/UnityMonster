@@ -1,0 +1,30 @@
+SOURCE cultists-import.log
+IMPORTED_POSE cultist_1h_sur 1h_walk_combat maxAngle=52.97907
+BEETLE_BAKED 1h_walk_combat curves=600 duration=1.5
+IMPORTED_POSE cultist_1h_sur 1h_stand_combat maxAngle=9.569583
+BEETLE_BAKED 1h_stand_combat curves=600 duration=1.4
+IMPORTED_POSE cultist_1h_sur 1h_attack_04 maxAngle=141.7531
+BEETLE_BAKED 1h_attack_04 curves=600 duration=1.6
+IMPORTED_POSE cultist_1h_sur dualwield_ec_appear_summon maxAngle=154.9598
+BEETLE_BAKED dualwield_ec_appear_summon curves=600 duration=1.1
+IMPORTED_POSE cultist_1h_sur 1h_hit maxAngle=63.22575
+BEETLE_BAKED 1h_hit curves=600 duration=0.6000001
+BEETLE_IMPORTED cultist_1h_sur standalone prefab and 5 sampled clips
+IMPORTED_POSE cultist_bow_sur bow_walk maxAngle=62.50002
+BEETLE_BAKED bow_walk curves=570 duration=1.333333
+IMPORTED_POSE cultist_bow_sur bow_stand_attack maxAngle=8.535938
+BEETLE_BAKED bow_stand_attack curves=570 duration=1.766667
+IMPORTED_POSE cultist_bow_sur bow_init maxAngle=0.3753437
+BEETLE_BAKED bow_init curves=570 duration=0.03333334
+IMPORTED_POSE cultist_bow_sur bow_attack_01 maxAngle=78.07309
+BEETLE_BAKED bow_attack_01 curves=570 duration=0.8
+IMPORTED_POSE cultist_bow_sur bow_hit maxAngle=63.22585
+BEETLE_BAKED bow_hit curves=570 duration=0.8
+BEETLE_IMPORTED cultist_bow_sur standalone prefab and 5 sampled clips
+SOURCE cultists-final-smoke.log
+MONSTER_PLAYTEST_ATTACK_DSP cultist_1h_sur sourcePeak=0.033237 listenerMixPeak=0.033237
+MONSTER_PLAYTEST_PASS cultist_1h_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_CHASE_POINT cultist_bow_sur origin=(-10.219, -0.010, -0.911) player=(5.781, 0.140, -0.911)
+MONSTER_PLAYTEST_ATTACK_DSP cultist_bow_sur sourcePeak=0.020295 listenerMixPeak=0.020295
+MONSTER_PLAYTEST_PASS cultist_bow_sur spawn=True model=True idle=True moved=True attack=True damage=7 cue=False audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=2 failed=0, runtimeErrors=14, first=State comes from an incompatible keyword space
