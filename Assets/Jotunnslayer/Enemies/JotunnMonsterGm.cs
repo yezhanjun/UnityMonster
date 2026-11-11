@@ -18,6 +18,8 @@ namespace Jotunnslayer
             ("beetle_portal_sur", Skeleton1HSpawn.Kind.BeetlePortal),
             ("beetle_big_sur", Skeleton1HSpawn.Kind.BeetleBig),
             ("beetle_desert_sur", Skeleton1HSpawn.Kind.BeetleDesert),
+            ("beetle_explo_sur", Skeleton1HSpawn.Kind.BeetleExplosive),
+            ("beetle_big_explo_sur", Skeleton1HSpawn.Kind.BeetleBigExplosive),
             ("beetle_sur", Skeleton1HSpawn.Kind.Beetle),
             ("skeleton_1h_sur", Skeleton1HSpawn.Kind.Melee),
             ("skeleton_bow_VarRegular", Skeleton1HSpawn.Kind.Bow),
@@ -140,6 +142,8 @@ namespace Jotunnslayer
                 if (!entry.actor) continue;
                 if (entry.actor.TryGetComponent<Skeleton1HCombat>(out var combat))
                     combat.SetGmCombat(active);
+                else if (entry.actor.TryGetComponent<BeetleExplosionCombat>(out var explosive))
+                    explosive.SetGmCombat(active);
                 else if (entry.actor.TryGetComponent<HorrorJotunCombat>(out var horror))
                     horror.SetGmCombat(active);
                 else if ((entry.id is "ghost_sur" or "ghost_red_sur" or "ghost_red_sur_bf" or "ghost_red_following_sur" or

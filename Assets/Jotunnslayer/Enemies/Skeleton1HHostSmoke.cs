@@ -2726,8 +2726,11 @@ namespace Jotunnslayer
                 bool model = jotunnVisual ? jotunnVisual.GetComponentInChildren<SkinnedMeshRenderer>() != null
                     : rainVisual && actor.GetComponentInChildren<SkinnedMeshRenderer>();
                 var combat = actor ? actor.GetComponent<Skeleton1HCombat>() : null;
+                var beetleExplosion = actor.GetComponent<BeetleExplosionCombat>();
+                bool verifyExplosiveBeetle = beetleExplosion != null;
+                bool beetleCancelled = false, beetleBurstSeen = false;
                 var ghostCharge = actor.GetComponent<MonsterPassThrough>();
-                var attackAudio = combat ? combat.AttackAudio : ghostCharge ? ghostCharge.ChargeAudio :
+                var attackAudio = beetleExplosion ? beetleExplosion.AttackAudio : combat ? combat.AttackAudio : ghostCharge ? ghostCharge.ChargeAudio :
                     rainVisual ? rainVisual.AttackAudio : null;
                 if (captureDirectory != null)
                     CaptureMonsterFrame(captureDirectory, id, "idle", actor);
@@ -2915,6 +2918,18 @@ namespace Jotunnslayer
                         HorizontalDistanceSquared(actor.transform.position, idlePosition) < .0225f &&
                         actor.GetComponentInChildren<LineRenderer>() is { enabled: false };
                 }
+                if (verifyExplosiveBeetle) {
+                    JotunnMonsterGm.SetCombat(target, true);
+                    float cancelDeadline=Time.realtimeSinceStartup+8f;
+                    while(actor && !beetleExplosion.IsCasting && Time.realtimeSinceStartup<cancelDeadline) yield return null;
+                    bool pending=actor && beetleExplosion.IsCasting;
+                    int beforeStop=target.CurrentHealth;
+                    JotunnMonsterGm.SetCombat(target,false);
+                    yield return new WaitForSeconds(1f);
+                    beetleCancelled=pending && actor && !beetleExplosion.IsCasting && !beetleExplosion.BurstVisible && !beetleExplosion.AttackAudio.isPlaying && target.CurrentHealth>=beforeStop;
+                    Debug.Log($"MONSTER_BEETLE_CANCEL {id} pending={pending} cancelled={beetleCancelled} health={beforeStop}->{target.CurrentHealth}");
+                    if(actor) SetSmokePlayerPosition(actor,idlePosition);
+                }
                 var constructArgs = Environment.GetCommandLineArgs();
                 bool constructFar = verifyConstruct && Array.IndexOf(constructArgs, "-constructFarHammer") >= 0;
                 bool constructHammer = constructFar || verifyConstruct && Array.IndexOf(constructArgs, "-constructNearHammer") >= 0;
@@ -3025,6 +3040,12 @@ namespace Jotunnslayer
                         {
                             arrivedHidden |= moved && teleportModel.forceRenderingOff;
                             reappeared |= arrivedHidden && !teleportModel.forceRenderingOff;
+                        }
+                        if (beetleExplosion && beetleExplosion.BurstVisible) {
+                            beetleBurstSeen=true;
+                            if(captureDirectory!=null && !signatureFrameCaptured && beetleExplosion.BurstDiameter>1.4f) {
+                                CaptureMonsterFrame(captureDirectory,id,"signature",actor); signatureFrameCaptured=true;
+                            }
                         }
                         cueSeen |= (rainEnemy && rainEnemy.HasVisibleAttackWarning) ||
                             actor.RainTelegraph != 0 || actor.GetComponentInChildren<LineRenderer>() is { enabled: true };
@@ -3395,7 +3416,7 @@ namespace Jotunnslayer
                         yield return null;
                         continue;
                     }
-                    if (verifyChampionMissiles && combat.ChampionMissilesReleased >= 3 && combat.ChampionMissileDamage > 0 || !verifyChampionMissiles && (verifyElementalMelee || verifyElfWoman || verifyGhostKing) && combat.ElementalSpikeHits > 0 && cueSeen || verifyMageFire && mageFireDamage > 0 && cueSeen || (!verifyWarrior && !verifyMageFire && moved && damage > 0 && (!verifyBird || combat.DiveMoved && birdCastSound && birdImpactSound && cueSeen) && (!verifyPoisonMage || combat.PoisonOrbDamage > 0 && poisonOrbAudioPlayed && (!verifyPlagueSplash || combat.PlagueSplashLanded > 0)) && (!verifyMage || combat.DiveMoved && combat.DiveHits > 0 && cueSeen) && !verifyHorrorAlf && (!verifyTeleport || reappeared && cueSeen) && (!verifyGup || gupRelease) && (!verifyGoatNormal || goatJumpHit && goatJumpLaunchPlayed) && (!verifyMuspel || combat.MuspelWaveDamage > 0 && cueSeen && audioStarted) && (!verifyEttin || ettinBlastSources.Count == 15 && combat.EttinLightningDamage > 0) && (!verifyEttinEndless || novaImpact && novaLayer && combat.EttinNovaHits > 0 && maxPoisonShots == EttinPoisonVolley.ShotCount && poisonAudio && poisonWarning)) ||
+                    if (verifyChampionMissiles && combat.ChampionMissilesReleased >= 3 && combat.ChampionMissileDamage > 0 || !verifyChampionMissiles && (verifyElementalMelee || verifyElfWoman || verifyGhostKing) && combat.ElementalSpikeHits > 0 && cueSeen || verifyMageFire && mageFireDamage > 0 && cueSeen || (!verifyWarrior && !verifyMageFire && moved && damage > 0 && (!verifyBird || combat.DiveMoved && birdCastSound && birdImpactSound && cueSeen) && (!verifyPoisonMage || combat.PoisonOrbDamage > 0 && poisonOrbAudioPlayed && (!verifyPlagueSplash || combat.PlagueSplashLanded > 0)) && (!verifyMage || combat.DiveMoved && combat.DiveHits > 0 && cueSeen) && !verifyHorrorAlf && !verifyExplosiveBeetle && (!verifyTeleport || reappeared && cueSeen) && (!verifyGup || gupRelease) && (!verifyGoatNormal || goatJumpHit && goatJumpLaunchPlayed) && (!verifyMuspel || combat.MuspelWaveDamage > 0 && cueSeen && audioStarted) && (!verifyEttin || ettinBlastSources.Count == 15 && combat.EttinLightningDamage > 0) && (!verifyEttinEndless || novaImpact && novaLayer && combat.EttinNovaHits > 0 && maxPoisonShots == EttinPoisonVolley.ShotCount && poisonAudio && poisonWarning)) ||
                         verifyConstruct && (constructLaser ? combat.ConstructLaserHits > 0 : constructFlame ? combat.ConstructFlameHits > 0 : constructHammer ? attacked && damage > 0 : combat.ConstructSawHits >= 2) && cueSeen || target.CurrentHealth <= 0 || !actor) break;
                     yield return null;
                 }
@@ -3482,7 +3503,7 @@ namespace Jotunnslayer
                     Mathf.Abs(Vector3.ProjectOnPlane(attackAudio.transform.position - idlePosition, Vector3.up).magnitude -
                         (constructFar ? 10.5f : 7.3f)) < .05f;
                 int sawHits = verifyConstruct && combat ? combat.ConstructSawHits : 0;
-                bool selfDestructed = verifyHorrorAlf && !NetworkServer.spawned.ContainsKey(identity);
+                bool selfDestructed = (verifyHorrorAlf || verifyExplosiveBeetle) && !NetworkServer.spawned.ContainsKey(identity);
                 if (verifyWarriorSpikes && actor && combat.WarriorSpikesResolved == expectedWarriorSpikes)
                 {
                     SetSmokePlayerPosition(actor, idlePosition);
@@ -3671,12 +3692,13 @@ namespace Jotunnslayer
                     Debug.Log($"{marker}_ATTACK_DSP {id} sourcePeak={attackSourcePeak:F6} listenerMixPeak={listenerPeak:F6}");
                     passed &= attackSourcePeak > requiredAudioPeak && listenerPeak > requiredAudioPeak;
                 }
+                if (verifyExplosiveBeetle) { passed &= beetleCancelled && beetleBurstSeen && selfDestructed; Debug.Log($"MONSTER_BEETLE_EXPLOSION {id} cancelled={beetleCancelled} burst={beetleBurstSeen} selfDestructed={selfDestructed}"); }
                 if (!passed) failures++;
                 if (verifyEttinEndless) Debug.Log($"{marker}_ETTIN_NOVA impact={novaImpact} layeredCast={novaLayer} knockbacks={combat.EttinNovaHits} poisonShots={maxPoisonShots} poisonAudio={poisonAudio} poisonWarning={poisonWarning}");
                 if (verifyMuspel) Debug.Log($"{marker}_MUSPEL waveDamage={combat.MuspelWaveDamage} audio={audioStarted} warning={cueSeen}");
                 if (verifyEttin) Debug.Log($"{marker}_ETTIN cast={audioStarted} impactSources={ettinBlastSources.Count} lightningDamage={combat.EttinLightningDamage}");
                 if (verifyGoatNormal) Debug.Log($"{marker}_GOAT_JUMP {id} warning={goatJumpWarning} launchAudio={goatJumpLaunchPlayed} hitWithImpactAudio={goatJumpHit}");
-                Debug.Log($"{marker}_{(passed ? "PASS" : "SKIP")} {id} spawn=True model={model} idle={idle} " +
+                Debug.Log($"{marker}_{(passed ? "PASS" : "FAIL")} {id} spawn=True model={model} idle={idle} " +
                     $"moved={moved} attack={attacked} damage={damage} cue={cueSeen} " +
                     $"audioCue={(selectedAttackSound ? selectedAttackSound.name : "none")} audioStarted={audioStarted} removed={removed}");
                 if (verifyTeleport)
@@ -3701,7 +3723,7 @@ namespace Jotunnslayer
             }
             if (Array.IndexOf(args, "-gupSplitSmoke") >= 0)
                 yield return VerifyGupSplit(lab, target, passed => { if (!passed) failures++; });
-            ReportAlfheimSmoke(marker, tested > 0 && failures == 0, $"tested={tested} skipped={failures}");
+            ReportAlfheimSmoke(marker, tested > 0 && failures == 0, $"tested={tested} failed={failures}");
         }
 
         static IEnumerator VerifyGupSplit(RangeResearchLab lab, CharacterInstance player, Action<bool> report)

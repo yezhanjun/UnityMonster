@@ -27,6 +27,15 @@ public static class BeetleBundleImport
         }
         EditorApplication.Exit(0);
     }
+    public static void RunExplosiveVariants() {
+        foreach (string id in new[] { "beetle_explo_sur", "beetle_big_explo_sur" }) {
+            Profile=id; bool big=id=="beetle_big_explo_sur";
+            Folder="Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/"+(big ? "BeetleBigExplosive" : "BeetleExplosive");
+            Wanted=big ? new[] { "beetle_veteran_idle", "beetle_veteran_flying", "beetle_veteran_attack" } : new[] { "beetle_minion_idle", "beetle_minion_fly", "beetle_minion_suicide", "beetle_minion_stun", "beetle_minion_summon" };
+            Import();
+        }
+        EditorApplication.Exit(0);
+    }
     public static void Run() { Import(); EditorApplication.Exit(0); }
     static void Import()
     {

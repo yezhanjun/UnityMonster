@@ -1,0 +1,21 @@
+SOURCE explosive-beetles-import.log
+BEETLE_BAKED beetle_minion_fly curves=270 duration=2
+BEETLE_BAKED beetle_minion_idle curves=270 duration=1.65
+BEETLE_BAKED beetle_minion_suicide curves=270 duration=0.08333334
+BEETLE_BAKED beetle_minion_stun curves=270 duration=3.316667
+BEETLE_BAKED beetle_minion_summon curves=270 duration=1.65
+BEETLE_IMPORTED beetle_explo_sur standalone prefab and 5 sampled clips
+BEETLE_BAKED beetle_veteran_flying curves=450 duration=2.666667
+BEETLE_BAKED beetle_veteran_idle curves=450 duration=2.633333
+BEETLE_BAKED beetle_veteran_attack curves=450 duration=0.6666667
+BEETLE_IMPORTED beetle_big_explo_sur standalone prefab and 3 sampled clips
+SOURCE explosive-beetles-smoke.log
+MONSTER_BEETLE_CANCEL beetle_explo_sur pending=True cancelled=True health=1000->1000
+MONSTER_PLAYTEST_ATTACK_DSP beetle_explo_sur sourcePeak=0.144960 listenerMixPeak=0.144960
+MONSTER_BEETLE_EXPLOSION beetle_explo_sur cancelled=True burst=True selfDestructed=True
+MONSTER_PLAYTEST_PASS beetle_explo_sur spawn=True model=True idle=True moved=True attack=True damage=20 cue=True audioCue=OriginalAlfExplosion audioStarted=True removed=True
+MONSTER_BEETLE_CANCEL beetle_big_explo_sur pending=True cancelled=True health=1000->1000
+MONSTER_PLAYTEST_ATTACK_DSP beetle_big_explo_sur sourcePeak=0.145269 listenerMixPeak=0.145269
+MONSTER_BEETLE_EXPLOSION beetle_big_explo_sur cancelled=True burst=True selfDestructed=True
+MONSTER_PLAYTEST_PASS beetle_big_explo_sur spawn=True model=True idle=True moved=True attack=True damage=20 cue=True audioCue=OriginalAlfExplosion audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=2 skipped=0, runtimeErrors=14, first=State comes from an incompatible keyword space

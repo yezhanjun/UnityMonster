@@ -1187,13 +1187,16 @@
   },
   {
     "id": "beetle_big_explo_sur",
-    "name": "beetle_big_explo_sur",
+    "name": "大型爆炸甲虫",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/ExplosiveBeetleFrames/beetle_big_explo_sur-idle.png",
+      "Docs/Validation/ExplosiveBeetleFrames/beetle_big_explo_sur-signature.png"
+    ],
+    "note": "UnityMonster 正常白盒 GM 重启实测，已查看本体、追近和橙色扩张球体爆发。20 范围实伤；音源及监听器峰值各 0.145269。预警中停战取消通过，恢复后爆发并自毁、清理通过。采用原包模型和采样动作、基础色材质；复用恐魔 OriginalAlfExplosion 音效，并非原甲虫爆炸音，未人工听辨。整体仍有14条keyword错误，FAILED。",
+    "order": 1
   },
   {
     "id": "beetle_big_sur",
@@ -1236,13 +1239,16 @@
   },
   {
     "id": "beetle_explo_sur",
-    "name": "beetle_explo_sur",
+    "name": "爆炸甲虫",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/ExplosiveBeetleFrames/beetle_explo_sur-idle.png",
+      "Docs/Validation/ExplosiveBeetleFrames/beetle_explo_sur-signature.png"
+    ],
+    "note": "UnityMonster 正常白盒 GM 重启实测，已查看本体、追近和橙色扩张球体爆发。20 范围实伤；音源及监听器峰值各 0.144960。预警中停战取消通过，恢复后爆发并自毁、清理通过。采用原包模型和采样动作、基础色材质；复用恐魔 OriginalAlfExplosion 音效，并非原甲虫爆炸音，未人工听辨。整体仍有14条keyword错误，FAILED。",
+    "order": 1
   },
   {
     "id": "beetle_portal_sur",
