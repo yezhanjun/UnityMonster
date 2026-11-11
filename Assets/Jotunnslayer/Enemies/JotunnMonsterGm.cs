@@ -14,6 +14,8 @@ namespace Jotunnslayer
 
         static readonly (string id, Skeleton1HSpawn.Kind kind)[] Entries =
         {
+            ("beetle_big_sur", Skeleton1HSpawn.Kind.BeetleBig),
+            ("beetle_desert_sur", Skeleton1HSpawn.Kind.BeetleDesert),
             ("beetle_sur", Skeleton1HSpawn.Kind.Beetle),
             ("skeleton_1h_sur", Skeleton1HSpawn.Kind.Melee),
             ("skeleton_bow_VarRegular", Skeleton1HSpawn.Kind.Bow),

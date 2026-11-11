@@ -1197,13 +1197,16 @@
   },
   {
     "id": "beetle_big_sur",
-    "name": "beetle_big_sur",
+    "name": "大型甲虫",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BeetleVariantFrames/beetle_big_sur-idle.png",
+      "Docs/Validation/BeetleVariantFrames/beetle_big_sur-attack.png"
+    ],
+    "note": "UnityMonster 独立原模型、PNG 原色及采样曲线，重启后从正常白盒 GM 实测。三段动画各 450 曲线；出场和受击使用待机片段近似。 已查看本体、追近和攻击画面；移动、5 实伤、声音源和监听器峰值各 0.033266、移除通过。使用 SwingPlaceholder 占位挥击声，未人工听辨。整体仍有 14 条 keyword 渲染错误，FAILED。",
+    "order": 1
   },
   {
     "id": "beetle_desert_big_sur",
@@ -1217,13 +1220,16 @@
   },
   {
     "id": "beetle_desert_sur",
-    "name": "beetle_desert_sur",
+    "name": "沙漠甲虫",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BeetleVariantFrames/beetle_desert_sur-idle.png",
+      "Docs/Validation/BeetleVariantFrames/beetle_desert_sur-attack.png"
+    ],
+    "note": "UnityMonster 独立原模型、PNG 原色及采样曲线，重启后从正常白盒 GM 实测。五段动画各 260 曲线。 已查看本体、追近和攻击画面；移动、5 实伤、声音源和监听器峰值各 0.033229、移除通过。使用 SwingPlaceholder 占位挥击声，未人工听辨。整体仍有 14 条 keyword 渲染错误，FAILED。",
+    "order": 1
   },
   {
     "id": "beetle_explo_sur",
