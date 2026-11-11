@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900f7cc33032f124cb8e4bca700e6e53, type: 3}
+  m_Name: LongBladeFeedback
+  m_EditorClassIdentifier: Assembly-CSharp::MTPSKIT.Gameplay.MeleeFeedbackProfile
+  swordStamp:
+    enabled: 1
+    contactSparks: 1
+    material: {fileID: 2100000, guid: 3ec6cfa78a744858a7e7257b16e337b0, type: 2}
+    stampKind: 0
+    length: 0.65
+    width: 0.22
+    depth: 0.04
+    lifetime: 1.2
+    glowDuration: 0.65
+    fadeFraction: 0.65
+    localSlashDirection: {x: 0.25, y: 1, z: 0}
+    glowColor: {r: 5, g: 1.3, b: 0.2, a: 1}
+    scarColor: {r: 0.15, g: 0.025, b: 0.015, a: 1}
+    maxSurfaceDistance: 0.8
+  radialAmount: 0.25
+  radialDuration: 0.14
+  radialCenter: {x: 0.5, y: 0.5}
+  radialIterations: 6
+  radialShader: {fileID: 4800000, guid: 4f929ddf777dcdb44aa012b2a6bb9538, type: 3}
+  shakeDuration: 0.14
+  shakeFrequency: 25
+  shakePosition: {x: 0.015, y: 0.01, z: 0}
+  shakeRotation: {x: 0.6, y: 0.35, z: 0.3}
+  attackerRate: 0.1
+  attackerDuration: 0.06
+  victimRate: 0.15
+  victimDuration: 0.05

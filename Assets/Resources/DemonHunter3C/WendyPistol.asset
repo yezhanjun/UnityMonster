@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b74d75877b44d32a2b1bc129c992deb, type: 3}
+  m_Name: WendyPistol
+  idle: {fileID: 8039006803641055762, guid: 491d25b8b9d74919a298bc203bc32360, type: 3}
+  aimIdle: {fileID: -5516736278650128037, guid: e8a48c3f527f4223bef5bb82dfa2affd, type: 3}
+  sprint: {fileID: 1827226128182048838, guid: 848bc54adbd44aaa985bcbf2c54dffd5, type: 3}
+  take: {fileID: 2407882129380014940, guid: 01b0c2900a55414c8d27296830aceeed, type: 3}
+  fire: {fileID: 7400000, guid: 89eb6f8e2a15e444c9a8660a9c6bfea5, type: 2}
+  reload: {fileID: 7400000, guid: a194feaa8d991754b893803060a5e496, type: 2}
+  reloadEmpty: {fileID: 7400000, guid: a194feaa8d991754b893803060a5e496, type: 2}
+  run: {fileID: 1827226128182048838, guid: f5dbb99bb49b404688c1065c34814c77, type: 3}
+  runStop: {fileID: 7400000, guid: c7f19e79773d91d4ea7be9706d784614, type: 2}
+  runStopLeft: {fileID: 7400000, guid: c7f19e79773d91d4ea7be9706d784614, type: 2}
+  runStopRight: {fileID: 7400000, guid: 5b61db410bbdbaa4d9a0ed9f07116d61, type: 2}
+  runArcLeft: {fileID: 9093225096419954101, guid: 8c60f16a6f1e461fbdae44748c948dac, type: 3}
+  runArcRight: {fileID: 4226477269311345753, guid: 14f432967e0c4035803ea18234516fcd, type: 3}
+  sprintArcLeft: {fileID: 1827226128182048838, guid: 7b3dabfbafe747d4ad31f27cea206619, type: 3}
+  sprintArcRight: {fileID: 1827226128182048838, guid: 917542d5f7eb4ecf86481e494ad19b84, type: 3}
+  sprintTurnLeft: {fileID: 1827226128182048838, guid: 63fbb449fae444d3b8c822d2a879602b, type: 3}
+  sprintTurnRight: {fileID: 1827226128182048838, guid: 912512255ab443e3bdf035a19510066a, type: 3}
+  sprintStopLeft: {fileID: 7400000, guid: 9653df76e7365954f99d784a0a609321, type: 2}
+  sprintStopRight: {fileID: 7400000, guid: ca680588cd73653409b064477cb394cd, type: 2}
+  runStopFeet:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  sprintStopFeet:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  rollStopFeet: []
+  sprintStopBlend: 0.1
+  sprintStopStart: 0.1
+  sprintStopExit: 1
+  sprintStopIdleBlend: 0.8
+  oppositeFootReinput: 1
+  runStopBlend: 0.15
+  runStopReinputBlend: 0.15
+  runStopExit: 1
+  turnThreshold: 130
+  turnRotationStart: 0.21212122
+  turnRotationDuration: 0.36363637
+  turnExit: 0.7
+  turnEnterBlend: 0.15
+  turnExitBlend: 0.2
+  arcSensitivity: 1.5
+  arcLerpSpeed: 3
+  weaponResource: FpsPistol
+  modelChild: Pistol_1
+  armsMask: {fileID: 31900000, guid: 0e28b61b3317b3c4e832ddcc5d1971da, type: 2}
+  hipMove:
+  - {fileID: -1870079936100236668, guid: c8be5de6c28543ec84c0330210939180, type: 3}
+  - {fileID: 1984853124847898257, guid: 3d7bfaf4aadc4e03abc7505052531b8b, type: 3}
+  - {fileID: 4489151151886534054, guid: 5fdc81c83ba74326b075c1ecaeb77b74, type: 3}
+  - {fileID: 3372616475359876609, guid: 222c7270f1f74fb0b8948e019e473c95, type: 3}
+  - {fileID: 2127110407674224541, guid: 0b9a347a958642a1b6ec7e09baa62dfe, type: 3}
+  - {fileID: 4281018992422711433, guid: af062fbc65944c988d5b8e52bd34e6db, type: 3}
+  - {fileID: 6926181221956835396, guid: 91d42b823ba54ab79a9696b977fa16c6, type: 3}
+  - {fileID: 5591011448831363009, guid: a1368fdf32f847b6b94d601b78a2467e, type: 3}
+  aimMove:
+  - {fileID: 83450145202593063, guid: a87efdaa34564732a3d3c98d668825b2, type: 3}
+  - {fileID: -3975193076942186852, guid: b377c5a82fc54e479f3d6f281473d4e7, type: 3}
+  - {fileID: 2458469849635539842, guid: 054cc256edc84b8e8a340d50ba144d7d, type: 3}
+  - {fileID: -7925948992481109043, guid: 8dd35a10553e45bba6abe2e0cb0ba3a5, type: 3}
+  - {fileID: -7593017346468746175, guid: f6e74b71292c4c9d891547146252d88f, type: 3}
+  - {fileID: 3539943383538435326, guid: ac503df57eca4730b663da93497ac3cf, type: 3}
+  - {fileID: 2989179110936037344, guid: 62f32d9d5a5546988727c72b7b569e52, type: 3}
+  - {fileID: 2245963570812256280, guid: 0dbd49cdc858402c8b571347417502c1, type: 3}
+  handPosition: {x: -0.0018122415, y: 0.029016772, z: -0.00078324834}
+  handEuler: {x: 280.92, y: 276.2851, z: 181.12059}
+  handScale: 0.89062995
+  hipFirePoseHold: 1
+  locomotionBlend: 0.16
+  fireBlend: 0.035
+  reloadBlend: 0.1
+  reloadBlendOut: 0.22

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wendy_clothes_headdress
+  m_Shader: {fileID: 4800000, guid: 3c79b10c7e0b2784aaa4c2f8dd17d55e, type: 3}
+  m_Parent: {fileID: 2100000, guid: 752b86e10d1db07458f10e2d4e20acab, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    VRCFallback: UnlitDoubleSided
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMask:
+        m_Texture: {fileID: 2800000, guid: fc87a18029db25b42b7e528f9ce17b49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaMaskValue: 0
+    - _AlphaToMask: 1
+    - _Cutoff: 0.5
+    - _DstBlend: 0
+    - _OutlineAlphaToMask: 1
+    - _OutlineDstBlend: 0
+    - _OutlineSrcBlend: 1
+    m_Colors: []
+  m_BuildTextureStacks: []

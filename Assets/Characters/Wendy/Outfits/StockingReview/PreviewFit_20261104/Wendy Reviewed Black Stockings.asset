@@ -1,0 +1,422 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faa2d75ad390b0479e993f9c9073edd, type: 3}
+  m_Name: Wendy Reviewed Black Stockings
+  m_EditorClassIdentifier: 
+  slot: Stockings
+  prefab: {fileID: 8491226369081252568, guid: 7c8603e7091611149a45ac66fe6385a8, type: 3}
+  bindSkinDirectlyToAvatar: 1
+  preserveRestRotationOffsets: 0
+  sourceSkeletonPath: Armature
+  targetSkeletonPath: Armature
+  useHumanoidMapping: 0
+  allowUniqueNameFallback: 0
+  requiredSourcePaths:
+  - Armature/Hips
+  - Armature/Hips/Spine
+  - Armature/Hips/Spine/Chest
+  - Armature/Hips/Spine/Chest/Neck
+  - Armature/Hips/Spine/Chest/Neck/Head
+  - Armature/Hips/Spine/Chest/Neck/Head/LeftEye
+  - Armature/Hips/Spine/Chest/Neck/Head/RightEye
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L/Head_Ribon_Eye.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L/Head_Ribon_02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L/Head_Ribon_01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L/Head_Ribon_03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.L/Head_Ribon_04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R/Head_Ribon_Eye.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R/Head_Ribon_02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R/Head_Ribon_01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R/Head_Ribon_03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Head_Ribon_root.R/Head_Ribon_04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_A01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_A01/Hair_Front_A02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_A01/Hair_Front_A02/Hair_Front_A03
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_A01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_A01.L/Hair_Side_A02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_A01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_A01.R/Hair_Side_A02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_C03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_C03.L/Hair_Back_C04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_C03.L/Hair_Back_C04.L/Hair_Back_C05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_C03.L/Hair_Back_C04.L/Hair_Back_C05.L/Hair_Back_C06.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_D01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_D01.L/Hair_Back_D02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_D01.L/Hair_Back_D02.L/Hair_Back_D03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.L/Hair_Back_C02.L/Hair_Back_D01.L/Hair_Back_D02.L/Hair_Back_D03.L/Hair_Back_D04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_C03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_C03.R/Hair_Back_C04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_C03.R/Hair_Back_C04.R/Hair_Back_C05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_C03.R/Hair_Back_C04.R/Hair_Back_C05.R/Hair_Back_C06.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_D01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_D01.R/Hair_Back_D02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_D01.R/Hair_Back_D02.R/Hair_Back_D03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_C01.R/Hair_Back_C02.R/Hair_Back_D01.R/Hair_Back_D02.R/Hair_Back_D03.R/Hair_Back_D04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01/Hair_Ahoge02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01/Hair_Ahoge02/Hair_Ahoge03
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01/Hair_Ahoge02/Hair_Ahoge03/Hair_Ahoge04
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01/Hair_Ahoge02/Hair_Ahoge03/Hair_Ahoge04/Hair_Ahoge05
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Ahoge01/Hair_Ahoge02/Hair_Ahoge03/Hair_Ahoge04/Hair_Ahoge05/Hair_Ahoge06
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_E02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_E02.L/Hair_Back_E03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_E02.L/Hair_Back_E03.L/Hair_Back_E04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_E02.L/Hair_Back_E03.L/Hair_Back_E04.L/Hair_Back_E05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_I01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_I01.L/Hair_Back_I02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_I01.L/Hair_Back_I02.L/Hair_Back_I03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_I01.L/Hair_Back_I02.L/Hair_Back_I03.L/Hair_Back_I04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_I01.L/Hair_Back_I02.L/Hair_Back_I03.L/Hair_Back_I04.L/Hair_Back_I05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_J01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_J01.L/Hair_Back_J02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_J01.L/Hair_Back_J02.L/Hair_Back_J03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.L/Hair_Back_J01.L/Hair_Back_J02.L/Hair_Back_J03.L/Hair_Back_J04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_E02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_E02.R/Hair_Back_E03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_E02.R/Hair_Back_E03.R/Hair_Back_E04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_E02.R/Hair_Back_E03.R/Hair_Back_E04.R/Hair_Back_E05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_I01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_I01.R/Hair_Back_I02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_I01.R/Hair_Back_I02.R/Hair_Back_I03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_I01.R/Hair_Back_I02.R/Hair_Back_I03.R/Hair_Back_I04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_I01.R/Hair_Back_I02.R/Hair_Back_I03.R/Hair_Back_I04.R/Hair_Back_I05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_J01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_J01.R/Hair_Back_J02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_J01.R/Hair_Back_J02.R/Hair_Back_J03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_E01.R/Hair_Back_J01.R/Hair_Back_J02.R/Hair_Back_J03.R/Hair_Back_J04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_C01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_C01/Hair_Front_C02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_C01/Hair_Front_C02/Hair_Front_C03
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_B01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Front_B01/Hair_Front_B02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.L/Hair_Back_F02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.L/Hair_Back_F02.L/Hair_Back_F03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.L/Hair_Back_F02.L/Hair_Back_F03.L/Hair_Back_F04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.L/Hair_Back_F02.L/Hair_Back_F03.L/Hair_Back_F04.L/Hair_Back_F05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.R/Hair_Back_F02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.R/Hair_Back_F02.R/Hair_Back_F03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.R/Hair_Back_F02.R/Hair_Back_F03.R/Hair_Back_F04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_F01.R/Hair_Back_F02.R/Hair_Back_F03.R/Hair_Back_F04.R/Hair_Back_F05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.L/Hair_Side_B02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.L/Hair_Side_B02.L/Hair_Side_B03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.R/Hair_Side_B02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_B01.R/Hair_Side_B02.R/Hair_Side_B03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L/Hair_Side_C03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L/Hair_Side_C03.L/Hair_Side_C04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L/Hair_Side_C03.L/Hair_Side_C04.L/Hair_Side_C05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L/Hair_Side_C03.L/Hair_Side_C04.L/Hair_Side_C05.L/Hair_Side_C06.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.L/Hair_Side_C02.L/Hair_Side_C03.L/Hair_Side_C04.L/Hair_Side_C05.L/Hair_Side_C06.L/Hair_Side_C07.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R/Hair_Side_C03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R/Hair_Side_C03.R/Hair_Side_C04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R/Hair_Side_C03.R/Hair_Side_C04.R/Hair_Side_C05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R/Hair_Side_C03.R/Hair_Side_C04.R/Hair_Side_C05.R/Hair_Side_C06.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Side_C01.R/Hair_Side_C02.R/Hair_Side_C03.R/Hair_Side_C04.R/Hair_Side_C05.R/Hair_Side_C06.R/Hair_Side_C07.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.L/Hair_Back_G02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.L/Hair_Back_G02.L/Hair_Back_G03.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.L/Hair_Back_G02.L/Hair_Back_G03.L/Hair_Back_G04.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.L/Hair_Back_G02.L/Hair_Back_G03.L/Hair_Back_G04.L/Hair_Back_G05.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.R/Hair_Back_G02.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.R/Hair_Back_G02.R/Hair_Back_G03.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.R/Hair_Back_G02.R/Hair_Back_G03.R/Hair_Back_G04.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_G01.R/Hair_Back_G02.R/Hair_Back_G03.R/Hair_Back_G04.R/Hair_Back_G05.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01/Hair_Back_A02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01/Hair_Back_A02/Hair_Back_A03
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01/Hair_Back_A02/Hair_Back_A03/Hair_Back_A04
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01/Hair_Back_A02/Hair_Back_A03/Hair_Back_A04/Hair_Back_A05
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_A01/Hair_Back_A02/Hair_Back_A03/Hair_Back_A04/Hair_Back_A05/Hair_Back_A06
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01/Hair_Back_B02
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01/Hair_Back_B02/Hair_Back_B03
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01/Hair_Back_B02/Hair_Back_B03/Hair_Back_B04
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01/Hair_Back_B02/Hair_Back_B03/Hair_Back_B04/Hair_Back_B05
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_B01/Hair_Back_B02/Hair_Back_B03/Hair_Back_B04/Hair_Back_B05/Hair_Back_B06
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_H01.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_H01.L/Hair_Back_H02.L
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_H01.R
+  - Armature/Hips/Spine/Chest/Neck/Head/Hair_root/Hair_Back_H01.R/Hair_Back_H02.R
+  - Armature/Hips/Spine/Chest/Shoulder.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Index Proximal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Index Proximal.L/Index
+    Intermediate.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Index Proximal.L/Index
+    Intermediate.L/Index Distal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Thumb Proximal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Thumb Proximal.L/Thumb
+    Intermediate.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Thumb Proximal.L/Thumb
+    Intermediate.L/Thumb Distal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Middle Proximal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Middle Proximal.L/Middle
+    Intermediate.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Middle Proximal.L/Middle
+    Intermediate.L/Middle Distal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Ring Proximal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Ring Proximal.L/Ring
+    Intermediate.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Ring Proximal.L/Ring
+    Intermediate.L/Ring Distal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Little Proximal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Little Proximal.L/Little
+    Intermediate.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Little Proximal.L/Little
+    Intermediate.L/Little Distal.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Sleeve01.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Hand.L/Sleeve01.L/Sleeve02.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Lower_Arm.L/Lower_Arm_Twist.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Twist.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Ribbon_root.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Ribbon_root.L/Upper_Arm_Ribbon01.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Ribbon_root.L/Upper_Arm_Ribbon03.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Ribbon_root.L/Upper_Arm_Ribbon02.L
+  - Armature/Hips/Spine/Chest/Shoulder.L/Upper_Arm.L/Upper_Arm_Ribbon_root.L/Upper_Arm_Ribbon04.L
+  - Armature/Hips/Spine/Chest/Shoulder.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Index Proximal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Index Proximal.R/Index
+    Intermediate.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Index Proximal.R/Index
+    Intermediate.R/Index Distal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Thumb Proximal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Thumb Proximal.R/Thumb
+    Intermediate.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Thumb Proximal.R/Thumb
+    Intermediate.R/Thumb Distal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Middle Proximal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Middle Proximal.R/Middle
+    Intermediate.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Middle Proximal.R/Middle
+    Intermediate.R/Middle Distal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Ring Proximal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Ring Proximal.R/Ring
+    Intermediate.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Ring Proximal.R/Ring
+    Intermediate.R/Ring Distal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Little Proximal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Little Proximal.R/Little
+    Intermediate.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Little Proximal.R/Little
+    Intermediate.R/Little Distal.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Sleeve01.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Hand.R/Sleeve01.R/Sleeve02.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Lower_Arm.R/Lower_Arm_Twist.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Twist.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Ribbon_root.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Ribbon_root.R/Upper_Arm_Ribbon01.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Ribbon_root.R/Upper_Arm_Ribbon03.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Ribbon_root.R/Upper_Arm_Ribbon04.R
+  - Armature/Hips/Spine/Chest/Shoulder.R/Upper_Arm.R/Upper_Arm_Ribbon_root.R/Upper_Arm_Ribbon02.R
+  - Armature/Hips/Spine/Chest/Ribbon_root
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_A01.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_A01.R/Ribbon_A02.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.R/Ribbon_B02.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.R/Ribbon_B02.R/Ribbon_B03.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.R/Ribbon_B02.R/Ribbon_B03.R/Ribbon_B04.R
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_A01.L
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_A01.L/Ribbon_A02.L
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.L
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.L/Ribbon_B02.L
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.L/Ribbon_B02.L/Ribbon_B03.L
+  - Armature/Hips/Spine/Chest/Ribbon_root/Ribbon_B01.L/Ribbon_B02.L/Ribbon_B03.L/Ribbon_B04.L
+  - Armature/Hips/Spine/Chest/Chest_root.L
+  - Armature/Hips/Spine/Chest/Chest_root.L/Chest_01.L
+  - Armature/Hips/Spine/Chest/Chest_root.L/Chest_01.L/Chest_02.L
+  - Armature/Hips/Spine/Chest/Chest_root.L/Chest_01.L/Chest_02.L/Chest_03.L
+  - Armature/Hips/Spine/Chest/Chest_root.R
+  - Armature/Hips/Spine/Chest/Chest_root.R/Chest_01.R
+  - Armature/Hips/Spine/Chest/Chest_root.R/Chest_01.R/Chest_02.R
+  - Armature/Hips/Spine/Chest/Chest_root.R/Chest_01.R/Chest_02.R/Chest_03.R
+  - Armature/Hips/Spine/Tail_01
+  - Armature/Hips/Spine/Tail_01/Tail_02
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13/Tail_14
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13/Tail_14/Tail_15
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13/Tail_14/Tail_15/Tail_16
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13/Tail_14/Tail_15/Tail_16/Tail_17
+  - Armature/Hips/Spine/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_06/Tail_07/Tail_08/Tail_09/Tail_10/Tail_11/Tail_12/Tail_13/Tail_14/Tail_15/Tail_16/Tail_17/Tail_18
+  - Armature/Hips/Spine/Skirt_root
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.R/Skirt_A02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.R/Skirt_A02.R/Skirt_A03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.R/Skirt_A02.R/Skirt_A03.R/Skirt_A04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R/Skirt_C02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R/Skirt_C02.R/Skirt_C03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R/Skirt_C02.R/Skirt_C03.R/Skirt_C04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R/Skirt_C02.R/Skirt_C03.R/Skirt_C04.R/Skirt_C05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.R/Skirt_C02.R/Skirt_C03.R/Skirt_C04.R/Skirt_C05.R/Skirt_C06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R/Skirt_D02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R/Skirt_D02.R/Skirt_D03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R/Skirt_D02.R/Skirt_D03.R/Skirt_D04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R/Skirt_D02.R/Skirt_D03.R/Skirt_D04.R/Skirt_D05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.R/Skirt_D02.R/Skirt_D03.R/Skirt_D04.R/Skirt_D05.R/Skirt_D06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_E04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_E04.R/Skirt_E05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_E04.R/Skirt_E05.R/Skirt_E06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R/Skirt_H04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R/Skirt_H04.R/Skirt_H05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R/Skirt_H04.R/Skirt_H05.R/Skirt_H06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R/Skirt_H04.R/Skirt_H05.R/Skirt_H06.R/Skirt_H07.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.R/Skirt_E02.R/Skirt_E03.R/Skirt_H01.R/Skirt_H02.R/Skirt_H03.R/Skirt_H04.R/Skirt_H05.R/Skirt_H06.R/Skirt_H07.R/Skirt_H08.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R/Skirt_F02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R/Skirt_F02.R/Skirt_F03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R/Skirt_F02.R/Skirt_F03.R/Skirt_F04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R/Skirt_F02.R/Skirt_F03.R/Skirt_F04.R/Skirt_F05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.R/Skirt_F02.R/Skirt_F03.R/Skirt_F04.R/Skirt_F05.R/Skirt_F06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R/Skirt_G02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R/Skirt_G02.R/Skirt_G03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R/Skirt_G02.R/Skirt_G03.R/Skirt_G04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R/Skirt_G02.R/Skirt_G03.R/Skirt_G04.R/Skirt_G05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.R/Skirt_G02.R/Skirt_G03.R/Skirt_G04.R/Skirt_G05.R/Skirt_G06.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.R/Skirt_B02.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.R/Skirt_B02.R/Skirt_B03.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.R/Skirt_B02.R/Skirt_B03.R/Skirt_B04.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.R/Skirt_B02.R/Skirt_B03.R/Skirt_B04.R/Skirt_B05.R
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.L/Skirt_A02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.L/Skirt_A02.L/Skirt_A03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_A01.L/Skirt_A02.L/Skirt_A03.L/Skirt_A04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L/Skirt_C02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L/Skirt_C02.L/Skirt_C03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L/Skirt_C02.L/Skirt_C03.L/Skirt_C04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L/Skirt_C02.L/Skirt_C03.L/Skirt_C04.L/Skirt_C05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_C01.L/Skirt_C02.L/Skirt_C03.L/Skirt_C04.L/Skirt_C05.L/Skirt_C06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L/Skirt_D02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L/Skirt_D02.L/Skirt_D03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L/Skirt_D02.L/Skirt_D03.L/Skirt_D04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L/Skirt_D02.L/Skirt_D03.L/Skirt_D04.L/Skirt_D05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_D01.L/Skirt_D02.L/Skirt_D03.L/Skirt_D04.L/Skirt_D05.L/Skirt_D06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_E04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_E04.L/Skirt_E05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_E04.L/Skirt_E05.L/Skirt_E06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L/Skirt_H04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L/Skirt_H04.L/Skirt_H05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L/Skirt_H04.L/Skirt_H05.L/Skirt_H06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L/Skirt_H04.L/Skirt_H05.L/Skirt_H06.L/Skirt_H07.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_E01.L/Skirt_E02.L/Skirt_E03.L/Skirt_H01.L/Skirt_H02.L/Skirt_H03.L/Skirt_H04.L/Skirt_H05.L/Skirt_H06.L/Skirt_H07.L/Skirt_H08.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L/Skirt_F02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L/Skirt_F02.L/Skirt_F03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L/Skirt_F02.L/Skirt_F03.L/Skirt_F04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L/Skirt_F02.L/Skirt_F03.L/Skirt_F04.L/Skirt_F05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_F01.L/Skirt_F02.L/Skirt_F03.L/Skirt_F04.L/Skirt_F05.L/Skirt_F06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L/Skirt_G02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L/Skirt_G02.L/Skirt_G03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L/Skirt_G02.L/Skirt_G03.L/Skirt_G04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L/Skirt_G02.L/Skirt_G03.L/Skirt_G04.L/Skirt_G05.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_G01.L/Skirt_G02.L/Skirt_G03.L/Skirt_G04.L/Skirt_G05.L/Skirt_G06.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.L/Skirt_B02.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.L/Skirt_B02.L/Skirt_B03.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.L/Skirt_B02.L/Skirt_B03.L/Skirt_B04.L
+  - Armature/Hips/Spine/Skirt_root/Skirt_B01.L/Skirt_B02.L/Skirt_B03.L/Skirt_B04.L/Skirt_B05.L
+  - Armature/Hips/Upper_Leg.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Bigtoe_01.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Bigtoe_01.L/Bigtoe_02.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Secondtoe_01.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Secondtoe_01.L/Secondtoe_02.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Thirdtoe_01.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Thirdtoe_01.L/Thirdtoe_02.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Fourthtoe_01.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Fourthtoe_01.L/Fourthtoe_02.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Littletoe_01.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Foot.L/Toe.L/Littletoe_01.L/Littletoe_02.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/knee-ctrl.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/Calf.L
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/bandage02
+  - Armature/Hips/Upper_Leg.L/Lower_Leg.L/bandage01
+  - Armature/Hips/Upper_Leg.L/Knee.L
+  - Armature/Hips/Upper_Leg.L/Knee.L/Knee_pos.L
+  - Armature/Hips/Upper_Leg.L/Thigh.L
+  - Armature/Hips/Upper_Leg.L/Thigh_cross
+  - Armature/Hips/Upper_Leg.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Bigtoe_01.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Bigtoe_01.R/Bigtoe_02.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Secondtoe_01.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Secondtoe_01.R/Secondtoe_02.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Thirdtoe_01.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Thirdtoe_01.R/Thirdtoe_02.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Fourthtoe_01.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Fourthtoe_01.R/Fourthtoe_02.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Littletoe_01.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Foot.R/Toe.R/Littletoe_01.R/Littletoe_02.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/knee-ctrl.R
+  - Armature/Hips/Upper_Leg.R/Lower_Leg.R/Calf.R
+  - Armature/Hips/Upper_Leg.R/Knee.R
+  - Armature/Hips/Upper_Leg.R/Knee.R/Knee_pos.R
+  - Armature/Hips/Upper_Leg.R/Thigh.R
+  - Armature/Hips/Butt_01.L
+  - Armature/Hips/Butt_01.R
+  - Armature/Hips/Butt_02.L
+  - Armature/Hips/Butt_02.R
+  preservedSourcePaths: []
+  overrides: []

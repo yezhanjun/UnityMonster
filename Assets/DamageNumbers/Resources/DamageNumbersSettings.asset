@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52564ae0b85460849858d8aa8287ea2f, type: 3}
+  m_Name: DamageNumbersSettings
+  m_EditorClassIdentifier: Assembly-CSharp::MTPSKIT.UI.DamageNumbers.DamageNumbersSettings
+  Font: {fileID: 11400000, guid: b5ddf6578b3180d4d9187da63d6b7de8, type: 2}
+  PrewarmSingles: 24
+  MaxSingles: 48
+  MaxTotals: 8
+  FontSize: 60
+  LifeTime: 0.75
+  MoveDistance: 64
+  Offset: {x: 0, y: -64}
+  StartJitter: {x: 8, y: 6}
+  DriftJitter: {x: 10, y: 12}
+  HeadshotScale: 1.5
+  NormalColor: {r: 0.95, g: 0.48, b: 0, a: 1}
+  HeadshotColor: {r: 1, g: 0.18, b: 0.18, a: 1}
+  NearDistance: 3
+  FarDistance: 18
+  NearScale: 0.72
+  FarScale: 0.34
+  ShowAccumulated: 1
+  TotalFontSize: 37
+  TotalHoldTime: 0.75
+  TotalScale: 1.06
+  TotalOffset: {x: 112, y: 54}
+  TotalTop: {r: 1, g: 0.98, b: 0.22, a: 1}
+  TotalBottom: {r: 1, g: 0.42, b: 0.02, a: 1}
+  TotalShine: {r: 1, g: 1, b: 0.78, a: 1}

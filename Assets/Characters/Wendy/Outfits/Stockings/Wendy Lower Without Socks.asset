@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faa2d75ad390b0479e993f9c9073edd, type: 3}
+  m_Name: Wendy Lower Without Socks
+  m_EditorClassIdentifier: 
+  slot: Lower
+  prefab: {fileID: 168759995452261818, guid: c5a2c15664e30bd4b860553d3f7d7689, type: 3}
+  bindSkinDirectlyToAvatar: 0
+  sourceSkeletonPath: Armature
+  targetSkeletonPath: Armature
+  useHumanoidMapping: 0
+  allowUniqueNameFallback: 0
+  requiredSourcePaths:
+  - Armature/Hips
+  - Armature/Hips/Spine
+  preservedSourcePaths: []
+  overrides: []

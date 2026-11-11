@@ -1,0 +1,708 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02bc62debb005de48a510e841258de46, type: 3}
+  m_Name: Wendy Expression Clips
+  m_EditorClassIdentifier: 
+  entries:
+  - originalName: Blink_Enable
+    category: "\u8F85\u52A9/Blink"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/Blink/Blink_Enable.anim
+    utility: 1
+    timeVarying: 1
+    loop: 1
+    clip: {fileID: 7400000, guid: bd24272e88768284b9ba57d84bfe7c25, type: 2}
+  - originalName: FaceEmote_AFK end
+    category: "\u8F85\u52A9/AFK"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/AFK/FaceEmote_AFK
+      end.anim
+    utility: 1
+    timeVarying: 1
+    loop: 0
+    clip: {fileID: 7400000, guid: c21ba6c26870be94980e616943d9b431, type: 2}
+  - originalName: FaceEmote_AFK start
+    category: "\u8F85\u52A9/AFK"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/AFK/FaceEmote_AFK
+      start.anim
+    utility: 1
+    timeVarying: 1
+    loop: 0
+    clip: {fileID: 7400000, guid: dc75128656ff88945814dae06395771e, type: 2}
+  - originalName: FaceEmote_AFK
+    category: "\u8F85\u52A9/AFK"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/AFK/FaceEmote_AFK.anim
+    utility: 1
+    timeVarying: 1
+    loop: 1
+    clip: {fileID: 7400000, guid: 6ebda369cbe42dc42908f4c28d1b318e, type: 2}
+  - originalName: FaceEmote_Default
+    category: "\u8F85\u52A9/FaceEmote"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/FaceEmote_Default.anim
+    utility: 1
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 49f7c88a9f17a4b4bacd6005ee7e1cc8, type: 2}
+  - originalName: FaceEmote_Override_NadeNade
+    category: "\u8F85\u52A9/FaceEmote"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/FaceEmote_Override_NadeNade.anim
+    utility: 1
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: ff83c3bdc5874f847bcbf66560bd68f3, type: 2}
+  - originalName: "\u3042\u306F"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u3042\u306F.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 29580fc0ad6f13646b3a6f3e06b496de, type: 2}
+  - originalName: "\u3071\u3041\u3046\u308B\u3046\u308B"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u3071\u3041\u3046\u308B\u3046\u308B.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: f6043a24b93014b42a58ba2c074e87d4, type: 2}
+  - originalName: "\u3075\u30FC\u3093"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u3075\u30FC\u3093.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 4ce6ceacc58f9214cb75255c70e7c05e, type: 2}
+  - originalName: "\u3080\u30FC\uFF01"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u3080\u30FC\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 7f8c717ece885bc47b324fe99921336a, type: 2}
+  - originalName: "\u30AD\u30B9\u9854"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u30AD\u30B9\u9854.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 23168eee3b5c30c4ea7afffa7c4f25c0, type: 2}
+  - originalName: "\u30E4\u30F3\u30C7\u30EC\u30CF\u30FC\u30C8"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u30E4\u30F3\u30C7\u30EC\u30CF\u30FC\u30C8.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 110008896d4dcdc4282d9f2efef76e5a, type: 2}
+  - originalName: "\u6D17\u8133\u30CF\u30FC\u30C8"
+    category: etc
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/etc/\u6D17\u8133\u30CF\u30FC\u30C8.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 4a9c6bc5d325f954e808495d9f623de9, type: 2}
+  - originalName: "\u3057\u3085\u3093"
+    category: "\u54C0"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u54C0/\u3057\u3085\u3093.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: b7acbaf30e0fb3049aa15de379fb3412, type: 2}
+  - originalName: "\u3059\u306D\u308B"
+    category: "\u54C0"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u54C0/\u3059\u306D\u308B.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 96c3b78b482c9d7448127fdb812f06b0, type: 2}
+  - originalName: "\u6D99"
+    category: "\u54C0"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u54C0/\u6D99.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 115ce4f24e51787488e867cf8ee19068, type: 2}
+  - originalName: "\u8010\u3048\u308B"
+    category: "\u54C0"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u54C0/\u8010\u3048\u308B.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 7d04741e2d731844dbafbb278f01c42a, type: 2}
+  - originalName: "\u306F\u3093\uFF01"
+    category: "\u559C"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u559C/\u306F\u3093\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 93bfe99d9aa9ceb47b6ea47e1dfa4005, type: 2}
+  - originalName: "\u30AD\u30E9\u30AD\u30E9"
+    category: "\u559C"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u559C/\u30AD\u30E9\u30AD\u30E9.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 45bbfe1fc2773c74a9baffb498178f0a, type: 2}
+  - originalName: "\u30CB\u30E4\u30EA\u9854\u5F71"
+    category: "\u559C"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u559C/\u30CB\u30E4\u30EA\u9854\u5F71.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 16fee8c1ef7b2d54c8c419abd70004cd, type: 2}
+  - originalName: "\u7167\u308C"
+    category: "\u559C"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u559C/\u7167\u308C.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 942aa536ab4d0ca4d83917910b8b6c3e, type: 2}
+  - originalName: "\u7B11\u9854"
+    category: "\u559C"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u559C/\u7B11\u9854.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 197ef0bdb0edc264784419c1ddc9be00, type: 2}
+  - originalName: "\u304A\u3053"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u304A\u3053.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 6df14d4c6cd373440818ba49710f23c5, type: 2}
+  - originalName: "\u3050\u3046\u2026\uFF01"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u3050\u3046\u2026\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 2ecaccf713c4c01409de8e67e19c1b54, type: 2}
+  - originalName: "\u306F\u3041\uFF1F"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u306F\u3041\uFF1F.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 7999f01817646494ba63029c1682b7ed, type: 2}
+  - originalName: "\u3077\u3093\u3077\u3093\uFF01"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u3077\u3093\u3077\u3093\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 02bf751b286affc42b063fb6433da2a7, type: 2}
+  - originalName: "\u3081\u3063\uFF01"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u3081\u3063\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 98eba97a51fe84e4db96076f986e6de5, type: 2}
+  - originalName: "\u5F15\u304D\u9854"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u5F15\u304D\u9854.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 6be661d50bc9944428644f90787ade91, type: 2}
+  - originalName: "\u672C\u5F53\u306B\u5ACC"
+    category: "\u6012"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u6012/\u672C\u5F53\u306B\u5ACC.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 17b8476b22271034d896e521c1e7d942, type: 2}
+  - originalName: "\u3048\u3078\u3078\uFF5E"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u3048\u3078\u3078\uFF5E.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: d6d49651eda9ee341848b90a649548b2, type: 2}
+  - originalName: "\u3066\u3078\u307A\u308D"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u3066\u3078\u307A\u308D.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 01b60d9236a6aa54999ad514aeb03ea6, type: 2}
+  - originalName: "\u3069\u3084\uFF01"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u3069\u3084\uFF01.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 3aeebf9e63a98b542a1c23268db01079, type: 2}
+  - originalName: "\u306B\u3057\u3057"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u306B\u3057\u3057.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: d3c70e326401d7a458185f20b6e58101, type: 2}
+  - originalName: "\u307B\u306E\u307C\u306E"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u307B\u306E\u307C\u306E.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 6db5f8d5906ef084b9ae13da0197c462, type: 2}
+  - originalName: "\u30A6\u30A3\u30F3\u30AF"
+    category: "\u697D"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u697D/\u30A6\u30A3\u30F3\u30AF.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 152dadf7de6ea0d47a81dd7227100133, type: 2}
+  - originalName: "\u3042\u2026\u3042\u2026"
+    category: "\u7126"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u7126/\u3042\u2026\u3042\u2026.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 70ba03dc11393364cad60a17a28d5eb3, type: 2}
+  - originalName: "\u3048\u3063\u3068\u3049\uFF5E\u6C57"
+    category: "\u7126"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u7126/\u3048\u3063\u3068\u3049\uFF5E\u6C57.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: 1d7b47c3fdf52de4cb64ff6931ec2d21, type: 2}
+  - originalName: "\u3050\u308B\u3050\u308B"
+    category: "\u7126"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u7126/\u3050\u308B\u3050\u308B.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: fd97e5df77350f24785eb00a7ea5b0a7, type: 2}
+  - originalName: "\u3075\u3047\u3063\uFF01\uFF1F"
+    category: "\u9A5A"
+    sourceClipPath: "Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/FaceEmote/\u8868\u60C5\u307E\u3068\u3081/\u9A5A/\u3075\u3047\u3063\uFF01\uFF1F.anim"
+    utility: 0
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: ace61e39b3ff23b4b9e572e92a935540, type: 2}
+  - originalName: MouthMorphCanceller_ENABLE
+    category: "\u8F85\u52A9/MouthMorphCanceller"
+    sourceClipPath: Assets/Kaerimichi/Wendy/Animation/Animator/Animation/FX/MouthMorphCanceller/MouthMorphCanceller_ENABLE.anim
+    utility: 1
+    timeVarying: 0
+    loop: 0
+    clip: {fileID: 7400000, guid: c0988d6930eeda74ab736a0cfafdbf74, type: 2}
+  rendererPath: Body
+  managedBlendshapes:
+  - ears_elf
+  - eye_><
+  - eye_><_L
+  - eye_><_R
+  - eye_OO
+  - eye_angry
+  - eye_angry_L
+  - eye_angry_R
+  - eye_back
+  - eye_big
+  - eye_blink
+  - eye_blink_L
+  - eye_blink_R
+  - eye_deadeye
+  - eye_doya
+  - eye_doya_L
+  - eye_doya_R
+  - eye_evil
+  - eye_evil_L
+  - eye_evil_R
+  - eye_guruguru
+  - eye_happy
+  - eye_happy_L
+  - eye_happy_R
+  - eye_heart
+  - eye_heart_big
+  - eye_kirakira
+  - eye_kirakira_big
+  - eye_look_down
+  - eye_look_far
+  - eye_look_left
+  - eye_look_near
+  - eye_look_right
+  - eye_look_up
+  - eye_nagomi
+  - eye_nagomi2
+  - eye_nagomi2_L
+  - eye_nagomi2_R
+  - eye_nagomi_L
+  - eye_nagomi_R
+  - eye_position_down
+  - eye_position_far
+  - eye_position_near
+  - eye_position_up
+  - eye_sad
+  - eye_sad_L
+  - eye_sad_R
+  - eye_simple
+  - eye_size_big
+  - eye_size_narrow
+  - eye_size_small
+  - eye_size_wide
+  - eye_sleepy
+  - eye_sleepy_L
+  - eye_sleepy_R
+  - eye_small
+  - eye_smile
+  - eye_smile_L
+  - eye_smile_R
+  - eye_surprise
+  - eye_surprise_L
+  - eye_surprise_R
+  - eye_thick
+  - eye_thin
+  - eye_whiteeye
+  - eye_x
+  - eye_zito
+  - eye_zito2
+  - eye_zito2_L
+  - eye_zito2_R
+  - eye_zito3
+  - eye_zito3_L
+  - eye_zito3_R
+  - eye_zito_L
+  - eye_zito_R
+  - eyebrow_angry1
+  - eyebrow_angry1_L
+  - eyebrow_angry1_R
+  - eyebrow_angry2
+  - eyebrow_angry2_L
+  - eyebrow_angry2_R
+  - eyebrow_back
+  - eyebrow_back_L
+  - eyebrow_back_R
+  - eyebrow_down
+  - eyebrow_down_L
+  - eyebrow_down_R
+  - eyebrow_front
+  - eyebrow_front_L
+  - eyebrow_front_R
+  - eyebrow_front_center
+  - eyebrow_front_center_L
+  - eyebrow_front_center_R
+  - eyebrow_front_head
+  - eyebrow_front_head_L
+  - eyebrow_front_head_R
+  - eyebrow_front_tail
+  - eyebrow_front_tail_L
+  - eyebrow_front_tail_R
+  - eyebrow_long
+  - eyebrow_sad1
+  - eyebrow_sad1_L
+  - eyebrow_sad1_R
+  - eyebrow_sad2
+  - eyebrow_sad2_L
+  - eyebrow_sad2_R
+  - eyebrow_short
+  - eyebrow_smile
+  - eyebrow_smile_L
+  - eyebrow_smile_R
+  - eyebrow_straight
+  - eyebrow_straight_L
+  - eyebrow_straight_R
+  - eyebrow_surprised
+  - eyebrow_surprised_L
+  - eyebrow_surprised_R
+  - eyebrow_tare
+  - eyebrow_tare_L
+  - eyebrow_tare_R
+  - eyebrow_thick
+  - eyebrow_thin
+  - eyebrow_turi
+  - eyebrow_turi_L
+  - eyebrow_turi_R
+  - eyebrow_up
+  - eyebrow_up_L
+  - eyebrow_up_R
+  - eyelash_top_big
+  - eyelash_top_x
+  - eyelash_under1_x
+  - eyelash_under2_x
+  - eyelash_under3_x
+  - eyelash_under_big1
+  - eyelash_under_big2
+  - eyelid_center_down
+  - eyelid_center_down_L
+  - eyelid_center_down_R
+  - eyelid_center_up
+  - eyelid_center_up_L
+  - eyelid_center_up_R
+  - eyelid_down
+  - eyelid_down_L
+  - eyelid_down_R
+  - eyelid_head_down
+  - eyelid_head_down_L
+  - eyelid_head_down_R
+  - eyelid_head_sharp
+  - eyelid_head_sharp_L
+  - eyelid_head_sharp_R
+  - eyelid_head_up
+  - eyelid_head_up_L
+  - eyelid_head_up_R
+  - eyelid_head_wide
+  - eyelid_head_wide_L
+  - eyelid_head_wide_R
+  - eyelid_sub1_back
+  - eyelid_sub1_down
+  - eyelid_sub1_front
+  - eyelid_sub1_turn_inside
+  - eyelid_sub1_turn_outside
+  - eyelid_sub1_up
+  - eyelid_sub1_x
+  - eyelid_sub2_back
+  - eyelid_sub2_down
+  - eyelid_sub2_front
+  - eyelid_sub2_turn_inside
+  - eyelid_sub2_turn_outside
+  - eyelid_sub2_up
+  - eyelid_sub2_x
+  - eyelid_tail_down
+  - eyelid_tail_long
+  - eyelid_tail_short
+  - eyelid_tail_up
+  - eyelid_tare1
+  - eyelid_tare1_L
+  - eyelid_tare1_R
+  - eyelid_turi1
+  - eyelid_turi1_L
+  - eyelid_turi1_R
+  - eyelid_under_down
+  - eyelid_under_down2
+  - eyelid_under_down2_L
+  - eyelid_under_down2_R
+  - eyelid_under_down_L
+  - eyelid_under_down_R
+  - eyelid_under_tare
+  - eyelid_under_tare_L
+  - eyelid_under_tare_R
+  - eyelid_under_thin
+  - eyelid_under_turi
+  - eyelid_under_turi_L
+  - eyelid_under_turi_R
+  - eyelid_under_up1
+  - eyelid_under_up1_L
+  - eyelid_under_up1_R
+  - eyelid_under_up2
+  - eyelid_under_up2_L
+  - eyelid_under_up2_R
+  - eyelid_up
+  - eyelid_up_L
+  - eyelid_up_R
+  - eyelid_up_thick
+  - eyelid_up_thin
+  - highlight_main_back
+  - highlight_main_big
+  - highlight_main_down
+  - highlight_main_far
+  - highlight_main_front
+  - highlight_main_near
+  - highlight_main_small
+  - highlight_main_up
+  - highlight_main_x
+  - highlight_sub1_back
+  - highlight_sub1_big
+  - highlight_sub1_down
+  - highlight_sub1_front
+  - highlight_sub1_left
+  - highlight_sub1_right
+  - highlight_sub1_small
+  - highlight_sub1_up
+  - highlight_sub_x
+  - hilight_all_x
+  - mouth_H
+  - mouth_H_L
+  - mouth_H_R
+  - mouth_V
+  - mouth_a1
+  - mouth_a2
+  - mouth_a3
+  - mouth_a4
+  - mouth_big
+  - mouth_center_beak
+  - mouth_center_down
+  - mouth_center_up
+  - mouth_corner_angle_down
+  - mouth_corner_angle_up
+  - mouth_corner_back
+  - mouth_corner_front
+  - mouth_corner_thick
+  - mouth_e1
+  - mouth_e2
+  - mouth_grin1_L
+  - mouth_grin1_L(no_tooth)
+  - mouth_grin1_R
+  - mouth_grin1_R(no_tooth)
+  - mouth_grin2_L
+  - mouth_grin2_R
+  - mouth_hawa
+  - mouth_i1
+  - mouth_i1(no_tooth)
+  - mouth_i2
+  - mouth_i2(no_tooth)
+  - mouth_i3
+  - mouth_i3(no_tooth)
+  - mouth_i4
+  - mouth_i4(no_tooth)
+  - mouth_narrow
+  - mouth_o1
+  - mouth_o2
+  - mouth_position_back
+  - mouth_position_down
+  - mouth_position_front
+  - mouth_position_up
+  - mouth_sad
+  - mouth_sad_L
+  - mouth_sad_R
+  - mouth_small
+  - mouth_smile1
+  - mouth_smile2
+  - mouth_smile2_L
+  - mouth_smile2_R
+  - mouth_straight
+  - mouth_straight_L
+  - mouth_straight_R
+  - mouth_u1
+  - mouth_u2
+  - mouth_wa
+  - mouth_wide
+  - mouth_~
+  - "mouth_\u039B"
+  - "mouth_\u03C9"
+  - "mouth_\u03C9\u25A1"
+  - "mouth_\u03C9\u3007"
+  - "mouth_\u25A1"
+  - "mouth_\u25A1~"
+  - "mouth_\u25B3"
+  - "mouth_\u25B3_small"
+  - "mouth_\u25CB_big"
+  - "mouth_\u25CB_small"
+  - mouthparts_close
+  - mouthparts_open
+  - option_contour_big
+  - option_contour_maru
+  - option_contour_narrow
+  - option_contour_sharp
+  - option_contour_small
+  - option_contour_wide
+  - option_ear_x
+  - option_face_down
+  - option_face_loli
+  - option_face_otona
+  - option_face_up
+  - option_jaw_down
+  - option_jaw_long
+  - option_jaw_narrow
+  - option_jaw_short
+  - option_jaw_wide
+  - option_neckhole_shrink
+  - option_nose_down
+  - option_nose_up
+  - option_nose_x
+  - other_cheek_1
+  - other_cheek_2
+  - other_pout
+  - other_pout_L
+  - other_pout_R
+  - other_shadow
+  - other_sweat _1
+  - other_sweat _2
+  - other_tear_1
+  - other_tear_2
+  - other_tear_3_L
+  - other_tear_3_R
+  - pupil_big
+  - pupil_shape_cat
+  - "pupil_shape_\u3007"
+  - pupil_small
+  - pupil_x
+  - tongue_1
+  - tongue_2
+  - tongue_3
+  - tongue_4
+  - tongue_angle_down
+  - tongue_angle_up
+  - tongue_long
+  - tongue_narrow
+  - tongue_pero
+  - tongue_pero_L
+  - tongue_pero_R
+  - tongue_position_back
+  - tongue_position_down
+  - tongue_position_front
+  - tongue_position_up
+  - tongue_round
+  - tongue_sharp
+  - tongue_short
+  - tongue_wide
+  - tongue_x
+  - tooth_gizaba
+  - tooth_top_position_down
+  - tooth_top_position_up
+  - tooth_top_x
+  - tooth_under_position_down
+  - tooth_under_position_up
+  - tooth_under_x
+  - tooth_yaeba_x_L
+  - tooth_yaeba_x_R
+  - "\u03C9"
+  - "\u03C9\u25A1"
+  - "\u2227"
+  - "\u25B2"
+  - "\u3042"
+  - "\u3042\uFF12"
+  - "\u3044"
+  - "\u3046"
+  - "\u3048"
+  - "\u3048\u30FC"
+  - "\u304A"
+  - "\u304C\u30FC\u3093"
+  - "\u3058\u3068\u76EE"
+  - "\u3066\u3078\u307A\u308D"
+  - "\u306A\u3054\u307F"
+  - "\u306B\u3053\u308A"
+  - "\u306B\u3063\u3053\u308A"
+  - "\u306B\u3084\u308A"
+  - "\u306B\u3084\u308A2"
+  - "\u306F\u3041\u3068"
+  - "\u306F\u3045"
+  - "\u306F\u3061\u3085\u76EE"
+  - "\u306F\u3093\u3063\uFF01"
+  - "\u3073\u3063\u304F\u308A"
+  - "\u307A\u308D\u3063"
+  - "\u307E\u3070\u305F\u304D"
+  - "\u30A6\u30A3\u30F3\u30AF"
+  - "\u30A6\u30A3\u30F3\u30AF\u53F3"
+  - "\u30A6\u30A3\u30F3\u30AF\uFF12"
+  - "\u30CF\u30A4\u30E9\u30A4\u30C8\u6D88\u3057"
+  - "\u30EF"
+  - "\u4E0A"
+  - "\u4E0B"
+  - "\u53E3\u6A2A\u5E83\u3052"
+  - "\u53E3\u89D2\u4E0A\u3052"
+  - "\u53E3\u89D2\u4E0B\u3052"
+  - "\u56F0\u308B"
+  - "\u6012\u308A"
+  - "\u6050\u308D\u3057\u3044\u5B50\uFF01"
+  - "\u661F\u76EE"
+  - "\u6B6F\u7121\u3057\u4E0A"
+  - "\u6B6F\u7121\u3057\u4E0B"
+  - "\u6D99"
+  - "\u7167\u308C"
+  - "\u771F\u9762\u76EE"
+  - "\u77B3\u5927"
+  - "\u77B3\u5C0F"
+  - "\u7B11\u3044"
+  - "\u9752\u3056\u3081\u308B"
+  - "\uFF73\uFF68\uFF9D\uFF78\uFF12\u53F3"
+  - "\uFF77\uFF98\uFF6F"
+  neutralIndex: 4

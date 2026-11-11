@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06261b0b6074b4bbbcb49c1aa45d159, type: 3}
+  m_Name: FourWayJump
+  starts:
+  - {fileID: 7400000, guid: 9c06119cd6644624cb363be1356ca473, type: 2}
+  - {fileID: 7400000, guid: 79a41472c7690274e99621b270413df8, type: 2}
+  - {fileID: 7400000, guid: c44733cfeb9850246818f123d127b46c, type: 2}
+  - {fileID: 7400000, guid: 3543039faabb98d48ba3a6184031def6, type: 2}
+  - {fileID: 7400000, guid: cbb7356e4962a024d95a33e16ddb01a3, type: 2}
+  loop: {fileID: 7400000, guid: 294e8745de1ee1d4f9e15171b2c31b91, type: 2}
+  landing: {fileID: -8279524762354361089, guid: 1cd1157ea2c66f44fb8e4cae26ed065b, type: 3}
+  landingRun: {fileID: -69967671510244691, guid: 576519a70d32ddc42877c02260c31311, type: 3}
+  landingRunExit: 0.5
+  landingRunBlend: 0.15
+  regularIdle: {fileID: 7400000, guid: 3a4ffb35fdf36c2499b5340235fd8b54, type: 2}
+  regularMove: {fileID: 7400000, guid: c0f7b72d59823e242a5ba87e72a2426b, type: 2}
+  regularMoveRight: {fileID: 7400000, guid: b246abf185690fd4789c7292ab443b5f, type: 2}
+  runJumpFeet:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  idleTail: {fileID: 7400000, guid: e247346143244f17bc62eb67bdd25194, type: 2}
+  moveTail: {fileID: 7400000, guid: 951a3c15bb654c679610e48f26a1da7a, type: 2}
+  rightTail: {fileID: 7400000, guid: 498b70b47f6d45a6a4ef462b4acb500a, type: 2}
+  doubleJump: {fileID: 8851784343546294154, guid: d0e570df11527334680aea87681fbae5, type: 3}
+  doubleTail: {fileID: 7400000, guid: 2774420c52f0dec4dab64c1a11d02f1b, type: 2}
+  doubleToLoop: 1
+  doubleEnterBlend: 0.08
+  doubleLoopBlend: 0.1
+  startToLoop: 1
+  landingExit: 0.8
+  blend: 0.25
+  idleForceFrame: 4
+  moveForceFrame: 5
+  jumpPower: 10
+  gravity: -30
+  airSpeed: 5
+  airAcceleration: 5
+  airBraking: 2.5
+  landingJumpWindow: 0.2

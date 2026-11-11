@@ -1,0 +1,49 @@
+{
+  "weapons": [
+    {
+      "weapon": "Rifle",
+      "source": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Rifle.asset",
+      "profile": "Assets\\Resources\\DemonHunter3C\\WendyRifle.asset",
+      "reload": "{fileID: 7400000, guid: 63c22596fae5d5c4092ab77e3f83b254, type: 2}",
+      "reloadEmpty": "{fileID: 7400000, guid: 63c22596fae5d5c4092ab77e3f83b254, type: 2}",
+      "mask": "Assets\\Game\\Art\\Animation\\GenshinFirearm\\FirearmReloadUpperBody.mask",
+      "handScale": 0.74922043,
+      "stopPhaseSource": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Rifle_GenshinFootPhases.asset",
+      "clips": 35
+    },
+    {
+      "weapon": "Pistol",
+      "source": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Pistol.asset",
+      "profile": "Assets\\Resources\\DemonHunter3C\\WendyPistol.asset",
+      "reload": "{fileID: 7400000, guid: a194feaa8d991754b893803060a5e496, type: 2}",
+      "reloadEmpty": "{fileID: 7400000, guid: a194feaa8d991754b893803060a5e496, type: 2}",
+      "mask": "Assets\\Game\\Art\\Animation\\GenshinFirearm\\FirearmReloadUpperBody.mask",
+      "handScale": 0.89062995,
+      "stopPhaseSource": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Pistol_GenshinFootPhases.asset",
+      "clips": 35
+    },
+    {
+      "weapon": "Shotgun",
+      "source": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Shotgun.asset",
+      "profile": "Assets\\Resources\\DemonHunter3C\\WendyShotgun.asset",
+      "reload": "{fileID: 7400000, guid: 92527a5084a16304ea4a4e682e097902, type: 2}",
+      "reloadEmpty": "{fileID: 7400000, guid: 92527a5084a16304ea4a4e682e097902, type: 2}",
+      "mask": "Assets\\Game\\Art\\Animation\\GenshinFirearm\\FirearmReloadUpperBody.mask",
+      "handScale": 0.26012194,
+      "stopPhaseSource": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Shotgun_GenshinFootPhases.asset",
+      "clips": 35
+    },
+    {
+      "weapon": "Sniper",
+      "source": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Sniper.asset",
+      "profile": "Assets\\Resources\\DemonHunter3C\\WendySniper.asset",
+      "reload": "{fileID: 7400000, guid: 56c37263102534f4683d4dadec85634e, type: 2}",
+      "reloadEmpty": "{fileID: 7400000, guid: 56c37263102534f4683d4dadec85634e, type: 2}",
+      "mask": "Assets\\Game\\Art\\Animation\\GenshinFirearm\\FirearmReloadUpperBody.mask",
+      "handScale": 0.886408,
+      "stopPhaseSource": "Assets\\Game\\Data\\Weapons\\ProjectFirearms\\Sniper_GenshinFootPhases.asset",
+      "clips": 35
+    }
+  ],
+  "newAssets": []
+}

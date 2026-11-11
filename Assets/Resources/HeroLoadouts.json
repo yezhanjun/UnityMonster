@@ -1,0 +1,18 @@
+{
+  "heroes": [
+    {"selection":12,"name":"温蒂","maximumMana":100,"manaRegeneration":1,"q":["test_blast","test_heal","test_guard"],"e":["test_blast","test_heal","test_guard"],"v":["test_blast","test_heal","test_guard"],"passives":["test_regen","test_damage","test_speed"]},
+    {"selection":13,"name":"诗乃","maximumMana":100,"manaRegeneration":1,"q":["test_blast","test_heal","test_guard"],"e":["test_blast","test_heal","test_guard"],"v":["test_blast","test_heal","test_guard"],"passives":["test_regen","test_damage","test_speed"]},
+    {"selection":14,"name":"萨菲","maximumMana":100,"manaRegeneration":1,"q":["test_blast","test_heal","test_guard"],"e":["test_blast","test_heal","test_guard"],"v":["test_blast","test_heal","test_guard"],"passives":["test_regen","test_damage","test_speed"]},
+    {"selection":15,"name":"米尔缇娜","maximumMana":100,"manaRegeneration":1,"q":["test_blast","test_heal","test_guard"],"e":["test_blast","test_heal","test_guard"],"v":["test_blast","test_heal","test_guard"],"passives":["test_regen","test_damage","test_speed"]}
+  ],
+  "actions": [
+    {"id":"test_blast","name":"调试占位·冲击","description":"调试用公共技能，非角色最终设计。周围6米敌人受到200%攻击力伤害。消耗20法力，冷却6秒。","icon":"texBehemothIcon","effect":"blast","cooldown":6,"mana":20,"power":2,"radius":6,"duration":0.6},
+    {"id":"test_heal","name":"调试占位·治疗","description":"调试用公共技能，非角色最终设计。恢复自身最大生命20%。消耗15法力，冷却8秒。","icon":"texMedkitIcon","effect":"heal","cooldown":8,"mana":15,"power":0.2,"radius":1,"duration":0.6},
+    {"id":"test_guard","name":"调试占位·护甲","description":"调试用公共技能，非角色最终设计。获得50点护甲，持续5秒。消耗20法力，冷却12秒。","icon":"texRepulsionArmorPlateIcon","effect":"armor","cooldown":12,"mana":20,"power":50,"radius":1,"duration":5}
+  ],
+  "passives": [
+    {"id":"test_regen","name":"调试占位·再生","description":"额外每秒恢复1点生命。非最终角色被动。","icon":"texMedkitIcon","regeneration":1},
+    {"id":"test_damage","name":"调试占位·攻击","description":"攻击力增加5%。非最终角色被动。","icon":"texSyringeIcon","damage":0.05},
+    {"id":"test_speed","name":"调试占位·移动","description":"移动速度增加5%。非最终角色被动。","icon":"texHoofIcon","speed":0.05}
+  ]
+}

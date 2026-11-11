@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_Name: matLunarShardTrail
+  m_Shader: {fileID: 4800000, guid: 6439ac8fc1ea49d397eef609f528bddb, type: 3}
+  m_ValidKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Lightning:
+        m_Texture: {fileID: 2800000, guid: 9057ac22a1cb416497aedee8244fd6d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cloud:
+        m_Texture: {fileID: 2800000, guid: a4734192af8e48ea9b48fe16b56cef96, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 2800000, guid: a4dc69e604cd4c2f9290bbb349099775, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []

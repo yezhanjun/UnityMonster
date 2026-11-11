@@ -1,0 +1,11 @@
+本目录动画相关视图来源
+
+FpsRifleView / FpsPistolView / FpsShotgunView / FpsSniperView
+动画与模型来自 AAAFpsPVE，播放框架为 FPS Animation Framework。
+生成入口 AaaViewBuilder，动作槽位于 Assets/AaaWeapons/AnimationSlots。
+
+RangeRobot.prefab
+显示模型与骨架来自 FPS Animation Framework。
+生成入口 RangeRobotSetup，源模型位于 Assets/CharacterSelection/UnityRobot。
+
+AaaGrenadeView.prefab 位于 Assets/CharacterSelection/AaaCombat/Resources，来源为 AAAFpsPVE。

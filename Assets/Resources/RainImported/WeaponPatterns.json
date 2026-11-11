@@ -1,0 +1,31 @@
+{
+  "weapons": [
+    {
+      "id": "rifle",
+      "title": "步枪",
+      "coefficient": 1,
+      "interval": 0.45,
+      "procCoefficient": 1,
+      "reach": 45,
+      "pellets": 1
+    },
+    {
+      "id": "scatter",
+      "title": "霰弹",
+      "coefficient": 0.55,
+      "interval": 0.85,
+      "procCoefficient": 0.5,
+      "reach": 16,
+      "pellets": 4
+    },
+    {
+      "id": "heavy",
+      "title": "重炮",
+      "coefficient": 4.2,
+      "interval": 2.1,
+      "procCoefficient": 1,
+      "reach": 60,
+      "pellets": 1
+    }
+  ]
+}

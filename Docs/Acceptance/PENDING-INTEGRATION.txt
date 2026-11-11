@@ -1,0 +1,7 @@
+# Pending integration — isolated only
+Do not apply automatically while user develops main.
+ClayBruiser addition: Assets/Baseline/RangeResearchEnemy.ClayBruiser.cs and .meta; scoped edits in RangeResearchEnemy.cs, RangeResearchLab.cs, RainActorVisual.cs, Skeleton1HHostSmoke.cs, and isolated JournalBrowser priority set; Assets/Resources/RainActors/PendingWhitebox/claybruiser/.
+Bell idle fix: RainActorVisual PendingBell_ clip name fallback and validation log.
+Evidence and qualification: AcceptanceReports/隔离验收推进.md.
+Main integration baseline stays 88/283; isolated qualified count is 89/283.
+Grenadier pending integration: Assets/Resources/RainActors/PendingWhitebox/claygrenadier/ and RainGrenadierBundleImport tool; scoped changes to RangeResearchEnemy.PendingRanged.cs (kind 24, ballistic shot), RangeResearchEnemy.cs, RangeResearchLab.cs, RainActorVisual.cs, Skeleton1HHostSmoke.cs and isolated JournalBrowser priority. Do not automatically apply to main. Isolated qualification now 90/283; main integrated baseline remains 88/283.

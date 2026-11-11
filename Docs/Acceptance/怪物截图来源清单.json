@@ -1,0 +1,3068 @@
+[
+  {
+    "id": "skeleton_1h_sur",
+    "name": "近战骷髅",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\skeleton_1h_sur-attack.png"
+    ],
+    "note": " Unity D3D11 玩家视角中模型可见，从召唤点追至玩家近身 ； 可见红圈与挥击，玩家生命由 100 降至 88。独立副本复跑再确认实伤 5 ； 240 ms 合成挥击占位音。攻击窗音源和监听器混音峰值均为 0.033210，移除通过。日志 `Builds/MonsterWhitebox-01a1c6ef/skeleton-whitebox-d3d11.log` 第 23920、23932 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_bow_VarRegular",
+    "name": "skeleton_bow_VarRegular",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_bow_VarRegular-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_bow_VarRegular-signature.png"
+    ],
+    "note": " 重建显示 Avatar 后恢复站立，已移动 ； 实际查看金色箭矢飞行，实伤 8 ； 监听器峰值 0.020295，移除通过；人工听感待确认。最终日志。残留 lilToon 渲染错误见 G2-13。 ",
+    "order": 2
+  },
+  {
+    "id": "spider_sur_VarRegular",
+    "name": "普通蜘蛛",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\spider_sur_VarRegular-attack-scale-fixed.png"
+    ],
+    "note": " 高约 1.03 m，可见，运行确认移动 ； 实伤 5，可见红圈 ； 合成攻击音，音源与监听器峰值均为 0.064857，移除通过。日志 whitebox-spider-audio.log 第 1751 行 ",
+    "order": 2
+  },
+  {
+    "id": "spider_sur_VarInsane",
+    "name": "疯狂蜘蛛",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\spider_sur_VarInsane-attack-scale-fixed.png"
+    ],
+    "note": " 高约 1.03 m，可见，运行确认移动 ； 实伤 5，可见红圈 ； 合成攻击音，音源与监听器峰值均为 0.065084，移除通过。日志 whitebox-spider-audio.log 第 1904 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_spider_02_sur",
+    "name": "精灵蜘蛛变体",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_spider_02_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，尺寸修正后可见，主体约 4.19 m ； 实伤 5 ； 占位攻击音源和监听器峰值均为 0.039646，移除通过。日志 whitebox-drider-stone-audio.log 第 1773 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_spider_sur",
+    "name": "精灵蜘蛛",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_spider_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，尺寸修正后可见，主体约 3.55 m ； 实伤 5 ； 占位攻击音源和监听器峰值均为 0.043070，移除通过。日志 whitebox-drider-stone-audio.log 第 1952 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_stone_insane_sur",
+    "name": "疯狂石巨人",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_stone_insane_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，尺寸修正后可见，主体约 5.17 m ； 实伤 7 ； 占位攻击音源和监听器峰值均为 0.143836，移除通过。日志 whitebox-drider-stone-audio.log 第 2157 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_stone_sur",
+    "name": "石巨人",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_stone_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，尺寸修正后可见，主体约 5.17 m ； 实伤 7 ； 占位攻击音源和监听器峰值均为 0.143836，移除通过。日志 whitebox-drider-stone-audio.log 第 2363 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_ranged_sur",
+    "name": "elf_ranged_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_ranged_sur-idle-arrow.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_ranged_sur-signature-arrow.png"
+    ],
+    "note": " 本体可见，已移动 ； 绿色箭矢可辨认，实伤 7 ； 替代攻击音监听器峰值 0.020295，移除通过。whitebox-jotunn-arrow-readability.log 第 1914 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_melee_insane_sur",
+    "name": "elf_melee_insane_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_melee_insane_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 2.86 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.033250，移除通过。whitebox-elf-sentinel-audio.log 第 1952 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_melee_sur",
+    "name": "elf_melee_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\elf_melee_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 2.15 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.033247，移除通过。whitebox-elf-sentinel-audio.log 第 2157 行 ",
+    "order": 2
+  },
+  {
+    "id": "sentinel_alf_sur",
+    "name": "sentinel_alf_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\sentinel_alf_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 1.72 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.012725，移除通过。whitebox-elf-sentinel-audio.log 第 2310 行 ",
+    "order": 2
+  },
+  {
+    "id": "sentinel_veteran_alf_sur",
+    "name": "sentinel_veteran_alf_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\sentinel_veteran_alf_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 2.29 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.012702，移除通过。whitebox-elf-sentinel-audio.log 第 2463 行 ",
+    "order": 2
+  },
+  {
+    "id": "spider_alf_sur",
+    "name": "spider_alf_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\spider_alf_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 0.72 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.065019，移除通过。whitebox-elf-sentinel-audio.log 第 2617 行 ",
+    "order": 2
+  },
+  {
+    "id": "spider_alf_veteran_sur",
+    "name": "spider_alf_veteran_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\spider_alf_veteran_sur-attack-scale-fixed.png"
+    ],
+    "note": " 已移动，主体约 1.60 m，玩家画面可见 ； 实伤 5 ； 占位攻击音与监听器峰值 0.065004，移除通过。whitebox-elf-sentinel-audio.log 第 2770 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_guardian_sur",
+    "name": "skeleton_guardian_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_guardian_sur-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_guardian_sur-impact-aimed.png"
+    ],
+    "note": " 重建显示 Avatar 后恢复站立，已移动 ； 实际查看挥击连续帧，实伤 12 ； 监听器峰值 0.208358，移除通过；人工听感待确认。最终日志。残留 lilToon 渲染错误见 G2-13。 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_goat_sur_boss_VarEasy",
+    "name": "skeleton_goat_sur_boss_VarEasy",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_sur_boss_VarEasy-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_sur_boss_VarEasy-impact-aimed.png"
+    ],
+    "note": " 本体可见，已移动；约 5 米近似尺寸 ； 连续画面确认挥击与俯身落击，实伤 5 ； 音源峰值 0.188415、监听器峰值 0.202317，移除通过；人工听感待确认。最终日志。批测有 lilToon 渲染错误，见 G2-09。 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_goat_sur_boss_VarNormal",
+    "name": "skeleton_goat_sur_boss_VarNormal",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_sur_boss_VarNormal-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_sur_boss_VarNormal-impact-aimed.png"
+    ],
+    "note": " 本体可见，已移动 ； 本体与跳砸冰效同框，实伤 5 ； 监听器峰值 0.137223，移除通过。whitebox-jotunn-melee-aimed.log 第 2339 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_goat_endless",
+    "name": "skeleton_goat_endless",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_endless-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_endless-impact.png"
+    ],
+    "note": " 已移动，模型可见 ； 实伤 188 ； 监听器峰值 0.137162，移除通过。whitebox-guardian-goat-fixed.log 第 2262 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_goat_hel_form_sur_boss",
+    "name": "skeleton_goat_hel_form_sur_boss",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_hel_form_sur_boss-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_goat_hel_form_sur_boss-impact.png"
+    ],
+    "note": " 已移动，模型可见 ； 实伤 300 ； 监听器峰值 0.137317，移除通过。whitebox-guardian-goat-fixed.log 第 2427 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_sur",
+    "name": "ghost_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_sur-attack.png"
+    ],
+    "note": " 已移动，本体及冲锋预警清晰可见 ； 冲锋实伤 5 ； 占位音监听器峰值 0.020729，移除通过。whitebox-ghost-fixed.log 第 1751 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_red_sur",
+    "name": "ghost_red_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_red_sur-attack.png"
+    ],
+    "note": " 已移动，本体及冲锋预警清晰可见 ； 冲锋实伤 5 ； 占位音监听器峰值 0.020491，移除通过。whitebox-ghost-fixed.log 第 1916 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_red_sur_bf",
+    "name": "ghost_red_sur_bf",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_red_sur_bf-attack.png"
+    ],
+    "note": " 已移动，本体及冲锋预警清晰可见 ； 冲锋实伤 5 ； 占位音监听器峰值 0.020472，移除通过。whitebox-ghost-fixed.log 第 2081 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_red_following_sur",
+    "name": "ghost_red_following_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_red_following_sur-attack.png"
+    ],
+    "note": " 已移动，本体及冲锋预警清晰可见 ； 冲锋实伤 5 ； 占位音监听器峰值 0.020495，移除通过。whitebox-ghost-fixed.log 第 2246 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_svart_sur",
+    "name": "ghost_svart_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_svart_sur-attack.png"
+    ],
+    "note": " 已移动，本体及冲锋预警清晰可见 ； 冲锋实伤 5 ； 占位音监听器峰值 0.020634，移除通过。whitebox-ghost-fixed.log 第 2423 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_skull_sur",
+    "name": "ghost_skull_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_skull_sur-idle-import.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_skull_sur-attack-import.png"
+    ],
+    "note": " 约 1 m 本体可见，已移动 ； 冲锋预警与头骨同框，实伤 5，尾部动画通过 ； 替代攻击音监听器峰值 0.021703，移除通过。whitebox-jotunn-skull-import.log 第 1920 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_alfheim_boss_sur",
+    "name": "jotunn_alfheim_boss_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_alfheim_boss_sur-impact.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 5 ； 监听器峰值 0.157142，移除通过。whitebox-boss-impact.log 第 1902 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_alfheim_boss_phase2_sur",
+    "name": "jotunn_alfheim_boss_phase2_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_alfheim_boss_phase2_sur-idle-review.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_alfheim_boss_phase2_sur-attack-aimed-review.png"
+    ],
+    "note": " 本体可见，已移动 ； 本体与攻击范围红圈同框，实伤 5 ； 监听器峰值 0.010085，移除通过。whitebox-jotunn-melee-aimed.log 第 2778 行 ",
+    "order": 2
+  },
+  {
+    "id": "hyb_sub_boss_sur_VarEasy",
+    "name": "hyb_sub_boss_sur_VarEasy",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/hyb_sub_boss_sur_VarEasy-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/hyb_sub_boss_sur_VarEasy-signature.png"
+    ],
+    "note": " 本体约 3 米，已后退走位；1.8 m/s 近似适配 ； 可辨认施法动作和绿色占位法球，实伤 5 ； 已采到音源与监听器输出，移除通过；人工听感待确认。最终日志。全技能组未验，lilToon 残留错误见 G2-12。 ",
+    "order": 2
+  },
+  {
+    "id": "hyb_sub_boss_sur_VarNormal",
+    "name": "hyb_sub_boss_sur_VarNormal",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/hyb_sub_boss_sur_VarNormal-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/hyb_sub_boss_sur_VarNormal-signature.png"
+    ],
+    "note": " 本体约 3 米，已后退走位；1.8 m/s 近似适配 ； 可辨认施法动作和绿色占位法球，实伤 10 ； 已采到音源与监听器输出，移除通过；人工听感待确认。最终日志。全技能组未验，lilToon 残留错误见 G2-12。 ",
+    "order": 2
+  },
+  {
+    "id": "hyb_boss_sur_VarEasy",
+    "name": "hyb_boss_sur_VarEasy",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarEasy-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarEasy-signature-visible.png"
+    ],
+    "note": " 本体可见，瞬移移动通过，近似显示尺寸 ； 施法及召唤／范围预警可辨认，实伤 19 ； 原施法音监听器峰值 0.026179，移除通过。whitebox-jotunn-hybboss-visible.log 第 2019 行 ",
+    "order": 2
+  },
+  {
+    "id": "hyb_boss_sur_VarNormal",
+    "name": "hyb_boss_sur_VarNormal",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarNormal-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarNormal-signature-visible.png"
+    ],
+    "note": " 本体可见，瞬移移动通过，近似显示尺寸 ； 施法及召唤／范围预警可辨认，实伤 41 ； 原施法音监听器峰值 0.008345，移除通过。whitebox-jotunn-hybboss-visible.log 第 2444 行 ",
+    "order": 2
+  },
+  {
+    "id": "hyb_boss_sur_VarHard",
+    "name": "hyb_boss_sur_VarHard",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarHard-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\hyb_boss_sur_VarHard-signature-visible.png"
+    ],
+    "note": " 本体可见，瞬移移动通过，近似显示尺寸 ； 施法及召唤／范围预警可辨认，实伤 64 ； 原施法音监听器峰值 0.033792，移除通过。whitebox-jotunn-hybboss-visible.log 第 2869 行 ",
+    "order": 2
+  },
+  {
+    "id": "ettin_boss",
+    "name": "ettin_boss",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ettin_boss-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ettin_boss-attack-aimed-visible.png"
+    ],
+    "note": " 本体可见，已移动，近似显示尺寸 ； 雷击范围预警与本体同框，实伤 382 ； 原攻击音监听器峰值 0.715313，移除通过。whitebox-jotunn-visible-giants.log 第 2421 行 ",
+    "order": 2
+  },
+  {
+    "id": "ettin_endless",
+    "name": "ettin_endless",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ettin_endless-release.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 5 ； 监听器峰值 0.301318，移除通过。whitebox-boss-impact.log 第 2842 行 ",
+    "order": 2
+  },
+  {
+    "id": "ettin_hel_form_boss",
+    "name": "ettin_hel_form_boss",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ettin_hel_form_boss-release.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 7 ； 监听器峰值 0.301256，移除通过。whitebox-boss-impact.log 第 3163 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_muspel_sur",
+    "name": "jotunn_muspel_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_muspel_sur-release.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 108 ； 监听器峰值 0.237273，移除通过。whitebox-boss-impact.log 第 3484 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_muspel_endless",
+    "name": "jotunn_muspel_endless",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_muspel_endless-release.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 101 ； 监听器峰值 0.164789，移除通过。whitebox-boss-impact.log 第 3805 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_muspel_hel_form_sur",
+    "name": "jotunn_muspel_hel_form_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_muspel_hel_form_sur-release.png"
+    ],
+    "note": " 可见，移动通过，近距有裁切 ； 实伤 102 ； 监听器峰值 0.237872，移除通过。whitebox-boss-impact.log 第 4126 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_warrior_sur",
+    "name": "jotunn_warrior_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_warrior_sur-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_warrior_sur-attack-aimed-visible.png"
+    ],
+    "note": " 本体可见，已移动，近似显示尺寸 ； 抬脚踩踏动作可辨认，实伤 108 ； 原攻击音监听器峰值 0.150367，移除通过。whitebox-jotunn-visible-giants.log 第 2806 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_warrior_v2_sur",
+    "name": "jotunn_warrior_v2_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_warrior_v2_sur-idle-visible.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\jotunn_warrior_v2_sur-attack-aimed-visible.png"
+    ],
+    "note": " 本体可见，已移动，近似显示尺寸 ； 抬脚踩踏动作可辨认，实伤 101 ； 原攻击音监听器峰值 0.149220，移除通过。whitebox-jotunn-visible-giants.log 第 3191 行 ",
+    "order": 2
+  },
+  {
+    "id": "ghost_king_sur",
+    "name": "ghost_king_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ghost_king_sur-release-audio.png"
+    ],
+    "note": " 移动通过，本体与预警可见 ； 实伤 110 ； 监听器峰值 0.086252，移除通过。whitebox-warrior-ghost-bird-audio.log 第 2400 行 ",
+    "order": 2
+  },
+  {
+    "id": "elf_woman_sur",
+    "name": "elf_woman_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/elf_woman_sur-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/elf_woman_sur-impact-aimed.png"
+    ],
+    "note": " 已移动；补齐缺失静止姿态后头部／身体完整，躯干动作仍僵硬 ； 连续帧确认触肢与柱状占位攻击，实伤 186 ； 监听器峰值 0.286375，停战隐藏／停声／无新增命中及移除通过；人工听感待确认。最终日志。全技能组合未验，lilToon 错误见 G2-15。 ",
+    "order": 2
+  },
+  {
+    "id": "elf_woman_02_sur",
+    "name": "elf_woman_02_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/elf_woman_02_sur-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/elf_woman_02_sur-impact-aimed.png"
+    ],
+    "note": " 已移动；补齐缺失静止姿态后头部／身体完整，躯干动作仍僵硬 ； 连续帧确认触肢与柱状占位攻击，实伤 508 ； 监听器峰值 0.324260，停战隐藏／停声／无新增命中及移除通过；人工听感待确认。最终日志。全技能组合未验，lilToon 错误见 G2-15。 ",
+    "order": 2
+  },
+  {
+    "id": "bird_noobj_sur",
+    "name": "bird_noobj_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\bird_noobj_sur-release-audio.png"
+    ],
+    "note": " 移动通过，本体与预警可见 ； 实伤 104 ； 监听器峰值 0.149531，移除通过。whitebox-warrior-ghost-bird-audio.log 第 3207 行 ",
+    "order": 2
+  },
+  {
+    "id": "bird_sur",
+    "name": "bird_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\bird_sur-release-audio.png"
+    ],
+    "note": " 移动通过，本体与预警可见 ； 实伤 104 ； 监听器峰值 0.149531，移除通过。whitebox-warrior-ghost-bird-audio.log 第 3476 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_melee_champion_sur",
+    "name": "ele_mb_melee_champion_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_melee_champion_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 104 ； 监听器峰值 0.131200，移除通过。whitebox-elemental.log 第 1862 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_melee_sur",
+    "name": "ele_mb_melee_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_melee_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 95 ； 监听器峰值 0.133448，移除通过。whitebox-elemental.log 第 2131 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_plague_sur",
+    "name": "ele_mb_plague_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_plague_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 303 ； 监听器峰值 0.162453，移除通过。whitebox-elemental.log 第 2412 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_venom_sur",
+    "name": "ele_mb_venom_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_venom_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 275 ； 监听器峰值 0.107430，移除通过。whitebox-elemental.log 第 2682 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_mage_sur",
+    "name": "ele_mb_mage_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_mage_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 109 ； 监听器峰值 0.059760，移除通过。whitebox-elemental.log 第 2951 行 ",
+    "order": 2
+  },
+  {
+    "id": "ele_mb_mage_v2_sur",
+    "name": "ele_mb_mage_v2_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\ele_mb_mage_v2_sur-release.png"
+    ],
+    "note": " 已移动，本体与预警可见 ； 实伤 204 ； 监听器峰值 0.091490，移除通过。whitebox-elemental.log 第 3220 行 ",
+    "order": 2
+  },
+  {
+    "id": "milipede_sur",
+    "name": "milipede_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\milipede_sur-impact.png"
+    ],
+    "note": " 移动通过，本体可见 ； 实伤 5 ； 监听器峰值 0.075509，移除通过。whitebox-sphinx-milipede.log 第 1850 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_1h_sphinx_sur",
+    "name": "skeleton_1h_sphinx_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_1h_sphinx_sur-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/skeleton_1h_sphinx_sur-impact-aimed.png"
+    ],
+    "note": " 重建显示 Avatar 后恢复站立，已移动 ； 实际查看挥击连续帧，实伤 5 ； 监听器峰值 0.033400，移除通过；人工听感待确认。最终日志。残留 lilToon 渲染错误见 G2-13。 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_bow_sphinx",
+    "name": "skeleton_bow_sphinx",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\skeleton_bow_sphinx-idle-arrow.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\skeleton_bow_sphinx-signature-arrow.png"
+    ],
+    "note": " 本体可见，已移动 ； 金色箭矢可辨认，实伤 7 ； 替代攻击音监听器峰值 0.020295，移除通过。whitebox-jotunn-arrow-readability.log 第 2224 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_guardian_sphinx_sur",
+    "name": "skeleton_guardian_sphinx_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\skeleton_guardian_sphinx_sur-release-sphinx-horror.png"
+    ],
+    "note": " 移动通过 ； 实伤 24 ； 监听器峰值 0.011250，移除通过。whitebox-sphinx-horror.log 第 2652 行 ",
+    "order": 2
+  },
+  {
+    "id": "skeleton_mb_sphinx_sur",
+    "name": "skeleton_mb_sphinx_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\skeleton_mb_sphinx_sur-release.png"
+    ],
+    "note": " 移动通过，本体可见 ； 实伤 5 ； 监听器峰值 0.129889，移除通过。whitebox-sphinx-milipede.log 第 2687 行 ",
+    "order": 2
+  },
+  {
+    "id": "milipede_insane_sur",
+    "name": "milipede_insane_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\milipede_insane_sur-impact.png"
+    ],
+    "note": " 移动通过，本体可见 ； 实伤 5 ； 监听器峰值 0.106470，移除通过。whitebox-sphinx-milipede.log 第 2944 行 ",
+    "order": 2
+  },
+  {
+    "id": "jotunn_construct_sur",
+    "name": "jotunn_construct_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/jotunn_construct_sur-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/jotunn_construct_sur-impact-aimed.png"
+    ],
+    "note": " 已移动；1.4 m/s 悬浮近似，最大边长约 5 米 ； 可见抬臂与圆盘攻击，实伤 100 ； 音源／监听器峰值 0.094868，投射物清理、移除通过；人工听感待确认。最终日志。损坏硬质零件隐藏，完整外观及其他技能未验，lilToon 错误见 G2-11。 ",
+    "order": 2
+  },
+  {
+    "id": "horror_expl_jotun_sur",
+    "name": "horror_expl_jotun_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\horror_expl_jotun_sur-idle-audio.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\horror_expl_jotun_sur-attack-audio.png"
+    ],
+    "note": " 本体可见，已移动 ； 自爆范围及动作可辨认，实伤 20 ； 借用阿尔夫海姆爆炸音，监听器峰值 0.149928，自毁及移除通过。whitebox-jotunn-horror-audio.log 第 1922 行 ",
+    "order": 2
+  },
+  {
+    "id": "horror_expl_alf_sur",
+    "name": "horror_expl_alf_sur",
+    "source": "巨人杀手",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\horror_expl_alf_sur-idle-audio.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\巨人杀手\\验收证据\\2026-11-11-白盒\\horror_expl_alf_sur-attack-audio.png"
+    ],
+    "note": " 本体可见，已移动 ； 自爆范围及动作可辨认，实伤 20 ； 原爆炸音，监听器峰值 0.150218，自毁及移除通过。whitebox-jotunn-horror-audio.log 第 2127 行 ",
+    "order": 2
+  },
+  {
+    "id": "bat_loot_sur",
+    "name": "bat_loot_sur",
+    "source": "巨人杀手",
+    "status": "跳过",
+    "scope": "主工程已有入口",
+    "images": [],
+    "note": " 奖励蝙蝠 ； 非攻击配置 ； 目录核对 ",
+    "order": 2
+  },
+  {
+    "id": "LEMURIAN_BODY",
+    "name": "利莫里亚",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LEMURIAN_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LEMURIAN_BODY-attack.png"
+    ],
+    "note": " 本体可见，已移动 ； 咬击矩形预警，实伤 24 ； 监听器峰值 0.102515，移除通过。whitebox-rain-first-audio.log 第 1937 行 ",
+    "order": 2
+  },
+  {
+    "id": "BEETLEGUARD_BODY",
+    "name": "甲壳虫守卫",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLEGUARD_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLEGUARD_BODY-attack.png"
+    ],
+    "note": " 本体可见，已移动 ； 砸地范围预警，实伤 53 ； 监听器峰值 0.062767，移除通过。whitebox-rain-first-audio.log 第 2193 行 ",
+    "order": 2
+  },
+  {
+    "id": "MINIMUSHROOM_BODY",
+    "name": "迷你菇",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口；当前动作修复仅隔离",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MiniSavedFrames/MINIMUSHROOM_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MiniSavedFrames/MINIMUSHROOM_BODY-signature.png"
+    ],
+    "note": "实际动作曲线已重建并重载；菌盖／身体变化、弹体、12 实伤及清理通过。",
+    "order": 1
+  },
+  {
+    "id": "BELL_BODY",
+    "name": "黄铜装置",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口；当前动作修复仅隔离",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2BellIdleCleanFrames/BELL_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2BellIdleCleanFrames/BELL_BODY-signature.png"
+    ],
+    "note": "待机名称匹配已修复；弹体、18 实伤及清理通过；原动画恢复待补修。",
+    "order": 1
+  },
+  {
+    "id": "BEETLE_BODY",
+    "name": "甲壳虫",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLE_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLE_BODY-attack.png"
+    ],
+    "note": " 本体可见，已移动 ； 冲撞矩形预警，实伤 12 ； 监听器峰值 0.049358，使用占位攻击音，移除通过。whitebox-rain-first-audio.log 第 2449 行 ",
+    "order": 2
+  },
+  {
+    "id": "GOLEM_BODY",
+    "name": "石傀儡",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GOLEM_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GOLEM_BODY-attack.png"
+    ],
+    "note": " 本体可见，已移动 ； 激光瞄准线，实伤 45 ； 监听器峰值 0.062767，移除通过。whitebox-rain-first-audio.log 第 2694 行 ",
+    "order": 2
+  },
+  {
+    "id": "TITAN_BODY",
+    "name": "石巨人",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\TITAN_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\TITAN_BODY-release.png"
+    ],
+    "note": " 本体可见，已移动 ； 激光释放，实伤 74 ； 监听器峰值 0.062767，移除通过。whitebox-rain-first-audio.log 第 2938 行 ",
+    "order": 2
+  },
+  {
+    "id": "LEMURIANBRUISER_BODY",
+    "name": "利莫里亚长者",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LEMURIANBRUISER_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LEMURIANBRUISER_BODY-release-retry.png"
+    ],
+    "note": " 本体可见，已移动 ； 喷火可见，实伤 495 ； 监听器峰值 0.062767，移除通过。whitebox-rain-second-retry.log 第 1934 行 ",
+    "order": 2
+  },
+  {
+    "id": "WISP_BODY",
+    "name": "小型幽魂",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\WISP_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\WISP_BODY-release-retry.png"
+    ],
+    "note": " 本体可见，已移动 ； 火弹轨迹可见，实伤 10 ； 监听器峰值 0.002140，借用大火精音效，移除通过。whitebox-rain-second-retry.log 第 2178 行 ",
+    "order": 2
+  },
+  {
+    "id": "GREATERWISP_BODY",
+    "name": "巨型幽魂",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GREATERWISP_BODY-idle-clear.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GREATERWISP_BODY-signature-clear.png"
+    ],
+    "note": " 本体可见，已移动 ； 炮口绿光与命中爆炸可辨认，实伤 84 ； 原攻击音监听器峰值 0.016096，移除通过。白盒日志 第 2010 行 ",
+    "order": 2
+  },
+  {
+    "id": "IMP_BODY",
+    "name": "小恶魔",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\IMP_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\IMP_BODY-attack-retry.png"
+    ],
+    "note": " 本体可见，已移动 ； 矩形预警可见，实伤 15 ； 监听器峰值 0.076622，替代挥击音，移除通过。whitebox-rain-second-retry.log 第 2615 行 ",
+    "order": 2
+  },
+  {
+    "id": "JELLYFISH_BODY",
+    "name": "水母",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\JELLYFISH_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\JELLYFISH_BODY-attack-retry.png"
+    ],
+    "note": " 本体可见，已移动 ； 爆炸范围预警可见，实伤 54 ； 监听器峰值 0.197381，替代爆炸音，移除通过。whitebox-rain-second-retry.log 第 2807 行 ",
+    "order": 2
+  },
+  {
+    "id": "VERMIN_BODY",
+    "name": "盲眼害虫",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\VERMIN_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\VERMIN_BODY-impact-retry.png"
+    ],
+    "note": " 已移动 ； 扑咬预警及命中效果可见，实伤 22 ； 监听器峰值 0.121606，替代音，移除通过。whitebox-rain-third-retry.log 第 2038 行 ",
+    "order": 2
+  },
+  {
+    "id": "FLYINGVERMIN_BODY",
+    "name": "盲虫",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\FLYINGVERMIN_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\FLYINGVERMIN_BODY-release-retry.png"
+    ],
+    "note": " 已移动 ； 空中本体及射线可见，实伤 30 ； 监听器峰值 0.058908，替代音，移除通过。whitebox-rain-third-retry.log 第 2386 行 ",
+    "order": 2
+  },
+  {
+    "id": "HERMIT_CRAB_BODY",
+    "name": "寄居蟹",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\HERMIT_CRAB_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\HERMIT_CRAB_BODY-impact-retry.png"
+    ],
+    "note": " 已移动 ； 待机本体可见，迫击炮弹及落点范围可见，实伤 12 ； 监听器峰值 0.021294，原迫击炮音，移除通过。whitebox-rain-third-retry.log 第 2630 行 ",
+    "order": 2
+  },
+  {
+    "id": "BISON_BODY",
+    "name": "巨角野牛",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BISON_BODY-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BISON_BODY-release-retry.png"
+    ],
+    "note": " 已移动 ； 本体及头撞预警可见，实伤 36 ； 监听器峰值 0.062767，替代音，移除通过。whitebox-rain-third-retry.log 第 2926 行 ",
+    "order": 2
+  },
+  {
+    "id": "ACIDLARVA_BODY",
+    "name": "幼体",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\ACIDLARVA_BODY-idle-aimed.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\ACIDLARVA_BODY-signature-aimed.png"
+    ],
+    "note": " 已移动 ； 转向帧可见腾空，随后命中，实伤 35 ； 替代攻击音监听器峰值 0.003115，移除通过。whitebox-aimed-frames.log 第 2673 行 ",
+    "order": 2
+  },
+  {
+    "id": "LUNAREXPLODER_BODY",
+    "name": "月球喀迈拉",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LUNAREXPLODER_BODY-idle-particles.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\LUNAREXPLODER_BODY-impact-particles.png"
+    ],
+    "note": " 本体可见，已移动 ； 蓝色命中闪光可辨认，实伤 33 ； 替代音监听器峰值 0.003001，移除通过。whitebox-rain-lunar-particles.log 第 2055 行 ",
+    "order": 2
+  },
+  {
+    "id": "PARENT_BODY",
+    "name": "祖人",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/PARENT_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MainRegressionFrames/PARENT_BODY-signature.png"
+    ],
+    "note": " 约 4.5 m 近似显示高度，本体可见，连续帧确认前移约 3.35 m ； 连续画面可辨认抬臂砸地，实伤 52 ； 替代音，音源／监听器峰值 0.182919，人工听感待确认；移除通过。GM 与战斗日志 第 684、2176、2384、2436、2760 行 ",
+    "order": 2
+  },
+  {
+    "id": "BEETLEQUEEN_BODY",
+    "name": "甲壳虫女王",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLEQUEEN_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\BEETLEQUEEN_BODY-attack.png"
+    ],
+    "note": " 已移动 ； 女王本体及酸液瞄准线可见，实伤 485 ； 监听器峰值 0.062767，移除通过。whitebox-rain-fourth.log 第 1935 行 ",
+    "order": 2
+  },
+  {
+    "id": "TITANGOLD_BODY",
+    "name": "奥利雷奥尼特",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\TITANGOLD_BODY-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\TITANGOLD_BODY-release.png"
+    ],
+    "note": " 已移动 ； 黄金本体及激光释放可见，实伤 74 ； 监听器峰值 0.062767，移除通过。whitebox-rain-fourth.log 第 2179 行 ",
+    "order": 2
+  },
+  {
+    "id": "GM_SNOW_GOLEM",
+    "name": "GM_SNOW_GOLEM",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_SNOW_GOLEM-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_SNOW_GOLEM-impact-retry.png"
+    ],
+    "note": " 已移动 ； 本体恢复约 2.8 m，激光命中可见，实伤 45 ； 监听器峰值 0.062767，移除通过。whitebox-rain-fourth-retry.log 第 1934 行 ",
+    "order": 2
+  },
+  {
+    "id": "GM_NATURE_GOLEM",
+    "name": "GM_NATURE_GOLEM",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_NATURE_GOLEM-idle-retry.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_NATURE_GOLEM-impact-retry.png"
+    ],
+    "note": " 已移动 ； 本体恢复约 2.8 m，激光命中可见，实伤 45 ； 监听器峰值 0.062767，移除通过。whitebox-rain-fourth-retry.log 第 2179 行 ",
+    "order": 2
+  },
+  {
+    "id": "GM_SANDY_GOLEM",
+    "name": "GM_SANDY_GOLEM",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_SANDY_GOLEM-idle.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GM_SANDY_GOLEM-attack.png"
+    ],
+    "note": " 已移动 ； 砂岩本体及激光瞄准线可见，实伤 45 ； 监听器峰值 0.062767，移除通过。whitebox-rain-fourth.log 第 2911 行 ",
+    "order": 2
+  },
+  {
+    "id": "GUP_BODY",
+    "name": "加普",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GUP_BODY-idle-unit-fixed.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GUP_BODY-impact-unit-fixed.png"
+    ],
+    "note": " 本体可见，已移动 ； 尖刺展开可见，实伤 36 ； 监听器峰值 0.140678，移除通过。whitebox-rain-gup-minimal-fix.log 第 2177 行 ",
+    "order": 2
+  },
+  {
+    "id": "GEEP_BODY",
+    "name": "基普",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GEEP_BODY-idle-unit-fixed.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GEEP_BODY-impact-unit-fixed.png"
+    ],
+    "note": " 本体可见，已移动 ； 尖刺展开可见，实伤 18 ； 监听器峰值 0.139511，移除通过。whitebox-rain-gup-minimal-fix.log 第 2693 行 ",
+    "order": 2
+  },
+  {
+    "id": "GIP_BODY",
+    "name": "格普",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "主工程已有入口",
+    "images": [
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GIP_BODY-idle-unit-fixed.png",
+      "D:\\Project\\Unity\\TPSBattle\\TPSShoot\\Docs\\玩法参考设计\\雨中冒险2\\当前工程验收\\2026-11-11-白盒\\GIP_BODY-impact-unit-fixed.png"
+    ],
+    "note": " 本体可见，已移动 ； 尖刺展开可见，实伤 9 ； 监听器峰值 0.176095，移除通过。whitebox-rain-gup-minimal-fix.log 第 3209 行 ",
+    "order": 2
+  },
+  {
+    "id": "CLAYGRENADIER_BODY",
+    "name": "黏土药剂师",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "仅隔离工程，未合入主工程",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2GrenadierFinalFrames/CLAYGRENADIER_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2GrenadierFinalFrames/CLAYGRENADIER_BODY-signature.png"
+    ],
+    "note": "可见抛物线球体、12 实伤、声音采样及飞行中取消通过。原动画恢复待补修。",
+    "order": 0
+  },
+  {
+    "id": "CLAYBRUISER_BODY",
+    "name": "黏土圣堂武士",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "仅隔离工程，未合入主工程",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2ClayTraceFrames/CLAYBRUISER_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2ClayTraceFrames/CLAYBRUISER_BODY-impact-aimed.png"
+    ],
+    "note": "近似五连射、15 实伤、声音采样及射击中取消通过。原动画恢复待补修。",
+    "order": 0
+  },
+  {
+    "id": "CHILD_BODY",
+    "name": "魔童",
+    "source": "雨中冒险 2",
+    "status": "已记录通过",
+    "scope": "仅隔离工程，未合入主工程",
+    "images": [
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MiniSavedFrames/CHILD_BODY-idle.png",
+      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2MiniSavedFrames/CHILD_BODY-signature.png"
+    ],
+    "note": "实际动作曲线已重建并重载；姿态变化、可见弹体、12 实伤及清理通过。",
+    "order": 0
+  },
+  {
+    "id": "bat",
+    "name": "bat",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "bat_large_sur",
+    "name": "bat_large_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "bat_sur",
+    "name": "bat_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_big_explo_sur",
+    "name": "beetle_big_explo_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_big_sur",
+    "name": "beetle_big_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_desert_big_sur",
+    "name": "beetle_desert_big_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_desert_sur",
+    "name": "beetle_desert_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_explo_sur",
+    "name": "beetle_explo_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_portal_sur",
+    "name": "beetle_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "beetle_sur",
+    "name": "beetle_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "camel_01_sur",
+    "name": "camel_01_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "camel_02_sur",
+    "name": "camel_02_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "camel_03_sur",
+    "name": "camel_03_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "camel_04_sur",
+    "name": "camel_04_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "camel_05_sur",
+    "name": "camel_05_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cat_sur",
+    "name": "cat_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_1h_sur",
+    "name": "cultist_1h_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_bow_sur",
+    "name": "cultist_bow_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_miniboss_sur",
+    "name": "cultist_miniboss_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_miniboss_v02_sur",
+    "name": "cultist_miniboss_v02_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_priest_sur",
+    "name": "cultist_priest_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "cultist_woman",
+    "name": "cultist_woman",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "demon_helheim_sur",
+    "name": "demon_helheim_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "draug_crawler_sur",
+    "name": "draug_crawler_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "draug_sur",
+    "name": "draug_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "draug_thrower_sur",
+    "name": "draug_thrower_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "dummy_enemy",
+    "name": "dummy_enemy",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "dummy_enemy_1h",
+    "name": "dummy_enemy_1h",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "dummy_enemy_quad",
+    "name": "dummy_enemy_quad",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "dummy_npc_female",
+    "name": "dummy_npc_female",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "dummy_npc_male",
+    "name": "dummy_npc_male",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_svart_sur",
+    "name": "ele_svart_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_green_sur",
+    "name": "ele_warrior_green_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_hel_sur",
+    "name": "ele_warrior_hel_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_poison_sur",
+    "name": "ele_warrior_poison_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_runner_ice_sur",
+    "name": "ele_warrior_runner_ice_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_runner_poison_sur",
+    "name": "ele_warrior_runner_poison_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_runner_sur",
+    "name": "ele_warrior_runner_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ele_warrior_sur",
+    "name": "ele_warrior_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "elemental",
+    "name": "elemental",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "elemental_archmage",
+    "name": "elemental_archmage",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "elemental_desert",
+    "name": "elemental_desert",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "elf_ancient",
+    "name": "elf_ancient",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ghost_magi_sur",
+    "name": "ghost_magi_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ghost_modifier",
+    "name": "ghost_modifier",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_archer_sur",
+    "name": "goatman_archer_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_elite_portal_sur",
+    "name": "goatman_elite_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_elite_sur",
+    "name": "goatman_elite_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_elite_sur_ghost",
+    "name": "goatman_elite_sur_ghost",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_elite_sur_rotator",
+    "name": "goatman_elite_sur_rotator",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_warrior_portal_sur",
+    "name": "goatman_warrior_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goatman_warrior_sur",
+    "name": "goatman_warrior_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goblin_melee_portal_sur",
+    "name": "goblin_melee_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goblin_melee_sur",
+    "name": "goblin_melee_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goblin_ranged_portal_sur",
+    "name": "goblin_ranged_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goblin_ranged_sur",
+    "name": "goblin_ranged_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "goblin_warlock_sur",
+    "name": "goblin_warlock_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "greyfolk_sur",
+    "name": "greyfolk_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "greyfolk_v02_sur",
+    "name": "greyfolk_v02_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hel_boss_sur",
+    "name": "hel_boss_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hobgoblin_melee_sur",
+    "name": "hobgoblin_melee_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_elem_sur",
+    "name": "horror_expl_elem_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_hel_sur",
+    "name": "horror_expl_hel_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_sur",
+    "name": "horror_expl_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_sur_VarHalloween",
+    "name": "horror_expl_sur_VarHalloween",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_sur_VarRegular",
+    "name": "horror_expl_sur_VarRegular",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_expl_svart_sur",
+    "name": "horror_expl_svart_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_heat_sur",
+    "name": "horror_heat_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "horror_winter_sur",
+    "name": "horror_winter_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hound_skeletal_sur",
+    "name": "hound_skeletal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hound_sur",
+    "name": "hound_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hyb_boss_sur",
+    "name": "hyb_boss_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "hyb_sub_boss_sur",
+    "name": "hyb_sub_boss_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "jotunn_rider_sur",
+    "name": "jotunn_rider_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "jotunn_weak_ranged_sur",
+    "name": "jotunn_weak_ranged_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "jotunn_weak_sur",
+    "name": "jotunn_weak_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "lizard_sur",
+    "name": "lizard_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "locusts_sur",
+    "name": "locusts_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "octopus_sur",
+    "name": "octopus_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "prefab_survivor_melee_attack",
+    "name": "prefab_survivor_melee_attack",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "prefab_survivor_melee_noattack",
+    "name": "prefab_survivor_melee_noattack",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "prefab_survivor_ranged",
+    "name": "prefab_survivor_ranged",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "prefab_survivor_skill_user",
+    "name": "prefab_survivor_skill_user",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "scarab_teleporting_runner_sur",
+    "name": "scarab_teleporting_runner_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "sentinel_sur",
+    "name": "sentinel_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "sentinel_veteran_sur",
+    "name": "sentinel_veteran_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_1h_portal_sur",
+    "name": "skeleton_1h_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_armyofdead_summon",
+    "name": "skeleton_armyofdead_summon",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_bow_sur",
+    "name": "skeleton_bow_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_bow_VarTripleshot",
+    "name": "skeleton_bow_VarTripleshot",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_champion_sur",
+    "name": "skeleton_champion_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_champion_sur_VarHalloween",
+    "name": "skeleton_champion_sur_VarHalloween",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_champion_sur_VarRegular",
+    "name": "skeleton_champion_sur_VarRegular",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_goat_sur_boss",
+    "name": "skeleton_goat_sur_boss",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_lord_sur",
+    "name": "skeleton_lord_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_lord_sur_VarHalloween",
+    "name": "skeleton_lord_sur_VarHalloween",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_lord_sur_VarRegular",
+    "name": "skeleton_lord_sur_VarRegular",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_lord_wall_sur",
+    "name": "skeleton_lord_wall_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_sur",
+    "name": "skeleton_spellcaster_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_sur_VarHalloween",
+    "name": "skeleton_spellcaster_sur_VarHalloween",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_sur_VarRegular",
+    "name": "skeleton_spellcaster_sur_VarRegular",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_v2_sur",
+    "name": "skeleton_spellcaster_v2_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_v2_sur_VarHalloween",
+    "name": "skeleton_spellcaster_v2_sur_VarHalloween",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "skeleton_spellcaster_v2_sur_VarRegular",
+    "name": "skeleton_spellcaster_v2_sur_VarRegular",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_fat_portal_sur",
+    "name": "spider_fat_portal_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_fat_sur",
+    "name": "spider_fat_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_fat_sur_Insane",
+    "name": "spider_fat_sur_Insane",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_leng_spiderling",
+    "name": "spider_leng_spiderling",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur",
+    "name": "spider_mimic_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_buff",
+    "name": "spider_mimic_sur_cursed_buff",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_charm",
+    "name": "spider_mimic_sur_cursed_charm",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_curse",
+    "name": "spider_mimic_sur_cursed_curse",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_gold",
+    "name": "spider_mimic_sur_cursed_gold",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_heal",
+    "name": "spider_mimic_sur_cursed_heal",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_cursed_levelling",
+    "name": "spider_mimic_sur_cursed_levelling",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_hel",
+    "name": "spider_mimic_sur_hel",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_musp",
+    "name": "spider_mimic_sur_musp",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_nifl",
+    "name": "spider_mimic_sur_nifl",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_rare",
+    "name": "spider_mimic_sur_rare",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_mimic_sur_svart",
+    "name": "spider_mimic_sur_svart",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "spider_sur",
+    "name": "spider_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tentacle",
+    "name": "tentacle",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tentacle_hand_hel",
+    "name": "tentacle_hand_hel",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tentacle_leviathan_l1",
+    "name": "tentacle_leviathan_l1",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_guardian_sur",
+    "name": "tree_guardian_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_lava_medium_sur",
+    "name": "tree_lava_medium_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_lava_small_sur",
+    "name": "tree_lava_small_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_medium_sur",
+    "name": "tree_medium_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_nerthus",
+    "name": "tree_nerthus",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_nerthus_evolve",
+    "name": "tree_nerthus_evolve",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "tree_small_sur",
+    "name": "tree_small_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_armored_endless_sur",
+    "name": "troll_armored_endless_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_armored_jugg_sur",
+    "name": "troll_armored_jugg_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_armored_sur",
+    "name": "troll_armored_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_melee_sur",
+    "name": "troll_melee_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_shaman_sur",
+    "name": "troll_shaman_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_spitter_sur",
+    "name": "troll_spitter_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "troll_thrower_sur",
+    "name": "troll_thrower_sur",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_einherjar_archer_evolve",
+    "name": "viking_einherjar_archer_evolve",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_einherjar_melee",
+    "name": "viking_einherjar_melee",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_einherjar_melee_evolve",
+    "name": "viking_einherjar_melee_evolve",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_jormungandr_l1",
+    "name": "viking_jormungandr_l1",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_jormungandr_l2",
+    "name": "viking_jormungandr_l2",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_jormungandr_l3",
+    "name": "viking_jormungandr_l3",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_jormungandr_l4_fire",
+    "name": "viking_jormungandr_l4_fire",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "viking_jormungandr_l4_poison",
+    "name": "viking_jormungandr_l4_poison",
+    "source": "巨人杀手",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "BIGMUSH_BODY",
+    "name": "舒鲁姆菇",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "BROTHER_BODY",
+    "name": "米斯历克斯",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "CLAYBOSS_BODY",
+    "name": "黏土沙丘行者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "DEFECTIVEUNIT_BODY",
+    "name": "独一失效者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ELECTRICWORM_BODY",
+    "name": "超载蠕虫",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "EXTRACTORUNIT_BODY",
+    "name": "独一萃取者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "FALSESONBOSS_BODY",
+    "name": "虚假子嗣",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "GILDEDWURM_BODY",
+    "name": "腐蚀地龙",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "GRANDPARENT_BODY",
+    "name": "元祖",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "GRAVEKEEPER_BODY",
+    "name": "森林守护者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "HALCYONITE_BODY",
+    "name": "哈雷肯尼特",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "IMPBOSS_BODY",
+    "name": "小恶魔霸主",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "IRONHAULER_BODY",
+    "name": "独一传送者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LUNARGOLEM_BODY",
+    "name": "月球喀迈拉",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LUNARWISP_BODY",
+    "name": "月球喀迈拉",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LYNX2_BODY",
+    "name": "猞猁狂战士",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LYNXAMBUSHER_BODY",
+    "name": "猞猁刺客",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LYNXARCHER_BODY",
+    "name": "猞猁死射",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "LYNXTOTEM_BODY",
+    "name": "猞猁图腾",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "MAGMAWORM_BODY",
+    "name": "岩浆蠕虫",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "MEGACONSTRUCT_BODY",
+    "name": "克西结构体",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "MIMIC_BODY",
+    "name": "拟态怪",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "MINEPOD_BODY",
+    "name": "独一经销商",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "MINORCONSTRUCT_BODY",
+    "name": "阿尔法结构体",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "NULLIFIER_BODY",
+    "name": "虚空掠夺者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "PROVIDENCE_BODY",
+    "name": "神之回响",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "REAPER_BODY",
+    "name": "灵魂收割者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ROBOBALLBOSS_BODY",
+    "name": "单独控制单元",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "ROBOBALLMINI_BODY",
+    "name": "独一探针",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SCAV_BODY",
+    "name": "清道夫",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SCORCHLING_BODY",
+    "name": "烧灼蠕虫",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SOLUSAMALGAMATOR_BODY",
+    "name": "独一融合者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SOLUSHEART_BODY",
+    "name": "独一之心",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SOLUSWING_BODY",
+    "name": "独一之翼",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "SUPERROBOBALLBOSS_BODY",
+    "name": "合金崇拜单体",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "TANKER_BODY",
+    "name": "独一灼热者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VAGRANT_BODY",
+    "name": "漫游者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VOIDBARNACLE_BODY",
+    "name": "虚空藤壶",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VOIDINFESTOR_BODY",
+    "name": "虚空感染者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VOIDJAILER_BODY",
+    "name": "虚空狱卒",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VOIDMEGACRAB_BODY",
+    "name": "虚空毁灭者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VOIDRAIDCRAB_BODY",
+    "name": "「虚灵」",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VULTURE_BODY",
+    "name": "合金秃鹫",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "VULTUREHUNTER_BODY",
+    "name": "合金猎人",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  },
+  {
+    "id": "WORKERUNIT_BODY",
+    "name": "独一勘探者",
+    "source": "雨中冒险 2",
+    "status": "待接入／未测",
+    "scope": "尚无合格验收记录",
+    "images": [],
+    "note": "未测，无合格实机截图，不计通过。",
+    "order": 4
+  }
+]
