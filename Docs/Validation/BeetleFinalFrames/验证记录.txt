@@ -1,0 +1,15 @@
+SOURCE beetle-import.log
+BEETLE_BAKED beetle_minion_fly curves=270 duration=2
+BEETLE_BAKED beetle_minion_idle curves=270 duration=1.65
+BEETLE_BAKED beetle_veteran_attack curves=270 duration=0.6666667
+BEETLE_BAKED beetle_minion_stun curves=270 duration=3.316667
+BEETLE_BAKED beetle_minion_summon curves=270 duration=1.65
+BEETLE_IMPORTED standalone prefab and five sampled clips
+SOURCE beetle-first-smoke.log
+MONSTER_PLAYTEST_ATTACK_DSP beetle_sur sourcePeak=0.000000 listenerMixPeak=0.000000
+MONSTER_PLAYTEST_SKIP beetle_sur spawn=True model=True idle=True moved=True attack=True damage=26 cue=True audioCue=none audioStarted=False removed=True
+MONSTER_PLAYTEST_FAILED tested=1 skipped=1, runtimeErrors=14, first=State comes from an incompatible keyword space
+SOURCE beetle-final-smoke.log
+MONSTER_PLAYTEST_ATTACK_DSP beetle_sur sourcePeak=0.033238 listenerMixPeak=0.033238
+MONSTER_PLAYTEST_PASS beetle_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=1 skipped=0, runtimeErrors=14, first=State comes from an incompatible keyword space

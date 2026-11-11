@@ -1247,13 +1247,16 @@
   },
   {
     "id": "beetle_sur",
-    "name": "beetle_sur",
+    "name": "甲虫",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/BeetleFinalFrames/beetle_sur-idle.png",
+      "Docs/Validation/BeetleFinalFrames/beetle_sur-attack.png"
+    ],
+    "note": "UnityMonster 正常白盒 GM 入口重启实测，真实模型及原色贴图，五段采样动画各 270 曲线。已查看待机和近身攻击画面，追近、5 实伤、占位挥击声源及监听器峰值 0.033238、移除通过。首跑因无声音未通过，补接后复验通过；未人工听辨。整体批测仍有 14 条 keyword 渲染报错，FAILED。",
+    "order": 1
   },
   {
     "id": "camel_01_sur",

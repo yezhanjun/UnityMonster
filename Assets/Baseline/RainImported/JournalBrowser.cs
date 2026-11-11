@@ -32,6 +32,7 @@ namespace MTPSKIT.RainImported
         static readonly string[] Categories={"物品和装备","怪物","幸存者","武器","无人机","挑战（成就）","档案属性"};
         static readonly HashSet<string> WhiteboxVerifiedMonsters = new()
         {
+            "beetle_sur",
             "skeleton_1h_sur",
             "spider_sur_VarRegular",
             "spider_sur_VarInsane",
@@ -159,6 +160,7 @@ namespace MTPSKIT.RainImported
             "GM_SANDY_GOLEM",
             "HERMIT_CRAB_BODY",
             "GREATERWISP_BODY",
+            "beetle_sur",
             "skeleton_1h_sur",
             "milipede_sur",
             "skeleton_bow_VarRegular",
