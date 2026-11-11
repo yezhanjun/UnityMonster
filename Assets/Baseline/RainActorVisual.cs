@@ -218,7 +218,7 @@ namespace MTPSKIT.Gameplay
             }
             if (prefix is "PendingMini_" or "PendingBell_")
             {
-                idle = prefix == "PendingMini_" ? Find(prefix, "Idle") : Find(prefix, "Idle__Single") ?? Find(prefix, "Idle, Single");
+                idle = prefix == "PendingMini_" ? Find(prefix, "Idle") : Find(prefix, "Idle__Additive") ?? Find(prefix, "Idle__Single") ?? Find(prefix, "Idle, Single");
                 move = Find(prefix, prefix == "PendingMini_" ? "RunForward" : "GasForward");
                 attack = Find(prefix, prefix == "PendingMini_" ? "SporeRelease" : "GasBackwards");
                 animator.fireEvents = false;

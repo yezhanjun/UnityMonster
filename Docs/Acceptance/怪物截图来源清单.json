@@ -809,12 +809,12 @@
     "name": "黄铜装置",
     "source": "雨中冒险 2",
     "status": "已记录通过",
-    "scope": "主工程已有入口；当前动作修复仅隔离",
+    "scope": "UnityMonster 最新实测",
     "images": [
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2BellIdleCleanFrames/BELL_BODY-idle.png",
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2BellIdleCleanFrames/BELL_BODY-signature.png"
+      "Docs/Validation/BellResumeFrames/BELL_BODY-idle.png",
+      "Docs/Validation/BellResumeFrames/BELL_BODY-signature.png"
     ],
-    "note": "待机名称匹配已修复；弹体、18 实伤及清理通过；原动画恢复待补修。",
+    "note": "UnityMonster 恢复后重启实测：待机 Additive 烘焙 140 曲线，1 秒循环；GasForward/GasBackwards 是原单帧倾斜姿势，并非原版完整移动或攻击动画。已查看主体与橙色弹体画面；移动、18 实伤、声音采样峰值 0.087905、取消与移除通过。人工听感未确认；整体 smoke 仍有 14 条 keyword 渲染错误，FAILED。",
     "order": 1
   },
   {

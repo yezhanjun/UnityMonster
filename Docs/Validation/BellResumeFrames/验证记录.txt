@@ -1,0 +1,10 @@
+BELL_BAKED Idle__Additive curves=140 duration=1 maxAngle=0.5895011
+BELL_BAKED GasBackwards curves=140 duration=0.01666667 maxAngle=0
+BELL_BAKED GasForward curves=140 duration=0.01666667 maxAngle=0
+BELL_SAVED Idle__Additive curves=140 duration=1 loop=True
+BELL_SAVED GasForward curves=140 duration=0.01666667 loop=True
+BELL_SAVED GasBackwards curves=140 duration=0.01666667 loop=False
+MONSTER_PENDING_ORB_CANCEL BELL_BODY observed=True cancelled=True orbVisible=False audioPlaying=False health=984->985
+MONSTER_PLAYTEST_ATTACK_DSP BELL_BODY sourcePeak=0.087905 listenerMixPeak=0.087905
+MONSTER_PLAYTEST_PASS BELL_BODY spawn=True model=True idle=True moved=True attack=True damage=18 cue=False audioCue=OriginalSlam audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=1 skipped=0, runtimeErrors=14, first=State comes from an incompatible keyword space
