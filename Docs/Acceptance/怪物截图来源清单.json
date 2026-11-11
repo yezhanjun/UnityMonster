@@ -1121,12 +1121,12 @@
     "name": "黏土药剂师",
     "source": "雨中冒险 2",
     "status": "已记录通过",
-    "scope": "仅隔离工程，未合入主工程",
+    "scope": "UnityMonster 最新实测",
     "images": [
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2GrenadierFinalFrames/CLAYGRENADIER_BODY-idle.png",
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2GrenadierFinalFrames/CLAYGRENADIER_BODY-signature.png"
+      "Docs/Validation/ClayResumeFrames/CLAYGRENADIER_BODY-idle.png",
+      "Docs/Validation/ClayResumeFrames/CLAYGRENADIER_BODY-signature.png"
     ],
-    "note": "可见抛物线球体、12 实伤、声音采样及飞行中取消通过。原动画恢复待补修。",
+    "note": "重启后待机、移动、攻击片段各 590 曲线；已查看主体及绿色抛射物。移动、12 实伤、声音采样峰值 0.091020、飞行取消和清理通过。 均为白盒近似行为，未人工听辨；整体 smoke 保留 14 条 keyword 渲染错误，FAILED。",
     "order": 0
   },
   {
@@ -1134,12 +1134,12 @@
     "name": "黏土圣堂武士",
     "source": "雨中冒险 2",
     "status": "已记录通过",
-    "scope": "仅隔离工程，未合入主工程",
+    "scope": "UnityMonster 最新实测",
     "images": [
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2ClayTraceFrames/CLAYBRUISER_BODY-idle.png",
-      "D:/Project/Unity/TPSBattle/Builds/MonsterWhitebox-01a1c6ef/Goal2ClayTraceFrames/CLAYBRUISER_BODY-impact-aimed.png"
+      "Docs/Validation/ClayResumeFrames/CLAYBRUISER_BODY-idle.png",
+      "Docs/Validation/ClayResumeFrames/CLAYBRUISER_BODY-attack.png"
     ],
-    "note": "近似五连射、15 实伤、声音采样及射击中取消通过。原动画恢复待补修。",
+    "note": "重启后待机、移动、射击片段各 1380 曲线；已查看主体及黄色射击效果。移动、15 实伤、声音采样峰值 0.073439、清理通过。 均为白盒近似行为，未人工听辨；整体 smoke 保留 14 条 keyword 渲染错误，FAILED。",
     "order": 0
   },
   {

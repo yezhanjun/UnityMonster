@@ -1,0 +1,18 @@
+CLAY_BAKED mdlClayBruiser Idle__Additive_Loop curves=1380 duration=0.5 maxAngle=10.50771
+CLAY_BAKED mdlClayBruiser WalkForward curves=1380 duration=1 maxAngle=93.92545
+CLAY_BAKED mdlClayBruiser FireGatling__Additive curves=1380 duration=0.6333333 maxAngle=16.83758
+CLAY_BAKED mdlClayGrenadier Attack curves=590 duration=2.466667 maxAngle=178.032
+CLAY_BAKED mdlClayGrenadier Idle curves=590 duration=1.966667 maxAngle=66.8165
+CLAY_BAKED mdlClayGrenadier Walk curves=590 duration=2 maxAngle=99.44394
+CLAY_SAVED mdlClayBruiser Idle__Additive_Loop curves=1380 duration=0.5 loop=True
+CLAY_SAVED mdlClayBruiser WalkForward curves=1380 duration=1 loop=True
+CLAY_SAVED mdlClayBruiser FireGatling__Additive curves=1380 duration=0.6333333 loop=False
+CLAY_SAVED mdlClayGrenadier Idle curves=590 duration=1.966667 loop=True
+CLAY_SAVED mdlClayGrenadier Walk curves=590 duration=2 loop=True
+CLAY_SAVED mdlClayGrenadier Attack curves=590 duration=2.466667 loop=False
+MONSTER_PENDING_ORB_CANCEL CLAYGRENADIER_BODY observed=True cancelled=True orbVisible=False audioPlaying=False health=990->991
+MONSTER_PLAYTEST_ATTACK_DSP CLAYGRENADIER_BODY sourcePeak=0.091020 listenerMixPeak=0.091020
+MONSTER_PLAYTEST_PASS CLAYGRENADIER_BODY spawn=True model=True idle=True moved=True attack=True damage=12 cue=False audioCue=OriginalSlam audioStarted=True removed=True
+MONSTER_PLAYTEST_ATTACK_DSP CLAYBRUISER_BODY sourcePeak=0.073439 listenerMixPeak=0.073439
+MONSTER_PLAYTEST_PASS CLAYBRUISER_BODY spawn=True model=True idle=True moved=True attack=True damage=15 cue=True audioCue=OriginalSlam audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=2 skipped=0, runtimeErrors=14, first=State comes from an incompatible keyword space

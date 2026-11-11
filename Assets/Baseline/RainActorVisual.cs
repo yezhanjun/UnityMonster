@@ -212,7 +212,7 @@ namespace MTPSKIT.Gameplay
             }
             if (prefix == "ClayBruiserArmature_")
             {
-                idle = Find(prefix, "Idle__Single"); move = Find(prefix, "WalkForward"); attack = Find(prefix, "FireGatling");
+                idle = Find(prefix, "Idle__Additive_Loop") ?? Find(prefix, "Idle__Single"); move = Find(prefix, "WalkForward"); attack = Find(prefix, "FireGatling");
                 animator.fireEvents = false;
                 BindAttackAudio(2, "RainActors/RoR2/Base/Characters/BeetleGroup/BeetleGuard/OriginalSlam");
             }
