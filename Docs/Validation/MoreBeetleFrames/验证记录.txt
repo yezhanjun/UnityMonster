@@ -1,0 +1,17 @@
+SOURCE more-beetles-import.log
+BEETLE_BAKED beetle_veteran_flying curves=440 duration=2.666667
+BEETLE_BAKED beetle_veteran_idle curves=440 duration=2.633333
+BEETLE_BAKED beetle_veteran_attack curves=440 duration=0.6666667
+BEETLE_IMPORTED beetle_desert_big_sur standalone prefab and 3 sampled clips
+BEETLE_BAKED beetle_minion_fly curves=270 duration=2
+BEETLE_BAKED beetle_minion_idle curves=270 duration=1.65
+BEETLE_BAKED beetle_veteran_attack curves=270 duration=0.6666667
+BEETLE_BAKED beetle_minion_stun curves=270 duration=3.316667
+BEETLE_BAKED beetle_minion_summon curves=270 duration=1.65
+BEETLE_IMPORTED beetle_portal_sur standalone prefab and 5 sampled clips
+SOURCE more-beetles-smoke.log
+MONSTER_PLAYTEST_ATTACK_DSP beetle_desert_big_sur sourcePeak=0.033201 listenerMixPeak=0.033201
+MONSTER_PLAYTEST_PASS beetle_desert_big_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_ATTACK_DSP beetle_portal_sur sourcePeak=0.033216 listenerMixPeak=0.033216
+MONSTER_PLAYTEST_PASS beetle_portal_sur spawn=True model=True idle=True moved=True attack=True damage=5 cue=True audioCue=SwingPlaceholder audioStarted=True removed=True
+MONSTER_PLAYTEST_FAILED tested=2 skipped=0, runtimeErrors=14, first=State comes from an incompatible keyword space

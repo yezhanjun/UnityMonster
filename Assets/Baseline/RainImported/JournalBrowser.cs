@@ -34,6 +34,8 @@ namespace MTPSKIT.RainImported
         {
             "beetle_big_sur",
             "beetle_desert_sur",
+            "beetle_desert_big_sur",
+            "beetle_portal_sur",
             "beetle_sur",
             "skeleton_1h_sur",
             "spider_sur_VarRegular",
@@ -164,6 +166,8 @@ namespace MTPSKIT.RainImported
             "GREATERWISP_BODY",
             "beetle_big_sur",
             "beetle_desert_sur",
+            "beetle_desert_big_sur",
+            "beetle_portal_sur",
             "beetle_sur",
             "skeleton_1h_sur",
             "milipede_sur",

@@ -9,7 +9,7 @@ namespace Jotunnslayer
     {
         const string ResourcePath = "Jotunnslayer/Skeleton1H/";
 
-        public enum Kind { Melee, Bow, Spider, Guardian, NiflheimBossEasy, Ghost, AlfheimPhase1, AlfheimPhase2, HybSubBossEasy, SphinxSkeleton, AlfheimSpider, AlfheimSpiderVeteran, AlfheimSentinel, AlfheimSentinelVeteran, AlfheimElfMelee, AlfheimElfRanged, AlfheimStoneJotunn, AlfheimDrider, AlfheimDriderVariant, AlfheimElfMeleeInsane, AlfheimStoneJotunnInsane, SphinxBow, SphinxGuardian, HybBossEasy, SphinxMiniBoss, Milipede, HorrorJotun, BatLoot, MilipedeInsane, SpiderInsane, GhostRed, GhostRedBattlefield, GhostRedFollowing, GhostSvart, GhostSkull, HorrorAlf, HybSubBossNormal, HybBossNormal, HybBossHard, NiflheimBossNormal, NiflheimBossEndless, NiflheimBossHelForm, EttinBoss, EttinEndless, EttinHelForm, MuspelBoss, MuspelEndless, MuspelHelForm, ConstructBoss, BirdNoObjective, BirdObjective, ElementalMage, ElementalMageV2, ElementalMelee, ElementalMeleeChampion, ElementalPlague, ElementalVenom, ElfWoman, ElfWomanV2, GhostKing, JotunnWarrior, JotunnWarriorV2, Beetle, BeetleBig, BeetleDesert }
+        public enum Kind { Melee, Bow, Spider, Guardian, NiflheimBossEasy, Ghost, AlfheimPhase1, AlfheimPhase2, HybSubBossEasy, SphinxSkeleton, AlfheimSpider, AlfheimSpiderVeteran, AlfheimSentinel, AlfheimSentinelVeteran, AlfheimElfMelee, AlfheimElfRanged, AlfheimStoneJotunn, AlfheimDrider, AlfheimDriderVariant, AlfheimElfMeleeInsane, AlfheimStoneJotunnInsane, SphinxBow, SphinxGuardian, HybBossEasy, SphinxMiniBoss, Milipede, HorrorJotun, BatLoot, MilipedeInsane, SpiderInsane, GhostRed, GhostRedBattlefield, GhostRedFollowing, GhostSvart, GhostSkull, HorrorAlf, HybSubBossNormal, HybBossNormal, HybBossHard, NiflheimBossNormal, NiflheimBossEndless, NiflheimBossHelForm, EttinBoss, EttinEndless, EttinHelForm, MuspelBoss, MuspelEndless, MuspelHelForm, ConstructBoss, BirdNoObjective, BirdObjective, ElementalMage, ElementalMageV2, ElementalMelee, ElementalMeleeChampion, ElementalPlague, ElementalVenom, ElfWoman, ElfWomanV2, GhostKing, JotunnWarrior, JotunnWarriorV2, Beetle, BeetleBig, BeetleDesert, BeetleDesertBig, BeetlePortal }
 
         const string SphinxResources = "Jotunnslayer/SphinxSkeleton/";
         const string MilipedeResources = "Jotunnslayer/Milipede/";
@@ -154,6 +154,8 @@ namespace Jotunnslayer
             var characterPrefab = GameManager.Gamemode.GetPlayerCharacterPrefab();
             var (folder, modelName, spawn, idle, walk, attack, hit) = kind switch
             {
+                Kind.BeetleDesertBig => ("Jotunnslayer/BeetleDesertBig/", "beetle_desert_big_sur", "beetle_veteran_idle", "beetle_veteran_idle", "beetle_veteran_flying", "beetle_veteran_attack", "beetle_veteran_idle"),
+                Kind.BeetlePortal => ("Jotunnslayer/BeetlePortal/", "beetle_portal_sur", "beetle_minion_summon", "beetle_minion_idle", "beetle_minion_fly", "beetle_veteran_attack", "beetle_minion_stun"),
                 Kind.BeetleBig => ("Jotunnslayer/BeetleBig/", "beetle_big_sur", "beetle_veteran_idle", "beetle_veteran_idle", "beetle_veteran_flying", "beetle_veteran_attack", "beetle_veteran_idle"),
                 Kind.BeetleDesert => ("Jotunnslayer/BeetleDesert/", "beetle_desert_sur", "beetle_minion_summon", "beetle_minion_idle", "beetle_minion_fly", "beetle_veteran_attack", "beetle_minion_stun"),
                 Kind.Beetle => ("Jotunnslayer/Beetle/", "beetle_sur", "beetle_minion_summon", "beetle_minion_idle", "beetle_minion_fly", "beetle_veteran_attack", "beetle_minion_stun"),
@@ -249,7 +251,7 @@ namespace Jotunnslayer
             bool ettin = kind is Kind.EttinBoss or Kind.EttinEndless or Kind.EttinHelForm;
             bool muspelHel = kind is Kind.MuspelEndless or Kind.MuspelHelForm;
             bool muspel = kind == Kind.MuspelBoss || muspelHel;
-            bool embeddedMaterials = (kind is Kind.Beetle or Kind.BeetleBig or Kind.BeetleDesert) || ettin || muspel || kind is Kind.ConstructBoss or Kind.BirdNoObjective or Kind.BirdObjective or Kind.ElementalMage or Kind.ElementalMageV2 or Kind.ElementalMelee or Kind.ElementalMeleeChampion or Kind.ElementalPlague or Kind.ElementalVenom or Kind.ElfWoman or Kind.ElfWomanV2 or Kind.GhostKing or Kind.JotunnWarrior or Kind.JotunnWarriorV2;
+            bool embeddedMaterials = (kind is Kind.Beetle or Kind.BeetleBig or Kind.BeetleDesert or Kind.BeetleDesertBig or Kind.BeetlePortal) || ettin || muspel || kind is Kind.ConstructBoss or Kind.BirdNoObjective or Kind.BirdObjective or Kind.ElementalMage or Kind.ElementalMageV2 or Kind.ElementalMelee or Kind.ElementalMeleeChampion or Kind.ElementalPlague or Kind.ElementalVenom or Kind.ElfWoman or Kind.ElfWomanV2 or Kind.GhostKing or Kind.JotunnWarrior or Kind.JotunnWarriorV2;
             bool generic = embeddedMaterials || milipede || kind is Kind.Spider or Kind.SpiderInsane or Kind.HorrorJotun or Kind.HorrorAlf or Kind.BatLoot || boss || ghost || alfheim || alfheimSpider || sentinel || elfMelee || elfRanged || stoneJotunn || drider;
             string modelFolder = hybBoss ? HybBossResources
                 : kind is Kind.SphinxSkeleton or Kind.SphinxBow or Kind.SphinxMiniBoss ? SphinxResources : folder;

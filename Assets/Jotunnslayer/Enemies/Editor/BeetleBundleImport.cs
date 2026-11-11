@@ -18,6 +18,15 @@ public static class BeetleBundleImport
         }
         EditorApplication.Exit(0);
     }
+    public static void RunMoreVariants() {
+        foreach (string id in new[] { "beetle_desert_big_sur", "beetle_portal_sur" }) {
+            Profile=id; bool big=id=="beetle_desert_big_sur";
+            Folder="Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/"+(big ? "BeetleDesertBig" : "BeetlePortal");
+            Wanted=big ? new[] { "beetle_veteran_idle", "beetle_veteran_flying", "beetle_veteran_attack" } : new[] { "beetle_minion_idle", "beetle_minion_fly", "beetle_veteran_attack", "beetle_minion_stun", "beetle_minion_summon" };
+            Import();
+        }
+        EditorApplication.Exit(0);
+    }
     public static void Run() { Import(); EditorApplication.Exit(0); }
     static void Import()
     {
