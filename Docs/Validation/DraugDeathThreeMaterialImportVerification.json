@@ -1,0 +1,42 @@
+{
+  "status": "PASS_SOURCE_MIP_BYTES_AND_BINDINGS",
+  "materials": 3,
+  "mipLevels": 20,
+  "pixels": 5663402,
+  "limits": "Decoded RGBA8 GPU samples verified; original compressed storage not preserved. Two Shuriken and one Legacy material; no death prefab/runtime integration.",
+  "process": 31140,
+  "evidence": [
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathMaterialImport.cs",
+      "sha256": "202d255699669f67343a5f93dccd59ed4d9aff05d497d33180725871bd456d73"
+    },
+    {
+      "path": "Logs\\draug-death-three-material-import.log",
+      "sha256": "13dde583509e5e00b890ad4fe6b9b35244955ca9a02c1b02a417dbc99568ec02"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_mecha_particles.mat",
+      "sha256": "8f55a06d743a17f0b85ff62fa832cf4cbd42836ab6fdef2c300cafa509955abc"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Shaman_Glow.mat",
+      "sha256": "de02387e7119b0896443d7d56c05b12a7931cd715ebc4ab60aacf26ded5648db"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_smoke_earthquake.mat",
+      "sha256": "04493041d32a97a3412aabf36ba3bfa40b0ddbddb12284402e0a6fc155d85e4b"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_mecha_particles_SourceMips.asset",
+      "sha256": "2dcc11d7b7a5f5b267bdefb94fa7382a70473b2f21bf5b09ba17ecd4f9863315"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Shaman_Glow_SourceMips.asset",
+      "sha256": "b96b5780c13fbd8a13e04996c1fa1e65de96c9ed572e2d5dd03af719f335369b"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_smoke_earthquake_SourceMips.asset",
+      "sha256": "ed54a80476a8a95f92cdb01fbec06f3fe1995e1ffcb107e9f5adcfd356265d2a"
+    }
+  ]
+}

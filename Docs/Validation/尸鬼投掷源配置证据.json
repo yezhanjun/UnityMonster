@@ -1,0 +1,1555 @@
+{
+  "sourceBundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\enemies_assets_draug_thrower_sur_16b7ef33fa9021746b46ad2bdee25d8e.bundle",
+  "sha256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "scriptTypes": {
+    "projectile": "GamesFarm.BallisticProjectile",
+    "spawner": "GamesFarm.GenericAreaProjectileSpawner",
+    "splash": "GamesFarm.AuraRPGSkill",
+    "effect": "RPGEffect"
+  },
+  "splashColliderRadius": 1.5,
+  "unresolved": [
+    "Exact native ballistic interpolation; targetingType4 is decoded as ThrowToTarget",
+    "base projectile versus skill selection lifecycle",
+    "glass shader and full VFX material fidelity",
+    "Native ballistic interpolation/collision and interception behavior",
+    "Source actor damage scaling versus current TPS damage tuning"
+  ],
+  "components": {
+    "121126352032497425": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5916916789663957231
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 5661379167865690681
+      },
+      "m_Name": "",
+      "_guidComp": {
+        "m_FileID": 0,
+        "m_PathID": 2786547951365914385
+      },
+      "_photonView": {
+        "m_FileID": 0,
+        "m_PathID": 5755213483245109009
+      },
+      "displayName": {
+        "_key": 220003
+      },
+      "displayFullName": {
+        "_key": 0
+      },
+      "portret": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "portretInventory": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "uniqueName": "skeleton_1h_sur",
+      "loreID": "",
+      "actorGroupId": "",
+      "enemyType": 0,
+      "_size": 0,
+      "attackMask": {
+        "m_Bits": 256
+      },
+      "initialHealth": 36.0,
+      "initialMana": 0.0,
+      "_shineOnDamage": 1,
+      "immunity": 0,
+      "selectionDecalScale": 1.0,
+      "selectionMarkerPosition": 10,
+      "_autoAimTargetingPriority": 0,
+      "_autoAimTargetingPriorityRange": 7.0,
+      "interactionConfig": {
+        "baseRange": 2.0,
+        "bonusRange": 0.0,
+        "bonusRangeKB": 0.0,
+        "timeToInteract": 0.0
+      },
+      "linkedTrap": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "enableBossBar": 0,
+      "enableOverheadBar": 0,
+      "tooltipText": {
+        "_key": -1
+      },
+      "overrideWeight": 0,
+      "innerSphereFallback": 1.0,
+      "extraTargettables": [],
+      "_mainCollider": {
+        "m_FileID": 0,
+        "m_PathID": -6701134373390254319
+      },
+      "occlusionMode": 1,
+      "occlusionDistanceExtension": 0.0,
+      "occlusionSphere": {
+        "m_FileID": 0,
+        "m_PathID": -3260350496331989231
+      },
+      "ignoreOcclusion": 0,
+      "ignoreOccluderBoxes": 0,
+      "_bodyMarkers": {
+        "m_FileID": 0,
+        "m_PathID": 79280853997584145
+      },
+      "bodyCenterOffset": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "reparentWeaponTip": 1,
+      "reparentWeaponTipPoint": 4,
+      "attackTransforms": [],
+      "shieldSetting": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "serializationFlags": 0,
+      "_detailsBendingSize": 1.0,
+      "_bendDetailsBendToGround": 0.0,
+      "overrideIgnoreOcclusion": 0,
+      "occlusionCollider": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "cachedCullingIndex": -1,
+      "m_animator": {
+        "m_FileID": 0,
+        "m_PathID": -3003114223224357103
+      },
+      "m_agent": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_visualLevel": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_renderer": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_renderers": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 1097082290261131025
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -8224946689935802607
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -2506812428774342895
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -7269243706842153199
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 2169197582003011345
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": -867614335950192879
+        }
+      ],
+      "m_outlines": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 7501872702275321617
+        }
+      ],
+      "m_obstacles": [],
+      "_skinnedMeshRenderer": {
+        "m_FileID": 0,
+        "m_PathID": 2169197582003011345
+      },
+      "_incrementStatOnDeath": [],
+      "_statusImmunity": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_actorRPGSkills": {
+        "m_FileID": 0,
+        "m_PathID": 2413814501833703185
+      },
+      "_actorLoot": {
+        "m_FileID": 0,
+        "m_PathID": 5320546689382678289
+      },
+      "_actorFootsteps": {
+        "m_FileID": 0,
+        "m_PathID": -3558145273133465839
+      },
+      "_actorFx": {
+        "m_FileID": 0,
+        "m_PathID": -5749551323888943343
+      },
+      "_actorBlock": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_actorRoamer": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_actorTrickster": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_actorDodge": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_navmeshTag": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_boneKinematics": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "rpgCategory": 2,
+      "_damageMask": 6,
+      "creatureType": 0,
+      "rpgMight": {
+        "_base": 5.0,
+        "_per_level": 0.0,
+        "_level_up_bonus": 0.0,
+        "_level": 1,
+        "_add": 0.0,
+        "_multiply": 1.0
+      },
+      "rpgAgility": {
+        "_base": 5.0,
+        "_per_level": 0.0,
+        "_level_up_bonus": 0.0,
+        "_level": 1,
+        "_add": 0.0,
+        "_multiply": 1.0
+      },
+      "rpgWillpower": {
+        "_base": 5.0,
+        "_per_level": 0.0,
+        "_level_up_bonus": 0.0,
+        "_level": 1,
+        "_add": 0.0,
+        "_multiply": 1.0
+      },
+      "rpgEndurance": {
+        "_base": 5.0,
+        "_per_level": 0.0,
+        "_level_up_bonus": 0.0,
+        "_level": 1,
+        "_add": 0.0,
+        "_multiply": 1.0
+      },
+      "rpgLuck": {
+        "_base": 5.0,
+        "_per_level": 0.0,
+        "_level_up_bonus": 0.0,
+        "_level": 1,
+        "_add": 0.0,
+        "_multiply": 1.0
+      },
+      "healthPerLevel": 0.0,
+      "manaPerLevel": 0.0,
+      "baseHealthRegeneration": 0.0,
+      "baseManaRegeneration": 0.0,
+      "baseEvasion": 0.0,
+      "baseMissChance": 0.0,
+      "_baseBlockChance": 0.0,
+      "blockValueCoef": 0.5,
+      "baseBlockArc": 90.0,
+      "baseCriticalChance": 0.0,
+      "baseCriticalMultiplier": 1.75,
+      "baseLifesteal": 0.0,
+      "baseReturnDamage": 0.0,
+      "baseSlay": 0.0,
+      "_baseCleaveFactor": 0.0,
+      "hitpointsModifier": 1.0,
+      "hitpointsModRandom": 0.0,
+      "damageModifier": 1.0,
+      "bonusLevel": 0,
+      "_baseBat": 0.800000011920929,
+      "baseDamageType": 0,
+      "_baseElementType": 2,
+      "_threatGenerationScaling": 1.0,
+      "specialBatMultiplier": 1.0,
+      "specialBatJumpMultiplier": 1.0,
+      "elementalImmunities": 0,
+      "elementalHeal": 0,
+      "_alwaysDealExplosionKill": 0,
+      "_initialResurrectionCharges": 0,
+      "_resurrectionHealAmount": 0.5,
+      "_skillSet": 0,
+      "actorMeshVariations": [],
+      "randomReturnDamageBonus": 0.0,
+      "randomReturnDamageChance": 0.0,
+      "reduceDamageChance": 0.0,
+      "reduceDamageValue": 0.0,
+      "autoresurrectionChance": 0.0,
+      "autoresurrectionValue": 0.0,
+      "fearTimer": 0.0,
+      "isFear": 0,
+      "fearFleeDir": 0,
+      "fearOrigin": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "lastAttackAnimation": 0,
+      "_debugCriticalChance": 0,
+      "m_body": {
+        "m_FileID": 0,
+        "m_PathID": -3630716050047566063
+      },
+      "_actorAnimatorSetup": {
+        "m_FileID": 0,
+        "m_PathID": -6794680497600004335
+      },
+      "effectOnAttack": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effectOnAttackBonus": [],
+      "feet": [
+        "right_foot",
+        "left_foot"
+      ],
+      "feetRotation": 0.0,
+      "_moveSpeed": 1.4500000476837158,
+      "_moveSpeedMax": -1.0,
+      "_patrolSpeed": 2.0,
+      "walkSpeed": 4.0,
+      "maxTurnTiltAngle": 0.0,
+      "turnTiltFactor": 2.0,
+      "turnSlowdownFactor": 0.5,
+      "turnSpeed": 10.0,
+      "navMeshAreaOverride": 0,
+      "flying": 0,
+      "meleeRange": 0.20000000298023224,
+      "rangedRange": 10.0,
+      "meleeAngle": 60.0,
+      "rangedAngle": 360.0,
+      "viewAngle": 120.0,
+      "faceBlocked": 0,
+      "_randomRangedAngle": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "_randomRangedChance": 0.0,
+      "_finalDamageMultiplier": 1.0,
+      "_itemStatusChanceMultiplier": 1.0,
+      "_baseProjectile": {
+        "m_FileID": 0,
+        "m_PathID": 5835990943423446068
+      },
+      "_movementCollider": {
+        "m_FileID": 0,
+        "m_PathID": -6756168138255892719
+      },
+      "_shootDirectionMode": 0,
+      "deathType": 1,
+      "_variableDeathTypeSettings": {
+        "animationDeath": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "ragdollDeathChance": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "destroyDeathChance": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "_fadeoutOnDeath": 1,
+      "_fadeoutOnDeathOnlyWithVisualEffect": 0,
+      "_fadeoutOnDeathDelay": 10.0,
+      "_fadeoutOnDeathDuration": 4.0,
+      "_setFadeToGroundDirection": 0,
+      "cinematicDeath": 0,
+      "cinematicDeathDuration": 2.0,
+      "bossCameraDistanceFactor": 1.5,
+      "criticalDeathType": 0,
+      "ragdollDeath_": 1087,
+      "validCorpse": 1,
+      "deactivateObjectsOnDeath": [],
+      "activateObjectsOnDeath": [],
+      "deactivateObjectsOnCriticalDeath": [],
+      "activateObjectsOnCriticalDeath": [],
+      "deactivatePartsOnCriticalDeath": [],
+      "skinSizeBonus": 0.0,
+      "spotShadowDecal": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "hitSlidePower": 0.0,
+      "hitSlideDuration": 0.0,
+      "_hasAdditiveHitAnimations": 0,
+      "_hitAnimationSpeed": 1.0,
+      "visualEffects": {
+        "m_FileID": 0,
+        "m_PathID": 3954429157036262475
+      },
+      "_invulnerabilityFx": {
+        "<Collection>k__BackingField": {
+          "_vfx": [],
+          "_sfx": []
+        },
+        "<ShouldAttach>k__BackingField": 0,
+        "<PreloadCount>k__BackingField": 0,
+        "<Marker>k__BackingField": 1
+      },
+      "_invulnerabilityEndFx": {
+        "<Collection>k__BackingField": {
+          "_vfx": [],
+          "_sfx": []
+        },
+        "<ShouldAttach>k__BackingField": 0,
+        "<PreloadCount>k__BackingField": 0,
+        "<Marker>k__BackingField": 1
+      },
+      "_chargeIndicators": [],
+      "_skillForm": 0,
+      "_skillFormActorFx": [],
+      "_skillFormAnimators": [],
+      "_ignoreWind": 0,
+      "_windStrengthMultiplier": 1.0,
+      "aggresiveTimer": 0.0,
+      "passiveTimer": 0.0,
+      "skeletonBase": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "weaponContraints": [],
+      "feetTransform": [],
+      "m_trails": [],
+      "m_sinkableObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_ragDoll": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_originalWeaponHighlights": [],
+      "_furInstance": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "bluntResistance": 0.0,
+      "slashResistance": 0.0,
+      "pierceResistance": 0.0,
+      "fireResistance": -30.0,
+      "iceResistance": 0.0,
+      "lightningResistance": 0.0,
+      "earthResistance": 0.0,
+      "poisonResistance": 0.0,
+      "darkResistance": 0.0,
+      "divineResistance": 0.0,
+      "_nearTeleport": 1,
+      "meshBase": {
+        "m_FileID": 0,
+        "m_PathID": 9074053172310376209
+      },
+      "specialAbilities": [],
+      "_aiType": 0,
+      "_enemyGroup": 1,
+      "woundedFactor": 1.0,
+      "hostile": 1,
+      "ally": 0,
+      "isChasing": 1,
+      "immortal": 0,
+      "isTargetable": 1,
+      "isTargetableByAIOnly": 0,
+      "canBeAttacked": 1,
+      "canInteract": 1,
+      "interactionUI": 1,
+      "onlyInteractOutOfCombat": 0,
+      "npcIgnoreCamera": 0,
+      "shuffleSkillsAfterCast": 1,
+      "_shuffleSkillsOnSpawn": 0,
+      "_passthrough": 0,
+      "_fleeWaitDuration": {
+        "x": 1.5,
+        "y": 2.5
+      },
+      "_fleeDisableTimer": 30.0,
+      "_fleeAngle": 60.0,
+      "_startingFleeOffset": -2.0,
+      "_fleeOffsetIncrease": 0.5,
+      "_fleeStartRadius": 4.0,
+      "_fleeStartChance": 30.0,
+      "_fleeOnDamageChance": 75.0,
+      "_fleeAfterSummon": 0,
+      "chaseDistance": 17.0,
+      "chaseSignalRadius": 8.0,
+      "chaseFollowRadius": 25.0,
+      "manualTargetChaseDistance": 5.0,
+      "followDistance": 6.0,
+      "constantlySearchTargets": 1,
+      "forcePathCheck": 0,
+      "_disableRandomizedChaseAnimation": 0,
+      "_allowRunAnimation": 0,
+      "_blendStartRunSpeed": 2.0,
+      "_blendEndRunSpeed": 2.5,
+      "_useNavmeshPathChasingFallback": 0,
+      "_ignoreFlowField": 0,
+      "useOutOfScreenMoveSpeed": 0,
+      "outOfScreenMoveSpeed": 10.0,
+      "_attackDistance": 10.0,
+      "_attackInterval": 4.0,
+      "retreatChance": 0,
+      "retreatDistance": 3.0,
+      "retreatHitDuration": 1.0,
+      "_noRetreat": 0,
+      "retreatAfterAttackChance": 20,
+      "retreatAfterAttackDuration": 1.5,
+      "stampedeMoveSpeed": 10.0,
+      "initialAttackTarget": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_repositionAfterAttackChance": 20,
+      "_repositionAfterSkillChance": 20,
+      "_repositionRange": {
+        "x": 3.0,
+        "y": 4.0
+      },
+      "_repositionAngles": [
+        {
+          "x": 70.0,
+          "y": 110.0
+        },
+        {
+          "x": -70.0,
+          "y": -110.0
+        }
+      ],
+      "knockbackTypePreference": 0,
+      "knockbackFallAnimationDurationScale": 1.0,
+      "knockbackStandAnimationDurationScale": 1.0,
+      "deathSinkDelay": 3.0,
+      "deathSinkDuration": 6.0,
+      "deathSinkSpeed": 0.25,
+      "master": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_masterPrefabSpawnable": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "slaveController": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "killOnMasterDeath": 0,
+      "owner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "ownerType": 0,
+      "resurrectDelay": 4.0,
+      "waitForResurrect": 0,
+      "initialyDead": 0,
+      "animateWhenPaused": 0,
+      "turnOnHit": 1,
+      "idleAnimationSpeed": 1.0,
+      "noDeathTracking": 0,
+      "aura": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "auraPoint": 10,
+      "auraFromStart": 1,
+      "_summons": 0,
+      "ignoreSummonOcclusion": 0,
+      "summonAnimationSpeed": 1.0,
+      "forceSummon": 0,
+      "summonType": 0,
+      "summonAnimation": 0,
+      "summonTrigger": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "hiddenBeforeSummons": 0,
+      "hideByFadeout": 0,
+      "canBeSummonedBySignal": 1,
+      "maxSummonHeightDiff": 1.0,
+      "_supportedSpawnTypes": 41,
+      "_maxStaggerAmount": 0.0,
+      "_staggerDuration": 3.0,
+      "_staggerDecayTimeout": 5.0,
+      "_staggerDecayAmount": 1.0,
+      "boringTimer": 0.0,
+      "isPatrolling": 0,
+      "patrolTimer": 0.0,
+      "manualPatrolDestination": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "tricksterActive": 0,
+      "aggresive": 0,
+      "wasAlerted": 0,
+      "vulnerable": 0,
+      "boredFXInstance": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "RagdollTimeout": 4.0,
+      "_actorLifetimeWreckSpawner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_ownerTransferCondition": 0,
+      "_transformView": {
+        "m_FileID": 0,
+        "m_PathID": 4536440347077639953
+      }
+    },
+    "2413814501833703185": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5916916789663957231
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 21796242486552966
+      },
+      "m_Name": "",
+      "skills": {
+        "list": [
+          {
+            "skill": {
+              "m_FileID": 0,
+              "m_PathID": 1687912784046678327
+            },
+            "slotPosition": 0,
+            "skillSet": 0,
+            "requiredLevel": 0,
+            "addressableSkill": {
+              "address": "",
+              "guid": "",
+              "preloadCount": 0,
+              "prefab": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "calledPreloadPrefab": 0
+            },
+            "animationSpeed": 1.0,
+            "animationTime": 0.0,
+            "castChance": 0.800000011920929,
+            "castTurn": 1,
+            "count": -1,
+            "useType": 0,
+            "animationType": 0,
+            "synergyGroups": 0,
+            "castType": 0,
+            "automaticCast": 0,
+            "castableOnlyByTriggerEvent": 0,
+            "skillGroup": 0
+          }
+        ]
+      },
+      "explosionSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "skillsSyncedWithAttacks": 1
+    },
+    "5835990943423446068": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -3890105469391422412
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 4484953294080238173
+      },
+      "m_Name": "",
+      "_projectileId": "",
+      "_canPreload": 1,
+      "_showProjectileIndicator": 0,
+      "_speed": 6.0,
+      "_lifeTime": 3.0,
+      "_overrideTargetMask": {
+        "m_Bits": 0
+      },
+      "_returnToCaster": 0,
+      "_returnToCasterMarker": 1,
+      "_hitWhileReturning": 1,
+      "_resetTargetsWhenReturning": 1,
+      "_customReturnToCasterEndRadius": -1.0,
+      "_useReturnToCasterSpeed": 0,
+      "_returnToCasterSpeed": 5.0,
+      "_stayAWhileBeforeReturn": 0,
+      "_stayTime": 0.5,
+      "_bounceChance": 0,
+      "_bounceNoHitDuration": 0.5,
+      "_bounceMaxCount": 0,
+      "_bounceOnlyOnTarget": 0,
+      "_resetTargetsWhenBouncing": 0,
+      "_useBoxCollision": 0,
+      "_boxSize": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_boxSizeIncrease": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_boxCenterForwardOffset": 0.0,
+      "_reverseBoxIncreaseWhenReturning": 0,
+      "_increaseRadius": 0.0,
+      "_hitRadius": 0.5,
+      "_innerRadius": 0.0,
+      "_hitOnlyOnce": 1,
+      "_hitOnlyOnEnd": 0,
+      "_canPassThrough": 0,
+      "_canPassThroughTerrain": 0,
+      "_angleBetween": 0.0,
+      "_blockable": 1,
+      "_hitOnlyTerrain": 0,
+      "_attachToFirstHit": 0,
+      "_attachToFirstHitMarker": 3,
+      "_bendDetails": 0,
+      "_bendDetailsFadeInDuration": 0.10000000149011612,
+      "_bendDetailsFadeoutDuration": 0.5,
+      "_bendDetailsSizeBonus": 0.0,
+      "_bendDetailsSizeMultiplier": 1.0,
+      "_bendDetailsOverrideStrength": -1.0,
+      "_bendDetailsBendToGround": 0.0,
+      "_usePhysics": 0,
+      "_explosionForce": 0.0,
+      "_explosionRadius": 0.0,
+      "_upwardsModifier": 0.0,
+      "_onStartFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 1010928470288764214
+              }
+            ],
+            "_sfx": []
+          }
+        }
+      ],
+      "_onStartToEndFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 2749766515002901700
+              }
+            ],
+            "_sfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -1006229299304238387
+              }
+            ]
+          },
+          "<InstantFade>k__BackingField": 0
+        }
+      ],
+      "_onHitFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -2368007096911992863
+              }
+            ],
+            "_sfx": []
+          }
+        }
+      ],
+      "_onEndFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -7012499635603176432
+              }
+            ],
+            "_sfx": []
+          }
+        }
+      ],
+      "_onReturnToCasterFX": [],
+      "_canUseEnviromentHitFx": 0,
+      "_canGetStuckIn": 0,
+      "_stuckInTime": 1.0,
+      "_stuckInLayers": {
+        "m_Bits": 0
+      },
+      "_preciseCollisionCheck": 0,
+      "_precisionType": 2,
+      "_resetTargetInterval": -1.0,
+      "_initialNoHitTime": 0.0,
+      "_particleSystems": [],
+      "copyTerrain": 1
+    },
+    "7508492882822761170": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 5377139827751389906
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 3712452899570459701
+      },
+      "m_Name": "",
+      "_projectileId": "",
+      "_canPreload": 1,
+      "_showProjectileIndicator": 0,
+      "_speed": 15.0,
+      "_lifeTime": 1.2999999523162842,
+      "_overrideTargetMask": {
+        "m_Bits": 0
+      },
+      "_returnToCaster": 0,
+      "_returnToCasterMarker": 1,
+      "_hitWhileReturning": 1,
+      "_resetTargetsWhenReturning": 1,
+      "_customReturnToCasterEndRadius": -1.0,
+      "_useReturnToCasterSpeed": 0,
+      "_returnToCasterSpeed": 5.0,
+      "_stayAWhileBeforeReturn": 0,
+      "_stayTime": 0.5,
+      "_bounceChance": 0,
+      "_bounceNoHitDuration": 0.5,
+      "_bounceMaxCount": 0,
+      "_bounceOnlyOnTarget": 0,
+      "_resetTargetsWhenBouncing": 0,
+      "_useBoxCollision": 0,
+      "_boxSize": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_boxSizeIncrease": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_boxCenterForwardOffset": 0.0,
+      "_reverseBoxIncreaseWhenReturning": 0,
+      "_increaseRadius": 0.0,
+      "_hitRadius": 1.0,
+      "_innerRadius": 0.0,
+      "_hitOnlyOnce": 0,
+      "_hitOnlyOnEnd": 0,
+      "_canPassThrough": 0,
+      "_canPassThroughTerrain": 0,
+      "_angleBetween": 0.0,
+      "_blockable": 1,
+      "_hitOnlyTerrain": 0,
+      "_attachToFirstHit": 0,
+      "_attachToFirstHitMarker": 3,
+      "_bendDetails": 0,
+      "_bendDetailsFadeInDuration": 0.10000000149011612,
+      "_bendDetailsFadeoutDuration": 0.5,
+      "_bendDetailsSizeBonus": 0.0,
+      "_bendDetailsSizeMultiplier": 1.0,
+      "_bendDetailsOverrideStrength": -1.0,
+      "_bendDetailsBendToGround": 0.0,
+      "_usePhysics": 0,
+      "_explosionForce": 0.0,
+      "_explosionRadius": 0.0,
+      "_upwardsModifier": 0.0,
+      "_onStartFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 5602875595809599146
+              }
+            ],
+            "_sfx": []
+          }
+        },
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [],
+            "_sfx": []
+          }
+        }
+      ],
+      "_onStartToEndFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6794783710351461448
+              }
+            ],
+            "_sfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 8842457080181081783
+              }
+            ]
+          },
+          "<InstantFade>k__BackingField": 0
+        },
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": -5774951666051456348
+              }
+            ],
+            "_sfx": []
+          },
+          "<InstantFade>k__BackingField": 1
+        }
+      ],
+      "_onHitFX": [],
+      "_onEndFX": [],
+      "_onReturnToCasterFX": [],
+      "_canUseEnviromentHitFx": 0,
+      "_canGetStuckIn": 0,
+      "_stuckInTime": 1.0,
+      "_stuckInLayers": {
+        "m_Bits": 0
+      },
+      "_preciseCollisionCheck": 0,
+      "_precisionType": 2,
+      "_resetTargetInterval": -1.0,
+      "_initialNoHitTime": 0.0,
+      "_particleSystems": [],
+      "_targetingType": 4,
+      "_useTargetTransform": 0,
+      "_checkTargetOnEnd": 0,
+      "_endOnTargetPosition": 1,
+      "_explodeOnHeight": 0,
+      "_explodeOnPass": 0,
+      "_explodeRadius": 1.0,
+      "_predictionFx": {
+        "_vfx": [],
+        "_sfx": []
+      },
+      "_pulldownDirection": {
+        "x": 0.0,
+        "y": -1.0,
+        "z": 0.0
+      },
+      "_pulldownFactor": 1.0,
+      "_gravitateDelay": 0.0,
+      "_gravitateFactor": 1.0,
+      "_gravitateFactorIncrease": 0.0,
+      "_maxGravitateFactor": 2.0,
+      "_stopGravitationOnDistance": 0.0,
+      "_yStraightGravitation": 0,
+      "_maxProjectileHeight": 5.0,
+      "_useLifeTimeInsteadOfSpeed": 1,
+      "_useBallisticCurve": 0,
+      "_useBallisticSpeed": 0,
+      "_flightTimeRatio": 1.0,
+      "_ballisticCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inSlope": 0.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.0,
+            "outWeight": 0.0
+          },
+          {
+            "time": 0.5,
+            "value": 1.0,
+            "inSlope": 0.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.0,
+            "outWeight": 0.0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inSlope": 0.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.0,
+            "outWeight": 0.0
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      }
+    },
+    "6121876050770026807": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5524832725134646985
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -2329091797569875658
+      },
+      "m_Name": "",
+      "parent": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_projectileCount": 1,
+      "_projectile": {
+        "m_FileID": 0,
+        "m_PathID": 7508492882822761170
+      },
+      "_throwFromSpell": 0,
+      "_projectileThrowSource": 1,
+      "_onProjectileEndSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_hitOnlyOnce": 0,
+      "_upSpawnOffset": 0.0,
+      "_positionPickType": 0,
+      "_areaName": "",
+      "_minMaxRangeAround": {
+        "x": 0.0,
+        "y": 3.0
+      },
+      "_randomInFront": 0,
+      "_randomAngleInFront": 60.0,
+      "_inFrontAngleIncrement": 30.0,
+      "_incrementAngle": 60.0,
+      "_randomInitialDirection": 1,
+      "_mustTargetWalkableTerrain": 0,
+      "_maxDistanceSq": 0.0,
+      "_projectileAreaOverlap": 0,
+      "_projectileAreaRadius": 4.0,
+      "chanceForPrecisionTarget": 0.0,
+      "precisionTargetCount": 0,
+      "precisionTargetCountResetShards": 0,
+      "_precisionTargetHitOnlyOnce": 0,
+      "_precisionTargetPrediction": 0,
+      "_areas": [],
+      "_predictionFx": {
+        "_vfx": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -1833310984109670319
+          }
+        ],
+        "_sfx": []
+      },
+      "_effect": {
+        "m_FileID": 0,
+        "m_PathID": -2955192185904275145
+      },
+      "_delay": {
+        "x": 0.05000000074505806,
+        "y": 0.05000000074505806
+      },
+      "_yAxisHelper": ""
+    },
+    "1687912784046678327": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -5524832725134646985
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 4193493295411070643
+      },
+      "m_Name": "",
+      "_skillName": {
+        "_key": 0
+      },
+      "_skillDescription": {
+        "_key": 0
+      },
+      "_levelDescription": {
+        "_key": 0
+      },
+      "_statusDescription": {
+        "_key": 0
+      },
+      "_csvSkillID": 0,
+      "_csvLevelID": 0,
+      "_icon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_iconSkillBar": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_statusEffect": {
+        "status": 0
+      },
+      "_statusDuration": 0.0,
+      "_statusChance": 50.0,
+      "_useRandomStatusMask": 0,
+      "_randomStatusMask": 0,
+      "_overrideAttack": {
+        "m_Bits": 0
+      },
+      "_overrideEnemyGroupDamageMask": 0,
+      "_overrideEnemyGroupTargetMask": 0,
+      "_requireTarget": 0,
+      "_ignoreTargetLayerCheck": 0,
+      "_cooldown": 4.0,
+      "_showCooldown": 1,
+      "_constantCooldown": 0,
+      "_cannotResetCooldown": 0,
+      "_corruptionCost": 0.0,
+      "_bonusCastCount": 0,
+      "_hideCaster": 0,
+      "_warpCasterToHit": 0,
+      "_canCastSpellsIgnored": 0,
+      "_canMoveWhileCasting": 0,
+      "_canOnCastSkillRotate": 1,
+      "_checkEvasion": 0,
+      "_checkCritical": 0,
+      "_criticalChanceBonus": 0.0,
+      "_checkBlock": 0,
+      "_canTriggerBaseAttackSkills": 0,
+      "_isBaseAttack": 0,
+      "_castPathRequirement": 0,
+      "_tags": 0,
+      "_onStartFX": [],
+      "_onCastFX": [],
+      "_onCastOnTargetFX": [],
+      "_onHitFX": [],
+      "_onFirstHitFX": [],
+      "_onJumpToIndicatorFX": {
+        "_vfx": [],
+        "_sfx": []
+      },
+      "_onCastSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_onCastSkillChance": 100.0,
+      "_onCastSkillTargetSelf": 0,
+      "_onHitSkill": {
+        "m_FileID": 0,
+        "m_PathID": -6771151300753388103
+      },
+      "_onHitSkillChance": 100.0,
+      "_castHitSkillOnHitObject": 0,
+      "_castHitSkillOnActorsOnly": 0,
+      "_affectingAttribute": 0,
+      "_attributeAffectTargetMask": 0,
+      "_skillModifiers": [],
+      "_passiveSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_disablePassiveOnCooldown": 1,
+      "_rageIncreaseMultiplier": 1.0,
+      "_castThroughFollower": 0,
+      "_requiredFollowerGroup": 0,
+      "_repeatCastCount": 0,
+      "_repeatDelay": 0.0,
+      "_repeatPosition": 0,
+      "_targetType": 0,
+      "_castRange": {
+        "x": 0.0,
+        "y": 10.0
+      },
+      "_castCondition": 0,
+      "_minimalCastRangeBonus": 0.5,
+      "_targetAngle": 60,
+      "_attachOnCaster": 0,
+      "_skillGroupDelay": 0.5,
+      "_showMarkerOnPotentialTargets": 0,
+      "_summonedAiUseMasterAsCaster": 0,
+      "_doubleCastDelay": 0.5,
+      "_endOnCasterDeath": 0,
+      "_endOnCutsceneStart": 0,
+      "_interruptAttackAnim": 1,
+      "_noAnimation": 0,
+      "_noNavCollision": 0,
+      "_stopMovementOnCast": 0,
+      "_interruptable": 1,
+      "_interruptableByBaseAttack": 1,
+      "_invulnerable": 0,
+      "_applyImmuneActorShaderEffect": 0,
+      "_targetable": 1,
+      "_uiTargetable": 1,
+      "_usePhysics": 0,
+      "_physicsHitSource": 0,
+      "_physicalForce": 0.0,
+      "_physicsRadius": 0.0,
+      "_explosionAngle": 0.0,
+      "_upwardsModifier": 0.0,
+      "_autocastTriggerEvent": 0,
+      "_autocastTriggerChance": 0,
+      "_autocastDynamicChanceBonus": 0,
+      "_autocastCanTriggerDuringCasting": 0,
+      "_autocastTriggerTarget": 0,
+      "_autocastCustomTriggerName": "",
+      "_photonView": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "skillScript": {
+        "m_FileID": 0,
+        "m_PathID": 6121876050770026807
+      },
+      "skillScriptCastContidionOnly": 0
+    },
+    "-6771151300753388103": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6567058907938065849
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 8877895229564984996
+      },
+      "m_Name": "",
+      "_skillName": {
+        "_key": -1
+      },
+      "_skillDescription": {
+        "_key": -1
+      },
+      "_levelDescription": {
+        "_key": 0
+      },
+      "_statusDescription": {
+        "_key": 0
+      },
+      "_csvSkillID": 0,
+      "_csvLevelID": 0,
+      "_icon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_iconSkillBar": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_statusEffect": {
+        "status": 0
+      },
+      "_statusDuration": 0.0,
+      "_statusChance": 100.0,
+      "_useRandomStatusMask": 0,
+      "_randomStatusMask": 210520508416,
+      "_overrideAttack": {
+        "m_Bits": 256
+      },
+      "_overrideEnemyGroupDamageMask": 0,
+      "_overrideEnemyGroupTargetMask": 0,
+      "_requireTarget": 0,
+      "_ignoreTargetLayerCheck": 0,
+      "_cooldown": 0.0,
+      "_showCooldown": 1,
+      "_constantCooldown": 0,
+      "_cannotResetCooldown": 0,
+      "_corruptionCost": 0.0,
+      "_bonusCastCount": 0,
+      "_hideCaster": 0,
+      "_warpCasterToHit": 0,
+      "_canCastSpellsIgnored": 0,
+      "_canMoveWhileCasting": 0,
+      "_canOnCastSkillRotate": 1,
+      "_checkEvasion": 1,
+      "_checkCritical": 0,
+      "_criticalChanceBonus": 0.0,
+      "_checkBlock": 1,
+      "_canTriggerBaseAttackSkills": 0,
+      "_isBaseAttack": 0,
+      "_castPathRequirement": 0,
+      "_tags": 0,
+      "_onStartFX": [],
+      "_onCastFX": [
+        {
+          "<Collection>k__BackingField": {
+            "_vfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 1586598802387835570
+              }
+            ],
+            "_sfx": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 9043388496718655223
+              }
+            ]
+          },
+          "<Place>k__BackingField": 5,
+          "<ShouldAttach>k__BackingField": 0,
+          "<ShouldFollowTransform>k__BackingField": 0,
+          "<ShouldBeGrounded>k__BackingField": 1,
+          "<ShouldRecycleOnSkillEnd>k__BackingField": 0
+        }
+      ],
+      "_onCastOnTargetFX": [],
+      "_onHitFX": [],
+      "_onFirstHitFX": [],
+      "_onJumpToIndicatorFX": {
+        "_vfx": [],
+        "_sfx": []
+      },
+      "_onCastSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_onCastSkillChance": 100.0,
+      "_onCastSkillTargetSelf": 0,
+      "_onHitSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_onHitSkillChance": 100.0,
+      "_castHitSkillOnHitObject": 0,
+      "_castHitSkillOnActorsOnly": 0,
+      "_affectingAttribute": 0,
+      "_attributeAffectTargetMask": 0,
+      "_skillModifiers": [],
+      "_passiveSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_disablePassiveOnCooldown": 1,
+      "_rageIncreaseMultiplier": 1.0,
+      "_castThroughFollower": 0,
+      "_requiredFollowerGroup": 0,
+      "_repeatCastCount": 0,
+      "_repeatDelay": 0.0,
+      "_repeatPosition": 0,
+      "_targetType": 0,
+      "_castRange": {
+        "x": 0.0,
+        "y": 20.0
+      },
+      "_castCondition": 0,
+      "_minimalCastRangeBonus": 1.0,
+      "_targetAngle": 60,
+      "_attachOnCaster": 0,
+      "_skillGroupDelay": 0.5,
+      "_showMarkerOnPotentialTargets": 0,
+      "_summonedAiUseMasterAsCaster": 0,
+      "_doubleCastDelay": 0.0,
+      "_endOnCasterDeath": 0,
+      "_endOnCutsceneStart": 0,
+      "_interruptAttackAnim": 1,
+      "_noAnimation": 0,
+      "_noNavCollision": 0,
+      "_stopMovementOnCast": 0,
+      "_interruptable": 1,
+      "_interruptableByBaseAttack": 1,
+      "_invulnerable": 0,
+      "_applyImmuneActorShaderEffect": 0,
+      "_targetable": 1,
+      "_uiTargetable": 1,
+      "_usePhysics": 0,
+      "_physicsHitSource": 0,
+      "_physicalForce": 0.0,
+      "_physicsRadius": 0.0,
+      "_explosionAngle": 0.0,
+      "_upwardsModifier": 0.0,
+      "_autocastTriggerEvent": 0,
+      "_autocastTriggerChance": 0,
+      "_autocastDynamicChanceBonus": 0,
+      "_autocastCanTriggerDuringCasting": 0,
+      "_autocastTriggerTarget": 0,
+      "_autocastCustomTriggerName": "",
+      "_photonView": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_duration": 3.0,
+      "_alwaysInfiniteStatusDuration": 1,
+      "_delayedCast": 0.0,
+      "_mainEffect": {
+        "m_FileID": 0,
+        "m_PathID": -3274570229161816647
+      },
+      "_secondaryEffect": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_secondaryEffectMask": {
+        "m_Bits": 0
+      },
+      "_alwaysActive": 1,
+      "_startAuraEvent": 0,
+      "_endAuraEvent": 0,
+      "_attachToCaster": 0,
+      "_attachToTarget": 0,
+      "_copyCasterForwardOnSpawn": 0,
+      "_attachMarker": 10,
+      "_onAuraEndChainSkill": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_startToEndFX": {
+        "<Collection>k__BackingField": {
+          "_vfx": [],
+          "_sfx": []
+        },
+        "<ShouldAttach>k__BackingField": 0,
+        "<PreloadCount>k__BackingField": 0,
+        "<Marker>k__BackingField": 1
+      },
+      "_beforeEndFX": {
+        "<Collection>k__BackingField": {
+          "_vfx": [],
+          "_sfx": []
+        },
+        "<ShouldAttach>k__BackingField": 0,
+        "<PreloadCount>k__BackingField": 0,
+        "<Marker>k__BackingField": 1
+      },
+      "_fxOffsetBeforeEndInSec": 0.0,
+      "_endSkillOnCutscene": 0,
+      "_statusEffectSecondary": {
+        "status": 0
+      }
+    },
+    "-3274570229161816647": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 6567058907938065849
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 7247851288579477501
+      },
+      "m_Name": "",
+      "_rpgEffectFx": {
+        "_fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "_fxBig": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "_preEndFx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "_endFX": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "_preEndTimeBeforeEnd": 0.0,
+        "_attach": 5,
+        "_stay": 1,
+        "_fadeOutFxOnPreEnd": 0
+      },
+      "chance": 100,
+      "effectSource": 0,
+      "keywords": [],
+      "applyWeaponKeywordToAttributes": 0,
+      "canCauseCritical": 1,
+      "guid": "7bbcb54d-af21-4ca0-b194-ecfce6d9fc12",
+      "icon": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effectName": {
+        "_key": 0
+      },
+      "effectDescription": {
+        "_key": 0
+      },
+      "csvId": 0,
+      "_iconStats": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "_effectNameStats": {
+        "_key": 0
+      },
+      "_effectCategoryStats": 0,
+      "duration": 0.0,
+      "infinite": 1,
+      "canStack": 0,
+      "maxStacks": -1,
+      "visualEffect": 0,
+      "applyVisualEffectDeath": 0,
+      "overrideCriticalDeathCutOff": -1,
+      "endTrigger": 0,
+      "useEffectMultipliers": 0,
+      "multiplierType": 0,
+      "useEffectConditions": 0,
+      "conditionType": 0,
+      "attributes": [
+        {
+          "type": 404,
+          "operation": 0,
+          "period": 0.25,
+          "value": 90.0,
+          "value2": 110.0,
+          "value3": 0.0,
+          "value4": 1.0,
+          "vector3": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "int1": 0,
+          "damageType": 0,
+          "elementType": 0,
+          "damageAttribute": 0,
+          "rpgCategory": 0,
+          "creatureTypeMask": 0,
+          "effectKeyword": 0,
+          "keyword": 0,
+          "statusCategory": 0,
+          "status": 0,
+          "exposureType": 0,
+          "skillForm": 0,
+          "hitAnimation": 0,
+          "hitEffect": 0,
+          "noCalculations": 0,
+          "skillModifierCondition": 0,
+          "hashCode": 0,
+          "stringValue": "",
+          "additionalEffectCategory": 0
+        }
+      ]
+    }
+  },
+  "resolvedEnums": {
+    "RPGAttributeType404": "DealDamage_PercActorDamage",
+    "ETargetingType4": "ThrowToTarget",
+    "evidence": "源RPG与投射物枚举.json"
+  }
+}

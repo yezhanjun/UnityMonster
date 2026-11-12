@@ -15,7 +15,7 @@ cd UnityMonster
 git lfs pull
 ```
 
-在 Unity Hub 中添加仓库根目录，使用 6000.2.10f1 打开。首次打开需要还原 Packages 并导入资源。打开 `Assets/Baseline/Scenes/Startup.unity`，进入 Play，选择「白盒训练场」。使用训练场的 GM 图鉴召唤怪物，关闭 GM 后点击战斗开始。已记录通过的怪物排在 GM 列表前面。
+在 Unity Hub 中添加仓库根目录，使用 6000.2.10f1 打开。首次打开需要还原 Packages 并导入资源。打开 `Assets/Game/Baseline/Scenes/Startup.unity`，进入 Play，选择「白盒训练场」。使用训练场的 GM 图鉴召唤怪物，关闭 GM 后点击战斗开始。已记录通过的怪物排在 GM 列表前面。
 
 本工程只配置启动场景与白盒训练场的构建入口；正式训练场和其他玩法不属于此仓库的验收入口。
 

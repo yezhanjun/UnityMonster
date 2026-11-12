@@ -1,0 +1,76 @@
+{
+  "status": "PASS_CONTROLLED_SOURCE_GPU",
+  "cases": 48,
+  "maxError": 0,
+  "limits": "48 controlled synthetic-texture/depth cases only. Nonzero distortion, animated UVs, colored B/C/mask, dynamic camera exposure, actual particles and final death images unverified. GameTime override not integrated; shader uses Unity time.",
+  "process": 55564,
+  "coverage": {
+    "fade": [
+      0,
+      0.1,
+      1,
+      5
+    ],
+    "sceneNormalizedDepth": [
+      0.5,
+      1.5,
+      1.75,
+      3
+    ],
+    "particleEyeDepth": 1.5,
+    "uv": [
+      [
+        0.1,
+        0.2
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.9,
+        0.8
+      ]
+    ],
+    "blendMode": 0,
+    "intensity": 2,
+    "tint": [
+      0.4,
+      0.7,
+      0.2,
+      0.5
+    ],
+    "vertexColor": [
+      0.6,
+      0.2,
+      0.8,
+      0.25
+    ],
+    "probeExposure": 0,
+    "deExposure": 1,
+    "distortionStrength": 0,
+    "animationSpeed": 0
+  },
+  "evidence": [
+    {
+      "path": "Logs\\draug-death-glow-gpu.log",
+      "sha256": "630e4cc88669ce57d3627d9e7434b6ce4f30ac80d322e3e194c1003664a8f34e"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\SourceDeathAnimatedAlpha.shader",
+      "sha256": "70206c379bda2debf9e051598556910a080b4f13950dee5c78cb55342ece8c81"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathGlowGpuValidation.cs",
+      "sha256": "3ea612be8c0168f4bf8da9a6db27216ba51ef2c09682976f790ebccf79256c63"
+    },
+    {
+      "path": "Logs\\draug-death-animatedalpha-13.dxbc",
+      "sha256": "6cca40fb0b69727f31ee69e17fc747cdc06533657b4d3dedbac6d88d4dafd9e4"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathRemainingShaderEvidence.json",
+      "sha256": "a4355f6026dfcaa024a6a1dc1d9f2cec52567a57ee49fb5d326331ea0ef9add4"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_UNITY_SHARED_RNG_LAUNCH",
+  "cases": 10,
+  "limits": "Local Unity RNG branch/order/state and velocities only; original engine random sequence, source RandomFloat cached fields, scale draw, selection/global registration and lethal integration remain pending.",
+  "process": 77764,
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckLaunch.cs",
+      "sha256": "17d48b5cc41772319a2972bf56575b08b8989b010e6e788bf72ae799b706fa57"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckRandomLaunchValidation.cs",
+      "sha256": "53009472a4e418b35239c595fa90ebb4b651bd65af3d6915a46b88a8f6adb9fa"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckRandomFloatVerification.json",
+      "sha256": "42cf5c19a2ab9e2d8c40b5989e6723687c94afde89f2767a9313d7e06e1de5ac"
+    },
+    {
+      "path": "Logs/draug-wreck-random-launch.log",
+      "sha256": "bea093961d8238eb07d519f62f9be5f34817015ee4f6d24e7ea5594583617158"
+    },
+    {
+      "path": "Logs/Wreck-ActivateImpl-0xad45c0.asm.txt",
+      "sha256": "705aa7f80b48bcfd9f8a2d1b38ec5522a88864513322704bd5317565cd4fc3c1"
+    }
+  ]
+}

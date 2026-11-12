@@ -1,0 +1,489 @@
+{
+  "bundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\enemies_assets_draug_thrower_sur_16b7ef33fa9021746b46ad2bdee25d8e.bundle",
+  "sha256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "clips": [
+    {
+      "pathId": -6767853322786381189,
+      "name": "attack_02",
+      "events": [
+        {
+          "time": 0.4504537582397461,
+          "functionName": "OnSpawnFXEvent",
+          "data": "whoosh",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        },
+        {
+          "time": 0.5551713705062866,
+          "functionName": "OnFireEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        }
+      ]
+    },
+    {
+      "pathId": -4810808285443595653,
+      "name": "attack_01",
+      "events": [
+        {
+          "time": 0.5131691694259644,
+          "functionName": "OnFireEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        }
+      ]
+    },
+    {
+      "pathId": -4476409874691411733,
+      "name": "crawler_init",
+      "events": []
+    },
+    {
+      "pathId": -3176902719504588165,
+      "name": "move",
+      "events": [
+        {
+          "time": 0.46014755964279175,
+          "functionName": "OnStep",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        },
+        {
+          "time": 1.076270341873169,
+          "functionName": "OnStep",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 1,
+          "messageOptions": 0
+        }
+      ]
+    },
+    {
+      "pathId": -2264341149059587461,
+      "name": "summon_01",
+      "events": [
+        {
+          "time": 3.214668035507202,
+          "functionName": "OnSummonedEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        }
+      ]
+    },
+    {
+      "pathId": -1882680100380155269,
+      "name": "stand",
+      "events": []
+    },
+    {
+      "pathId": 773777635648660091,
+      "name": "skill_throw",
+      "events": [
+        {
+          "time": 0.49205490946769714,
+          "functionName": "OnCastEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        },
+        {
+          "time": 1.1088453531265259,
+          "functionName": "OnCastEndEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        }
+      ]
+    },
+    {
+      "pathId": 4088879959924007547,
+      "name": "attack_03",
+      "events": [
+        {
+          "time": 0.4536709189414978,
+          "functionName": "OnFireEvent",
+          "data": "",
+          "objectReferenceParameter": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "floatParameter": 0.0,
+          "intParameter": 0,
+          "messageOptions": 0
+        }
+      ]
+    }
+  ],
+  "controllers": [
+    {
+      "m_Name": "draug",
+      "m_Controller": {
+        "m_FileID": 2,
+        "m_PathID": -3839662355133768646
+      },
+      "m_Clips": [
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 2874649451259613927
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -3176902719504588165
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 1467551794046791881
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -1882680100380155269
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -8087226494522115808
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -1882680100380155269
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -9135250367245378618
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -1882680100380155269
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -3807904322557071853
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -1882680100380155269
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 5039463890958980164
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -4476409874691411733
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -2342565105570537393
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -4810808285443595653
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -120316419690087974
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -6767853322786381189
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 1096436187015962796
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": 4088879959924007547
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 2116991682785074259
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -3176902719504588165
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": 5883482775800164705
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": -2264341149059587461
+          }
+        },
+        {
+          "m_OriginalClip": {
+            "m_FileID": 2,
+            "m_PathID": -8193774656523207214
+          },
+          "m_OverrideClip": {
+            "m_FileID": 0,
+            "m_PathID": 773777635648660091
+          }
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": -5916916789663957231
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 21796242486552966
+    },
+    "m_Name": "",
+    "skills": {
+      "list": [
+        {
+          "skill": {
+            "m_FileID": 0,
+            "m_PathID": 1687912784046678327
+          },
+          "slotPosition": 0,
+          "skillSet": 0,
+          "requiredLevel": 0,
+          "addressableSkill": {
+            "address": "",
+            "guid": "",
+            "preloadCount": 0,
+            "prefab": {
+              "m_FileID": 0,
+              "m_PathID": 0
+            },
+            "calledPreloadPrefab": 0
+          },
+          "animationSpeed": 1.0,
+          "animationTime": 0.0,
+          "castChance": 0.800000011920929,
+          "castTurn": 1,
+          "count": -1,
+          "useType": 0,
+          "animationType": 0,
+          "synergyGroups": 0,
+          "castType": 0,
+          "automaticCast": 0,
+          "castableOnlyByTriggerEvent": 0,
+          "skillGroup": 0
+        }
+      ]
+    },
+    "explosionSkill": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "skillsSyncedWithAttacks": 1
+  },
+  "metadataSkillTypes": [
+    {
+      "type": "RPGSkillHelper",
+      "fields": [
+        {
+          "index": 5562,
+          "name": "skill",
+          "typeIndex": 45240
+        },
+        {
+          "index": 5563,
+          "name": "slotPosition",
+          "typeIndex": 64506,
+          "resolvedType": "SlotPosition",
+          "enumValues": {
+            "None": 0,
+            "Character1": 1,
+            "Character2": 2,
+            "God1": 3,
+            "God2": 4,
+            "God3": 5,
+            "SlotTalisman": 6,
+            "SlotPersonal": 7,
+            "SlotUltimate": 8,
+            "SlotPassive": 9
+          }
+        },
+        {
+          "index": 5564,
+          "name": "skillSet",
+          "typeIndex": 64324
+        },
+        {
+          "index": 5565,
+          "name": "requiredLevel",
+          "typeIndex": 50305
+        },
+        {
+          "index": 5566,
+          "name": "addressableSkill",
+          "typeIndex": 28719
+        },
+        {
+          "index": 5567,
+          "name": "animVariations",
+          "typeIndex": 8088
+        },
+        {
+          "index": 5568,
+          "name": "animationSpeed",
+          "typeIndex": 47556
+        },
+        {
+          "index": 5569,
+          "name": "animationTime",
+          "typeIndex": 47556
+        },
+        {
+          "index": 5570,
+          "name": "castChance",
+          "typeIndex": 47556,
+          "resolvedType": "Single"
+        },
+        {
+          "index": 5571,
+          "name": "castTurn",
+          "typeIndex": 30216,
+          "resolvedType": "Boolean"
+        },
+        {
+          "index": 5572,
+          "name": "count",
+          "typeIndex": 39735,
+          "resolvedType": "Int32"
+        },
+        {
+          "index": 5573,
+          "name": "useType",
+          "typeIndex": 64509,
+          "resolvedType": "UseType",
+          "enumValues": {
+            "None": 0,
+            "OnHitSelf": 1,
+            "OnHitSource": 2,
+            "OnDamageEnemySelf": 3,
+            "OnDamageEnemySource": 4,
+            "OnDeathSelf": 5,
+            "OnDeathSource": 6
+          }
+        },
+        {
+          "index": 5574,
+          "name": "animationType",
+          "typeIndex": 39735,
+          "resolvedType": "Int32"
+        },
+        {
+          "index": 5575,
+          "name": "synergyGroups",
+          "typeIndex": 48768
+        },
+        {
+          "index": 5576,
+          "name": "castType",
+          "typeIndex": 64491,
+          "resolvedType": "CastType",
+          "enumValues": {
+            "Always": 0,
+            "Never": 1,
+            "Synergy": 2
+          }
+        },
+        {
+          "index": 5577,
+          "name": "automaticCast",
+          "typeIndex": 30216,
+          "resolvedType": "Boolean"
+        },
+        {
+          "index": 5578,
+          "name": "castableOnlyByTriggerEvent",
+          "typeIndex": 30216
+        },
+        {
+          "index": 5579,
+          "name": "skillGroup",
+          "typeIndex": 65759,
+          "resolvedType": "SkillGroup",
+          "enumValues": {
+            "None": 0,
+            "SkillGroup1": 1,
+            "SkillGroup2": 2,
+            "SkillGroup3": 3,
+            "SkillGroup4": 4
+          }
+        },
+        {
+          "index": 5580,
+          "name": "<OriginalCount>k__BackingField",
+          "typeIndex": 39730
+        }
+      ]
+    }
+  ],
+  "limits": "Serialized fields, native field types, and distinct OnFireEvent/OnCastEvent are proven. Native chance evaluation, cooldown, fallback and scheduling control flow remain unproven.",
+  "nativeTypeEvidence": "DraugNativeSkillTypes.json"
+}

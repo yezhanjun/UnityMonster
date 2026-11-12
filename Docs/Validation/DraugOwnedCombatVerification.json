@@ -1,0 +1,51 @@
+{
+  "status": "PASS_OWNED_RANDOM_COMBAT_INTEGRATION",
+  "selectionCases": 32,
+  "arrowRequests": 21,
+  "flaskRequests": 11,
+  "actorLifetimeCases": 12,
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 113,
+    "audioCue": "OriginalDraugFlight",
+    "audioStarted": true
+  },
+  "log": {
+    "path": "Logs/draug-owned-combat.log",
+    "sha256": "12a2bd9d9e82bce6e3abb68d3d653b63151d5a7d278b60b4e94581fedb765184"
+  },
+  "code": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Skeleton1HCombat.cs",
+      "sha256": "71937001c39bd06b357de76671c1c5131b1faac9ce3fb316ca9cb2866c0ed8ad"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugCombatRandomValidation.cs",
+      "sha256": "0aee0cb9c8cf9e761ea3c41866e9fb0a6dbf3e698ab162fc7a63d4bacdb8fad7"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugCastCombatValidation.cs",
+      "sha256": "a559eb277a592e944efba7448d9db94aaf63e425eb63a1733d96af4d7d45c7a3"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugLateCancellationValidation.cs",
+      "sha256": "4d5fd64854d0327da2fb341f5c0fa76496a94b83b15b44247015ae583d41383f"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugActorLifetimeValidation.cs",
+      "sha256": "17b20f64954d62457c0e1450268b892d963bec51c856bdd5ec5a01259be57b7a"
+    }
+  ],
+  "behavior": [
+    "First successful Draug Begin creates an owned random stream and consumes one known GFStart chase-distance sample; repeat Begin preserves the stream.",
+    "Skill-ready requests consume one owned sample; cooling requests consume none; Unity.Random remains unchanged until separate arrow animation entry.",
+    "Shared actor fixtures temporarily inject seeded streams and restore the saved production stream. Independent spawned actors validate startup sample and root-disable/Begin preservation."
+  ],
+  "limits": [
+    "Direct-spawn startup policy only; encounter SpawnConfig draws, other source actor consumers, runtime seed synchronization and debug-global seed override remain pending.",
+    "DraugStartupChaseDistance records the source startup result and stream advance; current explicit target binding/pursuit does not yet use it as a detection or disengagement gate.",
+    "Startup distance comparison tolerance1e-5; deterministic request stream values compared byfloat32 bits. Does not prove whole-game first-skill sequence parity.",
+    "No Player build, full multiplayer comparison or GC/memory measurement. Complete Draug fidelity still pending."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS_CHASE_DECISION_BLEND_AFTER_SPEED_FIX",
+  "configuredSourceTransitionCases": 27,
+  "unchangedComparedWithPriorObservations": true,
+  "sourceState": {
+    "name": "base.attack.decide",
+    "speed": 0.5,
+    "speedParameter": "",
+    "graphSHA256": "48fd57a88fb6aed7efae959f574043fcff7af961ed2b4b42d36f455c91926e4a"
+  },
+  "initial": {
+    "frames": 600,
+    "failed": 492,
+    "maxRotationDegrees": 9.522876739501953
+  },
+  "fixed": {
+    "frames": 600,
+    "failed": 0,
+    "maxLocalPosition": 1.1950272892136127e-05,
+    "maxRootRelativePosition": 0.00024351620231755078
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-configured-animator-transitions.log",
+      "sha256": "2d88cebd9fb4e71a8db7d09513424276ec4849b768dc86c4cb1daedc7c88d3f4"
+    },
+    {
+      "path": "Logs/draug-chase-blend-pose.log",
+      "sha256": "3535e9cde1ffe46327cc523d6878b7135892966f1cce97b222d113e6622e5fcd"
+    },
+    {
+      "path": "Logs/draug-chase-blend-speed-fixed.log",
+      "sha256": "1f28a20e8fc32d188cc14e688d2a8430b7dc6420c422e07d96445ff527c06d60"
+    },
+    {
+      "path": "Logs/draug-decide-speed-smoke.log",
+      "sha256": "5ef04af22817c7ea922ec6a7cb5e45d26496627bd3dcf4fbfe7ec6d7221c757c"
+    }
+  ],
+  "battle": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 76
+  },
+  "limitations": [
+    "Only chase->decide first150ms at1ms steps and four initial chase phases; later chained attack blend not covered.",
+    "Original native scripts absent; checked idle parameter explicitly initialized.",
+    "Does not establish idle->decide interruption snapshot, attack->idle/chase/cast blend or full source timing equivalence."
+  ]
+}

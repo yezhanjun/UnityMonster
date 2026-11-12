@@ -1,0 +1,677 @@
+{
+  "scope": "Explicit integer mip LOD GPU samples at each source level resolution on D3D11. No claim about every fractional LOD, platform or original-game scene.",
+  "runs": [
+    {
+      "log": "Logs\\draug-texture-mip-audit.log",
+      "sha256": "fcb0074d0c2075af6602b90fa15f33e48a97caa5e9ae1b64a4045f3aad9d876f",
+      "failures": 18,
+      "cases": [
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.0390625,
+          "meanError": 0.00146547539679887
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.03125,
+          "meanError": 0.00233516190201044
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.02734375,
+          "meanError": 0.00362226595461834
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.03515625,
+          "meanError": 0.00469927315134555
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.0234375,
+          "meanError": 0.00577277387492359
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.01953125,
+          "meanError": 0.005218505859375
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.02539063,
+          "meanError": 0.000911189283215208
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.03125,
+          "meanError": 0.00133759611344431
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.0390625,
+          "meanError": 0.00194716251280624
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.02734375,
+          "meanError": 0.00225833407603204
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.03515625,
+          "meanError": 0.0039777928031981
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.0234375,
+          "meanError": 0.00341624021530151
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.002929688,
+          "meanError": 0.00054931640625
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.07421875,
+          "meanError": 0.00420630986064907
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.1015625,
+          "meanError": 0.00653246406201902
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.1308594,
+          "meanError": 0.0110939504875205
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.1113281,
+          "meanError": 0.0147927867774342
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.09277344,
+          "meanError": 0.0173752607297502
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.04589844,
+          "meanError": 0.0139743471809197
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.005859375,
+          "meanError": 0.0010986328125
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.png",
+          "maxError": 0.002929688,
+          "meanError": 0.000732421875
+        },
+        {
+          "name": "T_fx_ParticleSet_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_3.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_01_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_4.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_5.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_6.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        }
+      ]
+    },
+    {
+      "log": "Logs\\draug-source-mip-fixed.log",
+      "sha256": "7eb01e6cad82782daf323432fe4a7afa46dc28b1c5647cc44e85e8ac264ed14d",
+      "failures": 0,
+      "cases": [
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_3.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_01_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_4.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_5.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_6.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        }
+      ]
+    },
+    {
+      "log": "Logs\\draug-source-mip-reload-roundtrip.log",
+      "sha256": "346e630e5d0bb0920aee4e6471c6005f97764fa2f7df447605d62ebf184ca03f",
+      "failures": 0,
+      "cases": [
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Noise_03",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_0.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_VFX_Dust_01",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_1.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 1,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 2,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 3,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 4,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 5,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 6,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 7,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_blast_warden01bw",
+          "mip": 8,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_2.asset",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_01",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_3.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_01_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_4.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_5.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        },
+        {
+          "name": "T_fx_ParticleSet_Stretch_02_UV",
+          "mip": 0,
+          "path": "Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer/DraugThrower/OriginalFx/source_texture_6.png",
+          "maxError": 0.0,
+          "meanError": 0.0
+        }
+      ]
+    }
+  ]
+}

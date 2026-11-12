@@ -1,0 +1,108 @@
+{
+  "status": "PASS_NORMAL_IDLE_CHASE_ARROW_ROUTES",
+  "cases": [
+    {
+      "entry": "idle",
+      "index": 0.0,
+      "sourceObserved": 0.507,
+      "entryDelay": 0.0,
+      "elapsed": 0.5104771,
+      "maxFrame": 0.0644315,
+      "animationTime": 0.514126890338957,
+      "returnAt": 1.067982,
+      "arrows": 1.0
+    },
+    {
+      "entry": "idle",
+      "index": 1.0,
+      "sourceObserved": 0.525,
+      "entryDelay": 0.0,
+      "elapsed": 0.5271301,
+      "maxFrame": 0.007476396,
+      "animationTime": 0.555763789918274,
+      "returnAt": 1.043537,
+      "arrows": 1.0
+    },
+    {
+      "entry": "idle",
+      "index": 2.0,
+      "sourceObserved": 0.391,
+      "entryDelay": 0.0,
+      "elapsed": 0.3986874,
+      "maxFrame": 0.007506803,
+      "animationTime": 0.457016846630722,
+      "returnAt": 1.01153,
+      "arrows": 1.0
+    },
+    {
+      "entry": "chase",
+      "index": 0.0,
+      "sourceObserved": 0.667,
+      "entryDelay": 0.1592827,
+      "elapsed": 0.6741524,
+      "maxFrame": 0.007638195,
+      "animationTime": 0.51913628866896,
+      "returnAt": 1.227264,
+      "arrows": 1.0
+    },
+    {
+      "entry": "chase",
+      "index": 1.0,
+      "sourceObserved": 0.685,
+      "entryDelay": 0.1617088,
+      "elapsed": 0.6904221,
+      "maxFrame": 0.007414498,
+      "animationTime": 0.555238287430257,
+      "returnAt": 1.205246,
+      "arrows": 1.0
+    },
+    {
+      "entry": "chase",
+      "index": 2.0,
+      "sourceObserved": 0.551,
+      "entryDelay": 0.1634674,
+      "elapsed": 0.5639153,
+      "maxFrame": 0.007737599,
+      "animationTime": 0.458621554076672,
+      "returnAt": 1.174997,
+      "arrows": 1.0
+    }
+  ],
+  "logs": [
+    {
+      "path": "Logs/draug-source-timeline-smoke.log",
+      "sha256": "2a3c1ad02fa5ab951f680f1c0f449bcc6e0a1fb1880b70f3f14e84bb6582d051"
+    },
+    {
+      "path": "Logs/draug-source-entry-schedule.log",
+      "sha256": "edd3de3ffa0c26eba4ed8d1b16af758bc2e264877eb85da4ea0250568d9bc728"
+    },
+    {
+      "path": "Logs/draug-source-clip-clock-smoke.log",
+      "sha256": "b5c354bd13064fa17b1862b22c9f657e83e4adc99d0b39b4f4efb00054b3d269"
+    }
+  ],
+  "battle": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 113
+  },
+  "sourceObservationFile": "Docs/Validation/DraugAnimatorTransitionVerification.json",
+  "sourceSha256": "acaa1f76162bbd69d064c0f67d73cd786aa1acbdf0b38dafdefc1611451ac230",
+  "verified": [
+    "source clip offsets and .05 attack blend requested",
+    "chase stand decision delay and .6590912342 stand offset requested",
+    "entry resets attack timer and advances next index once",
+    "clip clock must reach release and .95 exit before actions execute",
+    "return blend .1 seconds and finish afterwards",
+    "cancelled decision clears pending playback and invalidates release",
+    "duplicate/stale EnterArrow cannot extend timer or overwrite index"
+  ],
+  "limitations": [
+    "First smoke passed weaker clock checks; superseded by actual clip threshold gate.",
+    "Source observations use 1ms Animator steps; runtime Update observes sampled Playable clock with up to roughly two frames difference. Not frame-phase equivalence.",
+    "Source humanoid pose and exact interruption blend behavior are not yet compared.",
+    "Source attack->chase/cast interruption branches and synchronized RNG remain unported; Unity Random is used.",
+    "HDRP fog/exposure, flask glass and static projectile preview remain pending."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "PASS_COOLING_CHANCE_CONSUMPTION_FIX",
+  "initialFailure": "Actual Combat.Update consumed Unity.Random.value even when skill cooldown was100. Test failed before Animator entry.",
+  "change": "Draw chance only when SkillRemaining<=0 after Tick; otherwise pass unused1 to schedule. Arrow entry Random.Range unchanged. RNG algorithm replacement remains pending.",
+  "coverage": "Six idle/chase x3 arrow automatic cases plus6 cancellation setups all check exact serialized Unity.Random.state unchanged across cooling attack request. Existing flask, late-cancel, actor-lifetime and projectile gates pass.",
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 113,
+    "audioCue": "OriginalDraugFlight",
+    "audioStarted": true
+  },
+  "evidence": [
+    {
+      "path": "Logs/draug-random-consumption-initial.log",
+      "sha256": "bba3a26040633af5d11fec3d1230338486fe26c95f83fcd0ee1d03db407b05f5"
+    },
+    {
+      "path": "Logs/draug-random-consumption-final.log",
+      "sha256": "a9566398a41d884c04e9453e638aeb49a562e8fc728108ebc4fea31e1de094f1"
+    },
+    {
+      "path": "Logs/PawnController-ProcessSpells-0xb87f10.asm.txt",
+      "sha256": "c72205d903f1049038d725546a431d4ffdd2ed0213d65a16c5963d0bf8286d77"
+    },
+    {
+      "path": "Logs/PawnController-CanCastSkill-0xb87500.asm.txt",
+      "sha256": "1c8a5a50b8a32faa017d4354f317d1fbf7136342e35cb72c95672c3d7d5f6fe5"
+    },
+    {
+      "path": "Logs/PawnController-CanCastSkill-0xb876a0.asm.txt",
+      "sha256": "4a0ac257eb06b60fac3cbf5fa71f057641744b7e025a88b119d5ea3ed17ef236"
+    },
+    {
+      "path": "Docs/Validation/DraugNativeSkillEligibilityVerification.json",
+      "sha256": "6fb192fdd811b386df8107909561fa69b4602b3729b7704ba27816c3fd5f5666"
+    }
+  ],
+  "limits": [
+    "Fixes extra draws while cooling only. Skill chance still uses Unity.Random rather than verified actor-owned System.Random, so RNG fidelity remains incomplete.",
+    "No complete source ProcessSpells execution or all skill filters/consumption order proof.",
+    "No new Player build or GC/memory measurement."
+  ]
+}

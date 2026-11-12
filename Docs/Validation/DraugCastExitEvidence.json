@@ -1,0 +1,65 @@
+{
+  "status": "STATIC_CAST_EXIT_FALLBACK_VERIFIED",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "castingStateOffset": "0x7e4",
+  "virtualSlots": [
+    {
+      "classOffset": "0xb98",
+      "slot": 166,
+      "method": "_DoCastEnd",
+      "declaringType": "AIController"
+    },
+    {
+      "classOffset": "0xc58",
+      "slot": 178,
+      "method": "set_canCastMoveInterrupt",
+      "declaringType": "RPGActor"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "Logs/ai_cast-OnStateExit-0xa05d00.asm.txt",
+      "sha256": "66783621696493b066f4acda72fe63ba24dcbc55984879a4303deb84f6b7b022",
+      "instructions": [
+        "0xa05e15 mov rax, qword ptr [rbx + 0x48]",
+        "0xa05e19 test rax, rax",
+        "0xa05e1c je 0x180a05e3f",
+        "0xa05e1e cmp dword ptr [rax + 0x7e4], 2",
+        "0xa05e25 jne 0x180a05e34",
+        "0xa05e27 xor r8d, r8d",
+        "0xa05e2a xor edx, edx",
+        "0xa05e2c mov rcx, rax",
+        "0xa05e2f call 0x180ba1050 ; PawnController.OnCastEndEvent"
+      ]
+    },
+    {
+      "path": "Logs/PawnController-OnCastEndEvent-0xba1050.asm.txt",
+      "sha256": "abb4f97e8860dfa181da4b2d09bff1ecc1b86fd4795a287e49d1785293109901",
+      "instructions": [
+        "0xba12fd mov rax, qword ptr [rdi]",
+        "0xba1300 mov rcx, rdi",
+        "0xba1303 mov dword ptr [rdi + 0x7e8], 0",
+        "0xba130d mov rdx, qword ptr [rax + 0xba0]",
+        "0xba1314 call qword ptr [rax + 0xb98]",
+        "0xba131a mov rax, qword ptr [rdi]",
+        "0xba131d mov dl, 1",
+        "0xba131f mov rcx, rdi",
+        "0xba1322 mov r8, qword ptr [rax + 0xc60]",
+        "0xba1329 call qword ptr [rax + 0xc58]",
+        "0xba132f xor r9d, r9d",
+        "0xba1332 lea r8, [rsp + 0x50]",
+        "0xba1337 mov rdx, rsi",
+        "0xba133a mov rcx, rdi",
+        "0xba133d call 0x180bbe820 ; PawnController.ProcessAnimationEvent"
+      ]
+    }
+  ],
+  "findings": [
+    "ai_cast.OnStateExit checks m_castingState==2 and, after prior object-validity gates, calls OnCastEndEvent with null event.",
+    "Reached normal end branch invokes virtual slot0xb98 and slot0xc58 before ProcessAnimationEvent; this call order cannot be modeled as an event-weight filter before all end effects."
+  ],
+  "limits": [
+    "Static selected branches only; cast-repeat/other casting-state paths and all earlier gates are not simulated.",
+    "Original native callbacks are not executed by Unity comparison fixture; do not equate test event delivery with complete native cast-end behavior."
+  ]
+}

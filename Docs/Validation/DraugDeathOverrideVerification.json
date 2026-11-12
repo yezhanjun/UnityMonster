@@ -1,0 +1,702 @@
+{
+  "status": "PASS_SOURCE_CONFIG_AND_SELECTED_NATIVE_OVERRIDE_BLOCK",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "bundleSHA256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "visualReference": {
+    "m_FileID": 0,
+    "m_PathID": 3954429157036262475
+  },
+  "visualName": "vis_fx_surv_skel_basic",
+  "enums": {
+    "None": 0,
+    "Frozen": 1,
+    "Stunned": 2,
+    "Burning": 3,
+    "Feared": 4,
+    "Ghost": 5,
+    "Lightning": 6,
+    "Poison": 7,
+    "Darkened": 8,
+    "Invisible": 9,
+    "Shield": 10
+  },
+  "sourceRows": [
+    {
+      "name": "Ghost",
+      "type": 5,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 0,
+        "stayOnSheated": 0
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 0,
+        "stayOnSheated": 0
+      },
+      "keepDeathFxActiveOnHide": 0,
+      "visualMaterial": {
+        "m_FileID": 2,
+        "m_PathID": -6629604679185138382
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "applyOverlay": 1,
+      "changeTexture": 1,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 0,
+      "forceExplosionDeath": 0
+    },
+    {
+      "name": "Invisible",
+      "type": 9,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 0,
+        "stay": 0,
+        "stayOnSheated": 0
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 0,
+        "stay": 0,
+        "stayOnSheated": 0
+      },
+      "keepDeathFxActiveOnHide": 0,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 2919017779426970628
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "applyOverlay": 1,
+      "changeTexture": 1,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 0,
+      "forceExplosionDeath": 0
+    },
+    {
+      "name": "Frozen",
+      "type": 1,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": -3280582324047951592
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 1,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 1058774158825243121
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 1058774158825243121
+      },
+      "applyOverlay": 1,
+      "changeTexture": 1,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 1,
+      "customDeathType": 1,
+      "forceExplosionDeath": 0
+    },
+    {
+      "name": "Burning",
+      "type": 3,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": -1552822971036316951
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 1,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": -2074565877695830947
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": -2074565877695830947
+      },
+      "applyOverlay": 0,
+      "changeTexture": 0,
+      "useDeathFadeoutEdge": 1,
+      "deathFadeoutEdge": {
+        "r": 1.0,
+        "g": 0.029988141730427742,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 1,
+      "forceExplosionDeath": 0
+    },
+    {
+      "name": "Poison",
+      "type": 7,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 0,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 3047514325145132885
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 3047514325145132885
+      },
+      "applyOverlay": 0,
+      "changeTexture": 0,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.0,
+        "g": 0.529411792755127,
+        "b": 0.19607843458652496,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 1,
+      "forceExplosionDeath": 1
+    },
+    {
+      "name": "Darkened",
+      "type": 8,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 5464612696831747656
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 1,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 1463838125991880003
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 1463838125991880003
+      },
+      "applyOverlay": 1,
+      "changeTexture": 1,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.3207547068595886,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 1,
+      "forceExplosionDeath": 1
+    },
+    {
+      "name": "Lightning",
+      "type": 6,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 0,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 8513142161277451194
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 8513142161277451194
+      },
+      "applyOverlay": 0,
+      "changeTexture": 0,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.7388176321983337,
+        "g": 0.49528300762176514,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 1,
+      "forceExplosionDeath": 0
+    },
+    {
+      "name": "Shield",
+      "type": 10,
+      "deathOverlay": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "effect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "deathEffect": {
+        "fx": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "marker": 8,
+        "stay": 1,
+        "stayOnSheated": 1
+      },
+      "keepDeathFxActiveOnHide": 0,
+      "visualMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 2919017779426970628
+      },
+      "deathMaterial": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "applyOverlay": 1,
+      "changeTexture": 1,
+      "useDeathFadeoutEdge": 0,
+      "deathFadeoutEdge": {
+        "r": 0.7388176321983337,
+        "g": 0.49528300762176514,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "overrideDeathType": 0,
+      "customDeathType": 0,
+      "forceExplosionDeath": 0
+    }
+  ],
+  "deathOverlayTextures": [
+    {
+      "effect": "Frozen",
+      "reference": {
+        "m_FileID": 0,
+        "m_PathID": -3280582324047951592
+      },
+      "objectType": "Texture2D",
+      "name": "frostdamage01",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "effect": "Burning",
+      "reference": {
+        "m_FileID": 0,
+        "m_PathID": -1552822971036316951
+      },
+      "objectType": "Texture2D",
+      "name": "burning_corpse_01",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "effect": "Darkened",
+      "reference": {
+        "m_FileID": 0,
+        "m_PathID": 5464612696831747656
+      },
+      "objectType": "Texture2D",
+      "name": "BloodOverlayMap",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "cases": [
+    {
+      "effect": "Ghost",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Ghost",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Ghost",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Ghost",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Invisible",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Invisible",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Invisible",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Invisible",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Frozen",
+      "initialDeathType": 0,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 1
+    },
+    {
+      "effect": "Frozen",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 1
+    },
+    {
+      "effect": "Frozen",
+      "initialDeathType": 2,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 1
+    },
+    {
+      "effect": "Frozen",
+      "initialDeathType": 3,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 1
+    },
+    {
+      "effect": "Burning",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Burning",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Burning",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Burning",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Poison",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Poison",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Poison",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Poison",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Darkened",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Darkened",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Darkened",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Darkened",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 1,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Lightning",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Lightning",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Lightning",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Lightning",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Shield",
+      "initialDeathType": 0,
+      "finalDeathType": 0,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Shield",
+      "initialDeathType": 1,
+      "finalDeathType": 1,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Shield",
+      "initialDeathType": 2,
+      "finalDeathType": 2,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    },
+    {
+      "effect": "Shield",
+      "initialDeathType": 3,
+      "finalDeathType": 3,
+      "forceExplosionDeath": 0,
+      "mockedComponentQueries": 0
+    }
+  ],
+  "actualDefaultCases": 8,
+  "syntheticInitialTypeCases": 24,
+  "findings": [
+    "All eight configured effects preserve default Destroy when selected; only Frozen overrides type and writes Destroy again.",
+    "Poison and Darkened set forceExplosionDeath independently of deathType.",
+    "Frozen/Burning/Darkened reference non-null deathOverlay assets; these visuals are not implemented by default root deactivation.",
+    "All eight deathEffect.fx references are null; this is distinct from non-null deathOverlay assets."
+  ],
+  "limits": [
+    "Selected native block entered after effect lookup; no proof which effect wins under simultaneous statuses.",
+    "GetComponents helper mocked with empty array; component hiding and actual Unity overlay spawning not executed.",
+    "Full AI/Pawn death pipeline, forceExplosion downstream behavior and source game runtime not executed.",
+    "No production visual implementation or new Unity smoke in this batch."
+  ],
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugDeathOverrides.py",
+      "sha256": "a70ccad5791e6d772e16466113e562f2f25ae1c1e00107f7d3f3c0ac081b2a3e"
+    },
+    {
+      "path": "Logs/draug-death-source-visual-effects.json",
+      "sha256": "ae2b8b7ef5afb26022897ba6c4bbf59965fbd8a40d76f69425aa725099ca7a45"
+    },
+    {
+      "path": "Logs/AIController-OnDeath-0xb3f4d0.asm.txt",
+      "sha256": "31635d3c1e0ce8b9ad77eefef1185a7058cb2bbf908b17d557abc20a84e46f9c"
+    },
+    {
+      "path": "Logs/PawnController-GetDominantDeathVisualEffect-0xbb20d0.asm.txt",
+      "sha256": "18c992a89b54e516441e6b1c87830ca223b2a9428a0ef1028498b2985ef8b2dc"
+    },
+    {
+      "path": "Logs/PawnController-_GetDominantDeathVisualEffect_b__420_0-0xbc9fe0.asm.txt",
+      "sha256": "8425c16eb1db0add43c8c9ee489b5f271fad3b56ceee8cb5d04812c09d052a1a"
+    },
+    {
+      "path": "Docs/Validation/SourceCombatFieldOffsets.json",
+      "sha256": "16ef7c20a9365a440641242d6e59d91d2dea5f12da56e070ca8b28143311dd0d"
+    }
+  ]
+}

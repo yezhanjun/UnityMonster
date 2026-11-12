@@ -1,0 +1,52 @@
+{
+  "status": "STATIC_NATIVE_ASSIGNMENT_VERIFIED",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "configSource": "Docs\\Validation\\尸鬼投掷源配置证据.json",
+  "configSha256": "cdccb710d70cbbb58e997823bdac6928a8addedbcf5a2a9802e4264db1eea20e",
+  "idleAnimationSpeed": 1.0,
+  "animatorDefaultMeasured": 0.5,
+  "virtualSlot": {
+    "classOffset": "0x718",
+    "slot": 94,
+    "methodIndex": 7056,
+    "method": "SetAnimatorFloat"
+  },
+  "resolvedParameterType": {
+    "typeIndex": 29021,
+    "tag": 18,
+    "attributes": 0,
+    "data": 180,
+    "name": "AnimatorIds",
+    "namespace": ""
+  },
+  "stateZeroBranch": [
+    "0xb3880e test esi, esi",
+    "0xb38810 je 0x180b38af9"
+  ],
+  "instructions": [
+    "0xb38af9 mov rdx, qword ptr [rip + 0x57517b8]",
+    "0xb38b00 cmp dword ptr [rdx + 0xe4], edi",
+    "0xb38b06 jne 0x180b38b17",
+    "0xb38b08 mov rcx, rdx",
+    "0xb38b0b call 0x1805c6850",
+    "0xb38b10 mov rdx, qword ptr [rip + 0x57517a1]",
+    "0xb38b17 mov rax, qword ptr [rbx]",
+    "0xb38b1a mov rcx, rbx",
+    "0xb38b1d mov rdx, qword ptr [rdx + 0xb8]",
+    "0xb38b24 movss xmm2, dword ptr [rbx + 0x108c]",
+    "0xb38b2c mov r9, qword ptr [rax + 0x720]",
+    "0xb38b33 mov edx, dword ptr [rdx + 0x9c]",
+    "0xb38b39 call qword ptr [rax + 0x718]"
+  ],
+  "listing": "Logs\\AIController-SetAiState-idle-speed.asm.txt",
+  "findings": [
+    "ai_idle_simple.OnStateEnter invokes SetAiState with state0.",
+    "SetAiState contains assignment from AIController.idleAnimationSpeed to AnimatorIds.idle_anim_speed via SetAnimatorFloat.",
+    "Serialized Draug speed is1; isolated Animator default .5 omits original script initialization."
+  ],
+  "limits": [
+    "Static native evidence plus serialized data; original native callbacks not executed.",
+    "SetAiState has early returns for unchanged state, inactive actor and a global gate; assignment evidence describes the successful state-change path.",
+    "Does not prove every initialization or interruption branch, nor source script scheduling."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_NATIVE_REGISTRATION_CORPUS_IN_UNITY",
+  "cases": 39,
+  "limits": "Shared population helper only; production lifecycle ownership, reset points, FX LOD registry and lethal integration remain pending.",
+  "process": 82456,
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckPopulation.cs",
+      "sha256": "a62669a642aa05cf8db7b49c80d09a88b4b6d118e291e56c2271cdb65ff24878"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckPopulationValidation.cs",
+      "sha256": "4e3b680a64006f7eacf3f7686164774f3bbb0488d730b378d10fb1d30be57f59"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckRegistrationVerification.json",
+      "sha256": "8a7b38841bebcfebfb8002779a8df8b80167d45425e1a29dc685645b950abd5e"
+    },
+    {
+      "path": "Logs/draug-wreck-population.log",
+      "sha256": "c3642da824f0604e7848ebccfad0ce23a190e7f238042f7ec7a232fafa1367ce"
+    }
+  ]
+}

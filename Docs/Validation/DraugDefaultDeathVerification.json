@@ -1,0 +1,60 @@
+{
+  "status": "PASS_SOURCE_DEFAULT_DESTROY_HOST_RUNTIME",
+  "process": 67064,
+  "cases": [
+    "DRAUG_DEATH_CASE mode=0 passed=True scaled=2.019 real=2.020",
+    "DRAUG_DEATH_CASE mode=1 passed=True scaled=2.019 real=2.374",
+    "DRAUG_DEATH_CASE mode=2 passed=True scaled=2.010 real=4.020",
+    "DRAUG_DEATH_CASE mode=3 passed=True scaled=0.018 real=0.019",
+    "DRAUG_DEATH_CASE mode=4 passed=True scaled=2.027 real=2.027"
+  ],
+  "overall": [
+    "MONSTER_PLAYTEST_PASS draug_thrower_sur spawn=True model=True idle=True moved=True attack=True damage=65 cue=False audioCue=OriginalDraugImpact audioStarted=True removed=True",
+    "MONSTER_PLAYTEST_CHECKED tested=1 failed=0",
+    "MONSTER_PLAYTEST_PASSED"
+  ],
+  "initialFailure": "Process52672: five death cases passed but overall runtimeErrors8; delayed Health RPC tried PlayerRecoil coroutine after actor deactivation. Guarded Recoil with isActiveAndEnabled; preserved initial log.",
+  "implementation": "Only DraugThrower removes carrier HumanoidDeath/RangeRobotVisual before Start. Server lethal callback deactivates actor; external coroutine waits WaitForSeconds(2), checks server/CurrentHealth<=0, then NetworkServer.Destroy. Actor destruction cancels external job.",
+  "limits": [
+    "Source static default Destroy branch only; special death-effect overrides pending.",
+    "Mirror destruction adapts source pooled RemoveFromScene; original pool/network authority not replicated or verified.",
+    "Recovery test sets CurrentHealth=1 synthetically, not a complete resurrection test.",
+    "Host Editor tested; separate remote client and Player build untested.",
+    "Main combat screenshots are not death-specific captures.",
+    "Draug full fidelity remains pending; counts unchanged112/0/170/1 of283."
+  ],
+  "files": [
+    {
+      "path": "Logs/draug-default-death.log",
+      "sha256": "027b452d822cdf0634387bd35ea12cc37b829744910fef7b33d9fe60a239dbc0"
+    },
+    {
+      "path": "Logs/draug-default-death-final.log",
+      "sha256": "06f5b8ba29689a26745db05879c1dd5ed94eb24fb1d786aaf9709e9cd16edd4f"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathPolicyEvidence.json",
+      "sha256": "e915a6ce4e5746863d70865ace7c1792f3a47f059143a41dabe576948cafa9cf"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugDeathPresentation.cs",
+      "sha256": "312e886c34aad40beeda6d933b3f32abd45916cf729e53a0239145e3f817f6af"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugDeathValidation.cs",
+      "sha256": "cfb0e8ad42afc6235ee1d9591d4c212879d797d0d3ff78f285f0cdf65a110a56"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Skeleton1HSpawn.cs",
+      "sha256": "e834851335aaa1a570bd58ec1667e6671c1ccf92e8661abc63a215f0cbd745bd"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Skeleton1HHostSmoke.cs",
+      "sha256": "bddfc01aaf80076a0c68951c642eb8be3947e9d9408f0ae08da0923443f66a38"
+    },
+    {
+      "path": "Assets/desNetware/Multiplayer TPS KIT/Scripts/Gameplay/PlayerRecoil.cs",
+      "sha256": "914a93f0ee8f0d0751e8d697be149f48eac4c5a4713f801b48221d38d2122d7c"
+    }
+  ]
+}

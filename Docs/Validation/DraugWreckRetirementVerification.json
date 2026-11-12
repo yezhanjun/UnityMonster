@@ -1,0 +1,50 @@
+{
+  "status": "PASS_STATIONARY_CORPUS_AND_UNITY_RETIREMENT",
+  "nativeCases": 98,
+  "scenarios": 5,
+  "limits": "Post-activation retirement controller only. No native whole-GFUpdate emulation, source activation velocities/optimization/global counters, trajectory comparison, production death integration, audio or final screenshot. Actual Unity Rigidbody properties are exercised without Physics.Simulate.",
+  "process": 92088,
+  "coverage": [
+    "Native98single-body active/inactive velocity cases including .3/1 boundaries",
+    "Unity5controlled scenarios: stationary,moving,fallen,inactive,stationary reset",
+    "Paused timer delta0, strict stopTime1.5 damping, freeze, next-step collider disable, sink-.2 at finished delta.1, remove request at finished .5"
+  ],
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckStationary.py",
+      "sha256": "2a016c3718fbf4b6a16a42c77d318a661f4e5004bda1526b81271943acb75304"
+    },
+    {
+      "path": "Tools/DisassembleSourceCombat.py",
+      "sha256": "ba590c675c14c5d5af5d2b1ec67d01cc86cb67dd6bb174df5c5ab95dbc66ddec"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckRetirement.cs",
+      "sha256": "c60169a4e43bab562732b1f54a5218775724c219856f919495e8e1acd4e1a7a8"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckRetirementValidation.cs",
+      "sha256": "7dd5d1fdba573536e5ef3d4890061280cd9e4fefd81ff591253f979c7cb4d9cf"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckStationaryVerification.json",
+      "sha256": "1fdcb0cfe7a988dfb6fab7fcc0f42be4a4567420354dc1fb27bad74726cef1ac"
+    },
+    {
+      "path": "Logs/draug-wreck-retirement.log",
+      "sha256": "384b8b011cbcf275f91ba5402c320a34ae1577441fe8e13dcc9d5b877819eb77"
+    },
+    {
+      "path": "Logs/Wreck-IsStationary-0xad5970.asm.txt",
+      "sha256": "752a4f1bf36454418ef0282c81cbc8593bde73c8ec6e25f7c9bf5d2cf2a603cb"
+    },
+    {
+      "path": "Logs/Wreck-SetBodiesKinematic-0xad5d50.asm.txt",
+      "sha256": "0648c4c7d1e57e105c6c5b1a88ff1b8098113a59cc8526f9d871740274d5636f"
+    },
+    {
+      "path": "Logs/Wreck-SetCollidersEnabled-0xad5eb0.asm.txt",
+      "sha256": "692c8ac7f0693d7f2abf3aad976e6a0bbfc91401324eb13fd64264541ae48eb1"
+    }
+  ]
+}

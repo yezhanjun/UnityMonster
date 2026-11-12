@@ -1,0 +1,22 @@
+{
+  "status": "FULL_CHAIN_CANDIDATE_PASS_NOT_INTEGRATED",
+  "result": "Docs/Validation/DraugControllerChainVerification.json",
+  "logs": [
+    {
+      "path": "Logs/draug-controller-export.log",
+      "sha256": "f3dd26849bfa1275c15acec402b242896cd69eec67a511872b0c5418fcd9ddfe"
+    },
+    {
+      "path": "Logs/draug-controller-chain.log",
+      "sha256": "7c2447986a7e93f17425164e4623343998600f027dc7b6cb070ce22bad83da45"
+    }
+  ],
+  "exportProbe": "Compiled controller clip table unavailable through SerializedObject; no candidate controller asset created. Failure retained.",
+  "candidate": "Original compiled full controller in memory,11 override entries replaced by checked Compact960 local clips; rebuilt runtime Generic model.",
+  "limits": [
+    "Full chain evidence covers96 sampled idle/chase routes at30/60/120fps and variable steps; source callbacks/events disabled.",
+    "Original source bundles still loaded. No independent resource/package reload, no battle integration, no interruption lifecycle or native callback fidelity claim.",
+    "Quaternion.Angle reported0 at float precision, not proof of exact mathematical identity.",
+    "No new player memory or GC measurement. Source shared bundle30,617,383bytes not yet copied into project."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ALIGNED_IDLE_INTERRUPTION_SNAPSHOT_AND_BATTLE",
+  "runs": [
+    {
+      "file": "DraugIdleInterruptedBlendVerification.json",
+      "frames": 840,
+      "failed": 561,
+      "maxLocalPosition": 0.00023343050270341337,
+      "maxRotationDegreesReported": 4.516735553741455,
+      "maxRootPosition": 0.009955103509128094
+    },
+    {
+      "file": "DraugIdleSnapshotBlendVerification.json",
+      "frames": 840,
+      "failed": 0,
+      "maxLocalPosition": 1.2305621567065828e-05,
+      "maxRotationDegreesReported": 0.0,
+      "maxRootPosition": 0.00031654766644351184
+    }
+  ],
+  "logs": [
+    {
+      "path": "Logs/draug-idle-interrupted-blend.log",
+      "sha256": "fbfe287471cb64073c1e216c71c65c8f861012ac21e0f1bf2bf442fc4294b33d"
+    },
+    {
+      "path": "Logs/draug-idle-snapshot-blend.log",
+      "sha256": "87639d3bc46cf02298a1d7f250ce3518d4a4edaf84ef8377ea224bef1ded7e71"
+    },
+    {
+      "path": "Logs/draug-idle-snapshot-smoke.log",
+      "sha256": "8e13e0b0724fda622e84ccf0a882833e3377a04cdf4e2ab60fff28c8329e933b"
+    }
+  ],
+  "runtimeChange": "Optional freezePrevious stops previous playable output before blending. Enabled only for Draug arrow entry with zero decision delay and previous motion Idle. Chase entry does not freeze.",
+  "battle": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 116,
+    "audioCue": "none",
+    "audioStarted": true
+  },
+  "limitations": [
+    "Zero-time source idle->decide->attack evaluation aligns attack entry clocks; not a full request-to-entry timing simulation.",
+    "At nonzero frame steps the source interruption snapshot can already contain progressed idle->decide blend; this remains to be reconstructed and compared.",
+    "No claim that every nested interrupted mixer or long-frame case is covered.",
+    "Dedicated audio suites pass; smoke cue field is not visual/audio identity evidence."
+  ]
+}

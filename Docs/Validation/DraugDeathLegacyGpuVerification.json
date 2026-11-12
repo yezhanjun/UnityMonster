@@ -1,0 +1,31 @@
+{
+  "status": "PASS_NONSOFT_SOURCE_GPU",
+  "cases": 16,
+  "maxError": 7.450581e-09,
+  "limits": "Constant texture, alpha saturation and blend only; soft-particle depth and actual scene pending.",
+  "process": 73824,
+  "mode": "nonsoftAlphaSaturation",
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/SourceDeathLegacyAdd.shader",
+      "sha256": "7ded8be077364ada3a21c2f8ba10347f3c8ca3a33d1b5b61eafcfa8e2ed251ee"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathLegacyGpuValidation.cs",
+      "sha256": "a8d3cf0cd0ba4bc051f66f908642542e6f4308d707b77f4c37dbbd8f1843fc57"
+    },
+    {
+      "path": "Logs/draug-death-legacy-gpu-linear.log",
+      "sha256": "2b032c585fd98b3f3d882c4f084377b5edc7c88c0b4ebf415749bf62d41d5067"
+    },
+    {
+      "path": "Logs/draug-death-legacy-gpu.log",
+      "sha256": "8cac0348503bea1732bc213661abcfb4aa843e29e6f92d09ed8c91838fdfc7ca"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathRemainingShaderEvidence.json",
+      "sha256": "405cca6c44a1bfb17a894df60609951f128265d23122b410b669f4d82111fc17"
+    }
+  ],
+  "initialFailure": "Initial91880 source/port agreed but independent expected RGB omitted normal Color property gamma-to-linear conversion. Corrected fixture, production shader unchanged; failure log preserved."
+}

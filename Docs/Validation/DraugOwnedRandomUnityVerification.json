@@ -1,0 +1,34 @@
+{
+  "status": "PASS_UNITY_OWNED_RANDOM",
+  "unityVersion": "6000.2.10f1",
+  "corpusSHA256": "9eeccbd0baaf7988525a175feef9a187829ead171d9a6130a85e2766bbc32682",
+  "limits": "Component not yet used by Combat. Source debug-global seed override, full startup consumers/network authority and Player build remain pending.",
+  "seeds": 23,
+  "draws": 8832,
+  "guidCases": 3,
+  "lazyInitialization": true,
+  "warmSeedPreserved": true,
+  "explicitReset": true,
+  "instancesIndependent": true,
+  "unityRandomUnchanged": true,
+  "evidence": [
+    {
+      "path": "Logs/draug-owned-random.log",
+      "sha256": "bedfb5724f288651a446c6093f297cab049517cc1d1454d177bcabda3f67945c"
+    },
+    {
+      "path": "Logs/draug-owned-random-float32.log",
+      "sha256": "489d8116a81363989acd9fcea04749bdc38e28281afd58bce4bcb491e1164680"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugRandomSource.cs",
+      "sha256": "18eb04bd425c49351e1d76b771910bd0c55b7b92c413331a631edc19e4bf402b"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugOwnedRandomValidation.cs",
+      "sha256": "bfe623221c2c626e0561c712871aec4e1bf7587089912434daaba96e8e56a823"
+    }
+  ],
+  "nativeEvidenceSHA256": "eecdd0ea897ba273a9582238be3ccbd0c1726cc93a4df143f4725a56c599797b",
+  "initialFailure": "Native byte corpus matched, but direct float expression equality failed in extra interleaving check. Final comparison explicitly normalizes and compares float32 bit patterns; no PRNG implementation change between runs. Exact intermediate precision cause not separately instrumented."
+}

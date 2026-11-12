@@ -1,0 +1,71 @@
+{
+  "status": "PASS_SAMPLED_ARROW_POSES_AND_COMBAT",
+  "runs": [
+    {
+      "result": "Docs/Validation/DraugAlignedPoseVerification.json",
+      "log": "Logs/draug-aligned240-pose.log",
+      "logSha256": "67044d5b697170ca39dd891cecc1a039137a3bd8243b53b4e7c9a5c3d86d8308",
+      "cases": 795,
+      "failed": 30,
+      "maxPosition": 7.644463767064735e-05,
+      "maxRotationDegreesReportedByUnity": 0.5051284432411194
+    },
+    {
+      "result": "Docs/Validation/DraugReducedPoseVerification.json",
+      "log": "Logs/draug-reduced960-pose.log",
+      "logSha256": "257a372a801840b7ee45c5dfc89ed5eeccf89e40f2a3553f26d4ddbaf896f7a7",
+      "cases": 795,
+      "failed": 0,
+      "maxPosition": 4.246970547683304e-06,
+      "maxRotationDegreesReportedByUnity": 0.0
+    },
+    {
+      "result": "Docs/Validation/DraugCompactPoseVerification.json",
+      "log": "Logs/draug-compact960-pose.log",
+      "logSha256": "88e04bc53e5107007f57a8bd5810443bd2711bf56104e11e55460ca54c7db589",
+      "cases": 795,
+      "failed": 0,
+      "maxPosition": 1.3951337678008713e-05,
+      "maxRotationDegreesReportedByUnity": 0.0
+    },
+    {
+      "result": "Docs/Validation/DraugCompactReloadPoseVerification.json",
+      "log": "Logs/draug-compact960-reload.log",
+      "logSha256": "c596fc2e695518d48852fa351b53445560223b5f6ae400557e97cc93b0368ad5",
+      "cases": 6183,
+      "failed": 0,
+      "maxPosition": 1.413355039403541e-05,
+      "maxRotationDegreesReportedByUnity": 0.0
+    }
+  ],
+  "battle": {
+    "log": "Logs/draug-pose-fixed-smoke.log",
+    "logSha256": "9aac1a4c9bc81e9881061d0b03689cabd075d5fc1cbf3c1514a2a1efe922003d",
+    "tested": 1,
+    "failed": 0,
+    "damage": 113
+  },
+  "activeResources": "Resources/Jotunnslayer/DraugThrower/Compact960/attack_01..03",
+  "candidateSerializedBytes": 67816430,
+  "originalSerializedBytes": 29486674,
+  "editorReportedObjectMemory": {
+    "originalBytes": [
+      2134272,
+      2122432,
+      2122432
+    ],
+    "candidateBytes": [
+      4765652,
+      5235000,
+      5082120
+    ]
+  },
+  "archive": "Assets/Jotunnslayer/Enemies/Editor/DraugPoseCandidates contains SourceClips,Dense240,Aligned240,Reduced960; moved with AssetDatabase to preserve GUIDs and exclude from Resources build inclusion.",
+  "limitations": [
+    "Finite sample evidence, not exact continuous-time equivalence. Quaternion.Angle output is float-limited.",
+    "795 initial and6183 independent reload samples; tail>=.94 uses original clip SampleAnimation on original Avatar to avoid state exit contamination.",
+    "Editor object memory is not player-build memory or GC profiling.",
+    "Only three arrow clips switched; stand/move/skill_throw and transition poses remain unaudited.",
+    "Old assets and experiments retained as WIP."
+  ]
+}

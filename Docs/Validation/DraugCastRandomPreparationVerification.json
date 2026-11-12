@@ -1,0 +1,217 @@
+{
+  "status": "PASS_NATIVE_CAST_RANDOM_PREPARATION",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "cases": [
+    {
+      "seed": 0,
+      "pendingSkill": false,
+      "currentSkill": false,
+      "castIdCalls": 0,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 0,
+      "pendingSkill": true,
+      "currentSkill": false,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 0,
+      "pendingSkill": false,
+      "currentSkill": true,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 0,
+      "pendingSkill": true,
+      "currentSkill": true,
+      "castIdCalls": 2,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 1,
+      "pendingSkill": false,
+      "currentSkill": false,
+      "castIdCalls": 0,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 1,
+      "pendingSkill": true,
+      "currentSkill": false,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 1,
+      "pendingSkill": false,
+      "currentSkill": true,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 1,
+      "pendingSkill": true,
+      "currentSkill": true,
+      "castIdCalls": 2,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -1,
+      "pendingSkill": false,
+      "currentSkill": false,
+      "castIdCalls": 0,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -1,
+      "pendingSkill": true,
+      "currentSkill": false,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -1,
+      "pendingSkill": false,
+      "currentSkill": true,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -1,
+      "pendingSkill": true,
+      "currentSkill": true,
+      "castIdCalls": 2,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -2147483648,
+      "pendingSkill": false,
+      "currentSkill": false,
+      "castIdCalls": 0,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -2147483648,
+      "pendingSkill": true,
+      "currentSkill": false,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -2147483648,
+      "pendingSkill": false,
+      "currentSkill": true,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": -2147483648,
+      "pendingSkill": true,
+      "currentSkill": true,
+      "castIdCalls": 2,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 2147483647,
+      "pendingSkill": false,
+      "currentSkill": false,
+      "castIdCalls": 0,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 2147483647,
+      "pendingSkill": true,
+      "currentSkill": false,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 2147483647,
+      "pendingSkill": false,
+      "currentSkill": true,
+      "castIdCalls": 1,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    },
+    {
+      "seed": 2147483647,
+      "pendingSkill": true,
+      "currentSkill": true,
+      "castIdCalls": 2,
+      "actorUnchanged": true,
+      "skillRandomPointersPreserved": true
+    }
+  ],
+  "slotFields": {
+    "0xbd0": [
+      [
+        "GamesFarm.PawnController",
+        "m_queuedCast"
+      ]
+    ],
+    "0x820": [
+      [
+        "GamesFarm.RPGActor",
+        "_castSkill"
+      ]
+    ]
+  },
+  "evidence": [
+    {
+      "path": "Logs/PawnController-PrepareCastedSkill-0xbbe420.asm.txt",
+      "sha256": "1438d094a15dce280f487ede968d160c40cef8ab824ec5ba45d39d0f9c9984f2"
+    },
+    {
+      "path": "Logs/ActiveRPGSkill-SetCastId-0xe3b400.asm.txt",
+      "sha256": "8f9cc5b2869a53308c6c26689ab1c4f4093c12014d2a2c42c134b506b439fcd8"
+    },
+    {
+      "path": "Logs/ActiveRPGSkill-Cast-0xe3b540.asm.txt",
+      "sha256": "268e89ca677729309c058d428bd91c93cad9a501fd0607ee50c8a532de4e1ea1"
+    },
+    {
+      "path": "Logs/RPGSkill-Cast-0xe4c0c0.asm.txt",
+      "sha256": "873d41ec64b3a6c3471701c232f24ff3430b73babfa1f6c4aa7d549a7961cc95"
+    }
+  ],
+  "findings": [
+    "Native PrepareCastedSkill writes seed only to each present skill randomGenerator; actor random fields and existing skill_random pointers remain unchanged in all20 cases.",
+    "SetCastId calls occur in pending-then-current order with requested actor and castId. Dictionary mutation is mocked, not executed.",
+    "Direct listings of inspected PrepareCastedSkill/SetCastId/ActiveRPGSkill.Cast/RPGSkill.Cast contain no explicit RandomGenerator.Initialize call; RPGSkill.Cast can draw from skill RNG through Range, whose lazy initialization was separately verified."
+  ],
+  "limits": [
+    "Unity object validity and metadata represented with synthetic fixtures; missing pending container and invalid/destroyed object exception branches not tested.",
+    "Does not execute SetCastId dictionary implementation, full Cast virtual callbacks, all derived skill behavior or RPC authority; no global claim that casting never reinitializes RNG.",
+    "No production change, new Unity smoke or complete monster acceptance."
+  ],
+  "draugStartupFilterEvidence": {
+    "aiType": 0,
+    "aggressiveDurationRandomBranchRequires": 1,
+    "deathType": 1,
+    "variableDeathRandomBranchRequires": 3,
+    "chaseDistance": 17,
+    "configSHA256": "cdccb710d70cbbb58e997823bdac6928a8addedbcf5a2a9802e4264db1eea20e",
+    "limits": "Only selected branches/configuration; source runtime could change fields and other startup consumers remain."
+  }
+}

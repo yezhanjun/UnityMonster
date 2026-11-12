@@ -1,0 +1,156 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "emulator": "2.1.4",
+  "gateCases": [
+    {
+      "impairmentStack": -1,
+      "timer": -1.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 0.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 0.000999900046736002,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 0.0010000000474974513,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 0.0010001000482589006,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 1.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": -1,
+      "timer": 4.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 0,
+      "timer": -1.0,
+      "canAttack": true
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 0.0,
+      "canAttack": true
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 0.000999900046736002,
+      "canAttack": true
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 0.0010000000474974513,
+      "canAttack": true
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 0.0010001000482589006,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 1.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 0,
+      "timer": 4.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": -1.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 0.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 0.000999900046736002,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 0.0010000000474974513,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 0.0010001000482589006,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 1.0,
+      "canAttack": false
+    },
+    {
+      "impairmentStack": 1,
+      "timer": 4.0,
+      "canAttack": false
+    }
+  ],
+  "castEndCases": [
+    {
+      "skillsSyncedWithAttacks": false,
+      "suppliedAttackInterval": 1.5,
+      "timerAfter": -2.0
+    },
+    {
+      "skillsSyncedWithAttacks": false,
+      "suppliedAttackInterval": 4,
+      "timerAfter": -2.0
+    },
+    {
+      "skillsSyncedWithAttacks": true,
+      "suppliedAttackInterval": 1.5,
+      "timerAfter": 1.5
+    },
+    {
+      "skillsSyncedWithAttacks": true,
+      "suppliedAttackInterval": 4,
+      "timerAfter": 4.0
+    }
+  ],
+  "staticEvidence": [
+    {
+      "rva": "0xb49755..0xb49760",
+      "finding": "StartAttackAnimation assigns get_attackInterval to m_attackTimer."
+    },
+    {
+      "rva": "0xb433c1..0xb433c6",
+      "finding": "OnAttackStart also assigns get_attackInterval to m_attackTimer."
+    },
+    {
+      "rva": "0xb3716e..0xb37181",
+      "finding": "GFUpdate subtracts result of RVA0x9587d0 from m_attackTimer."
+    },
+    {
+      "rva": "0xb37c32..0xb37c45",
+      "finding": "_DoCastEnd checks get_skillsSyncedWithAttacks; when true assigns get_attackInterval to m_attackTimer."
+    }
+  ],
+  "limits": [
+    "Finite gate values tested; full AI not executed.",
+    "Cast-end test supplies synchronization flag and stubs attackInterval getter; full animation callback chain not executed.",
+    "Time-provider semantics, skill cooldown and animation variation remain unresolved."
+  ]
+}

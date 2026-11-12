@@ -1,0 +1,81 @@
+{
+  "status": "PASS_SUPPORTING_CLIP_POSES_LOOPS_AND_COMBAT",
+  "runs": [
+    {
+      "result": "Docs/Validation/DraugOtherClipPoseVerification.json",
+      "log": "Logs/draug-other-clips-pose.log",
+      "logSha256": "b3767e0046c0baf291d3c8f350171af24e1252f84b982b0481886955e0d7d52d",
+      "cases": 1048,
+      "failed": 607,
+      "metadataFailed": 2,
+      "maxPosition": 0.004610741510987282,
+      "maxRotationDegreesReportedByUnity": 17.646949768066406
+    },
+    {
+      "result": "Docs/Validation/DraugOtherClipFixedPoseVerification.json",
+      "log": "Logs/draug-other-clips-fixed-pose.log",
+      "logSha256": "4f06a05a12d754eb8dbb87f90d73b0ae28fa585c4b32cdab521c135e83ed8a53",
+      "cases": 1052,
+      "failed": 6,
+      "metadataFailed": 0,
+      "maxPosition": 0.007291480433195829,
+      "maxRotationDegreesReportedByUnity": 67.47064971923828
+    },
+    {
+      "result": "Docs/Validation/DraugOtherClipReloadPoseVerification.json",
+      "log": "Logs/draug-other-clips-reload-pose.log",
+      "logSha256": "b3bcc42b2fac25f9dc28b4c30291c36ec9591d028beac3512a0762e306ffc3e3",
+      "cases": 8236,
+      "failed": 0,
+      "metadataFailed": 0,
+      "maxPosition": 1.56895985128358e-05,
+      "maxRotationDegreesReportedByUnity": 0.0
+    }
+  ],
+  "editorObjectMemory": [
+    {
+      "index": 0,
+      "originalBytes": 1405480,
+      "candidateBytes": 1537544
+    },
+    {
+      "index": 1,
+      "originalBytes": 2237440,
+      "candidateBytes": 3205604
+    },
+    {
+      "index": 2,
+      "originalBytes": 2134272,
+      "candidateBytes": 4765908
+    },
+    {
+      "index": 3,
+      "originalBytes": 5266328,
+      "candidateBytes": 8704892
+    }
+  ],
+  "battle": {
+    "log": "Logs/draug-all-pose-fixed-smoke.log",
+    "logSha256": "3063163407def139493450fcd5d81f5494202777ab6c337df52fefc5c19a0a03",
+    "tested": 1,
+    "failed": 0,
+    "damage": 113
+  },
+  "activeResources": [
+    "Compact960/stand",
+    "Compact960/move",
+    "Compact960/skill_throw",
+    "Compact960/summon_01"
+  ],
+  "findings": [
+    "Original stand/move loopTime was false despite source true. Fixed clips preserve source loop metadata and length.",
+    "Six initial candidate failures were all cycle boundary/multi-cycle samples with inappropriate SampleAnimation reference; source Animator idle/chase comparison passes.",
+    "Reference source Animator is used for loop clips; source-avatar SampleAnimation for non-loop throw/spawn."
+  ],
+  "limitations": [
+    "Samples at selected absolute times, including later cycles; continuous playback phase and blended poses are separate pending checks.",
+    "Only37 skin-bone local transforms compared, not full rendered mesh or root-relative world pose.",
+    "Memory values are editor object reports, not player builds or GC profiling.",
+    "Original resources and failure logs retained."
+  ]
+}

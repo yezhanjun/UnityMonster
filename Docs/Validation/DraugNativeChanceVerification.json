@@ -1,0 +1,120 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "emulator": "Unicorn 2.1.4",
+  "scope": "Isolated native chance/count branch and failed-attempt cooldown flag branch; external random generator and casting are not executed.",
+  "chanceCases": [
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.0,
+      "remainingCount": -1,
+      "success": true
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.7999899983406067,
+      "remainingCount": -1,
+      "success": true
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.800000011920929,
+      "remainingCount": -1,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.8000100255012512,
+      "remainingCount": -1,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 1.0,
+      "remainingCount": -1,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.0,
+      "remainingCount": 0,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.7999899983406067,
+      "remainingCount": 0,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.800000011920929,
+      "remainingCount": 0,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.8000100255012512,
+      "remainingCount": 0,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 1.0,
+      "remainingCount": 0,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.0,
+      "remainingCount": 1,
+      "success": true
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.7999899983406067,
+      "remainingCount": 1,
+      "success": true
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.800000011920929,
+      "remainingCount": 1,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 0.8000100255012512,
+      "remainingCount": 1,
+      "success": false
+    },
+    {
+      "chance": 0.800000011920929,
+      "randomValue": 1.0,
+      "remainingCount": 1,
+      "success": false
+    }
+  ],
+  "cooldownCases": [
+    {
+      "autoCast": 0,
+      "triggerCooldown": 0,
+      "invokesCooldown": false
+    },
+    {
+      "autoCast": 0,
+      "triggerCooldown": 1,
+      "invokesCooldown": false
+    },
+    {
+      "autoCast": 1,
+      "triggerCooldown": 0,
+      "invokesCooldown": false
+    },
+    {
+      "autoCast": 1,
+      "triggerCooldown": 1,
+      "invokesCooldown": true
+    }
+  ],
+  "limits": "Does not establish caller frequency, cooldown implementation or full source-game behavior."
+}

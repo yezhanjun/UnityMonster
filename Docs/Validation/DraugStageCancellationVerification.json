@@ -1,0 +1,74 @@
+{
+  "status": "PASS_RUNTIME_CANCELLATION_ONLY",
+  "log": "Logs/draug-stage-cancel-smoke.log",
+  "logSha256": "41e06ac13b842a29d91e2cb2ddb1e6f3bae40b0d67a1e9bbc5799a7699d31649",
+  "cases": [
+    {
+      "mode": "gmStop",
+      "stage": "0",
+      "releasedBeforeCancel": "0",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    },
+    {
+      "mode": "gmStop",
+      "stage": "1",
+      "releasedBeforeCancel": "1",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    },
+    {
+      "mode": "gmStop",
+      "stage": "2",
+      "releasedBeforeCancel": "1",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    },
+    {
+      "mode": "block",
+      "stage": "0",
+      "releasedBeforeCancel": "0",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    },
+    {
+      "mode": "block",
+      "stage": "1",
+      "releasedBeforeCancel": "1",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    },
+    {
+      "mode": "block",
+      "stage": "2",
+      "releasedBeforeCancel": "1",
+      "pendingCleared": "True",
+      "staleRejected": "True",
+      "blendNodes": "1"
+    }
+  ],
+  "observationSecondsPerCase": 1.3,
+  "battle": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 116
+  },
+  "verified": [
+    "GM stop and CharacterInstance.BlockCharacter at attack entry, after release and during return blend",
+    "pending clip, entry/return flags and three stage timestamps cleared",
+    "stale Release, EnterArrow and Finish rejected",
+    "single playable node after cancellation",
+    "no new arrow and no stale return pose during observation"
+  ],
+  "limitations": [
+    "Validates current engine cancellation lifecycle, not original game interruption rules.",
+    "Block preserves already-launched projectiles under current implementation; source equivalence not established.",
+    "Does not cover all raid-control types, reentrant callbacks or matched source humanoid poses.",
+    "Overall smoke audioCue=none while audioStarted=True; dedicated source audio and lifecycle tests pass."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "status": "PASS_CONTROLLED_SOURCE_GPU",
+  "cases": 45,
+  "maxError": 0,
+  "limits": "Fixed clip-space mesh; HDRP offscreen skips fog; exposure1/mipBias0; real particles and final frame not verified.",
+  "process": 65808,
+  "initialFailures": [
+    "58184/77548: source ForwardOnly absent because UniversalPipeline selected an unnamed fallback pass; corrected by temporary HDRenderPipeline selection, restored in finally.",
+    "71904: source RGB NaN, alpha matched; fixture uploaded float1 instead of uint1 at OffScreenRendering. Correct integer bits skip unused HDRP atmosphere. Shader runtime code unchanged."
+  ],
+  "coverage": {
+    "distortion": [
+      0,
+      0.01,
+      0.3
+    ],
+    "times": [
+      0,
+      0.37,
+      12.5
+    ],
+    "uv": [
+      [
+        0.1,
+        0.2
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.999,
+        0.001
+      ],
+      [
+        -0.13,
+        1.2
+      ],
+      [
+        2.03,
+        -1.7
+      ]
+    ],
+    "noiseScale": 25,
+    "noiseSpeed": [
+      20.03,
+      5
+    ],
+    "texture": "16x16 varying RGBAFloat bilinear repeat",
+    "materialColor": [
+      0.4,
+      0.7,
+      0.2,
+      0.5
+    ],
+    "vertexColor": [
+      0.6,
+      0.2,
+      0.8,
+      0.25
+    ],
+    "pipeline": "D3D11 source compiled ForwardOnly vs local URP shader"
+  },
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathShaderGpuValidation.cs",
+      "sha256": "443268b2d67e3c2381a3bb941812dfb2f6133a30dca390b70a33566527a500af"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/SourceDeathShuriken.shader",
+      "sha256": "2aadb7c810918b7178aa571cf1740de55d80163cca0858b3dba8008f06145a79"
+    },
+    {
+      "path": "Logs/draug-death-shader-gpu.log",
+      "sha256": "e3d2352f5648497d27858ec6930871d546ba55f777d4f8931b7bf85030e1eb73"
+    },
+    {
+      "path": "Logs/draug-death-shader-gpu-pass.log",
+      "sha256": "90a7675f2a55e0cae57a2b226006a747d1aad5dfc76e58feb07fa7a172f1191a"
+    },
+    {
+      "path": "Logs/draug-death-shader-gpu-pipeline.log",
+      "sha256": "6c0941405d96493b5577689270b870581eb37f666a603fbf83b499be602690d8"
+    },
+    {
+      "path": "Logs/draug-death-shader-gpu-offscreen.log",
+      "sha256": "76f7a78b2e4cb35cbb478cbe6d3418bad52ad87e2ef83d520a66eada64c1b45a"
+    }
+  ]
+}

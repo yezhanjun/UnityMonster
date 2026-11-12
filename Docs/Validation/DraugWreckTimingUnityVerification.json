@@ -1,0 +1,49 @@
+{
+  "status": "PASS_CSHARP_NATIVE_TIMING_CORPUS",
+  "timerCases": 72,
+  "dampingCases": 28,
+  "limits": "Arithmetic only, not full native lifecycle, Unity physics or real death integration.",
+  "process": 56880,
+  "initialFailures": [
+    {
+      "process": 78900,
+      "log": "Logs/draug-wreck-timing.log"
+    },
+    {
+      "process": 63920,
+      "log": "Logs/draug-wreck-timing-diagnostic.log",
+      "case": "active1.59999/stop1.5/duration0 actual9.99122858e-05 versus native9.98973846e-05"
+    }
+  ],
+  "fix": "Explicit float casts at elapsed/division/subtraction reproduce native SUBSS/DIVSS/SUBSS rounding; no tolerance relaxation. 72timer+28damping exact equality passed.",
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckTiming.py",
+      "sha256": "5bbd0bb62e4432e218225f72f1b139c53cba5cdc69919874949c64227203336f"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckTiming.cs",
+      "sha256": "67e1c56357137401e47285c80e45938aa11df4edc5b286203aa0942e3859a9b6"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckTimingValidation.cs",
+      "sha256": "cb1549a7b9753c97af7831e683e65df53ce9daed8f5a33a94dfe4a83ec958402"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckTimingVerification.json",
+      "sha256": "757a9c0a8f467b7674b2e2933af939db2c797b5a4670b6817d3aacebf4643fe9"
+    },
+    {
+      "path": "Logs/draug-wreck-timing.log",
+      "sha256": "99fc9dc7b22474f5deb23474c6404cec668f580fde0e0b69e7ec8c68af48e96b"
+    },
+    {
+      "path": "Logs/draug-wreck-timing-diagnostic.log",
+      "sha256": "e4f1ca24f1b078c70ea2bfaa7571c5c7342b4d46750802e9b68df52dfa7b6c1a"
+    },
+    {
+      "path": "Logs/draug-wreck-timing-rounded.log",
+      "sha256": "194db1e61d0038505eb61f541ad4a5d7bbc8afebce8014785d85a49ca37d05fa"
+    }
+  ]
+}

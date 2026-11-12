@@ -1,0 +1,82 @@
+{
+  "status": "PASS_LATE_PENDING_CANCELLATION_FIX",
+  "cases": [
+    {
+      "action": "arrow",
+      "mode": 0
+    },
+    {
+      "action": "arrow",
+      "mode": 1
+    },
+    {
+      "action": "arrow",
+      "mode": 2
+    },
+    {
+      "action": "arrow",
+      "mode": 3
+    },
+    {
+      "action": "arrow",
+      "mode": 4
+    },
+    {
+      "action": "flask",
+      "mode": 0
+    },
+    {
+      "action": "flask",
+      "mode": 1
+    },
+    {
+      "action": "flask",
+      "mode": 2
+    },
+    {
+      "action": "flask",
+      "mode": 3
+    },
+    {
+      "action": "flask",
+      "mode": 4
+    }
+  ],
+  "modeNames": [
+    "block",
+    "visual disabled",
+    "owner health-zero flag",
+    "target health-zero flag",
+    "combat component disabled"
+  ],
+  "visualDisabledObservationSeconds": 4.2,
+  "initialFailure": "Late block suppressed release but retained pending generation. Initial overall smoke failed1; basic MONSTER_PLAYTEST_PASS line does not override final failure.",
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 76,
+    "audioCue": "OriginalDraugImpact",
+    "audioStarted": true
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-late-cancel-initial.log",
+      "sha256": "323dae525902b38eafa0fdea5046af3303737662dbdd760ddedae094f8b71062"
+    },
+    {
+      "path": "Logs/draug-late-cancel-fixed.log",
+      "sha256": "37cf5f53226799ae6e820cf39a163fdf488f0f4595418fc76d43e62595569c15"
+    },
+    {
+      "path": "Logs/draug-late-cancel-final.log",
+      "sha256": "f9d1dfca1af1b060c03330e20c729eda996f69a6591e7d7a186831d994b8e768"
+    }
+  ],
+  "limits": [
+    "Whitebox Animator is primed just before event threshold; injection occurs at LateUpdate order-32000 after animation evaluation, snapshot at+32000. Not a full source-native interruption comparison.",
+    "Health-zero flags restored at frame-end so shared fixture survives; full death callback/network despawn is not tested.",
+    "Combat component disabled then fixture body/target fields restored via reflection; production re-enable/rebind/respawn not proven.",
+    "Already launched projectile policies unchanged; new test cancels before launch.",
+    "No player build or GC/memory measurement."
+  ]
+}

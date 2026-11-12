@@ -1,0 +1,50 @@
+{
+  "status": "PASS_SOURCE_MIP_BYTES_AND_BINDINGS",
+  "materials": 4,
+  "mipLevels": 21,
+  "pixels": 5925546,
+  "limits": "Decoded RGBA8 GPU samples verified; original compressed storage not preserved. Two Shuriken, one Legacy and one AnimatedAlpha material; no death prefab/runtime integration.",
+  "process": 57856,
+  "evidence": [
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathMaterialImport.cs",
+      "sha256": "d13b2ea2c5fd1d82e7f2dc86250b033c8999ec3e24029fd429f04a778e5d7fee"
+    },
+    {
+      "path": "Logs\\draug-death-four-material-import.log",
+      "sha256": "4022c742054781fd362182167c984d54abdf1824512903b37b6523679d3306b3"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Glow_Alpha.mat",
+      "sha256": "e26be35050c811df10d12a26056663fc3570c30f92b1e214e386db19776f64f2"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_mecha_particles.mat",
+      "sha256": "8f55a06d743a17f0b85ff62fa832cf4cbd42836ab6fdef2c300cafa509955abc"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Shaman_Glow.mat",
+      "sha256": "de02387e7119b0896443d7d56c05b12a7931cd715ebc4ab60aacf26ded5648db"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_smoke_earthquake.mat",
+      "sha256": "04493041d32a97a3412aabf36ba3bfa40b0ddbddb12284402e0a6fc155d85e4b"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Glow_Alpha_SourceMips.asset",
+      "sha256": "55c5776873bd67a745bf87ef059897f29bf5093e508bc9fae4018a0bb437a5a6"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_mecha_particles_SourceMips.asset",
+      "sha256": "2dcc11d7b7a5f5b267bdefb94fa7382a70473b2f21bf5b09ba17ecd4f9863315"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_Shaman_Glow_SourceMips.asset",
+      "sha256": "b96b5780c13fbd8a13e04996c1fa1e65de96c9ed572e2d5dd03af719f335369b"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\M_smoke_earthquake_SourceMips.asset",
+      "sha256": "cb2541ce19d8f0369a136831ff8787225f5cc9e427202bd071d2f69445c593c6"
+    }
+  ]
+}

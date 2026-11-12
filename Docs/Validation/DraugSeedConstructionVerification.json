@@ -1,0 +1,90 @@
+{
+  "status": "PASS_NATIVE_DEFAULT_SEED_CONSTRUCTION",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "emulator": "2.1.4",
+  "cases": 259,
+  "entropyRequests": 259,
+  "corpusSHA256": "67c62ed7d51c58c1d700f83afc35f5076e50f69c802dc9b2c0d67169d542eac5",
+  "examples": [
+    {
+      "entropy": "00000000000000000000000000000000",
+      "seedSigned": 1073741952
+    },
+    {
+      "entropy": "ffffffffffffffffffffffffffffffff",
+      "seedSigned": -1342177216
+    },
+    {
+      "entropy": "000102030405060708090a0b0c0d0e0f",
+      "seedSigned": 1073741952
+    }
+  ],
+  "entropyCall": {
+    "method": "Interop.GetRandomBytes",
+    "rva": "0x3001890",
+    "bytes": 16
+  },
+  "actorCallbacks": [
+    {
+      "method": "GFAwake",
+      "directFieldReference": false
+    },
+    {
+      "method": "GFStart",
+      "directFieldReference": false
+    },
+    {
+      "method": "OnSpawn",
+      "directFieldReference": false
+    },
+    {
+      "method": "OnDespawn",
+      "directFieldReference": false
+    }
+  ],
+  "evidence": [
+    {
+      "path": "Logs/Actor-.ctor-0xb0f7a0.asm.txt",
+      "sha256": "000127437743760ca98b1635b8f6ed43c3ea4c856a469714f50ac55358a592d3"
+    },
+    {
+      "path": "Logs/RandomGenerator-.ctor-0xa99fa0.asm.txt",
+      "sha256": "6535fdc6ee9c6534dba738919b5185d1ed6e2328b190e232835782a8506e8bc4"
+    },
+    {
+      "path": "Logs/RandomGenerator-Initialize-0xa9a500.asm.txt",
+      "sha256": "bec9e65bd3ccbfcd4a5488be83325a595e68427e86811cc8f5b649f3818b100b"
+    },
+    {
+      "path": "Logs/RandomGenerator-get_value-0xa9a170.asm.txt",
+      "sha256": "1fa537f9cd7c99ed3e167c7aaa9392b28767810eaf94a29e765264b1e59f5d54"
+    },
+    {
+      "path": "Logs/Actor-GFAwake-0xaebe10.asm.txt",
+      "sha256": "7b4000c73a09f3422fbe64cd0478d1009f2affcf254bc20dad3b17fff5f1a757"
+    },
+    {
+      "path": "Logs/Actor-GFStart-0xaedf40.asm.txt",
+      "sha256": "b1578d38438f0c234f429c7c4629fc3eda0f7959b09f3ef23b4b79c7152d0b90"
+    },
+    {
+      "path": "Logs/Actor-OnSpawn-0xaef600.asm.txt",
+      "sha256": "4ffbf79f5fdc3c75e7dc754d6afd346ef2b6d12115e08580ef6439b01be73bc6"
+    },
+    {
+      "path": "Logs/Actor-OnDespawn-0xaef490.asm.txt",
+      "sha256": "41530c07735b33b3caed7401a7bf9a3fe75ce1e220cc506297dda222417d75a5"
+    }
+  ],
+  "findings": [
+    "Actor constructor creates default RandomGenerator and stores it at SyncedRandomGenerator offset0x4f0.",
+    "Default RandomGenerator constructor requests16 entropy bytes, sets GUID v4 version/variant bits, XORs four little-endian32-bit words into seed at0x18. It does not initialize_random at0x10.",
+    "First get_value/Range lazily invokes Initialize if_random is null. Initialize may override the stored seed through debug-global-seed configuration before constructing System.Random.",
+    "Selected base Actor lifecycle listings contain no direct SyncedRandomGenerator field reference; this does NOT prove callbacks cannot reseed through virtual/helper calls."
+  ],
+  "limits": [
+    "Synthetic entropy supplied by emulator; OS entropy implementation and distribution not executed.",
+    "Default constructor only. Later seed writes, subclass/network overrides, full pool lifecycle and debug-global override ownership remain unverified.",
+    "No source System.Random sequence verification or production runtime change. No new Unity run."
+  ]
+}

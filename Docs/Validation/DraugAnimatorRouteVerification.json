@@ -1,0 +1,68 @@
+{
+    "scope": "Source Animator evaluation only; original script callbacks and animation events are absent/disabled. Direct Play of sub-state-machine name is unsupported; direct decide state is tested instead.",
+    "cases": [
+        {
+            "entry": "base.idle",
+            "index": 0,
+            "clip": "attack_01",
+            "stateHash": 518398954,
+            "normalizedTime": 0.05913328379392624
+        },
+        {
+            "entry": "base.idle",
+            "index": 1,
+            "clip": "attack_02",
+            "stateHash": -2014350768,
+            "normalizedTime": 0.08070309460163117
+        },
+        {
+            "entry": "base.idle",
+            "index": 2,
+            "clip": "attack_03",
+            "stateHash": -253214010,
+            "normalizedTime": 0.10894444584846497
+        },
+        {
+            "entry": "base.chase",
+            "index": 0,
+            "clip": "attack_01",
+            "stateHash": 518398954,
+            "normalizedTime": 0.0517803430557251
+        },
+        {
+            "entry": "base.chase",
+            "index": 1,
+            "clip": "attack_02",
+            "stateHash": -2014350768,
+            "normalizedTime": 0.07335015386343003
+        },
+        {
+            "entry": "base.chase",
+            "index": 2,
+            "clip": "attack_03",
+            "stateHash": -253214010,
+            "normalizedTime": 0.10159150511026383
+        },
+        {
+            "entry": "base.attack.decide",
+            "index": 0,
+            "clip": "attack_01",
+            "stateHash": 518398954,
+            "normalizedTime": 0.0517803430557251
+        },
+        {
+            "entry": "base.attack.decide",
+            "index": 1,
+            "clip": "attack_02",
+            "stateHash": -2014350768,
+            "normalizedTime": 0.07335015386343003
+        },
+        {
+            "entry": "base.attack.decide",
+            "index": 2,
+            "clip": "attack_03",
+            "stateHash": -253214010,
+            "normalizedTime": 0.10159150511026383
+        }
+    ]
+}

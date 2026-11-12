@@ -1,0 +1,11 @@
+{
+  "log": "Logs\\draug-arrow-trap-smoke.log",
+  "sha256": "35dd069b217934a834ee444e12767aa1029ff3f7888c495dfb077d5a73af1e4e",
+  "cases": [
+    "trap before wall: disabled flight/presentation, stopped audio, zero hits, no additional end child",
+    "wall before trap: correct .5-radius contact, normal end effect, stopped audio, zero hits",
+    "zero-distance arrow inside trap: silent cancellation",
+    "trap removed: single normal 7 damage"
+  ],
+  "limits": "Engineering Time Trap integration, manually invoked FixedUpdate with isolated geometry. Does not prove original-game trap rules or all reflection/trap combinations. Immediate state/child checks, not a separate asynchronous destruction audit."
+}

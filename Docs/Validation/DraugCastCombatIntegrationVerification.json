@@ -1,0 +1,45 @@
+{
+  "status": "PASS_FLASK_CONTROLLER_COMBAT_INTEGRATION",
+  "visualSourceTimingCases": 40,
+  "visualMaxTimeError": 0,
+  "visualCancellationCases": 3,
+  "automaticCombatCases": [
+    {
+      "entry": 0,
+      "elapsed": 1.360756
+    },
+    {
+      "entry": 1,
+      "elapsed": 1.141819
+    }
+  ],
+  "combatCancellationCases": 6,
+  "arrowRegression": "6 automatic arrow cases +6 cancellations passed",
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 60,
+    "audioCue": "OriginalDraugImpact",
+    "audioStarted": true
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-visual-cast.log",
+      "sha256": "5705e5399831044f16e30b5b492c5387953b4813e1a9c9843bfeffe5045e5db1"
+    },
+    {
+      "path": "Logs/draug-cast-combat.log",
+      "sha256": "f8a22e0f32def81197cea9c2292030501e7865533100c7efce0407c348a37cfb"
+    },
+    {
+      "path": "Logs/draug-cast-combat-final.log",
+      "sha256": "5b858545a204db5bc3ceed4899ebef03f610f01547e57e5c75e5d760d5df5b93"
+    }
+  ],
+  "limits": [
+    "40 Visual timing comparisons use manual Animator.Update in PlayMode and source captured event times, not original native AI execution.",
+    "Two live cases verify same evaluated-frame release/end cooldowns and idle finish; native sub-frame order, repeated casting, all interruptions and synchronized RNG remain pending.",
+    "Cancellation covers GM/block at pending request/released flask/return blend, not death/disable/control changes between Update and LateUpdate.",
+    "No player build or memory/GC measurement; full materials/rendering fidelity remains pending."
+  ]
+}

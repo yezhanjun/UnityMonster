@@ -1,0 +1,40 @@
+{
+  "status": "PASS_NATIVE_OWNED_RANDOM_CORPUS",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "seeds": [
+    0,
+    1,
+    -1,
+    161803398,
+    -161803398,
+    2147483647,
+    -2147483648,
+    -1738457121,
+    1927129959,
+    1163768358,
+    86613917,
+    609312507,
+    -1447652315,
+    1254795386,
+    1514103272,
+    1616279260,
+    2120943519,
+    -1176347385,
+    417935563,
+    -1196493758,
+    644662851,
+    -1107905535,
+    1937976215
+  ],
+  "draws": 8832,
+  "corpusSHA256": "9eeccbd0baaf7988525a175feef9a187829ead171d9a6130a85e2766bbc32682",
+  "phases": [
+    "initial128 values",
+    "seed=bitwiseComplement; continue128",
+    "explicit System.Random constructor with changed seed;128"
+  ],
+  "limits": [
+    "Uses real native seeded constructor, seed setter and get_value arithmetic. Lazy allocation and explicit Initialize debug/allocator wrapper are not executed.",
+    "Does not prove actor startup draw accounting, network authority or combat integration."
+  ]
+}

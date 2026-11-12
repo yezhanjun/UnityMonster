@@ -1,0 +1,66 @@
+{
+  "status": "PASS_COMBAT_CONTROLLER_INTEGRATION",
+  "cases": [
+    {
+      "entry": 0,
+      "index": 0,
+      "elapsed": 1.248474
+    },
+    {
+      "entry": 0,
+      "index": 1,
+      "elapsed": 1.251514
+    },
+    {
+      "entry": 0,
+      "index": 2,
+      "elapsed": 1.143133
+    },
+    {
+      "entry": 1,
+      "index": 0,
+      "elapsed": 1.3426
+    },
+    {
+      "entry": 1,
+      "index": 1,
+      "elapsed": 1.254566
+    },
+    {
+      "entry": 1,
+      "index": 2,
+      "elapsed": 1.286489
+    }
+  ],
+  "cancellations": 6,
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 116,
+    "audioCue": "none",
+    "audioStarted": true
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-controller-combat.log",
+      "sha256": "2dee8df0a19bf48f3e6472b2ce2cf27f8a470dbbe50c14ac4f633096d9c29757"
+    },
+    {
+      "path": "Logs/draug-controller-combat-probe.log",
+      "sha256": "f97c9fbc5c6144369e16e18027836adcdcd2c16b4b6d543984212c7c685abc43"
+    },
+    {
+      "path": "Logs/draug-controller-combat-final.log",
+      "sha256": "17711204ac5a26e6dc51fc199c6f591cb4c71b4d0b885130108c259aff81e5e8"
+    }
+  ],
+  "initialRun": "PID84588 explicitly terminated after WaitForEndOfFrame did not resume in this batch run; actor continued attacking. Initial log retained; no PASS claimed.",
+  "probe": "DefaultExecutionOrder32000 LateUpdate captures state after production default-order Combat/Visual LateUpdate; coroutine examines previous frame snapshot. Entry timer, event threshold and completion must agree within that evaluated frame.",
+  "limits": [
+    "Normal arrow route integrated. Native callbacks/events still replaced by state observation; original sub-frame callback ordering and synchronous source RNG not proven.",
+    "Flask still uses existing generic clip/timer path; full source cast/interrupt routing pending.",
+    "Cancellation covers GM stop/block at request-before-evaluation, released arrow, return blend; not every AnyState interruption or death/disable timing.",
+    "No player build or player memory/GC measurement; Windows-only bundle.",
+    "Full Draug visual fidelity, glass/HDRP approximations and static projectile preview remain pending."
+  ]
+}

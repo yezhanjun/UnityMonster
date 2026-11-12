@@ -1,0 +1,16 @@
+{
+  "status": "PASS_MODEL_ONLY",
+  "sourceCases": 27,
+  "maxObservationDifferenceSeconds": 0.003867865,
+  "toleranceSeconds": 0.004,
+  "runtimeIntegration": false,
+  "log": "Logs/draug-arrow-timeline-model.log",
+  "logSha256": "3a69b4dbc0fa6220befbf00c6b992773b74f54424c82392ef722e777d3f40578",
+  "sourceEvidence": "Docs/Validation/DraugAnimatorTransitionVerification.json",
+  "sourceEvidenceSha256": "acaa1f76162bbd69d064c0f67d73cd786aa1acbdf0b38dafdefc1611451ac230",
+  "limitations": [
+    "Analytic timeline checked against sampled Animator observations; not an animation pose or callback equivalence test.",
+    "Chase decide uses source stand motion; runtime mixer, offsets, entry timer and random-index lifecycle are not integrated.",
+    "No new battle regression this batch; full Draug fidelity remains pending."
+  ]
+}

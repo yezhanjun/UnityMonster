@@ -1,0 +1,36 @@
+{
+  "log": "Logs\\draug-clip-timing-lifecycle-fixed.log",
+  "logSha256": "783456da5691d4c43bfbe5dac750da98cf2741c4572423bb58dace19f2974378",
+  "sourceGraphEvidence": "Docs\\Validation\\DraugAnimatorGraphEvidence.json",
+  "sourceGraphSha256": "48fd57a88fb6aed7efae959f574043fcff7af961ed2b4b42d36f455c91926e4a",
+  "cases": [
+    {
+      "index": 0,
+      "clip": "attack_01",
+      "sourceRelease": 0.5131692,
+      "elapsed": 0.5172138,
+      "frameDelta": 0.0049304,
+      "animationTime": 0.518623687326908,
+      "arrows": 1
+    },
+    {
+      "index": 1,
+      "clip": "attack_02",
+      "sourceRelease": 0.5551714,
+      "elapsed": 0.5595245,
+      "frameDelta": 0.0052661,
+      "animationTime": 0.562166298972443,
+      "arrows": 1
+    },
+    {
+      "index": 2,
+      "clip": "attack_03",
+      "sourceRelease": 0.4536709,
+      "elapsed": 0.4581814,
+      "frameDelta": 0.005027494,
+      "animationTime": 0.459895303007215,
+      "arrows": 1
+    }
+  ],
+  "limits": "Combat Update invoked manually once per real engine frame with GM waiting gating automatic ticks. Initial arrow index and skill cooldown forced. Actual playable graph advances normally. Does not prove original blend offsets, transition durations, synchronized random sequence or every interruption route."
+}

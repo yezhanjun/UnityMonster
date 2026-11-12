@@ -1,0 +1,191 @@
+{
+  "status": "PASS_NATIVE_RANDOMFLOAT_AND_UNITY_RANGE_WRAPPER",
+  "cases": [
+    {
+      "min": 3.0,
+      "max": 6.0,
+      "injectedEngineResult": 3.0,
+      "cached": 3.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 3.0,
+      "max": 6.0,
+      "injectedEngineResult": 4.5,
+      "cached": 4.5,
+      "engineCalls": 1
+    },
+    {
+      "min": 3.0,
+      "max": 6.0,
+      "injectedEngineResult": 6.0,
+      "cached": 6.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 3.0,
+      "max": 6.0,
+      "injectedEngineResult": 3.0,
+      "cached": 3.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -2.0,
+      "max": 2.0,
+      "injectedEngineResult": -2.0,
+      "cached": -2.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -2.0,
+      "max": 2.0,
+      "injectedEngineResult": 0.0,
+      "cached": 0.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -2.0,
+      "max": 2.0,
+      "injectedEngineResult": 2.0,
+      "cached": 2.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -2.0,
+      "max": 2.0,
+      "injectedEngineResult": -2.0,
+      "cached": -2.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -8.0,
+      "max": 8.0,
+      "injectedEngineResult": -8.0,
+      "cached": -8.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -8.0,
+      "max": 8.0,
+      "injectedEngineResult": 0.0,
+      "cached": 0.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -8.0,
+      "max": 8.0,
+      "injectedEngineResult": 8.0,
+      "cached": 8.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -8.0,
+      "max": 8.0,
+      "injectedEngineResult": -8.0,
+      "cached": -8.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -0.05000000074505806,
+      "max": 0.05000000074505806,
+      "injectedEngineResult": -0.05000000074505806,
+      "cached": -0.05000000074505806,
+      "engineCalls": 1
+    },
+    {
+      "min": -0.05000000074505806,
+      "max": 0.05000000074505806,
+      "injectedEngineResult": 0.0,
+      "cached": 0.0,
+      "engineCalls": 1
+    },
+    {
+      "min": -0.05000000074505806,
+      "max": 0.05000000074505806,
+      "injectedEngineResult": 0.05000000074505806,
+      "cached": 0.05000000074505806,
+      "engineCalls": 1
+    },
+    {
+      "min": -0.05000000074505806,
+      "max": 0.05000000074505806,
+      "injectedEngineResult": -0.05000000074505806,
+      "cached": -0.05000000074505806,
+      "engineCalls": 1
+    },
+    {
+      "min": 1.0,
+      "max": 1.0,
+      "injectedEngineResult": 1.0,
+      "cached": 1.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 1.0,
+      "max": 1.0,
+      "injectedEngineResult": 1.0,
+      "cached": 1.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 1.0,
+      "max": 1.0,
+      "injectedEngineResult": 1.0,
+      "cached": 1.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 1.0,
+      "max": 1.0,
+      "injectedEngineResult": 1.0,
+      "cached": 1.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 6.0,
+      "max": 3.0,
+      "injectedEngineResult": 6.0,
+      "cached": 6.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 6.0,
+      "max": 3.0,
+      "injectedEngineResult": 4.5,
+      "cached": 4.5,
+      "engineCalls": 1
+    },
+    {
+      "min": 6.0,
+      "max": 3.0,
+      "injectedEngineResult": 3.0,
+      "cached": 3.0,
+      "engineCalls": 1
+    },
+    {
+      "min": 6.0,
+      "max": 3.0,
+      "injectedEngineResult": 6.0,
+      "cached": 6.0,
+      "engineCalls": 1
+    }
+  ],
+  "method": "RandomFloat.Randomize",
+  "rva": "0xf26c80",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "limits": [
+    "Engine float RNG results injected; no source PRNG sequence equivalence claim.",
+    "Wrapper always calls engine once, including equal/reversed bounds. Engine handling of those bounds is not emulated.",
+    "Global RNG ownership, activation ordering and full lethal integration remain separate gates."
+  ],
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckRandomFloat.py",
+      "sha256": "db7eb891dd1dda018a6d4f6dd920f1f27ea933e32cfa5a6b3b4d56fb0aea0565"
+    },
+    {
+      "path": "Tools/ReadSourceMethodMap.py",
+      "sha256": "691f8dccc284a28a54d4450ada029e34c94bcba0d470db18f0891453d8f8d45f"
+    }
+  ]
+}

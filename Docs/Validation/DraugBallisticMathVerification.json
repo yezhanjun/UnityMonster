@@ -1,0 +1,1811 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "routineRVA": "0x678c10",
+  "emulator": "Unicorn 2.1.4",
+  "inputs": 257,
+  "range": "float pi times normalized progress 0..1",
+  "maxAbsoluteError": 0.0,
+  "samples": [
+    {
+      "t": 0.0,
+      "argument": 0.0,
+      "actual": 0.0,
+      "expectedFloatSin": 0.0,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.00390625,
+      "argument": 0.012271846644580364,
+      "actual": 0.012271538376808167,
+      "expectedFloatSin": 0.012271538376808167,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0078125,
+      "argument": 0.02454369328916073,
+      "actual": 0.024541229009628296,
+      "expectedFloatSin": 0.024541229009628296,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.01171875,
+      "argument": 0.03681553900241852,
+      "actual": 0.03680722415447235,
+      "expectedFloatSin": 0.03680722415447235,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.015625,
+      "argument": 0.04908738657832146,
+      "actual": 0.049067676067352295,
+      "expectedFloatSin": 0.049067676067352295,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.01953125,
+      "argument": 0.061359234154224396,
+      "actual": 0.06132074072957039,
+      "expectedFloatSin": 0.06132074072957039,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0234375,
+      "argument": 0.07363107800483704,
+      "actual": 0.0735645666718483,
+      "expectedFloatSin": 0.0735645666718483,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.02734375,
+      "argument": 0.08590292930603027,
+      "actual": 0.08579731732606888,
+      "expectedFloatSin": 0.08579731732606888,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.03125,
+      "argument": 0.09817477315664291,
+      "actual": 0.0980171412229538,
+      "expectedFloatSin": 0.0980171412229538,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.03515625,
+      "argument": 0.11044661700725555,
+      "actual": 0.11022220551967621,
+      "expectedFloatSin": 0.11022220551967621,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0390625,
+      "argument": 0.12271846830844879,
+      "actual": 0.12241067737340927,
+      "expectedFloatSin": 0.12241067737340927,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.04296875,
+      "argument": 0.13499031960964203,
+      "actual": 0.13458071649074554,
+      "expectedFloatSin": 0.13458071649074554,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.046875,
+      "argument": 0.14726215600967407,
+      "actual": 0.1467304676771164,
+      "expectedFloatSin": 0.1467304676771164,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.05078125,
+      "argument": 0.1595340073108673,
+      "actual": 0.15885815024375916,
+      "expectedFloatSin": 0.15885815024375916,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0546875,
+      "argument": 0.17180585861206055,
+      "actual": 0.1709619015455246,
+      "expectedFloatSin": 0.1709619015455246,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.05859375,
+      "argument": 0.1840776950120926,
+      "actual": 0.18303988873958588,
+      "expectedFloatSin": 0.18303988873958588,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0625,
+      "argument": 0.19634954631328583,
+      "actual": 0.19509032368659973,
+      "expectedFloatSin": 0.19509032368659973,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.06640625,
+      "argument": 0.20862139761447906,
+      "actual": 0.2071113884449005,
+      "expectedFloatSin": 0.2071113884449005,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0703125,
+      "argument": 0.2208932340145111,
+      "actual": 0.21910123527050018,
+      "expectedFloatSin": 0.21910123527050018,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.07421875,
+      "argument": 0.23316508531570435,
+      "actual": 0.23105812072753906,
+      "expectedFloatSin": 0.23105812072753906,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.078125,
+      "argument": 0.24543693661689758,
+      "actual": 0.2429801970720291,
+      "expectedFloatSin": 0.2429801970720291,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.08203125,
+      "argument": 0.2577087879180908,
+      "actual": 0.2548656761646271,
+      "expectedFloatSin": 0.2548656761646271,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.0859375,
+      "argument": 0.26998063921928406,
+      "actual": 0.2667127847671509,
+      "expectedFloatSin": 0.2667127847671509,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.08984375,
+      "argument": 0.2822524607181549,
+      "actual": 0.2785196900367737,
+      "expectedFloatSin": 0.2785196900367737,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.09375,
+      "argument": 0.29452431201934814,
+      "actual": 0.290284663438797,
+      "expectedFloatSin": 0.290284663438797,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.09765625,
+      "argument": 0.3067961633205414,
+      "actual": 0.30200594663619995,
+      "expectedFloatSin": 0.30200594663619995,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1015625,
+      "argument": 0.3190680146217346,
+      "actual": 0.3136817514896393,
+      "expectedFloatSin": 0.3136817514896393,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.10546875,
+      "argument": 0.33133986592292786,
+      "actual": 0.3253103196620941,
+      "expectedFloatSin": 0.3253103196620941,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.109375,
+      "argument": 0.3436117172241211,
+      "actual": 0.3368898630142212,
+      "expectedFloatSin": 0.3368898630142212,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.11328125,
+      "argument": 0.35588353872299194,
+      "actual": 0.3484186828136444,
+      "expectedFloatSin": 0.3484186828136444,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1171875,
+      "argument": 0.3681553900241852,
+      "actual": 0.3598950505256653,
+      "expectedFloatSin": 0.3598950505256653,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.12109375,
+      "argument": 0.3804272413253784,
+      "actual": 0.37131720781326294,
+      "expectedFloatSin": 0.37131720781326294,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.125,
+      "argument": 0.39269909262657166,
+      "actual": 0.3826834559440613,
+      "expectedFloatSin": 0.3826834559440613,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.12890625,
+      "argument": 0.4049709439277649,
+      "actual": 0.3939920663833618,
+      "expectedFloatSin": 0.3939920663833618,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1328125,
+      "argument": 0.41724279522895813,
+      "actual": 0.40524134039878845,
+      "expectedFloatSin": 0.40524134039878845,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.13671875,
+      "argument": 0.42951464653015137,
+      "actual": 0.4164295792579651,
+      "expectedFloatSin": 0.4164295792579651,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.140625,
+      "argument": 0.4417864680290222,
+      "actual": 0.4275550842285156,
+      "expectedFloatSin": 0.4275550842285156,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.14453125,
+      "argument": 0.45405831933021545,
+      "actual": 0.43861624598503113,
+      "expectedFloatSin": 0.43861624598503113,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1484375,
+      "argument": 0.4663301706314087,
+      "actual": 0.4496113359928131,
+      "expectedFloatSin": 0.4496113359928131,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.15234375,
+      "argument": 0.47860202193260193,
+      "actual": 0.46053871512413025,
+      "expectedFloatSin": 0.46053871512413025,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.15625,
+      "argument": 0.49087387323379517,
+      "actual": 0.4713967442512512,
+      "expectedFloatSin": 0.4713967442512512,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.16015625,
+      "argument": 0.503145694732666,
+      "actual": 0.4821837544441223,
+      "expectedFloatSin": 0.4821837544441223,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1640625,
+      "argument": 0.5154175758361816,
+      "actual": 0.49289822578430176,
+      "expectedFloatSin": 0.49289822578430176,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.16796875,
+      "argument": 0.5276893973350525,
+      "actual": 0.5035383701324463,
+      "expectedFloatSin": 0.5035383701324463,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.171875,
+      "argument": 0.5399612784385681,
+      "actual": 0.5141027569770813,
+      "expectedFloatSin": 0.5141027569770813,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.17578125,
+      "argument": 0.552233099937439,
+      "actual": 0.5245897173881531,
+      "expectedFloatSin": 0.5245897173881531,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1796875,
+      "argument": 0.5645049214363098,
+      "actual": 0.5349976420402527,
+      "expectedFloatSin": 0.5349976420402527,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.18359375,
+      "argument": 0.5767768025398254,
+      "actual": 0.545324981212616,
+      "expectedFloatSin": 0.545324981212616,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1875,
+      "argument": 0.5890486240386963,
+      "actual": 0.5555702447891235,
+      "expectedFloatSin": 0.5555702447891235,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.19140625,
+      "argument": 0.6013205051422119,
+      "actual": 0.5657318234443665,
+      "expectedFloatSin": 0.5657318234443665,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.1953125,
+      "argument": 0.6135923266410828,
+      "actual": 0.5758082270622253,
+      "expectedFloatSin": 0.5758082270622253,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.19921875,
+      "argument": 0.6258642077445984,
+      "actual": 0.585797905921936,
+      "expectedFloatSin": 0.585797905921936,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.203125,
+      "argument": 0.6381360292434692,
+      "actual": 0.5956993103027344,
+      "expectedFloatSin": 0.5956993103027344,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.20703125,
+      "argument": 0.6504078507423401,
+      "actual": 0.6055110096931458,
+      "expectedFloatSin": 0.6055110096931458,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2109375,
+      "argument": 0.6626797318458557,
+      "actual": 0.6152316331863403,
+      "expectedFloatSin": 0.6152316331863403,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.21484375,
+      "argument": 0.6749515533447266,
+      "actual": 0.6248595118522644,
+      "expectedFloatSin": 0.6248595118522644,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.21875,
+      "argument": 0.6872234344482422,
+      "actual": 0.6343933343887329,
+      "expectedFloatSin": 0.6343933343887329,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.22265625,
+      "argument": 0.699495255947113,
+      "actual": 0.6438315510749817,
+      "expectedFloatSin": 0.6438315510749817,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2265625,
+      "argument": 0.7117670774459839,
+      "actual": 0.6531728506088257,
+      "expectedFloatSin": 0.6531728506088257,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.23046875,
+      "argument": 0.7240389585494995,
+      "actual": 0.6624158024787903,
+      "expectedFloatSin": 0.6624158024787903,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.234375,
+      "argument": 0.7363107800483704,
+      "actual": 0.6715589761734009,
+      "expectedFloatSin": 0.6715589761734009,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.23828125,
+      "argument": 0.748582661151886,
+      "actual": 0.6806010007858276,
+      "expectedFloatSin": 0.6806010007858276,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2421875,
+      "argument": 0.7608544826507568,
+      "actual": 0.6895405650138855,
+      "expectedFloatSin": 0.6895405650138855,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.24609375,
+      "argument": 0.7731263637542725,
+      "actual": 0.6983762979507446,
+      "expectedFloatSin": 0.6983762979507446,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.25,
+      "argument": 0.7853981852531433,
+      "actual": 0.7071067690849304,
+      "expectedFloatSin": 0.7071067690849304,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.25390625,
+      "argument": 0.7976700067520142,
+      "actual": 0.7157308459281921,
+      "expectedFloatSin": 0.7157308459281921,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2578125,
+      "argument": 0.8099418878555298,
+      "actual": 0.7242470979690552,
+      "expectedFloatSin": 0.7242470979690552,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.26171875,
+      "argument": 0.8222137093544006,
+      "actual": 0.7326542735099792,
+      "expectedFloatSin": 0.7326542735099792,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.265625,
+      "argument": 0.8344855904579163,
+      "actual": 0.7409511804580688,
+      "expectedFloatSin": 0.7409511804580688,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.26953125,
+      "argument": 0.8467574119567871,
+      "actual": 0.7491363883018494,
+      "expectedFloatSin": 0.7491363883018494,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2734375,
+      "argument": 0.8590292930603027,
+      "actual": 0.7572088837623596,
+      "expectedFloatSin": 0.7572088837623596,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.27734375,
+      "argument": 0.8713011145591736,
+      "actual": 0.7651672959327698,
+      "expectedFloatSin": 0.7651672959327698,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.28125,
+      "argument": 0.8835729360580444,
+      "actual": 0.7730104327201843,
+      "expectedFloatSin": 0.7730104327201843,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.28515625,
+      "argument": 0.8958448171615601,
+      "actual": 0.7807372808456421,
+      "expectedFloatSin": 0.7807372808456421,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.2890625,
+      "argument": 0.9081166386604309,
+      "actual": 0.7883464097976685,
+      "expectedFloatSin": 0.7883464097976685,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.29296875,
+      "argument": 0.9203885197639465,
+      "actual": 0.7958369255065918,
+      "expectedFloatSin": 0.7958369255065918,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.296875,
+      "argument": 0.9326603412628174,
+      "actual": 0.803207516670227,
+      "expectedFloatSin": 0.803207516670227,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.30078125,
+      "argument": 0.9449321627616882,
+      "actual": 0.810457170009613,
+      "expectedFloatSin": 0.810457170009613,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3046875,
+      "argument": 0.9572040438652039,
+      "actual": 0.8175848126411438,
+      "expectedFloatSin": 0.8175848126411438,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.30859375,
+      "argument": 0.9694758653640747,
+      "actual": 0.8245893120765686,
+      "expectedFloatSin": 0.8245893120765686,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3125,
+      "argument": 0.9817477464675903,
+      "actual": 0.8314696550369263,
+      "expectedFloatSin": 0.8314696550369263,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.31640625,
+      "argument": 0.9940195679664612,
+      "actual": 0.8382247090339661,
+      "expectedFloatSin": 0.8382247090339661,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3203125,
+      "argument": 1.006291389465332,
+      "actual": 0.8448535799980164,
+      "expectedFloatSin": 0.8448535799980164,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.32421875,
+      "argument": 1.0185632705688477,
+      "actual": 0.8513551950454712,
+      "expectedFloatSin": 0.8513551950454712,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.328125,
+      "argument": 1.0308351516723633,
+      "actual": 0.8577286601066589,
+      "expectedFloatSin": 0.8577286601066589,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.33203125,
+      "argument": 1.0431069135665894,
+      "actual": 0.8639728426933289,
+      "expectedFloatSin": 0.8639728426933289,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3359375,
+      "argument": 1.055378794670105,
+      "actual": 0.8700869679450989,
+      "expectedFloatSin": 0.8700869679450989,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.33984375,
+      "argument": 1.0676506757736206,
+      "actual": 0.8760701417922974,
+      "expectedFloatSin": 0.8760701417922974,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.34375,
+      "argument": 1.0799225568771362,
+      "actual": 0.8819212913513184,
+      "expectedFloatSin": 0.8819212913513184,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.34765625,
+      "argument": 1.0921943187713623,
+      "actual": 0.8876396417617798,
+      "expectedFloatSin": 0.8876396417617798,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3515625,
+      "argument": 1.104466199874878,
+      "actual": 0.89322429895401,
+      "expectedFloatSin": 0.89322429895401,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.35546875,
+      "argument": 1.1167380809783936,
+      "actual": 0.898674488067627,
+      "expectedFloatSin": 0.898674488067627,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.359375,
+      "argument": 1.1290098428726196,
+      "actual": 0.903989315032959,
+      "expectedFloatSin": 0.903989315032959,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.36328125,
+      "argument": 1.1412817239761353,
+      "actual": 0.909168004989624,
+      "expectedFloatSin": 0.909168004989624,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3671875,
+      "argument": 1.1535536050796509,
+      "actual": 0.91420978307724,
+      "expectedFloatSin": 0.91420978307724,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.37109375,
+      "argument": 1.1658254861831665,
+      "actual": 0.9191138744354248,
+      "expectedFloatSin": 0.9191138744354248,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.375,
+      "argument": 1.1780972480773926,
+      "actual": 0.9238795042037964,
+      "expectedFloatSin": 0.9238795042037964,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.37890625,
+      "argument": 1.1903691291809082,
+      "actual": 0.928506076335907,
+      "expectedFloatSin": 0.928506076335907,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3828125,
+      "argument": 1.2026410102844238,
+      "actual": 0.9329928159713745,
+      "expectedFloatSin": 0.9329928159713745,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.38671875,
+      "argument": 1.21491277217865,
+      "actual": 0.9373390078544617,
+      "expectedFloatSin": 0.9373390078544617,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.390625,
+      "argument": 1.2271846532821655,
+      "actual": 0.9415440559387207,
+      "expectedFloatSin": 0.9415440559387207,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.39453125,
+      "argument": 1.2394565343856812,
+      "actual": 0.9456073641777039,
+      "expectedFloatSin": 0.9456073641777039,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.3984375,
+      "argument": 1.2517284154891968,
+      "actual": 0.9495282173156738,
+      "expectedFloatSin": 0.9495282173156738,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.40234375,
+      "argument": 1.2640001773834229,
+      "actual": 0.9533060193061829,
+      "expectedFloatSin": 0.9533060193061829,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.40625,
+      "argument": 1.2762720584869385,
+      "actual": 0.9569403529167175,
+      "expectedFloatSin": 0.9569403529167175,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.41015625,
+      "argument": 1.288543939590454,
+      "actual": 0.9604305624961853,
+      "expectedFloatSin": 0.9604305624961853,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4140625,
+      "argument": 1.3008157014846802,
+      "actual": 0.9637760519981384,
+      "expectedFloatSin": 0.9637760519981384,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.41796875,
+      "argument": 1.3130875825881958,
+      "actual": 0.9669764637947083,
+      "expectedFloatSin": 0.9669764637947083,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.421875,
+      "argument": 1.3253594636917114,
+      "actual": 0.9700312614440918,
+      "expectedFloatSin": 0.9700312614440918,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.42578125,
+      "argument": 1.3376312255859375,
+      "actual": 0.9729399681091309,
+      "expectedFloatSin": 0.9729399681091309,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4296875,
+      "argument": 1.3499031066894531,
+      "actual": 0.9757021069526672,
+      "expectedFloatSin": 0.9757021069526672,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.43359375,
+      "argument": 1.3621749877929688,
+      "actual": 0.978317379951477,
+      "expectedFloatSin": 0.978317379951477,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4375,
+      "argument": 1.3744468688964844,
+      "actual": 0.9807853102684021,
+      "expectedFloatSin": 0.9807853102684021,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.44140625,
+      "argument": 1.3867186307907104,
+      "actual": 0.983105480670929,
+      "expectedFloatSin": 0.983105480670929,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4453125,
+      "argument": 1.398990511894226,
+      "actual": 0.9852776527404785,
+      "expectedFloatSin": 0.9852776527404785,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.44921875,
+      "argument": 1.4112623929977417,
+      "actual": 0.9873014092445374,
+      "expectedFloatSin": 0.9873014092445374,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.453125,
+      "argument": 1.4235341548919678,
+      "actual": 0.9891765117645264,
+      "expectedFloatSin": 0.9891765117645264,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.45703125,
+      "argument": 1.4358060359954834,
+      "actual": 0.9909026622772217,
+      "expectedFloatSin": 0.9909026622772217,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4609375,
+      "argument": 1.448077917098999,
+      "actual": 0.9924795627593994,
+      "expectedFloatSin": 0.9924795627593994,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.46484375,
+      "argument": 1.4603497982025146,
+      "actual": 0.9939069747924805,
+      "expectedFloatSin": 0.9939069747924805,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.46875,
+      "argument": 1.4726215600967407,
+      "actual": 0.9951847195625305,
+      "expectedFloatSin": 0.9951847195625305,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.47265625,
+      "argument": 1.4848934412002563,
+      "actual": 0.9963126182556152,
+      "expectedFloatSin": 0.9963126182556152,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4765625,
+      "argument": 1.497165322303772,
+      "actual": 0.9972904324531555,
+      "expectedFloatSin": 0.9972904324531555,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.48046875,
+      "argument": 1.509437084197998,
+      "actual": 0.9981181025505066,
+      "expectedFloatSin": 0.9981181025505066,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.484375,
+      "argument": 1.5217089653015137,
+      "actual": 0.9987954497337341,
+      "expectedFloatSin": 0.9987954497337341,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.48828125,
+      "argument": 1.5339808464050293,
+      "actual": 0.9993224143981934,
+      "expectedFloatSin": 0.9993224143981934,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.4921875,
+      "argument": 1.546252727508545,
+      "actual": 0.99969881772995,
+      "expectedFloatSin": 0.99969881772995,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.49609375,
+      "argument": 1.558524489402771,
+      "actual": 0.9999247193336487,
+      "expectedFloatSin": 0.9999247193336487,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5,
+      "argument": 1.5707963705062866,
+      "actual": 1.0,
+      "expectedFloatSin": 1.0,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.50390625,
+      "argument": 1.5830682516098022,
+      "actual": 0.9999247193336487,
+      "expectedFloatSin": 0.9999247193336487,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5078125,
+      "argument": 1.5953400135040283,
+      "actual": 0.99969881772995,
+      "expectedFloatSin": 0.99969881772995,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.51171875,
+      "argument": 1.607611894607544,
+      "actual": 0.9993223547935486,
+      "expectedFloatSin": 0.9993223547935486,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.515625,
+      "argument": 1.6198837757110596,
+      "actual": 0.9987954497337341,
+      "expectedFloatSin": 0.9987954497337341,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.51953125,
+      "argument": 1.6321556568145752,
+      "actual": 0.9981181025505066,
+      "expectedFloatSin": 0.9981181025505066,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5234375,
+      "argument": 1.6444274187088013,
+      "actual": 0.9972904324531555,
+      "expectedFloatSin": 0.9972904324531555,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.52734375,
+      "argument": 1.656699299812317,
+      "actual": 0.9963126182556152,
+      "expectedFloatSin": 0.9963126182556152,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.53125,
+      "argument": 1.6689711809158325,
+      "actual": 0.9951847195625305,
+      "expectedFloatSin": 0.9951847195625305,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.53515625,
+      "argument": 1.6812429428100586,
+      "actual": 0.9939069747924805,
+      "expectedFloatSin": 0.9939069747924805,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5390625,
+      "argument": 1.6935148239135742,
+      "actual": 0.9924795031547546,
+      "expectedFloatSin": 0.9924795031547546,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.54296875,
+      "argument": 1.7057867050170898,
+      "actual": 0.9909026026725769,
+      "expectedFloatSin": 0.9909026026725769,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.546875,
+      "argument": 1.7180585861206055,
+      "actual": 0.9891765117645264,
+      "expectedFloatSin": 0.9891765117645264,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.55078125,
+      "argument": 1.7303303480148315,
+      "actual": 0.9873014092445374,
+      "expectedFloatSin": 0.9873014092445374,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5546875,
+      "argument": 1.7426022291183472,
+      "actual": 0.9852776527404785,
+      "expectedFloatSin": 0.9852776527404785,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.55859375,
+      "argument": 1.7548741102218628,
+      "actual": 0.983105480670929,
+      "expectedFloatSin": 0.983105480670929,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5625,
+      "argument": 1.7671458721160889,
+      "actual": 0.9807852506637573,
+      "expectedFloatSin": 0.9807852506637573,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.56640625,
+      "argument": 1.7794177532196045,
+      "actual": 0.978317379951477,
+      "expectedFloatSin": 0.978317379951477,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5703125,
+      "argument": 1.7916896343231201,
+      "actual": 0.9757021069526672,
+      "expectedFloatSin": 0.9757021069526672,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.57421875,
+      "argument": 1.8039615154266357,
+      "actual": 0.9729399085044861,
+      "expectedFloatSin": 0.9729399085044861,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.578125,
+      "argument": 1.8162332773208618,
+      "actual": 0.9700312614440918,
+      "expectedFloatSin": 0.9700312614440918,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.58203125,
+      "argument": 1.8285051584243774,
+      "actual": 0.9669764637947083,
+      "expectedFloatSin": 0.9669764637947083,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.5859375,
+      "argument": 1.840777039527893,
+      "actual": 0.9637760519981384,
+      "expectedFloatSin": 0.9637760519981384,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.58984375,
+      "argument": 1.8530488014221191,
+      "actual": 0.9604305028915405,
+      "expectedFloatSin": 0.9604305028915405,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.59375,
+      "argument": 1.8653206825256348,
+      "actual": 0.9569402933120728,
+      "expectedFloatSin": 0.9569402933120728,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.59765625,
+      "argument": 1.8775925636291504,
+      "actual": 0.9533060193061829,
+      "expectedFloatSin": 0.9533060193061829,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6015625,
+      "argument": 1.8898643255233765,
+      "actual": 0.949528157711029,
+      "expectedFloatSin": 0.949528157711029,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.60546875,
+      "argument": 1.902136206626892,
+      "actual": 0.9456073045730591,
+      "expectedFloatSin": 0.9456073045730591,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.609375,
+      "argument": 1.9144080877304077,
+      "actual": 0.9415440559387207,
+      "expectedFloatSin": 0.9415440559387207,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.61328125,
+      "argument": 1.9266799688339233,
+      "actual": 0.9373389482498169,
+      "expectedFloatSin": 0.9373389482498169,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6171875,
+      "argument": 1.9389517307281494,
+      "actual": 0.9329928159713745,
+      "expectedFloatSin": 0.9329928159713745,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.62109375,
+      "argument": 1.951223611831665,
+      "actual": 0.928506076335907,
+      "expectedFloatSin": 0.928506076335907,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.625,
+      "argument": 1.9634954929351807,
+      "actual": 0.9238795042037964,
+      "expectedFloatSin": 0.9238795042037964,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.62890625,
+      "argument": 1.9757672548294067,
+      "actual": 0.9191138744354248,
+      "expectedFloatSin": 0.9191138744354248,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6328125,
+      "argument": 1.9880391359329224,
+      "actual": 0.9142097234725952,
+      "expectedFloatSin": 0.9142097234725952,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.63671875,
+      "argument": 2.0003108978271484,
+      "actual": 0.909168004989624,
+      "expectedFloatSin": 0.909168004989624,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.640625,
+      "argument": 2.012582778930664,
+      "actual": 0.903989315032959,
+      "expectedFloatSin": 0.903989315032959,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.64453125,
+      "argument": 2.0248546600341797,
+      "actual": 0.8986744284629822,
+      "expectedFloatSin": 0.8986744284629822,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6484375,
+      "argument": 2.0371265411376953,
+      "actual": 0.89322429895401,
+      "expectedFloatSin": 0.89322429895401,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.65234375,
+      "argument": 2.049398422241211,
+      "actual": 0.887639582157135,
+      "expectedFloatSin": 0.887639582157135,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.65625,
+      "argument": 2.0616703033447266,
+      "actual": 0.8819212317466736,
+      "expectedFloatSin": 0.8819212317466736,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.66015625,
+      "argument": 2.073942184448242,
+      "actual": 0.8760700225830078,
+      "expectedFloatSin": 0.8760700225830078,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6640625,
+      "argument": 2.0862138271331787,
+      "actual": 0.8700870275497437,
+      "expectedFloatSin": 0.8700870275497437,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.66796875,
+      "argument": 2.0984857082366943,
+      "actual": 0.8639728426933289,
+      "expectedFloatSin": 0.8639728426933289,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.671875,
+      "argument": 2.11075758934021,
+      "actual": 0.8577286005020142,
+      "expectedFloatSin": 0.8577286005020142,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.67578125,
+      "argument": 2.1230294704437256,
+      "actual": 0.8513551354408264,
+      "expectedFloatSin": 0.8513551354408264,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6796875,
+      "argument": 2.135301351547241,
+      "actual": 0.8448535203933716,
+      "expectedFloatSin": 0.8448535203933716,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.68359375,
+      "argument": 2.147573232650757,
+      "actual": 0.8382246494293213,
+      "expectedFloatSin": 0.8382246494293213,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6875,
+      "argument": 2.1598451137542725,
+      "actual": 0.8314695358276367,
+      "expectedFloatSin": 0.8314695358276367,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.69140625,
+      "argument": 2.172116756439209,
+      "actual": 0.8245893120765686,
+      "expectedFloatSin": 0.8245893120765686,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.6953125,
+      "argument": 2.1843886375427246,
+      "actual": 0.8175848126411438,
+      "expectedFloatSin": 0.8175848126411438,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.69921875,
+      "argument": 2.1966605186462402,
+      "actual": 0.810457170009613,
+      "expectedFloatSin": 0.810457170009613,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.703125,
+      "argument": 2.208932399749756,
+      "actual": 0.803207516670227,
+      "expectedFloatSin": 0.803207516670227,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.70703125,
+      "argument": 2.2212042808532715,
+      "actual": 0.795836865901947,
+      "expectedFloatSin": 0.795836865901947,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7109375,
+      "argument": 2.233476161956787,
+      "actual": 0.7883463501930237,
+      "expectedFloatSin": 0.7883463501930237,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.71484375,
+      "argument": 2.2457480430603027,
+      "actual": 0.7807371020317078,
+      "expectedFloatSin": 0.7807371020317078,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.71875,
+      "argument": 2.2580196857452393,
+      "actual": 0.7730104923248291,
+      "expectedFloatSin": 0.7730104923248291,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.72265625,
+      "argument": 2.270291566848755,
+      "actual": 0.765167236328125,
+      "expectedFloatSin": 0.765167236328125,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7265625,
+      "argument": 2.2825634479522705,
+      "actual": 0.7572088241577148,
+      "expectedFloatSin": 0.7572088241577148,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.73046875,
+      "argument": 2.294835329055786,
+      "actual": 0.7491363286972046,
+      "expectedFloatSin": 0.7491363286972046,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.734375,
+      "argument": 2.3071072101593018,
+      "actual": 0.7409510612487793,
+      "expectedFloatSin": 0.7409510612487793,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.73828125,
+      "argument": 2.3193790912628174,
+      "actual": 0.7326541543006897,
+      "expectedFloatSin": 0.7326541543006897,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7421875,
+      "argument": 2.331650972366333,
+      "actual": 0.7242469787597656,
+      "expectedFloatSin": 0.7242469787597656,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.74609375,
+      "argument": 2.3439226150512695,
+      "actual": 0.7157308459281921,
+      "expectedFloatSin": 0.7157308459281921,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.75,
+      "argument": 2.356194496154785,
+      "actual": 0.7071067690849304,
+      "expectedFloatSin": 0.7071067690849304,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.75390625,
+      "argument": 2.368466377258301,
+      "actual": 0.6983762383460999,
+      "expectedFloatSin": 0.6983762383460999,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7578125,
+      "argument": 2.3807382583618164,
+      "actual": 0.6895405054092407,
+      "expectedFloatSin": 0.6895405054092407,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.76171875,
+      "argument": 2.393010139465332,
+      "actual": 0.6806009411811829,
+      "expectedFloatSin": 0.6806009411811829,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.765625,
+      "argument": 2.4052820205688477,
+      "actual": 0.6715588569641113,
+      "expectedFloatSin": 0.6715588569641113,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.76953125,
+      "argument": 2.4175539016723633,
+      "actual": 0.662415623664856,
+      "expectedFloatSin": 0.662415623664856,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7734375,
+      "argument": 2.4298255443573,
+      "actual": 0.6531728506088257,
+      "expectedFloatSin": 0.6531728506088257,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.77734375,
+      "argument": 2.4420974254608154,
+      "actual": 0.6438315510749817,
+      "expectedFloatSin": 0.6438315510749817,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.78125,
+      "argument": 2.454369306564331,
+      "actual": 0.6343932747840881,
+      "expectedFloatSin": 0.6343932747840881,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.78515625,
+      "argument": 2.4666411876678467,
+      "actual": 0.6248594522476196,
+      "expectedFloatSin": 0.6248594522476196,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.7890625,
+      "argument": 2.4789130687713623,
+      "actual": 0.6152315139770508,
+      "expectedFloatSin": 0.6152315139770508,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.79296875,
+      "argument": 2.491184949874878,
+      "actual": 0.605510950088501,
+      "expectedFloatSin": 0.605510950088501,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.796875,
+      "argument": 2.5034568309783936,
+      "actual": 0.5956991314888,
+      "expectedFloatSin": 0.5956991314888,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.80078125,
+      "argument": 2.51572847366333,
+      "actual": 0.5857978463172913,
+      "expectedFloatSin": 0.5857978463172913,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8046875,
+      "argument": 2.5280003547668457,
+      "actual": 0.5758081674575806,
+      "expectedFloatSin": 0.5758081674575806,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.80859375,
+      "argument": 2.5402722358703613,
+      "actual": 0.5657317638397217,
+      "expectedFloatSin": 0.5657317638397217,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8125,
+      "argument": 2.552544116973877,
+      "actual": 0.5555701851844788,
+      "expectedFloatSin": 0.5555701851844788,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.81640625,
+      "argument": 2.5648159980773926,
+      "actual": 0.5453248620033264,
+      "expectedFloatSin": 0.5453248620033264,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8203125,
+      "argument": 2.577087879180908,
+      "actual": 0.5349974632263184,
+      "expectedFloatSin": 0.5349974632263184,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.82421875,
+      "argument": 2.589359760284424,
+      "actual": 0.5245895385742188,
+      "expectedFloatSin": 0.5245895385742188,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.828125,
+      "argument": 2.6016314029693604,
+      "actual": 0.5141027569770813,
+      "expectedFloatSin": 0.5141027569770813,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.83203125,
+      "argument": 2.613903284072876,
+      "actual": 0.5035383701324463,
+      "expectedFloatSin": 0.5035383701324463,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8359375,
+      "argument": 2.6261751651763916,
+      "actual": 0.4928981363773346,
+      "expectedFloatSin": 0.4928981363773346,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.83984375,
+      "argument": 2.6384470462799072,
+      "actual": 0.48218369483947754,
+      "expectedFloatSin": 0.48218369483947754,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.84375,
+      "argument": 2.650718927383423,
+      "actual": 0.47139662504196167,
+      "expectedFloatSin": 0.47139662504196167,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.84765625,
+      "argument": 2.6629908084869385,
+      "actual": 0.4605385661125183,
+      "expectedFloatSin": 0.4605385661125183,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8515625,
+      "argument": 2.675262451171875,
+      "actual": 0.4496113657951355,
+      "expectedFloatSin": 0.4496113657951355,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.85546875,
+      "argument": 2.6875343322753906,
+      "actual": 0.43861624598503113,
+      "expectedFloatSin": 0.43861624598503113,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.859375,
+      "argument": 2.6998062133789062,
+      "actual": 0.42755505442619324,
+      "expectedFloatSin": 0.42755505442619324,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.86328125,
+      "argument": 2.712078094482422,
+      "actual": 0.4164294898509979,
+      "expectedFloatSin": 0.4164294898509979,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8671875,
+      "argument": 2.7243499755859375,
+      "actual": 0.4052412211894989,
+      "expectedFloatSin": 0.4052412211894989,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.87109375,
+      "argument": 2.736621856689453,
+      "actual": 0.3939919173717499,
+      "expectedFloatSin": 0.3939919173717499,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.875,
+      "argument": 2.7488937377929688,
+      "actual": 0.38268327713012695,
+      "expectedFloatSin": 0.38268327713012695,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.87890625,
+      "argument": 2.7611653804779053,
+      "actual": 0.3713172376155853,
+      "expectedFloatSin": 0.3713172376155853,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8828125,
+      "argument": 2.773437261581421,
+      "actual": 0.3598950505256653,
+      "expectedFloatSin": 0.3598950505256653,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.88671875,
+      "argument": 2.7857091426849365,
+      "actual": 0.348418653011322,
+      "expectedFloatSin": 0.348418653011322,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.890625,
+      "argument": 2.797981023788452,
+      "actual": 0.3368898034095764,
+      "expectedFloatSin": 0.3368898034095764,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.89453125,
+      "argument": 2.8102529048919678,
+      "actual": 0.32531020045280457,
+      "expectedFloatSin": 0.32531020045280457,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.8984375,
+      "argument": 2.8225247859954834,
+      "actual": 0.31368160247802734,
+      "expectedFloatSin": 0.31368160247802734,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.90234375,
+      "argument": 2.834796667098999,
+      "actual": 0.302005797624588,
+      "expectedFloatSin": 0.302005797624588,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.90625,
+      "argument": 2.8470683097839355,
+      "actual": 0.2902847230434418,
+      "expectedFloatSin": 0.2902847230434418,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.91015625,
+      "argument": 2.859340190887451,
+      "actual": 0.2785196900367737,
+      "expectedFloatSin": 0.2785196900367737,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9140625,
+      "argument": 2.871612071990967,
+      "actual": 0.2667127251625061,
+      "expectedFloatSin": 0.2667127251625061,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.91796875,
+      "argument": 2.8838839530944824,
+      "actual": 0.2548655867576599,
+      "expectedFloatSin": 0.2548655867576599,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.921875,
+      "argument": 2.896155834197998,
+      "actual": 0.24298007786273956,
+      "expectedFloatSin": 0.24298007786273956,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.92578125,
+      "argument": 2.9084277153015137,
+      "actual": 0.23105797171592712,
+      "expectedFloatSin": 0.23105797171592712,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9296875,
+      "argument": 2.9206995964050293,
+      "actual": 0.21910107135772705,
+      "expectedFloatSin": 0.21910107135772705,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.93359375,
+      "argument": 2.932971239089966,
+      "actual": 0.2071114033460617,
+      "expectedFloatSin": 0.2071114033460617,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9375,
+      "argument": 2.9452431201934814,
+      "actual": 0.19509030878543854,
+      "expectedFloatSin": 0.19509030878543854,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.94140625,
+      "argument": 2.957515001296997,
+      "actual": 0.1830398440361023,
+      "expectedFloatSin": 0.1830398440361023,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9453125,
+      "argument": 2.9697868824005127,
+      "actual": 0.17096181213855743,
+      "expectedFloatSin": 0.17096181213855743,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.94921875,
+      "argument": 2.9820587635040283,
+      "actual": 0.1588580310344696,
+      "expectedFloatSin": 0.1588580310344696,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.953125,
+      "argument": 2.994330644607544,
+      "actual": 0.14673033356666565,
+      "expectedFloatSin": 0.14673033356666565,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.95703125,
+      "argument": 3.0066025257110596,
+      "actual": 0.13458052277565002,
+      "expectedFloatSin": 0.13458052277565002,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9609375,
+      "argument": 3.018874168395996,
+      "actual": 0.12241069972515106,
+      "expectedFloatSin": 0.12241069972515106,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.96484375,
+      "argument": 3.0311460494995117,
+      "actual": 0.11022219806909561,
+      "expectedFloatSin": 0.11022219806909561,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.96875,
+      "argument": 3.0434179306030273,
+      "actual": 0.09801709651947021,
+      "expectedFloatSin": 0.09801709651947021,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.97265625,
+      "argument": 3.055689811706543,
+      "actual": 0.08579722791910172,
+      "expectedFloatSin": 0.08579722791910172,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9765625,
+      "argument": 3.0679616928100586,
+      "actual": 0.07356444746255875,
+      "expectedFloatSin": 0.07356444746255875,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.98046875,
+      "argument": 3.080233573913574,
+      "actual": 0.06132058426737785,
+      "expectedFloatSin": 0.06132058426737785,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.984375,
+      "argument": 3.09250545501709,
+      "actual": 0.04906748607754707,
+      "expectedFloatSin": 0.04906748607754707,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.98828125,
+      "argument": 3.1047770977020264,
+      "actual": 0.036807239055633545,
+      "expectedFloatSin": 0.036807239055633545,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.9921875,
+      "argument": 3.117048978805542,
+      "actual": 0.024541210383176804,
+      "expectedFloatSin": 0.024541210383176804,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 0.99609375,
+      "argument": 3.1293208599090576,
+      "actual": 0.012271485291421413,
+      "expectedFloatSin": 0.012271485291421413,
+      "absoluteError": 0.0
+    },
+    {
+      "t": 1.0,
+      "argument": 3.1415927410125732,
+      "actual": -8.742277657347586e-08,
+      "expectedFloatSin": -8.742277657347586e-08,
+      "absoluteError": 0.0
+    }
+  ],
+  "conclusion": "Routine matches float sine over tested flight domain; corroborates native branch height=H*sin(pi*t).",
+  "limits": "Bounded emulation, not original-game runtime validation or proof for NaN/infinity/other inputs. Source binary remains read-only; DLL was not loaded into the OS."
+}

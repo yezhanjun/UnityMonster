@@ -1,0 +1,36 @@
+{
+  "status": "FAIL_POSE_FIDELITY_PENDING",
+  "runs": [
+    {
+      "result": "Docs/Validation/DraugBonePoseVerification.json",
+      "log": "Logs/draug-bone-pose.log",
+      "logSha256": "b9c315bedaf095f5bea4492ea58414fa745fa7e29e363d4aa76c689da0bfeed5",
+      "cases": 24,
+      "failed": 19,
+      "maxRotationDegrees": 19.605342864990234,
+      "maxPosition": 0.0018087192438542843
+    },
+    {
+      "result": "Docs/Validation/DraugNativeClipPoseVerification.json",
+      "log": "Logs/draug-native-clip-pose.log",
+      "logSha256": "155bcfe134e9b28d189f5849db44aec5b9a211f42df3e0c67a3592e188723818",
+      "cases": 24,
+      "failed": 24,
+      "maxRotationDegrees": 109.16737365722656,
+      "maxPosition": 0.06363990157842636
+    }
+  ],
+  "boneCount": 37,
+  "avatarType": "Both source and runtime are Generic, not Humanoid.",
+  "thresholds": {
+    "position": 0.0001,
+    "rotationDegrees": 0.05,
+    "scale": 0.0001
+  },
+  "observations": [
+    "Existing 30fps bake uses zero key tangents; cause contribution not yet isolated.",
+    "Native Instantiate/CreateAsset copies serialize empty curve and generic-binding arrays; direct-copy experiment is unusable.",
+    "SourceClips experiment retained as WIP; runtime still loads original attack_01/02/03 assets."
+  ],
+  "next": "Isolate source SampleAnimation versus Animator pose, then reconstruct source curves or improve bake/interpolation and validate dense off-grid poses. Do not loosen tolerance or use empty native copies."
+}

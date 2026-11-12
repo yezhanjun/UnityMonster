@@ -1,0 +1,139 @@
+{
+  "status": "PASS_ACTOR_LIFETIME",
+  "cases": [
+    {
+      "action": 0,
+      "mode": 0,
+      "stage": 0,
+      "deathCallback": true,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 0,
+      "mode": 0,
+      "stage": 1,
+      "deathCallback": true,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 0,
+      "mode": 1,
+      "stage": 0,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 0,
+      "mode": 1,
+      "stage": 1,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 0,
+      "mode": 2,
+      "stage": 0,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 0,
+      "mode": 2,
+      "stage": 1,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 0,
+      "stage": 0,
+      "deathCallback": true,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 0,
+      "stage": 1,
+      "deathCallback": true,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 1,
+      "stage": 0,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 1,
+      "stage": 1,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 2,
+      "stage": 0,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    },
+    {
+      "action": 1,
+      "mode": 2,
+      "stage": 1,
+      "deathCallback": false,
+      "leaseBaseline": 1,
+      "cleanup": true
+    }
+  ],
+  "modeNames": [
+    "lethal damage then explicit network despawn",
+    "direct network despawn",
+    "root disable then production Begin rebind"
+  ],
+  "stageNames": [
+    "pending",
+    "released"
+  ],
+  "initialFailure": "Fixture target fell beyond10m attack range during root disable. Diagnostic distance10.42692; Begin succeeded but CanBegin correctly rejected. Fixed relative distance, no production runtime change.",
+  "smoke": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 113,
+    "audioCue": "OriginalDraugFlight",
+    "audioStarted": true
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-actor-lifetime.log",
+      "sha256": "39fc1856122a6a3d2c22dff6564c09eca2cff21103e84f9ec7ff2f7028ff9ec2"
+    },
+    {
+      "path": "Logs/draug-actor-lifetime-diagnostic.log",
+      "sha256": "a28888ace9d7fb85974f4d68909ab9cf5ad07ae5c0f18cfc622f589f0619cc46"
+    },
+    {
+      "path": "Logs/draug-actor-lifetime-final.log",
+      "sha256": "5263addbd097bc3da4ece5e24213878ac9fdb6902666242f182823ad69ebe767"
+    }
+  ],
+  "limits": [
+    "Editor host smoke, no Player build or memory/GC measurement.",
+    "Actions selected with whitebox cooldown/time/RNG setup. Relative target distance held at6m to isolate lifecycle from falling; not free-running navigation evidence.",
+    "Lethal ServerApplyRangeItemBlast invokes actual death callback; subsequent NetworkServer.Destroy is explicit. Automatic corpse removal and original Draug death animation/ragdoll fidelity not proven.",
+    "Root disable/re-enable uses production Begin, without restoring body/target via reflection. Rebound action start verified; full replay to impact after rebind not covered.",
+    "Source synchronized RNG, native interrupt parity, glass/HDRP/static projectile fidelity remain pending."
+  ]
+}

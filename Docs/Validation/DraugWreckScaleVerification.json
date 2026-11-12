@@ -1,0 +1,25 @@
+{
+  "status": "PASS_UNITY_NATIVE_SCALE_AND_SINGLE_DRAW",
+  "nativeScaleCases": 12,
+  "randomCases": 4,
+  "limits": "Local transform scale helper only. Full activation order, FX spawn placement, actual lethal integration and source engine RNG sequence remain pending.",
+  "process": 75916,
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckLaunch.cs",
+      "sha256": "0e4862d0ac4c7dbc4b6cbe22d71c7a42e7392553a4f8a9c4963f8b5d2602c1a4"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckScaleValidation.cs",
+      "sha256": "e7e5d3fe5725921576c06c5fe7660cbcfdc563bd9c8d964194c138835b44bae4"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckSpawnTransformVerification.json",
+      "sha256": "64697689a0cca575fbea084e9e8f44e9ba0611f5d71f10fc479a357bd3157678"
+    },
+    {
+      "path": "Logs/draug-wreck-scale.log",
+      "sha256": "64c0d5f147c4156917f7df1eeee01e779fede832f750e27fcb5726cd881654bc"
+    }
+  ]
+}

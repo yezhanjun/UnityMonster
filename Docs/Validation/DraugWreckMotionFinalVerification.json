@@ -1,0 +1,54 @@
+{
+  "status": "PASS_CONTROLLED_PHYSICS_AND_RETIREMENT",
+  "startIndexCases": 80,
+  "bodies": 9,
+  "frames": 180,
+  "maxDisplacement": 9.051558,
+  "removeTime": 2.116667,
+  "limits": "Fixed diagnostic samples, no ground plane/source RNG trajectory/optimized spawn/global registry/audio/bodyshader fidelity or real lethal integration.",
+  "process": 79124,
+  "initialPreviewIssue": "PID69016 physics gate passed, but manual ParticleSystem.Simulate paused systems; checking isPlaying each frame skipped subsequent simulation. Initial screenshots retained. Final fixture caches selected5systems once, then steps them every frame; frame20 particleCount38.",
+  "visualReview": "Inspected final frame20: source fragments moving with smoke/particles visible. No floor in fixture; source trajectory, actual kill flow, audio and body shading fidelity not accepted.",
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckStartIndex.py",
+      "sha256": "f1cb82f75bead191d7494338d1123c27f221639341b33a8ced021e1602eafb95"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckSelection.cs",
+      "sha256": "6be2f8d63fef034de440fb5a0f389d4e44f491ceee71a03f73701924719ccaa5"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckLaunch.cs",
+      "sha256": "6f8b1f16d0b680f4ac880d396299faa4f5723e7c3525d9f57371c7fb618b34b9"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckMotionValidation.cs",
+      "sha256": "7ba5888069d378c5425277071eae72aca3b273a7c1daa953d7b4e1f4ef083f39"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckStartIndexVerification.json",
+      "sha256": "92af66421f7d39d3cdce0511757de72d96e3907ad90748ae8e85c5ea0fbc13b6"
+    },
+    {
+      "path": "Logs/draug-wreck-motion.log",
+      "sha256": "39ace29132c8a6e325c0b60d1a171c9723095618bcf8e591cd923ab3481b0792"
+    },
+    {
+      "path": "Logs/draug-wreck-motion-final.log",
+      "sha256": "f7cc3ebbcf5755c9efa11228ff3906469e8fb985a0c9afe476d80f61bedf4669"
+    },
+    {
+      "path": "Docs\\Validation\\DraugWreckMotionFinalPreview\\frame-132.png",
+      "sha256": "894fbcc0030b233be12d0309f5754ec6c4c5cefdbe28cfe81d9eeab7abd85918"
+    },
+    {
+      "path": "Docs\\Validation\\DraugWreckMotionFinalPreview\\frame-20.png",
+      "sha256": "4cafe5ef067675f3b4252373877533cbf358b97198c0821daf21c1deeb80157c"
+    },
+    {
+      "path": "Docs\\Validation\\DraugWreckMotionFinalPreview\\frame-60.png",
+      "sha256": "c888ca67fa948f602b9b752ee55f5a7cd7e177f86fc45aa64b6f0a313b0bb5f0"
+    }
+  ]
+}

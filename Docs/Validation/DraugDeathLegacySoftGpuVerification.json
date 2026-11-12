@@ -1,0 +1,31 @@
+{
+  "status": "PASS_CONTROLLED_SOURCE_GPU",
+  "cases": 16,
+  "maxError": 1.303852e-08,
+  "limits": "Constant texture and controlled depth globals; camera depth generation and actual scene pending.",
+  "process": 66892,
+  "mode": "softControlledDepth",
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/SourceDeathLegacyAdd.shader",
+      "sha256": "7ded8be077364ada3a21c2f8ba10347f3c8ca3a33d1b5b61eafcfa8e2ed251ee"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathLegacyGpuValidation.cs",
+      "sha256": "a8d3cf0cd0ba4bc051f66f908642542e6f4308d707b77f4c37dbbd8f1843fc57"
+    },
+    {
+      "path": "Logs/draug-death-legacy-soft-gpu.log",
+      "sha256": "0d3b04f8da91cfbbe37bd3c6fe8500c63a230385d3b86a76fe951aa9edd542c8"
+    },
+    {
+      "path": "Logs/draug-death-legacy-gpu.log",
+      "sha256": "8cac0348503bea1732bc213661abcfb4aa843e29e6f92d09ed8c91838fdfc7ca"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathRemainingShaderEvidence.json",
+      "sha256": "405cca6c44a1bfb17a894df60609951f128265d23122b410b669f4d82111fc17"
+    }
+  ],
+  "initialFailure": "Initial91880 source/port agreed but independent expected RGB omitted normal Color property gamma-to-linear conversion. Corrected fixture, production shader unchanged; failure log preserved."
+}

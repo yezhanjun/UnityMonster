@@ -1,0 +1,56 @@
+{
+  "status": "STAGED_NATIVE_HIERARCHY_NOT_RUNTIME_READY",
+  "nodes": 26,
+  "particles": 15,
+  "bodies": 9,
+  "colliders": 9,
+  "meshes": 10,
+  "removedMissingScripts": 4,
+  "remappedReferences": 42,
+  "limits": "Existing local body material remains approximate (missing source normal/packed maps). Missing source scripts removed only from staged clone; source behaviour evidence retained separately. No WreckSpawner/audio/lifecycle implementation, particle simulation or final visual parity claim.",
+  "processes": {
+    "stage": 67792,
+    "reload": 57172,
+    "preview": 44880
+  },
+  "freshProcessReload": "PASS native counts and all serialized component object references resolve internally or to project/package/builtin assets; no source bundles loaded by reload method.",
+  "visualReview": "NOT_ACCEPTED: preview0.10/0.35 inspected; visible rectangular particle edges/background artifacts and absent complete wreck behaviour. Three standalone simulation images are diagnostic previews, not lethal gameplay screenshots.",
+  "evidence": [
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathPrefabStage.cs",
+      "sha256": "86876f987d76c504d28a76907cc517bcaaface5de159b2c9ad41f361f83b2a13"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathStagePreview.cs",
+      "sha256": "66336347594d270d5a15634b5948c54b3e63294adf6194c3445198c3456ce4b3"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\DraugDeathStaged.prefab",
+      "sha256": "92dc6dd7e98fd68204c1300766fbe97c553e09da51ad140fb54a80712fcfa164"
+    },
+    {
+      "path": "Logs\\draug-death-prefab-stage.log",
+      "sha256": "879c2a5b3ec85ecfc453405c585e2abf4741a94d3e9034eb0fdc36aa4d5e6dc6"
+    },
+    {
+      "path": "Logs\\draug-death-prefab-reload.log",
+      "sha256": "347b4523f8592d85a84e22bcda75b78bd088e77d8048e8020d0539a8f4af7707"
+    },
+    {
+      "path": "Logs\\draug-death-stage-preview.log",
+      "sha256": "035342ada532347babe4e0b76586ffa1a5b006134fc048892812c4b8848ea6ee"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathStagePreview\\0.10.png",
+      "sha256": "a24166468cdfb14bda6b5b7f425fb0949e79c75d5469aacdecc16461aaf183b0"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathStagePreview\\0.35.png",
+      "sha256": "a40e3138575068210ec39999a0c421dfd02229a7e308c88c7394e4fc69b2f67d"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathStagePreview\\0.80.png",
+      "sha256": "2ebbd71e178475d960ea298641e9b83e79bd3a35f40e62ea344b29b9ee67207f"
+    }
+  ]
+}

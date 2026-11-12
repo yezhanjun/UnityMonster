@@ -1,0 +1,67 @@
+{
+  "status": "PASS_WITH_SOURCE_CONFIGURED_IDLE_PARAMETER",
+  "cases": [
+    {
+      "clip": "stand",
+      "frames": 720,
+      "cycles": 20.510515213012695,
+      "failed": 0,
+      "maxLocalPosition": 1.2720415725198109e-05,
+      "maxRootRelativePosition": 0.0003632086154539138,
+      "maxRotationDegreesReportedByUnity": 0.0
+    },
+    {
+      "clip": "move",
+      "frames": 720,
+      "cycles": 10.824993133544922,
+      "failed": 0,
+      "maxLocalPosition": 1.4118309991317801e-05,
+      "maxRootRelativePosition": 0.00031449945527128875,
+      "maxRotationDegreesReportedByUnity": 0.0
+    }
+  ],
+  "stepsSeconds": [
+    0.016666666666666666,
+    0.008333333333333333,
+    0.03333333333333333,
+    0.007,
+    0.025,
+    0,
+    0.05,
+    0.004
+  ],
+  "thresholds": {
+    "localPosition": 0.0001,
+    "localRotationDegrees": 0.05,
+    "localScale": 0.0001,
+    "rootRelativePosition": 0.001
+  },
+  "sourceIdleParameterEvidence": "Docs/Validation/DraugIdleSpeedEvidence.json",
+  "evidenceSha256": "d7a37de45e7ced125696bdfc4c99489a94a890ca1841d9af7afe12c37441c6aa",
+  "logs": [
+    {
+      "path": "Logs/draug-continuous-loop-pose.log",
+      "sha256": "5168a2945d1e4ff14616428c4b59e9d3505cf2528888a304595e0a8852ffc524"
+    },
+    {
+      "path": "Logs/draug-continuous-loop-clock.log",
+      "sha256": "f3bed283ebebf71ea0e76f3ff7a5be9f84f23ad11985c40569aee741773e6c96"
+    },
+    {
+      "path": "Logs/draug-configured-continuous-loop.log",
+      "sha256": "78d12052d7af795f652acb0c1d4370170efc56a31c6b1e41161b847ddb243f8f"
+    }
+  ],
+  "runtimeChanged": false,
+  "findings": [
+    "Unconfigured source controller idle multiplier .5 diverged from runtime1, causing720 idle frame failures; movement720 passed.",
+    "Source serialized idleAnimationSpeed1 and successful SetAiState(0) native path set idle_anim_speed through checked SetAnimatorFloat slot.",
+    "Applying this parameter to the isolated source Animator produces1440 passing continuous frames without changing runtime speed."
+  ],
+  "limitations": [
+    "Native source callbacks not executed; checked assignment explicitly reproduced in fixture.",
+    "SetAiState early return and global gates remain outside runtime lifecycle equivalence claim.",
+    "Manual paired Animator.Update/PlayableGraph.Evaluate; zero steps are simulation pauses, not live Time.timeScale test.",
+    "No transition blending comparison in this batch; prior source transition observations used unconfigured controller and should be rechecked with initialization parameters."
+  ]
+}

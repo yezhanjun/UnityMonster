@@ -17,18 +17,18 @@ const md = s => String(s).replaceAll('|','\\|').replaceAll('\n',' ');
 const role = p => {
  if(p.startsWith('Packages/')) return '包与插件';
  if(p.startsWith('ProjectSettings/')) return '工程设置';
- if(p.startsWith('Assets/Jotunnslayer/Enemies/')) return p.includes('/Editor/')?'怪物编辑器工具':'巨人杀手怪物';
+ if(p.startsWith('Assets/Monsters/Jotunnslayer/Enemies/')) return p.includes('/Editor/')?'怪物编辑器工具':'巨人杀手怪物';
  if(p.startsWith('Assets/Resources/RainActors/')) return '雨中冒险角色与怪物';
- if(p.startsWith('Assets/Jotunnslayer/')) return '巨人杀手配套';
- if(p.startsWith('Assets/Baseline/')) return p.includes('/Editor/')?'验收编辑器工具':'运行入口与战斗适配';
- if(p.startsWith('Assets/Mirror/')||p.startsWith('Assets/ThirdParty/')) return '第三方基础组件';
- if(p.startsWith('Assets/Maps/')) return '场景与场景配套';
+ if(p.startsWith('Assets/Monsters/Jotunnslayer/')) return '巨人杀手配套';
+ if(p.startsWith('Assets/Game/Baseline/')) return p.includes('/Editor/')?'验收编辑器工具':'运行入口与战斗适配';
+ if(p.startsWith('Assets/ThirdParty/Mirror/')||p.startsWith('Assets/ThirdParty/')) return '第三方基础组件';
+ if(p.startsWith('Assets/Game/Maps/')) return '场景与场景配套';
  if(p.startsWith('Assets/Resources/RainImported/')) return '雨中冒险图鉴音效与配置';
- if(p.startsWith('Assets/Resources/DemonHunter3C/')||p.startsWith('Assets/CharacterSelection/')||p.startsWith('Assets/Characters/')||p.startsWith('Assets/Resources/PortableCharacters/')||p.startsWith('Assets/Resources/SuperBotPackVol1/'))return '玩家角色与角色配套';
+ if(p.startsWith('Assets/Resources/DemonHunter3C/')||p.startsWith('Assets/Game/CharacterSelection/')||p.startsWith('Assets/VRC/Characters/')||p.startsWith('Assets/Resources/PortableCharacters/')||p.startsWith('Assets/Resources/SuperBotPackVol1/'))return '玩家角色与角色配套';
  if(p.startsWith('Assets/Resources/')) return '共享运行资源';
- if(p.startsWith('Assets/AaaWeapons/')||p.startsWith('Assets/KINEMATION/')) return '武器与动作框架';
- if(p.startsWith('Assets/desNetware/')||p.startsWith('Assets/Demo/')||p.startsWith('Assets/TirgamesAssets/')) return '继承的框架与演示配套';
- if(p.startsWith('Assets/Localization/')||p.startsWith('Assets/TextMesh Pro/')||p.startsWith('Assets/DamageNumbers/')) return '界面字体与反馈';
+ if(p.startsWith('Assets/AssetStore/AaaWeapons/')||p.startsWith('Assets/AssetStore/KINEMATION/')) return '武器与动作框架';
+ if(p.startsWith('Assets/AssetStore/desNetware/')||p.startsWith('Assets/AssetStore/Demo/')||p.startsWith('Assets/AssetStore/TirgamesAssets/')) return '继承的框架与演示配套';
+ if(p.startsWith('Assets/Game/Localization/')||p.startsWith('Assets/TextMesh Pro/')||p.startsWith('Assets/AssetStore/DamageNumbers/')) return '界面字体与反馈';
  return '其他角色材质与共享配套';
 };
 function type(p) {
@@ -112,18 +112,18 @@ const result={generatedAt:new Date().toISOString(),sourceCommit:commit,scope:'Gi
 fs.writeFileSync(path.join(out,'资源完整清单.json'),JSON.stringify(result,null,2)+'\n');
 const table=(headers,rows)=>'| '+headers.join(' | ')+' |\n| '+headers.map(()=>'---').join(' | ')+' |\n'+rows.map(r=>'| '+r.map(md).join(' | ')+' |').join('\n')+'\n';
 const purposes={
- 'Assets/CharacterSelection':'角色包、武器动作及玩家外观配套；体积大不等于可删。先核对当前玩家 Prefab 与 Resources 加载。',
- 'Assets/Jotunnslayer':'怪物本体、动画、材质、图标与导入验收工具；优先保留。',
+ 'Assets/Game/CharacterSelection':'角色包、武器动作及玩家外观配套；体积大不等于可删。先核对当前玩家 Prefab 与 Resources 加载。',
+ 'Assets/Monsters/Jotunnslayer':'怪物本体、动画、材质、图标与导入验收工具；优先保留。',
  'Assets/Resources':'雨中冒险模型、音频、图鉴配置及共享玩家资源；含动态加载，不能按场景引用直接删。',
- 'Assets/Baseline':'启动 UI、GM 图鉴、怪物行为与战斗适配、URP 配置；混有运行代码与 Editor 工具。',
- 'Assets/Mirror':'网络与 Host 基础框架；同时保留了 Examples 的配套内容。',
- 'Assets/Maps':'白盒场景与其他场景依赖；仅 Startup 和 TrainingWhitebox 进入构建列表。',
- 'Assets/desNetware':'MTPSKIT 原框架、玩家与关卡配套；白盒入口仍依赖其中的服务与脚本。',
- 'Assets/Demo':'继承的演示与动作资源；其中部分动画被现有角色引用，需逐项核对。',
- 'Assets/TirgamesAssets':'继承的模型材质和演示配套，需通过依赖检查决定裁剪范围。',
- 'Assets/Localization':'中文字体等界面资源。',
- 'Assets/AaaWeapons':'武器与 FPS 框架配套。',
- 'Assets/KINEMATION':'动作与武器框架。',
+ 'Assets/Game/Baseline':'启动 UI、GM 图鉴、怪物行为与战斗适配、URP 配置；混有运行代码与 Editor 工具。',
+ 'Assets/ThirdParty/Mirror':'网络与 Host 基础框架；同时保留了 Examples 的配套内容。',
+ 'Assets/Game/Maps':'白盒场景与其他场景依赖；仅 Startup 和 TrainingWhitebox 进入构建列表。',
+ 'Assets/AssetStore/desNetware':'MTPSKIT 原框架、玩家与关卡配套；白盒入口仍依赖其中的服务与脚本。',
+ 'Assets/AssetStore/Demo':'继承的演示与动作资源；其中部分动画被现有角色引用，需逐项核对。',
+ 'Assets/AssetStore/TirgamesAssets':'继承的模型材质和演示配套，需通过依赖检查决定裁剪范围。',
+ 'Assets/Game/Localization':'中文字体等界面资源。',
+ 'Assets/AssetStore/AaaWeapons':'武器与 FPS 框架配套。',
+ 'Assets/AssetStore/KINEMATION':'动作与武器框架。',
  'Assets/TextMesh Pro':'字体与文字渲染配套。'};
 let doc='# UnityMonster 资源清单\n\n'+
  '本工程将巨人杀手怪物、雨中冒险角色、玩家角色包及 MTPSKIT 运行依赖放在了多个资源目录中。优先保留怪物与白盒运行资源，先核对大体积角色包、演示内容和重复文件，再决定搬迁或删除。目录名称本身不能证明资源未使用。\n\n'+
@@ -138,7 +138,7 @@ let doc='# UnityMonster 资源清单\n\n'+
  '\n文件数不包含 meta；场景、脚本、配置均计作源文件。资源组数量不等于怪物数量，同一个模型可能承载多个怪物配置。\n\n'+
  '## 顶层目录与用途\n\n'+table(['目录','资源文件','体积','用途及处理建议'],folders.map(g=>[g.name,g.count,unit(g.bytes),purposes[g.name]||'角色外观、材质或共享配套，具体内容按完整清单核对；未判定为冗余。']))+
  '\n## 当前资源混杂的主要位置\n\n'+
- `CharacterSelection 占 Assets 体积的 ${(100*folders.find(x=>x.name==='Assets/CharacterSelection').bytes/sum(assets)).toFixed(1)}%，包含玩家角色包及动作资源。它是优先核对的体积来源。LFS 重复候选即使全部可合并，理论也只节省 ${unit(duplicates.reduce((s,x)=>s+x.potentialBytes,0))}，单纯去重不能显著缩小工程。\n\n`+
+ `CharacterSelection 占 Assets 体积的 ${(100*folders.find(x=>x.name==='Assets/Game/CharacterSelection').bytes/sum(assets)).toFixed(1)}%，包含玩家角色包及动作资源。它是优先核对的体积来源。LFS 重复候选即使全部可合并，理论也只节省 ${unit(duplicates.reduce((s,x)=>s+x.potentialBytes,0))}，单纯去重不能显著缩小工程。\n\n`+
  '巨人杀手资源集中在 Jotunnslayer，雨中冒险本体在 RainActors，音效与图鉴又分布到 RainImported；运行适配和 GM 在 Baseline。玩家外观和动作还散布在 CharacterSelection、Characters、多个作者目录及 Resources。Editor 导入工具与运行代码混在同一业务目录的不同层级，继承的 Demo、Mirror Examples 和关卡配套仍在仓库。\n\n'+
  '建议先统一分类入口，再逐批核对玩家包、演示配套和旧导入产物。直接把目录名称中含 Demo、Pending 或 Examples 的资源删除，会遗漏被角色和运行工具引用的内容。\n\n'+
  '## 按资源类型统计\n\n'+table(['类型','文件数','体积'],types.map(g=>[g.name,g.count,unit(g.bytes)]))+
@@ -147,10 +147,10 @@ let doc='# UnityMonster 资源清单\n\n'+
  '以下是资源文件夹分组，雨中冒险部分也含幸存者和无人机。表中存在模型或动画只表示资源在库，不表示已经实机通过。PendingWhitebox 是沿用的文件夹名称，其中五组已有历史验收记录，不能按目录名判断失败。\n\n'+
  table(['资源组','文件数','网格或模型','Prefab','动画','材质','贴图','音频','体积'],actors.map(g=>[g.name,g.count,(g.types['网格']||0)+(g.types['模型文件']||0),g.types.Prefab||0,g.types['动画']||0,g.types['材质']||0,g.types['贴图']||0,g.types['音频']||0,unit(g.bytes)]))+
  '\n### 怪物资源的代码入口\n\n'+table(['职责','路径或位置'],[
- ['巨人杀手怪物资源','Assets/Jotunnslayer/Enemies/Resources/Jotunnslayer'],['巨人杀手行为与召唤','Assets/Jotunnslayer/Enemies/Skeleton1HSpawn.cs；Skeleton1HCombat.cs；Skeleton1HVisual.cs'],
- ['雨中冒险资源','Assets/Resources/RainActors/RoR2；Assets/Resources/RainActors/PendingWhitebox'],['雨中冒险材质动画适配','Assets/Baseline/RainActorVisual.cs'],
- ['怪物行为与适配','Assets/Baseline/RangeResearchEnemy*.cs；RangeResearchLab.cs'],['GM 图鉴与优先排序','Assets/Baseline/RainImported/JournalBrowser.cs'],
- ['图鉴图标音效配置','Assets/Resources/RainImported'],['导入和动画烘焙工具','Assets/Jotunnslayer/Enemies/Editor'],['已有验收证据','Docs/Acceptance；Docs/Validation']])+
+ ['巨人杀手怪物资源','Assets/Monsters/Jotunnslayer/Enemies/Resources/Jotunnslayer'],['巨人杀手行为与召唤','Assets/Monsters/Jotunnslayer/Enemies/Skeleton1HSpawn.cs；Skeleton1HCombat.cs；Skeleton1HVisual.cs'],
+ ['雨中冒险资源','Assets/Resources/RainActors/RoR2；Assets/Resources/RainActors/PendingWhitebox'],['雨中冒险材质动画适配','Assets/Game/Baseline/RainActorVisual.cs'],
+ ['怪物行为与适配','Assets/Game/Baseline/RangeResearchEnemy*.cs；RangeResearchLab.cs'],['GM 图鉴与优先排序','Assets/Game/Baseline/RainImported/JournalBrowser.cs'],
+ ['图鉴图标音效配置','Assets/Resources/RainImported'],['导入和动画烘焙工具','Assets/Monsters/Jotunnslayer/Enemies/Editor'],['已有验收证据','Docs/Acceptance；Docs/Validation']])+
  '\n### 近期修复资源的定位\n\n'+table(['怪物','资源目录','记录状态与遗留项'],[
  ['迷你菇','Assets/Resources/RainActors/PendingWhitebox/minimushroom','已记录通过；动画曲线已烘焙。'],
  ['黄铜装置','Assets/Resources/RainActors/PendingWhitebox/bell','已记录通过；原版动画持久化仍需跟进。'],
@@ -182,7 +182,7 @@ const html=`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="
 *{box-sizing:border-box}body{margin:0;background:#f4f6f9;color:#1c293b;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1450px;margin:auto;padding:30px}h1{margin:0 0 8px}a{color:#1759aa}.summary{display:flex;flex-wrap:wrap;gap:15px;margin:20px 0}.card{background:white;border:1px solid #dce3ec;border-radius:8px;padding:16px;min-width:180px}.card strong{display:block;font-size:25px}.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}input,select,button{font:inherit;padding:8px;border:1px solid #b9c6d8;border-radius:5px}input{flex:1;min-width:260px}button{background:white;cursor:pointer}table{border-collapse:collapse;width:100%;background:white}th,td{padding:10px;border-bottom:1px solid #dde4ee;text-align:left;vertical-align:top}th{background:#e8eef6;white-space:nowrap}td.path{max-width:680px;overflow-wrap:anywhere;font-family:ui-monospace,monospace;font-size:13px}.muted{color:#596980;font-size:13px}.panel{background:#fff;padding:18px;border-radius:8px;margin-bottom:20px}.pager{display:flex;align-items:center;gap:12px;margin:15px 0}code{overflow-wrap:anywhere}details{margin:12px 0}#tablewrap{overflow:auto}</style>
 <main><h1>UnityMonster 资源清单</h1><p>按用途、类型、目录与名称检索工程资源。目录分组与文件数量不等于已验收怪物数量。</p><p><a href="资源清单.md">分类说明与整理建议</a> · <a href="资源完整清单.json">完整 JSON</a> · <a href="../Acceptance/怪物实机截图验收汇总.html">怪物实机截图验收表</a></p>
 <div class="summary"><div class="card">Assets 资源<strong>${assets.length} 个</strong>${gib(sum(assets))}</div><div class="card">历史验收<strong>${acceptance.isolatedPassed}/${acceptance.catalogTotal}</strong>本次新增 0 · Goal 暂停</div><div class="card">内容重复候选<strong>${duplicates.length} 组</strong>理论可省 ${unit(duplicates.reduce((s,x)=>s+x.potentialBytes,0))}</div><div class="card">meta 与 GUID<strong>${audits.missingMeta.length+audits.orphanMeta.length+audits.duplicateGuids.length} 项异常</strong>细项见完整 JSON</div></div>
-<div class="panel"><b>重点核对</b>：CharacterSelection 占 ${gib(folders.find(x=>x.name==='Assets/CharacterSelection').bytes)}，约 ${(100*folders.find(x=>x.name==='Assets/CharacterSelection').bytes/sum(assets)).toFixed(1)}%。内容重复候选理论只可节省 ${unit(duplicates.reduce((s,x)=>s+x.potentialBytes,0))}。<br><b>整理边界</b>：当前建立分类清单，没有移动或删除资源。资源存在不代表已运行通过，未判定为冗余。Library、缓存、构建结果与 meta 不计入资源文件数。<div class="muted">来源提交 ${commit} · ${result.generatedAt} · 本地展开后的真实体积</div></div>
+<div class="panel"><b>重点核对</b>：CharacterSelection 占 ${gib(folders.find(x=>x.name==='Assets/Game/CharacterSelection').bytes)}，约 ${(100*folders.find(x=>x.name==='Assets/Game/CharacterSelection').bytes/sum(assets)).toFixed(1)}%。内容重复候选理论只可节省 ${unit(duplicates.reduce((s,x)=>s+x.potentialBytes,0))}。<br><b>整理边界</b>：当前建立分类清单，没有移动或删除资源。资源存在不代表已运行通过，未判定为冗余。Library、缓存、构建结果与 meta 不计入资源文件数。<div class="muted">来源提交 ${commit} · ${result.generatedAt} · 本地展开后的真实体积</div></div>
 <details><summary>顶层目录体积与用途</summary><table><thead><tr><th>目录</th><th>数量</th><th>体积</th><th>用途与建议</th></tr></thead><tbody>${folders.map(g=>'<tr><td>'+escape(g.name)+'</td><td>'+g.count+'</td><td>'+unit(g.bytes)+'</td><td>'+escape(purposes[g.name]||'角色、材质或共享配套；待依赖核对')+'</td></tr>').join('')}</tbody></table></details>
 <div class="filters"><input id="q" placeholder="搜索路径、名称、GUID、Resources 加载键"><select id="cat"><option value="">全部分类</option>${categories.map(g=>'<option>'+escape(g.name)+'</option>').join('')}</select><select id="kind"><option value="">全部类型</option>${[...new Set(files.map(x=>x.type))].sort().map(x=>'<option>'+escape(x)+'</option>').join('')}</select><select id="order"><option value="size">体积从大到小</option><option value="path">路径排序</option></select></div>
 <p id="count"></p><div id="tablewrap"><table><thead><tr><th>资源路径与加载信息</th><th>用途分类</th><th>类型</th><th>体积</th><th>LFS</th></tr></thead><tbody id="rows"></tbody></table></div><div class="pager"><button id="prev">上一页</button><span id="page"></span><button id="next">下一页</button></div></main>

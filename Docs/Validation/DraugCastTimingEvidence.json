@@ -1,0 +1,86 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "sourceBundleSHA256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "timeMethod": {
+    "index": 78850,
+    "name": "get_deltaTime",
+    "token": 100669288,
+    "VA": 6452250576,
+    "RVA": 9799632,
+    "raw": 9793488,
+    "parameterCount": 0
+  },
+  "skillThrowEvents": {
+    "OnCastEvent": 0.49205490946769714,
+    "OnCastEndEvent": 1.1088453531265259
+  },
+  "chain": [
+    {
+      "stage": "OnCastEvent",
+      "instructions": [
+        "0xba0a8a xor r9d, r9d",
+        "0xba0a8d lea r8, [rsp + 0x30]",
+        "0xba0a92 mov rdx, rsi",
+        "0xba0a95 mov rcx, rbx",
+        "0xba0a98 call 0x180bbe820 ; PawnController.ProcessAnimationEvent",
+        "0xba0a9d mov rcx, rbx",
+        "0xba0aa0 test al, al",
+        "0xba0aa2 je 0x180ba0ab7",
+        "0xba0aa4 mov rax, qword ptr [rbx]",
+        "0xba0aa7 mov rdx, qword ptr [rax + 0xf00]",
+        "0xba0aae call qword ptr [rax + 0xef8]",
+        "0xba0ab4 mov rcx, rbx"
+      ],
+      "finding": "If ProcessAnimationEvent succeeds, invokes virtual DoCast at slot0xef8."
+    },
+    {
+      "stage": "AIController.DoCast",
+      "instructions": [
+        "0xb55ae1 xor edx, edx",
+        "0xb55ae3 mov rcx, rdi",
+        "0xb55ae6 call 0x180b98890 ; PawnController.DoCast"
+      ],
+      "finding": "Calls PawnController.DoCast."
+    },
+    {
+      "stage": "PawnController.DoCast",
+      "instructions": [
+        "0xb9972a xor r13d, r13d",
+        "0xb9972d mov qword ptr [rsp + 0x20], r13",
+        "0xb99732 xor r9d, r9d",
+        "0xb99735 mov r8, rax",
+        "0xb99738 mov rdx, rbx",
+        "0xb9973b mov rcx, rsi",
+        "0xb9973e call 0x180e4da30 ; RPGSkill.ApplyModifiers",
+        "0xb99743 mov r9, qword ptr [rbx]",
+        "0xb99746 mov rax, qword ptr [r9 + 0x1038]",
+        "0xb9974d mov r9, qword ptr [r9 + 0x1040]",
+        "0xb99754 mov r8, rsi",
+        "0xb99757 mov rdx, r12",
+        "0xb9975a mov rcx, rbx",
+        "0xb9975d call rax"
+      ],
+      "finding": "At this reached cast path, ApplyModifiers precedes virtual TriggerCooldown with original skill and instance."
+    },
+    {
+      "stage": "AIController._DoCastEnd",
+      "instructions": [
+        "0xb37c2d xor edx, edx",
+        "0xb37c2f mov rcx, rbx",
+        "0xb37c32 call 0x180c6d870 ; RPGActor.get_skillsSyncedWithAttacks",
+        "0xb37c37 test al, al",
+        "0xb37c39 je 0x180b37c4d",
+        "0xb37c3b xor edx, edx",
+        "0xb37c3d mov rcx, rbx",
+        "0xb37c40 call 0x180b572a0 ; AIController.get_attackInterval",
+        "0xb37c45 movss dword ptr [rbx + 0x1168], xmm0"
+      ],
+      "finding": "Separate cast-end path resets attack timer when skillsSyncedWithAttacks is true."
+    }
+  ],
+  "limits": [
+    "Static reached-path analysis, not full successful-cast execution. DoCast has earlier gates and branches.",
+    "Source animation event times are clip-local; speed and state transitions affect wall-clock timing.",
+    "Skill cooldown trigger and attack timer reset are distinct events; do not combine into a single release timer."
+  ]
+}

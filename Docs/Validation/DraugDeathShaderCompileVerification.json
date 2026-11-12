@@ -1,0 +1,29 @@
+{
+  "status": "IMPLEMENTED_COMPILE_PASS_GPU_PARITY_PENDING",
+  "process": 55520,
+  "scope": "Source S_Shuriken noise/UV/sample/color/alpha-premultiply surface; actual death BlendMode1 only",
+  "limits": [
+    "No source-versus-port GPU comparison yet.",
+    "HDRP fog/global mip bias/exposure pipeline not replicated; explicit exposure multiplier defaults1.",
+    "Not bound to production death materials or runtime.",
+    "Other death material families, physics lifecycle and audio remain pending."
+  ],
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/SourceDeathShuriken.shader",
+      "sha256": "2aadb7c810918b7178aa571cf1740de55d80163cca0858b3dba8008f06145a79"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathShaderCompile.cs",
+      "sha256": "878ce27460668feba2746103c32941d63d4ba51b8012d588a544641cf7da1ce4"
+    },
+    {
+      "path": "Logs/draug-death-shader-compile.log",
+      "sha256": "c6b3bf48a235fc4f1410695bb47f43e08aa8d39c1632710aa3b06aab4660e3f6"
+    },
+    {
+      "path": "Docs/Validation/DraugNoiseLiteralEvidence.json",
+      "sha256": "55f0510b3ef95aab573a6ea1d8ba1add113cfafc911bc541747384ee85e7637b"
+    }
+  ]
+}

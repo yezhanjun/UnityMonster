@@ -1,0 +1,24 @@
+{
+  "status": "PASS_UNITY_FX_REGISTRY_AND_LOD_SEQUENCE",
+  "steps": 189,
+  "limits": "Native corpus models dictionary/unique collection operations. Tests registry and LOD decisions, not real particles, production despawn/destroy or full lethal lifecycle.",
+  "process": 80724,
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugDeathFxRegistry.cs",
+      "sha256": "f282ca6c3cf2104a0a8752081ddab9cc0d2003fadaa8c121fbb658f506ada27b"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathFxRegistryValidation.cs",
+      "sha256": "f0348522e6ab32993da41703c4943a9efc616f304363ec5bfe0e7af6636c6489"
+    },
+    {
+      "path": "Docs/Validation/DraugFxRegistryVerification.json",
+      "sha256": "d0c80530dfb3f140aefca8ddd2dea8c053e104b2914781ec2df12bb1120f4eea"
+    },
+    {
+      "path": "Logs/draug-death-fx-registry.log",
+      "sha256": "dc0d12a09bd9d861ca170c25509dc0c592ee3be962aa7893929f6c9f0f2515db"
+    }
+  ]
+}

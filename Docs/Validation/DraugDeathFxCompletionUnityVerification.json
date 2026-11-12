@@ -1,0 +1,43 @@
+{
+  "status": "PASS_UNITY_NATIVE_COMPLETION_AND_PREFAB_PROFILE",
+  "nativeCases": 108,
+  "inactiveCases": 2,
+  "prefabParticles": 15,
+  "maxDuration": 0.35,
+  "limits": "Completion predicate only; source removal coroutine, production lifecycle and lethal integration remain pending.",
+  "process": 76616,
+  "sourceDelayStaticEvidence": {
+    "type": {
+      "typeIndex": 51629,
+      "tag": 18,
+      "attributes": 0,
+      "data": 10952,
+      "name": "WaitForSeconds",
+      "namespace": "UnityEngine"
+    },
+    "coroutineRVA": "0xbdcb40",
+    "finding": "First MoveNext yields WaitForSeconds(delay); resumed state clears FX destroyCoroutine and calls RemoveFromScene. Source actual configured delay1. Engine coroutine scheduling not tested in this gate."
+  },
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugDeathFxCompletion.cs",
+      "sha256": "0180dfbcbc1fc46cc206688ddff0313c451b97b0ed8fdd391208b6db03292f42"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathFxCompletionValidation.cs",
+      "sha256": "39289b07036e48b0f83a604e8f2bd0e4079e9d3624aae7c4b0a71852c0db80b5"
+    },
+    {
+      "path": "Docs/Validation/DraugFxFinishedVerification.json",
+      "sha256": "1ebfde2db35c77f542223958da44f44f4f2445c52d4a9ff64f716eb395c04ae3"
+    },
+    {
+      "path": "Logs/draug-death-fx-completion.log",
+      "sha256": "1a8e9fcf34ddd16152d39c79889aa47b1626483805c47710fa9c9693ce15f60b"
+    },
+    {
+      "path": "Logs/__RemoveFromSceneDelayed_d__211-MoveNext-0xbdcb40.asm.txt",
+      "sha256": "d7cea0a66422d944a64fb5f2b0c623b2ec2ffcc05c9ededd15138bd8a32e64a3"
+    }
+  ]
+}

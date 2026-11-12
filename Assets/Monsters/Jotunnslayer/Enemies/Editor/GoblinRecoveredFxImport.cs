@@ -1,0 +1,93 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using Object=UnityEngine.Object;
+public static class GoblinRecoveredFxImport
+{
+ const string Folder="Assets/Monsters/Jotunnslayer/Enemies/Resources/Jotunnslayer/Goblin/OriginalFx";
+ static readonly Dictionary<Object,Object> copies=new Dictionary<Object,Object>();
+ static T Save<T>(T value,string path) where T:Object
+ {
+  var old=AssetDatabase.LoadAssetAtPath<T>(path);
+  if(old){EditorUtility.CopySerialized(value,old);Object.DestroyImmediate(value);return old;}
+  AssetDatabase.CreateAsset(value,path);return value;
+ }
+ static Mesh MeshCopy(Mesh value)
+ {
+  if(!value)return null;
+  if(copies.TryGetValue(value,out var found))return (Mesh)found;
+  var result=Save(Object.Instantiate(value),Folder+"/mesh_"+copies.Count+".asset");copies[value]=result;return result;
+ }
+ static Texture TextureCopy(Texture value)
+ {
+  if(!value)return null;
+  if(copies.TryGetValue(value,out var found))return (Texture)found;
+  var rt=RenderTexture.GetTemporary(value.width,value.height,0,RenderTextureFormat.ARGB32);
+  var previous=RenderTexture.active;Texture2D tex=null;
+  try
+  {
+   Graphics.Blit(value,rt);RenderTexture.active=rt;
+   tex=new Texture2D(value.width,value.height,TextureFormat.RGBA32,false);
+   tex.ReadPixels(new Rect(0,0,value.width,value.height),0,0);tex.Apply();
+   string path=Folder+"/texture_"+copies.Count+".png";
+   File.WriteAllBytes(path,tex.EncodeToPNG());AssetDatabase.ImportAsset(path);
+   var importer=(TextureImporter)AssetImporter.GetAtPath(path);importer.alphaIsTransparency=true;importer.wrapMode=value.wrapMode;importer.SaveAndReimport();
+   var result=AssetDatabase.LoadAssetAtPath<Texture2D>(path);copies[value]=result;return result;
+  }
+  finally {if(tex)Object.DestroyImmediate(tex);RenderTexture.active=previous;RenderTexture.ReleaseTemporary(rt);}
+ }
+ static Material MaterialCopy(Material original)
+ {
+  if(!original)return null;
+  if(copies.TryGetValue(original,out var found))return (Material)found;
+  var mat=new Material(Shader.Find("Universal Render Pipeline/Particles/Unlit"));mat.name=original.name+"_URPApproximation";
+  bool additive=original.HasProperty("_DstBlend") && original.GetFloat("_DstBlend")==1;
+  mat.SetFloat("_Surface",1);mat.SetFloat("_Blend",additive?2:0);mat.SetFloat("_SrcBlend",5);mat.SetFloat("_DstBlend",additive?1:10);mat.SetFloat("_ZWrite",0);mat.SetFloat("_Cull",0);
+  mat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");mat.renderQueue=3000;
+  foreach(var key in new[]{"_mainTexture","Main_tex","_MainTex","_BaseMap"})
+   if(original.HasProperty(key) && original.GetTexture(key)){mat.SetTexture("_BaseMap",TextureCopy(original.GetTexture(key)));mat.SetTextureScale("_BaseMap",original.GetTextureScale(key));mat.SetTextureOffset("_BaseMap",original.GetTextureOffset(key));break;}
+  var color=Color.white;
+  foreach(var key in new[]{"_color","_Color","_BaseColor"})if(original.HasProperty(key)){color=original.GetColor(key);if(color.a>0)break;}
+  // Custom dissolve alpha semantics are not URP opacity; preserve visible tint pending visual review.
+  color.a=1;mat.SetColor("_BaseColor",color);
+  var result=Save(mat,Folder+"/material_"+copies.Count+".mat");copies[original]=result;return result;
+ }
+ public static void Run()
+ {
+  Directory.CreateDirectory(Folder);AssetDatabase.Refresh();copies.Clear();
+  var bundles=new List<AssetBundle>();GameObject copy=null;
+  try
+  {
+   const string source="E:/SteamLibrary/steamapps/common/Jotunnslayer Hordes of Hel/Jotunnslayer_Data/StreamingAssets/aa/StandaloneWindows64";
+   foreach(var pattern in new[]{"*monoscripts*.bundle","*unitybuiltinassets*.bundle","duplicateassetisolation*.bundle"})foreach(var file in Directory.GetFiles(source,pattern))bundles.Add(AssetBundle.LoadFromFile(file));
+   var main=AssetBundle.LoadFromFile("Logs/goblin-recovered.bundle");bundles.Add(main);
+   foreach(var kind in new[]{"cast","muzzle","projectile","banish","hit"})
+   {
+    var original=main.LoadAsset<GameObject>("assets/recovered/goblin_"+kind+".prefab");if(!original)throw new Exception("Missing FX "+kind);
+    copy=Object.Instantiate(original);copy.name="Goblin_"+kind;
+    foreach(var c in copy.GetComponentsInChildren<MonoBehaviour>(true))if(c)Object.DestroyImmediate(c);
+    foreach(var t in copy.GetComponentsInChildren<Transform>(true))GameObjectUtility.RemoveMonoBehavioursWithMissingScript(t.gameObject);
+    foreach(var r in copy.GetComponentsInChildren<ParticleSystemRenderer>(true))
+    {
+     var mats=r.sharedMaterials;for(int i=0;i<mats.Length;i++)mats[i]=MaterialCopy(mats[i]);r.sharedMaterials=mats;r.trailMaterial=MaterialCopy(r.trailMaterial);
+     if(r.meshCount>0){var meshes=new Mesh[r.meshCount];r.GetMeshes(meshes);for(int i=0;i<meshes.Length;i++)meshes[i]=MeshCopy(meshes[i]);r.SetMeshes(meshes);}
+    }
+    foreach(var ps in copy.GetComponentsInChildren<ParticleSystem>(true))
+    {
+     ps.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);var settings=ps.main;settings.playOnAwake=false;
+     var shape=ps.shape;if(shape.mesh)shape.mesh=MeshCopy(shape.mesh);
+    }
+    copy.transform.SetLocalPositionAndRotation(Vector3.zero,Quaternion.identity);
+    if(!PrefabUtility.SaveAsPrefabAsset(copy,Folder+"/Goblin_"+kind+".prefab"))throw new Exception("Save failed "+kind);
+    Debug.Log($"GOBLIN_FX_IMPORTED {kind} particles={copy.GetComponentsInChildren<ParticleSystem>(true).Length} shaderApproximation=True");
+    Object.DestroyImmediate(copy);copy=null;
+   }
+   AssetDatabase.SaveAssets();Debug.Log("GOBLIN_FX_IMPORT_PASS");
+  }
+  finally {if(copy)Object.DestroyImmediate(copy);foreach(var b in bundles)if(b)b.Unload(true);copies.Clear();}
+  EditorApplication.Exit(0);
+ }
+}
+

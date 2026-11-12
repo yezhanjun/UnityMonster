@@ -1,0 +1,95 @@
+{
+  "status": "PASS_NATIVE_SEED_WRITE_SEMANTICS",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "setterRVA": "0x862f80",
+  "setterBytes": "895118c3cccccccc",
+  "cases": [
+    {
+      "initialSeed": 0,
+      "replacementSeed": 1,
+      "warmContinuationDraws": 128,
+      "warmPointerAndStatePreserved": true,
+      "coldRemainsUninitialized": true
+    },
+    {
+      "initialSeed": 1,
+      "replacementSeed": 0,
+      "warmContinuationDraws": 128,
+      "warmPointerAndStatePreserved": true,
+      "coldRemainsUninitialized": true
+    },
+    {
+      "initialSeed": -1,
+      "replacementSeed": 2147483647,
+      "warmContinuationDraws": 128,
+      "warmPointerAndStatePreserved": true,
+      "coldRemainsUninitialized": true
+    },
+    {
+      "initialSeed": -2147483648,
+      "replacementSeed": 161803398,
+      "warmContinuationDraws": 128,
+      "warmPointerAndStatePreserved": true,
+      "coldRemainsUninitialized": true
+    },
+    {
+      "initialSeed": 987654321,
+      "replacementSeed": -123456789,
+      "warmContinuationDraws": 128,
+      "warmPointerAndStatePreserved": true,
+      "coldRemainsUninitialized": true
+    }
+  ],
+  "warmDraws": 640,
+  "precedingNativeSequenceDraws": 26496,
+  "aiStartRandomizedField": "chaseDistance",
+  "evidence": [
+    {
+      "path": "Logs/NetAIController-Cast-0xf65260.asm.txt",
+      "sha256": "73ad46f422478933f60622b32c4afb4cbb8d0c5de36e408885ed6ca2b65f8f39",
+      "checkedInstructions": [
+        "0xf653d5 mov edx, 0xf423f",
+        "0xf653da xor ecx, ecx",
+        "0xf653dc call 0x1848dc880",
+        "0xf653ea mov dword ptr [rbx + 0x18], eax",
+        "0xf6543b mov dword ptr [rcx + 0x18], eax"
+      ]
+    },
+    {
+      "path": "Logs/NetAIController-RpcCast-0xf6e3e0.asm.txt",
+      "sha256": "25ee46e443db48b595b1709682840cde40cb2cdf7a4de6e314d2f9774322f407",
+      "checkedInstructions": [
+        "0xf6e663 mov rcx, qword ptr [rsi + 0x4f0]",
+        "0xf6e67b mov dword ptr [rcx + 0x18], r15d",
+        "0xf6e6a0 mov dword ptr [rcx + 0x18], r15d"
+      ]
+    },
+    {
+      "path": "Logs/NetAIController-RpcUseSkill-0xf6dba0.asm.txt",
+      "sha256": "f63802f5a9fbb7ca86cc7076e0e912ce08e771adf9fc88f16802029daf89eb38",
+      "checkedInstructions": [
+        "0xf6dcf5 mov rcx, qword ptr [r14 + 0x4f0]",
+        "0xf6dd0d mov dword ptr [rcx + 0x18], r12d"
+      ]
+    },
+    {
+      "path": "Logs/AIController-GFStart-0xb33440.asm.txt",
+      "sha256": "84beb667b4e86c95f96c3d63bb8d9487cb63ef59af0745cf4441fa74fd1ebcf8",
+      "checkedInstructions": [
+        "0xb336b8 mov rbx, qword ptr [rdi + 0x4f0]",
+        "0xb33709 call rax",
+        "0xb33739 movss dword ptr [rdi + 0xfd4], xmm0"
+      ]
+    }
+  ],
+  "findings": [
+    "Warm RandomGenerator.set_seed changes the backing seed only; it neither replaces nor rewinds the existing System.Random sequence. Cold setter leaves_random null for later initialization.",
+    "Reached NetAIController.Cast branch draws Unity integer Range(0,999999), writes actor seed and copies it to skill randomGenerator seed. RpcCast writes received seed to both actor and skill; RpcUseSkill writes actor seed.",
+    "AIController.GFStart consumes the same actor RNG to randomize field chaseDistance before gameplay skill draws. A skill-only new generator starting at draw0 cannot claim whole-actor sequence parity."
+  ],
+  "limits": [
+    "Selected static network branches only; RPC dispatch, authority guards, full call graph and later Initialize calls not executed.",
+    "Warm continuation validates the setter operation, not a claim that a full cast can never reinitialize either generator.",
+    "Startup/other actor RNG consumers still need configuration-specific accounting. No runtime change, Unity smoke or new monster acceptance."
+  ]
+}

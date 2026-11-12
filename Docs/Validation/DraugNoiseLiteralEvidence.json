@@ -1,0 +1,135 @@
+{
+  "status": "EXACT_SOURCE_NOISE_NORMALIZER_VERIFIED",
+  "normalizerBits": "0x33800001",
+  "normalizerFloat": 5.960465188081798e-08,
+  "sourceSHA256": "27bdba8cf98c3b33d477100b8f19b9bf9d5fde8fd186d42a57cb05e84003e108",
+  "records": [
+    {
+      "wordOffset": 216,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 2,
+      "instruction": [
+        "0xf000032",
+        "0x100062",
+        "0x2",
+        "0x100aa6",
+        "0x1",
+        "0x4002",
+        "0x0",
+        "0x33800001",
+        "0x33800001",
+        "0x0",
+        "0x4002",
+        "0x0",
+        "0x3f000000",
+        "0xbf000000",
+        "0x0"
+      ]
+    },
+    {
+      "wordOffset": 236,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 1,
+      "instruction": [
+        "0xa000032",
+        "0x100012",
+        "0x2",
+        "0x10002a",
+        "0x1",
+        "0x4001",
+        "0x33800001",
+        "0x8010003a",
+        "0x41",
+        "0x1"
+      ]
+    },
+    {
+      "wordOffset": 355,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 4,
+      "instruction": [
+        "0xf000032",
+        "0x1000f2",
+        "0x3",
+        "0x100446",
+        "0x2",
+        "0x4002",
+        "0x33800001",
+        "0x33800001",
+        "0x33800001",
+        "0x33800001",
+        "0x4002",
+        "0x3f000000",
+        "0x3f000000",
+        "0xbf000000",
+        "0xbf000000"
+      ]
+    },
+    {
+      "wordOffset": 375,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 2,
+      "instruction": [
+        "0xd000032",
+        "0x100032",
+        "0x3",
+        "0x100046",
+        "0x2",
+        "0x4002",
+        "0x33800001",
+        "0x33800001",
+        "0x0",
+        "0x0",
+        "0x80100ae6",
+        "0x41",
+        "0x2"
+      ]
+    },
+    {
+      "wordOffset": 521,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 2,
+      "instruction": [
+        "0xf000032",
+        "0x100062",
+        "0x3",
+        "0x100006",
+        "0x1",
+        "0x4002",
+        "0x0",
+        "0x33800001",
+        "0x33800001",
+        "0x0",
+        "0x4002",
+        "0x0",
+        "0x3f000000",
+        "0xbf000000",
+        "0x0"
+      ]
+    },
+    {
+      "wordOffset": 541,
+      "opcode": "mad",
+      "normalizerBits": "0x33800001",
+      "occurrences": 1,
+      "instruction": [
+        "0xa000032",
+        "0x100012",
+        "0x3",
+        "0x10000a",
+        "0x1",
+        "0x4001",
+        "0x33800001",
+        "0x8010001a",
+        "0x41",
+        "0x1"
+      ]
+    }
+  ],
+  "limits": "Targeted bytecode literal extraction; not full instruction emulation or shader GPU parity."
+}

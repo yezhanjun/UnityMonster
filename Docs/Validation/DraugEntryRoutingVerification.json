@@ -1,0 +1,52 @@
+{
+  "status": "PASS_SOURCE_FIRST_FRAME_ROUTING",
+  "checked": 184,
+  "counts": {
+    "anyState": 30,
+    "local": 154
+  },
+  "anyStateTransition": {
+    "m_DestinationState": 7,
+    "m_FullPathID": 1535973459,
+    "m_ID": 1223103004,
+    "m_UserID": 0,
+    "m_TransitionDuration": 0.10000000149011612,
+    "m_TransitionOffset": 0.0,
+    "m_ExitTime": 0.05000000074505806,
+    "m_HasExitTime": true,
+    "m_HasFixedDuration": true,
+    "m_InterruptionSource": 0,
+    "m_OrderedInterruption": true,
+    "m_CanTransitionToSelf": true,
+    "conditions": [
+      {
+        "m_ConditionMode": 1,
+        "m_EventID": 1203776827,
+        "m_EventThreshold": 0.0,
+        "m_ExitTime": 0.0,
+        "parameter": "attack"
+      }
+    ],
+    "destinationName": "base.attack.decide"
+  },
+  "rule": "If the first evaluated frame crosses a loop-relative .05 exit boundary, the conditioned AnyState attack route wins; otherwise observed local idle/chase attack route wins.",
+  "inputs": [
+    {
+      "path": "Docs/Validation/DraugAnimatorGraphEvidence.json",
+      "sha256": "4705e30bd48d35a17f82b13bfb6cd9fe2485b62c72cf961f77fc6470dbbbae8c"
+    },
+    {
+      "path": "Docs/Validation/DraugFrameStepTransitionIdentityVerification.json",
+      "sha256": "63fd69b72ada11c96b0c45e4a3c85eb38427bc08d724291a2c3e2a59c6fa863d"
+    },
+    {
+      "path": "Docs/Validation/DraugAnyStateBoundaryVerification.json",
+      "sha256": "25a5ee3916d00fc7abdad7e9c3be4e41ab9fbb11942f84c20fa5b60ba87bfe06"
+    }
+  ],
+  "limitations": [
+    "Only measured first-frame routing; source native callbacks/events absent.",
+    "Explicit Animator.Update timing; runtime PlayerLoop and pose chain not compared.",
+    "Rule verified over sampled phases/steps only, not arbitrary transition interruptions."
+  ]
+}

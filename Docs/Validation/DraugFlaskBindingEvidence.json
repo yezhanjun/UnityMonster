@@ -1,0 +1,71 @@
+{
+  "blob": "Logs\\draug-flask-dissolve-blob-16.bin",
+  "sha256": "3871bb8dabd4b0228b3c7f86361b884e814d5859600d4fb47436a3a76e6b0c6f",
+  "records": [
+    {
+      "name": "Boolean_2FAC1FE4",
+      "recordOffset": 1812,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "name": "_BlendMode",
+      "recordOffset": 1856,
+      "values": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        160
+      ]
+    },
+    {
+      "name": "Texture2D_F593E37E",
+      "recordOffset": 2872,
+      "values": [
+        0,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "_MainTex_UV",
+      "recordOffset": 2912,
+      "values": [
+        0,
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "UnityPerMaterial",
+      "recordOffset": 1784,
+      "values": [
+        176,
+        2,
+        16
+      ]
+    }
+  ],
+  "materialBufferBinding": [
+    1,
+    1,
+    0
+  ],
+  "bindings": {
+    "Boolean_2FAC1FE4": "cb1[1].x",
+    "_BlendMode": "cb1[10].x",
+    "Texture2D_F593E37E": "t3/s2",
+    "_MainTex_UV": "t4/s3"
+  },
+  "limits": "Targeted source-record verification, not a general Unity parameter parser. HDRP atmospheric fog and exposure not ported."
+}

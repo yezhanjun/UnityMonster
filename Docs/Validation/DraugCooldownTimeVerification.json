@@ -1,0 +1,125 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "timeInternalCall": "UnityEngine.Time::get_deltaTime()",
+  "capCases": [
+    {
+      "deltaTimeSupplied": 0.0,
+      "cappedDeltaTime": 0.0,
+      "timeGetterCalls": 2
+    },
+    {
+      "deltaTimeSupplied": 0.004166666883975267,
+      "cappedDeltaTime": 0.004166666883975267,
+      "timeGetterCalls": 2
+    },
+    {
+      "deltaTimeSupplied": 0.01666666753590107,
+      "cappedDeltaTime": 0.01666666753590107,
+      "timeGetterCalls": 2
+    },
+    {
+      "deltaTimeSupplied": 0.04999899864196777,
+      "cappedDeltaTime": 0.04999899864196777,
+      "timeGetterCalls": 2
+    },
+    {
+      "deltaTimeSupplied": 0.05000000074505806,
+      "cappedDeltaTime": 0.05000000074505806,
+      "timeGetterCalls": 2
+    },
+    {
+      "deltaTimeSupplied": 0.05000099912285805,
+      "cappedDeltaTime": 0.05000000074505806,
+      "timeGetterCalls": 1
+    },
+    {
+      "deltaTimeSupplied": 0.10000000149011612,
+      "cappedDeltaTime": 0.05000000074505806,
+      "timeGetterCalls": 1
+    },
+    {
+      "deltaTimeSupplied": 0.5,
+      "cappedDeltaTime": 0.05000000074505806,
+      "timeGetterCalls": 1
+    }
+  ],
+  "decrementCases": [
+    {
+      "remaining": 4,
+      "deltaSupplied": 0.05,
+      "after": 3.950000047683716
+    },
+    {
+      "remaining": 0.02,
+      "deltaSupplied": 0.05,
+      "after": -0.030000001192092896
+    },
+    {
+      "remaining": 0,
+      "deltaSupplied": 0.05,
+      "after": -0.05000000074505806
+    },
+    {
+      "remaining": 1,
+      "deltaSupplied": 0,
+      "after": 1.0
+    }
+  ],
+  "uncappedTimeCases": [
+    {
+      "deltaTimeSupplied": 0.0,
+      "attackAndBallisticDeltaTime": 0.0
+    },
+    {
+      "deltaTimeSupplied": 0.004166666883975267,
+      "attackAndBallisticDeltaTime": 0.004166666883975267
+    },
+    {
+      "deltaTimeSupplied": 0.01666666753590107,
+      "attackAndBallisticDeltaTime": 0.01666666753590107
+    },
+    {
+      "deltaTimeSupplied": 0.04999899864196777,
+      "attackAndBallisticDeltaTime": 0.04999899864196777
+    },
+    {
+      "deltaTimeSupplied": 0.05000000074505806,
+      "attackAndBallisticDeltaTime": 0.05000000074505806
+    },
+    {
+      "deltaTimeSupplied": 0.05000099912285805,
+      "attackAndBallisticDeltaTime": 0.05000099912285805
+    },
+    {
+      "deltaTimeSupplied": 0.10000000149011612,
+      "attackAndBallisticDeltaTime": 0.10000000149011612
+    },
+    {
+      "deltaTimeSupplied": 0.5,
+      "attackAndBallisticDeltaTime": 0.5
+    }
+  ],
+  "staticEvidence": [
+    {
+      "rva": "0xba408b..0xba4090",
+      "finding": "TriggerCooldown writes supplied duration to both cooldownLeft and cooldown."
+    },
+    {
+      "rva": "0xba5f18..0xba5f63",
+      "finding": "For nonconstant skills, nonzero maxCooldown*multiplier gives factor=maxCooldown/(maxCooldown*multiplier); otherwise factor remains1. Returns capped scaled deltaTime*factor."
+    },
+    {
+      "rva": "0xba60a9..0xba6174",
+      "finding": "UpdateSkillCooldowns checks expiration before decrement; expired statuses are queued for removal and may restore passive effects."
+    },
+    {
+      "rva": "0xba6188..0xba6192",
+      "finding": "Subtracts supplied cooldown delta without zero clamp."
+    }
+  ],
+  "limits": [
+    "Time getter is stubbed with stable finite values; no Unity game execution.",
+    "Collection iteration, multiplier lookup, status creation timing and removal callbacks were inspected only where stated, not executed.",
+    "RVA0x9587d0 is mapped to UnityEngine.Time.get_deltaTime and verified to forward supplied scaled deltaTime; this does not execute a full attack or projectile."
+  ]
+}

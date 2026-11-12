@@ -1,0 +1,33 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "status": "ThrowToTarget no-curve interpolation implemented; native math emulation and Unity 257-sample/regression PASS",
+  "confirmed": [
+    {
+      "method": "BallisticProjectile.Launch",
+      "rva": "0xe24772..0xe2481f",
+      "finding": "When _useLifeTimeInsteadOfSpeed is true, _lifeTime supplies _flyTime; speed/ballistic-speed alternatives are skipped."
+    },
+    {
+      "method": "BallisticProjectile.UpdateMovement",
+      "rva": "0xe262fc..0xe26342",
+      "finding": "Targeting type4 enters ThrowToTarget branch and compares _flyTime with _flyTimer."
+    },
+    {
+      "method": "BallisticProjectile.UpdateMovement",
+      "rva": "0xe26628..0xe26724",
+      "finding": "Timer is incremented and capped at flyTime; normalized progress is clamped to 0..1 and used for vector interpolation."
+    },
+    {
+      "method": "BallisticProjectile.UpdateMovement",
+      "rva": "0xe26729..0xe2676f",
+      "finding": "With _useBallisticCurve false, clamped progress is multiplied by float pi, passed to RVA0x678c10, then multiplied by _maxProjectileHeight and added to interpolated Y."
+    }
+  ],
+  "unresolved": [
+    "Current-target position virtual getter, time-provider semantics, end-position and collision dispatch need further analysis."
+  ],
+  "currentRuntimeDifference": "DraugFlaskAttack now uses H*sin(pi*t) with vector interpolation; native time provider, target getter and complete collision/end dispatch remain unverified.",
+  "next": "Verify source skill selection and remaining target/time/collision semantics; material fidelity remains pending",
+  "mathVerification": "DraugBallisticMathVerification.json",
+  "unityValidation": "Logs/draug-native-arc.log"
+}

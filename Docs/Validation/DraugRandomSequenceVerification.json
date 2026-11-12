@@ -1,0 +1,280 @@
+{
+  "status": "PASS_NATIVE_SEEDED_RANDOM_SEQUENCE",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "emulator": "2.1.4",
+  "seeds": 23,
+  "draws": 26496,
+  "perSeed": {
+    "mixedNext": 1024,
+    "continuedWrapperValue": 128
+  },
+  "maxima": [
+    1000000,
+    3,
+    1,
+    0,
+    2147483647
+  ],
+  "stateCheck": "All56 array entries and both cursors after constructor and EVERY draw",
+  "corpusSHA256": "4f46875de4fdbb1103012628977d188608ed55c7d931a698204ab7781073d992",
+  "examples": [
+    {
+      "seed": 0,
+      "firstMixedNextResults": [
+        726243,
+        2,
+        0,
+        0,
+        442452829
+      ]
+    },
+    {
+      "seed": 1,
+      "firstMixedNextResults": [
+        248668,
+        0,
+        0,
+        0,
+        1412011072
+      ]
+    },
+    {
+      "seed": -1,
+      "firstMixedNextResults": [
+        248668,
+        0,
+        0,
+        0,
+        1412011072
+      ]
+    },
+    {
+      "seed": 161803398,
+      "firstMixedNextResults": [
+        763262,
+        0,
+        0,
+        0,
+        104424774
+      ]
+    },
+    {
+      "seed": -161803398,
+      "firstMixedNextResults": [
+        763262,
+        0,
+        0,
+        0,
+        104424774
+      ]
+    },
+    {
+      "seed": 2147483647,
+      "firstMixedNextResults": [
+        726243,
+        2,
+        0,
+        0,
+        442452829
+      ]
+    },
+    {
+      "seed": -2147483648,
+      "firstMixedNextResults": [
+        726243,
+        2,
+        0,
+        0,
+        442452829
+      ]
+    },
+    {
+      "seed": -1738457121,
+      "firstMixedNextResults": [
+        369003,
+        0,
+        0,
+        0,
+        1140810679
+      ]
+    },
+    {
+      "seed": 1927129959,
+      "firstMixedNextResults": [
+        40109,
+        0,
+        0,
+        0,
+        793083201
+      ]
+    },
+    {
+      "seed": 1163768358,
+      "firstMixedNextResults": [
+        797764,
+        1,
+        0,
+        0,
+        500976577
+      ]
+    },
+    {
+      "seed": 86613917,
+      "firstMixedNextResults": [
+        528119,
+        1,
+        0,
+        0,
+        1281535304
+      ]
+    },
+    {
+      "seed": 609312507,
+      "firstMixedNextResults": [
+        635086,
+        0,
+        0,
+        0,
+        380681554
+      ]
+    },
+    {
+      "seed": -1447652315,
+      "firstMixedNextResults": [
+        226743,
+        2,
+        0,
+        0,
+        1217566102
+      ]
+    },
+    {
+      "seed": 1254795386,
+      "firstMixedNextResults": [
+        500367,
+        1,
+        0,
+        0,
+        662532346
+      ]
+    },
+    {
+      "seed": 1514103272,
+      "firstMixedNextResults": [
+        315637,
+        2,
+        0,
+        0,
+        99300633
+      ]
+    },
+    {
+      "seed": 1616279260,
+      "firstMixedNextResults": [
+        949122,
+        2,
+        0,
+        0,
+        1234129070
+      ]
+    },
+    {
+      "seed": 2120943519,
+      "firstMixedNextResults": [
+        17223,
+        0,
+        0,
+        0,
+        1895118755
+      ]
+    },
+    {
+      "seed": -1176347385,
+      "firstMixedNextResults": [
+        930433,
+        0,
+        0,
+        0,
+        1168037741
+      ]
+    },
+    {
+      "seed": 417935563,
+      "firstMixedNextResults": [
+        537330,
+        2,
+        0,
+        0,
+        88857929
+      ]
+    },
+    {
+      "seed": -1196493758,
+      "firstMixedNextResults": [
+        174729,
+        0,
+        0,
+        0,
+        1420357780
+      ]
+    },
+    {
+      "seed": 644662851,
+      "firstMixedNextResults": [
+        205980,
+        1,
+        0,
+        0,
+        835525274
+      ]
+    },
+    {
+      "seed": -1107905535,
+      "firstMixedNextResults": [
+        940497,
+        0,
+        0,
+        0,
+        570680984
+      ]
+    },
+    {
+      "seed": 1937976215,
+      "firstMixedNextResults": [
+        738684,
+        2,
+        0,
+        0,
+        608067699
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "Logs/Random-.ctor-0x32aafe0.asm.txt",
+      "sha256": "16e8a34b642e8160a715a9ba51f3d5dc84210f9e7fd7327af3b8cd2a20858ffe"
+    },
+    {
+      "path": "Logs/Random-Next-0x32ab770.asm.txt",
+      "sha256": "1e229057e08a984d97816e74316af32f9e2ff929003992726f49247568b11019"
+    },
+    {
+      "path": "Logs/Random-Sample-0x32ab210.asm.txt",
+      "sha256": "b99a5d78b0bdabb3aef3337d639e9eff900046006d882ec0dd75245b563c8d6f"
+    },
+    {
+      "path": "Logs/Random-InternalSample-0x32ab230.asm.txt",
+      "sha256": "8e1ecf27cfd199b9f9f09c6177b57a40bda960ce7c6fdf12a17f7ab362815f3d"
+    },
+    {
+      "path": "Logs/RandomGenerator-get_value-0xa9a170.asm.txt",
+      "sha256": "1fa537f9cd7c99ed3e167c7aaa9392b28767810eaf94a29e765264b1e59f5d54"
+    }
+  ],
+  "limits": [
+    "Reference is a Python subtractive-generator model. Unity installed System.Random implementation has not yet been compared.",
+    "Synthetic array allocation, metadata class objects and virtual dispatch table; native constructor and all PRNG arithmetic executed, no DLL loaded or OS calls.",
+    "Selected nonnegative Next(max) domain only; negative-bound exceptions, Next(min,max), NextBytes and concurrent access not tested.",
+    "Actor seed overrides, random-consumption order, full synchronization and gameplay integration remain pending."
+  ]
+}

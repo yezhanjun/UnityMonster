@@ -1,0 +1,52 @@
+{
+  "status": "PASS_NATIVE_CORPUS_AND_PARTICLE_SELECTION",
+  "policyCases": 104,
+  "switchCases": 7,
+  "suppressionCases": 1,
+  "limits": "Explicit caller count only; group registration, source renderer/loop overrides, WreckSpawner/audio and production death integration pending.",
+  "process": 66660,
+  "previewProcess": 31252,
+  "sourceCalls": {
+    "0x49b9b80": "ParticleSystem.Clear(bool)",
+    "0x49b9ad0": "ParticleSystem.Stop()",
+    "0x49b97f0": "ParticleSystem.Play(bool)",
+    "0x49b7710": "ParticleSystem.set_time",
+    "0x4904f60": "Transform.get_parent"
+  },
+  "membership": "Source Awake compares particle GameObject and immediate-parent GameObject to LOD roots. Constructor caches15systems/masks. Actual source playbackSpeed1/time0. No global group counter inferred.",
+  "preview": "Docs/Validation/DraugDeathLod0Preview/all.png visually inspected; only selected5systems simulated. Static wrecks/approximate body, no final lethal/audio acceptance.",
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugDeathParticleLod.cs",
+      "sha256": "896cae6e3553b9cf7df3bfd7469e946db3e40e46edbfc17d6c64f06e08527c71"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathParticleLodValidation.cs",
+      "sha256": "cf55758520cabdb6bf7c883cf37a36ceaea0b2714702597fdc69ebeecca085b6"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugDeathPreviewIsolation.cs",
+      "sha256": "b6a2cf8c4f0cd8a3c2ddfe9a8d73751232a1a1fd119ced17db02a354a93e467c"
+    },
+    {
+      "path": "Logs/draug-death-particle-lod.log",
+      "sha256": "176749fb4fa89008b8ef1e7337fc6e94bad6a20e575afd75ec17b6e13b3bdc50"
+    },
+    {
+      "path": "Logs/draug-death-lod0-preview.log",
+      "sha256": "0db4789fdeffef734ea5125432ae6f5e7f7462df812129e63b0db1ab472c15d5"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathLod0Preview/all.png",
+      "sha256": "77b1d2f863d1786ce13a901e79a097dfe88cf9d61409340aba91a4f9d15d198d"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathLodVerification.json",
+      "sha256": "6e2ac385e616348738a2ca8c55a3ad369d1925ce6b44bbc545a1820a61824dec"
+    },
+    {
+      "path": "Docs/Validation/SourceCombatMethodMap.json",
+      "sha256": "9b93ef3c482d21423f94b15cff9a3a06f6425f7c0ebac388001872468dae6bd1"
+    }
+  ]
+}

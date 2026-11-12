@@ -1,0 +1,29 @@
+{
+  "status": "PASS_NATIVE_SELECTION_CORPUS",
+  "selectionCases": 108,
+  "gateCases": 4,
+  "limits": "Explicit RNG samples/start index/counter; source RNG-start helper, shared counter lifecycle, velocities and production spawn integration pending.",
+  "process": 6168,
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckSelection.py",
+      "sha256": "4fa262a465d9f4fc171d60c56f9db8e8cc3f2ed1ea27e958f294743034eb6936"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/DraugWreckSelection.cs",
+      "sha256": "7869cd92f4592c2d0260cf3475714d4625a88008f562c5902f2756bc27a706e5"
+    },
+    {
+      "path": "Assets/Jotunnslayer/Enemies/Editor/DraugWreckSelectionValidation.cs",
+      "sha256": "d9a3261e1342acbe570222172c535ecdece6c828d30c4c40619195c2cc76b68f"
+    },
+    {
+      "path": "Docs/Validation/DraugWreckSelectionVerification.json",
+      "sha256": "6ad1d09b218fcfd8b387f4e754a686abd13fc0f148231f5c1bc43e6b5341e40c"
+    },
+    {
+      "path": "Logs/draug-wreck-selection.log",
+      "sha256": "7f61baa4a16cb914bf071d2f2ffdf05c41325b4c548ed026ecbf68c4e732518f"
+    }
+  ]
+}

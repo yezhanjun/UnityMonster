@@ -1,0 +1,11 @@
+{
+    "scope": "Production resource owner loading StreamingAssets bundle and Resources manifest; EditMode explicit Animator.Update. Shared leases/state isolation, duplicate acquisition/release, last-owner unload, destroyed actor and reacquisition. Deferred PlayMode destruction/player build not checked.",
+    "sharedController": true,
+    "independentStates": true,
+    "duplicateRejected": true,
+    "survivorAdvanced": true,
+    "doubleDisposeSafe": true,
+    "lastReleaseUnloaded": true,
+    "destroyedActorReleased": true,
+    "reloaded": true
+}

@@ -1,0 +1,127 @@
+{
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "sourceBundleSHA256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "skillPathId": 1687912784046678327,
+  "sourceCooldown": 4.0,
+  "sourceCastRange": {
+    "x": 0.0,
+    "y": 10.0
+  },
+  "cooldownCases": [
+    {
+      "cooldownLeftSupplied": -4.0,
+      "isOnCooldown": false
+    },
+    {
+      "cooldownLeftSupplied": -9.999999974752427e-07,
+      "isOnCooldown": false
+    },
+    {
+      "cooldownLeftSupplied": 0.0,
+      "isOnCooldown": false
+    },
+    {
+      "cooldownLeftSupplied": 9.999999974752427e-07,
+      "isOnCooldown": true
+    },
+    {
+      "cooldownLeftSupplied": 0.0010000000474974513,
+      "isOnCooldown": true
+    },
+    {
+      "cooldownLeftSupplied": 4.0,
+      "isOnCooldown": true
+    }
+  ],
+  "rangeCases": [
+    {
+      "isOnCooldownSupplied": false,
+      "distance": -9.999999747378752e-06,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 0.0,
+      "eligibleAtThisGate": true
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 9.999999747378752e-06,
+      "eligibleAtThisGate": true
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 5.0,
+      "eligibleAtThisGate": true
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 9.999990463256836,
+      "eligibleAtThisGate": true
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 10.0,
+      "eligibleAtThisGate": true
+    },
+    {
+      "isOnCooldownSupplied": false,
+      "distance": 10.000009536743164,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": -9.999999747378752e-06,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 0.0,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 9.999999747378752e-06,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 5.0,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 9.999990463256836,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 10.0,
+      "eligibleAtThisGate": false
+    },
+    {
+      "isOnCooldownSupplied": true,
+      "distance": 10.000009536743164,
+      "eligibleAtThisGate": false
+    }
+  ],
+  "staticEvidence": [
+    {
+      "rva": "0xba379e..0xba37a6",
+      "finding": "CooldownFor returns zero for absent m_skillStatuses."
+    },
+    {
+      "rva": "0xba3841..0xba3945",
+      "finding": "CooldownFor starts at zero and reduces the returned status collection by maximum cooldownLeft at offset0x20."
+    },
+    {
+      "rva": "0xb878a9..0xb878eb",
+      "finding": "CanCastSkill calls virtual IsOnCooldown, rejects true, then rejects distance greater than max or less than min."
+    }
+  ],
+  "limits": [
+    "CooldownFor collection retrieval and enumeration were inspected statically, not executed.",
+    "Tests supply CooldownFor results and isolate downstream eligibility; other actor/cast gates remain outside scope.",
+    "Cooldown initialization/decrement, full cast timing and base animation selection remain unresolved."
+  ]
+}

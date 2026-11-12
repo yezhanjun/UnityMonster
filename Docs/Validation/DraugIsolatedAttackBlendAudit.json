@@ -1,0 +1,67 @@
+{
+  "status": "PASS_ISOLATED_ALIGNED_BLEND_POSES",
+  "results": [
+    {
+      "file": "DraugDecideAttackBlendVerification.json",
+      "frames": 840,
+      "failed": 0,
+      "maxLocalPosition": 1.2305621567065828e-05,
+      "maxRotationDegreesReported": 0.0,
+      "maxRootPosition": 0.00031411138479597867
+    },
+    {
+      "file": "DraugAttackReturnBlendInitialVerification.json",
+      "frames": 1560,
+      "failed": 1188,
+      "maxLocalPosition": 6.029890209902078e-05,
+      "maxRotationDegreesReported": 0.851332426071167,
+      "maxRootPosition": 0.0019338062265887856
+    },
+    {
+      "file": "DraugAttackReturnBlendVerification.json",
+      "frames": 1560,
+      "failed": 0,
+      "maxLocalPosition": 1.123516085499432e-05,
+      "maxRotationDegreesReported": 0.0,
+      "maxRootPosition": 0.00025742303114384413
+    }
+  ],
+  "logs": [
+    {
+      "path": "Logs/draug-decide-attack-blend.log",
+      "sha256": "d79ba0bddb6e86323798a058bbd3c85551f10f448cadb84774221d218c8bd170"
+    },
+    {
+      "path": "Logs/draug-decide-attack-blend-primed.log",
+      "sha256": "e57871242f149b8e319081aa80d6dfa56edb995b4fc590cb016ee2383dddfaa1"
+    },
+    {
+      "path": "Logs/draug-decide-attack-blend-settled.log",
+      "sha256": "9ef1456fbfa4f061340e0a039f05e4091b9a617dddbb3e92dd5792c840557317"
+    },
+    {
+      "path": "Logs/draug-attack-return-blend.log",
+      "sha256": "8e149ad642a4195916745b4f907aa97af31fc6fe76bb47b3f6c914fa14f08b12"
+    },
+    {
+      "path": "Logs/draug-attack-return-blend-aligned.log",
+      "sha256": "67f9392e90ce2a0ff3c4c7c6b84ae36a58614c1f81e710256fe55713d4120240"
+    }
+  ],
+  "coverage": [
+    "decide->attack:4 decision phases x3 attacks x70ms at1ms steps,840 frames including completion",
+    "attack->idle:4 initial attack phases x3 attacks x130ms at1ms steps,1560 frames including completion",
+    "runtime graph settles to one playable after each transition"
+  ],
+  "referenceAlignment": [
+    "First decision evaluation enters state; second zero-time evaluation selects outgoing transition.",
+    "Return transition observed after exit threshold crossing already has .0003206015.. .0009853126 seconds elapsed; both blend progress and destination clip time seeded from source."
+  ],
+  "runtimeChanged": false,
+  "limitations": [
+    "These fixtures align input pose clocks and transition progress to source; they do not prove combat scheduling alignment.",
+    "Native source preserves fractional exit overshoot, which full-chain combat timing still needs to account for and verify.",
+    "Idle-entry interrupted transition snapshot and full chase->decide->attack chain remain pending.",
+    "No new battle regression because runtime unchanged."
+  ]
+}

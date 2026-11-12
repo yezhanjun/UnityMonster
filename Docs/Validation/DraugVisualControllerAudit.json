@@ -1,0 +1,41 @@
+{
+  "status": "PASS_VISUAL_ROUTE_NOT_COMBAT_WIRED",
+  "results": {
+    "cases": 184,
+    "failedCases": 0,
+    "cancellations": 3,
+    "maxTimeError": 0.0,
+    "disableReleased": true,
+    "reacquired": true,
+    "failures": []
+  },
+  "logs": [
+    {
+      "path": "Logs/draug-visual-controller.log",
+      "sha256": "d56143aa598f63a2d2261ad454b68f73faeca2f3b965bed55b8c68111e12f17f"
+    },
+    {
+      "path": "Logs/draug-visual-controller-playmode.log",
+      "sha256": "182b3d2f41734690918657ccd13754fe3f35732c00f1738e7363643e06de9b95"
+    },
+    {
+      "path": "Logs/draug-visual-controller-options-playmode.log",
+      "sha256": "bbe69c413b24f699f485cef32b6ceb8e87da1680347d1321fe1d7fd524d10f34"
+    },
+    {
+      "path": "Logs/draug-visual-controller-boundaries.log",
+      "sha256": "8688779eb2ae022a9387611b9f7f93f7acd89f53bba7048ed4f4f6650329442d"
+    },
+    {
+      "path": "Logs/draug-visual-controller-smoke.log",
+      "sha256": "99d564c9f4e376e0794924f42a0f1a9a66d05ab069ee3470e7007bb1d1e2082a"
+    }
+  ],
+  "limitations": [
+    "New RequestDraugArrow/SampleDraugArrow APIs tested on actual Skeleton1HVisual, but Skeleton1HCombat does not yet call them. Existing battle smoke exercises old combat path.",
+    "Timing comparison uses explicit Animator.Update then SampleDraugArrow inside PlayMode; automatic LateUpdate and same-frame combat callback ordering not proven.",
+    "Three cancellation cases cover pending request before evaluation, started attack, return blend. Not all interrupted decision/chase/cast paths.",
+    "Initial EditMode enabled-toggle test failed because runtime OnDisable did not execute there; failure artifact/log retained. Actual PlayMode disable/re-enable passed.",
+    "No fresh bone pose comparison in this batch, no player build."
+  ]
+}

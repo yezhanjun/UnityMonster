@@ -1,0 +1,43 @@
+{
+  "status": "PASS_PLAYBACK_CAPABILITY_AND_EXISTING_COMBAT_REGRESSION",
+  "runtimeSourceTimelineIntegrated": false,
+  "logs": [
+    {
+      "path": "Logs/draug-visual-blend.log",
+      "sha256": "636d212361c30ecace2d4a7ba424776e848c419484a656c491fba866818d3a2c"
+    },
+    {
+      "path": "Logs/draug-visual-blend-first-evaluate.log",
+      "sha256": "9b369e952e99a135bc20e6ebe793514b9675643f3de85bd6849fab172d452792"
+    },
+    {
+      "path": "Logs/draug-visual-blend-clock.log",
+      "sha256": "b2ba1c6faed2e86d872cf76116169a6400e4d345453c1e8262b6c338410f63ce"
+    },
+    {
+      "path": "Logs/draug-visual-blend-smoke.log",
+      "sha256": "d0f619c57254cf065c851d68de6c0784986a8ea12c63bc3b029b12d19092dbe6"
+    }
+  ],
+  "poseChecks": [
+    "offset .4 in linear 10->20 clip produces x14",
+    "half idle->offset attack blend produces x7",
+    "interrupted blend starts at x7 then halfway to hit produces x18.5",
+    "completed blend retains only one playable",
+    "immediate action cancels blend and releases subtree",
+    "initial evaluation samples offset; subsequent .1s advances pose to x15",
+    "disable destroys graph; replay recreates single node",
+    "same-frame Update does not advance blend"
+  ],
+  "battle": {
+    "tested": 1,
+    "failed": 0,
+    "damage": 75
+  },
+  "limitations": [
+    "Synthetic generic bone pose test, not source humanoid pose equivalence.",
+    "Combat still requests immediate zero-offset playback; source timeline integration remains pending.",
+    "Nested interrupted blends retain previous subtrees until completion or immediate switch; no stress test of indefinitely repeated interruptions.",
+    "Original first clock assertion failure retained; explicit initial evaluation required before measuring subsequent clock advancement."
+  ]
+}

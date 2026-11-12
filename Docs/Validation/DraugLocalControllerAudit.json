@@ -1,0 +1,42 @@
+{
+  "status": "PASS_PROJECT_LOCAL_CANDIDATE_NOT_INTEGRATED",
+  "matchedCases": 108,
+  "comparison": "All case fields, including full recorded entry traces, exactly equal source JSON.",
+  "lifecycleCycles": 3,
+  "remainingBundlesAfterEachUnload": 0,
+  "bundleBytes": 30617383,
+  "bundleSHA256": "9dcdc8a71979cf13cf2a6c8b4201b49f20eabfac1eae088489041381b032aef6",
+  "bundleCountWhileLoaded": 1,
+  "mappedUniqueOverrideEntries": 11,
+  "nativeUniqueClipEntries": 44,
+  "serializedClipSlots": 45,
+  "inputs": [
+    {
+      "path": "Docs/Validation/DraugFrameStepTransitionIdentityVerification.json",
+      "sha256": "63fd69b72ada11c96b0c45e4a3c85eb38427bc08d724291a2c3e2a59c6fa863d"
+    },
+    {
+      "path": "Docs/Validation/DraugLocalControllerTransitionVerification.json",
+      "sha256": "1ea3a3d609e81642617f50baba13b9c9ab7f1d51f68b812af4088bd7f9e1b730"
+    },
+    {
+      "path": "Docs/Validation/DraugLocalControllerManifest.json",
+      "sha256": "852855bbcad18699f53034edd4d2b207ac731ffbd23e50740c1f9bca1d932c00"
+    },
+    {
+      "path": "Logs/draug-local-controller-transitions.log",
+      "sha256": "95dd9f718e6b44993a1445705c2fdb48830ade78b09e25c6123d3dfad87d6bf6"
+    },
+    {
+      "path": "Logs/draug-local-controller-lifecycle.log",
+      "sha256": "53784c03a3acde12c6e0f83c3b6875713d9465344532f33a54d0cbc084c015d4"
+    }
+  ],
+  "limitations": [
+    "Candidate remains under Editor and is excluded from player builds. No production runtime integration or battle smoke this batch.",
+    "Source game installation remains present, but local test branch loads only project-local bundle and Resources; no filesystem-denial test performed.",
+    "Shared bundle copied intact (30.6MB), with other unused assets. Named controller loaded directly on second process; asset pruning and player memory unmeasured.",
+    "Tests use explicit Animator.Update and disabled native callbacks/events. PlayerLoop timing, concurrent monster ownership, cancellation and damage scheduling require integration tests.",
+    "Fresh local run compares timing/state traces; prior full-chain pose comparison was performed with source bundles loaded. No new pose comparison claimed."
+  ]
+}

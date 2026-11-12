@@ -1,0 +1,99 @@
+{
+  "status": "PASS_NATIVE_RANDOM_WRAPPER_SAMPLING",
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "emulator": "2.1.4",
+  "samplesPerWrapper": 4103,
+  "nativeWrapperCalls": 8206,
+  "corpusSHA256": "55ade5628021dd3d1f3a7c97ba8d0c7e183538705ce4cacdf24cfe7ada636e34",
+  "selectedCases": [
+    {
+      "nextResult": 0,
+      "value": 0.0,
+      "chancePointEightSucceeds": true
+    },
+    {
+      "nextResult": 799997,
+      "value": 0.7999978065490723,
+      "chancePointEightSucceeds": true
+    },
+    {
+      "nextResult": 799998,
+      "value": 0.7999988198280334,
+      "chancePointEightSucceeds": true
+    },
+    {
+      "nextResult": 799999,
+      "value": 0.7999997735023499,
+      "chancePointEightSucceeds": true
+    },
+    {
+      "nextResult": 800000,
+      "value": 0.800000786781311,
+      "chancePointEightSucceeds": false
+    },
+    {
+      "nextResult": 800001,
+      "value": 0.8000018000602722,
+      "chancePointEightSucceeds": false
+    },
+    {
+      "nextResult": 800002,
+      "value": 0.8000028133392334,
+      "chancePointEightSucceeds": false
+    },
+    {
+      "nextResult": 999999,
+      "value": 1.0,
+      "chancePointEightSucceeds": false
+    }
+  ],
+  "metadataMethods": [
+    {
+      "method": "System.Random..ctor(seed)",
+      "rva": "0x32aafe0"
+    },
+    {
+      "method": "System.Random.Next(maxValue)",
+      "rva": "0x32ab770",
+      "slot": 7
+    }
+  ],
+  "evidence": [
+    {
+      "path": "Logs/RandomGenerator-get_value-0xa9a170.asm.txt",
+      "sha256": "1fa537f9cd7c99ed3e167c7aaa9392b28767810eaf94a29e765264b1e59f5d54"
+    },
+    {
+      "path": "Logs/RandomGenerator-Value-0xa9a0c0.asm.txt",
+      "sha256": "9d849d36b16159ee4b64e950bbcd7b1a11b6441c8e1bf8422f7b159cf05dc241"
+    },
+    {
+      "path": "Logs/RandomGenerator-Initialize-0xa9a500.asm.txt",
+      "sha256": "bec9e65bd3ccbfcd4a5488be83325a595e68427e86811cc8f5b649f3818b100b"
+    },
+    {
+      "path": "Logs/RandomGenerator-Range-0xa9a020.asm.txt",
+      "sha256": "822a3f7fdfaaf9f43f8cfc32aaab779473d82a692fd436a52162864bf4f469d4"
+    },
+    {
+      "path": "Logs/PawnController-ProcessSpells-0xb87f10.asm.txt",
+      "sha256": "c72205d903f1049038d725546a431d4ffdd2ed0213d65a16c5963d0bf8286d77"
+    },
+    {
+      "path": "Logs/ai_attack-OnStateEnter-0xa00410.asm.txt",
+      "sha256": "9d40a63f67939613cc864cd216bb1589f333ea4769556560f374262053c277ac"
+    }
+  ],
+  "findings": [
+    "Non-null generator wrapper calls virtual System.Random.Next with maxValue1000000, then float32 divides by999999. Range(0,1) and get_value agree bitwise for tested inputs, including0 and1 endpoints.",
+    "ProcessSpells uses Actor.SyncedRandomGenerator at0x4f0 for Range; it is not the null-generator Unity random fallback.",
+    "RandomGenerator.Initialize reaches System.Random..ctor(seed); debug seed override and seed assignment require separate lifecycle tracing.",
+    "Static Value(null) resolves UnityEngine.Random::get_value(); this fallback is not exercised by the non-null skill chance path.",
+    "ai_attack.OnStateEnter resolves UnityEngine.Random::RandomRangeInt, passes0 and3, then assigns the result to AnimatorIds.attack_index. Arrow selection uses a different RNG stream from skill chance; runtime UnityEngine.Random.Range(0,3) should not be replaced by actor RNG."
+  ],
+  "limits": [
+    "Next results injected; native PRNG sequence, seed initialization, state ownership, consumption ordering and cross-actor synchronization NOT verified.",
+    "Sampled4097 uniform integer points plus6 chance-boundary points, not exhaustive allmillion results.",
+    "No runtime substitution or new Unity smoke performed. Arrow RNG API and bounds statically resolved; engine version sequence parity and native lifecycle ordering remain unverified."
+  ]
+}

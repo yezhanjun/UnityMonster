@@ -1,0 +1,1286 @@
+{
+  "attackIndexSerializedDefault": 0,
+  "source": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\enemies_assets_draug_thrower_sur_16b7ef33fa9021746b46ad2bdee25d8e.bundle",
+  "sourceSHA256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "sharedBundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\duplicateassetisolation1_assets_all_b4fcbc9fa83b62ab12bce32d2651b832.bundle",
+  "sharedSHA256": "9dcdc8a71979cf13cf2a6c8b4201b49f20eabfac1eae088489041381b032aef6",
+  "externalCAB": "archive:/CAB-67f516e87794f7613a6a47f0da6e7578/CAB-67f516e87794f7613a6a47f0da6e7578",
+  "controllerPathId": -3839662355133768646,
+  "controllerName": "ai_controller",
+  "states": [
+    {
+      "index": 1,
+      "name": "base.idle",
+      "speed": 1.0,
+      "speedParameter": "idle_anim_speed",
+      "transitions": [
+        {
+          "m_DestinationState": 2,
+          "m_FullPathID": 2452336635,
+          "m_ID": 2414602257,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.05000000074505806,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.028899727389216423,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 2,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 2533178265,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "chase"
+            }
+          ],
+          "destinationName": "base.chase"
+        },
+        {
+          "m_DestinationState": 7,
+          "m_FullPathID": 3568007420,
+          "m_ID": 3268647461,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.4166663885116577,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.5833336114883423,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": false,
+          "m_InterruptionSource": 2,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 1203776827,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack"
+            }
+          ],
+          "destinationName": "base.attack.decide"
+        },
+        {
+          "m_DestinationState": 30008,
+          "m_FullPathID": 2597529727,
+          "m_ID": 789635112,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.0,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.0,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 3429563881,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "summon"
+            }
+          ],
+          "destinationName": null
+        },
+        {
+          "m_DestinationState": 3,
+          "m_FullPathID": 1167514741,
+          "m_ID": 561864187,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20000000298023224,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.0,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 4,
+          "m_OrderedInterruption": false,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 314096118,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "cast"
+            }
+          ],
+          "destinationName": "base.cast_tree"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 4294967295,
+          "blendParameter": "npc_factor",
+          "children": [
+            1,
+            2,
+            3
+          ],
+          "thresholds": [
+            0.0,
+            1.0,
+            2.0
+          ]
+        },
+        {
+          "clipIndex": 2,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 2,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -9135250367245378618
+            },
+            "originalName": "ai_stand_npc",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -1882680100380155269
+            },
+            "effectiveName": "stand",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 3,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 3,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -8087226494522115808
+            },
+            "originalName": "ai_stand",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -1882680100380155269
+            },
+            "effectiveName": "stand",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 4,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 4,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 1467551794046791881
+            },
+            "originalName": "ai_stand_combat",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -1882680100380155269
+            },
+            "effectiveName": "stand",
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "base.chase",
+      "speed": 1.0,
+      "speedParameter": "",
+      "transitions": [
+        {
+          "m_DestinationState": 1,
+          "m_FullPathID": 1356307295,
+          "m_ID": 1561215158,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20270268619060516,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.0,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": false,
+          "m_InterruptionSource": 2,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 3693393173,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "idle"
+            }
+          ],
+          "destinationName": "base.idle"
+        },
+        {
+          "m_DestinationState": 7,
+          "m_FullPathID": 4154579453,
+          "m_ID": 1767174007,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.15909099578857422,
+          "m_TransitionOffset": 0.6590912342071533,
+          "m_ExitTime": 0.668304979801178,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 1203776827,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack"
+            }
+          ],
+          "destinationName": "base.attack.decide"
+        },
+        {
+          "m_DestinationState": 3,
+          "m_FullPathID": 2360792954,
+          "m_ID": 1875983550,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20000000298023224,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.0,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 314096118,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "cast"
+            }
+          ],
+          "destinationName": "base.cast_tree"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 4294967295,
+          "blendParameter": "move_speed",
+          "children": [
+            1,
+            2
+          ],
+          "thresholds": [
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "clipIndex": 0,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 0,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 2874649451259613927
+            },
+            "originalName": "ai_move",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -3176902719504588165
+            },
+            "effectiveName": "move",
+            "events": [
+              {
+                "time": 0.46014755964279175,
+                "functionName": "OnStep",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              },
+              {
+                "time": 1.076270341873169,
+                "functionName": "OnStep",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 1,
+                "messageOptions": 0
+              }
+            ]
+          }
+        },
+        {
+          "clipIndex": 1,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 1,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 2116991682785074259
+            },
+            "originalName": "ai_run",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -3176902719504588165
+            },
+            "effectiveName": "move",
+            "events": [
+              {
+                "time": 0.46014755964279175,
+                "functionName": "OnStep",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              },
+              {
+                "time": 1.076270341873169,
+                "functionName": "OnStep",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 1,
+                "messageOptions": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "base.cast_tree",
+      "speed": 1.0,
+      "speedParameter": "",
+      "transitions": [
+        {
+          "m_DestinationState": 1,
+          "m_FullPathID": 2254084818,
+          "m_ID": 1096076370,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.10000000149011612,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.8999999761581421,
+          "m_HasExitTime": true,
+          "m_HasFixedDuration": false,
+          "m_InterruptionSource": 1,
+          "m_OrderedInterruption": false,
+          "m_CanTransitionToSelf": true,
+          "conditions": [],
+          "destinationName": "base.idle"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 4294967295,
+          "blendParameter": "cast_sequence",
+          "children": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "thresholds": [
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0,
+            7.0,
+            8.0
+          ]
+        },
+        {
+          "clipIndex": 6,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 6,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -8193774656523207214
+            },
+            "originalName": "ai_cast_1",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": 773777635648660091
+            },
+            "effectiveName": "skill_throw",
+            "events": [
+              {
+                "time": 0.49205490946769714,
+                "functionName": "OnCastEvent",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              },
+              {
+                "time": 1.1088453531265259,
+                "functionName": "OnCastEndEvent",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              }
+            ]
+          }
+        },
+        {
+          "clipIndex": 7,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 7,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 5386926807165430623
+            },
+            "originalName": "ai_cast_2",
+            "override": null,
+            "effectiveName": "ai_cast_2",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 8,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 8,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -8786099151776337382
+            },
+            "originalName": "ai_cast_3",
+            "override": null,
+            "effectiveName": "ai_cast_3",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 9,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 9,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -6832828372591814677
+            },
+            "originalName": "ai_cast_4",
+            "override": null,
+            "effectiveName": "ai_cast_4",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 10,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 10,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 2003791054448621021
+            },
+            "originalName": "ai_cast_5",
+            "override": null,
+            "effectiveName": "ai_cast_5",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 11,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 11,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 3755461927296494820
+            },
+            "originalName": "ai_cast_6",
+            "override": null,
+            "effectiveName": "ai_cast_6",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 12,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 12,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -7513448623858525996
+            },
+            "originalName": "ai_cast_7",
+            "override": null,
+            "effectiveName": "ai_cast_7",
+            "events": []
+          }
+        },
+        {
+          "clipIndex": 13,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 13,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 4822762064274643926
+            },
+            "originalName": "ai_cast_8",
+            "override": null,
+            "effectiveName": "ai_cast_8",
+            "events": []
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "base.attack.attack_01",
+      "speed": 1.0,
+      "speedParameter": "attack_anim_speed",
+      "transitions": [
+        {
+          "m_DestinationState": 1,
+          "m_FullPathID": 1789352519,
+          "m_ID": 2931973113,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.10000000149011612,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.949999988079071,
+          "m_HasExitTime": true,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [],
+          "destinationName": "base.idle"
+        },
+        {
+          "m_DestinationState": 2,
+          "m_FullPathID": 321816750,
+          "m_ID": 1060336420,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.5120248198509216,
+          "m_TransitionOffset": 0.17798438668251038,
+          "m_ExitTime": 0.19911256432533264,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 2533178265,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "chase"
+            }
+          ],
+          "destinationName": "base.chase"
+        },
+        {
+          "m_DestinationState": 3,
+          "m_FullPathID": 1670329459,
+          "m_ID": 2504982242,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20000000298023224,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.75,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 314096118,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "cast"
+            }
+          ],
+          "destinationName": "base.cast_tree"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 14,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 14,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -2342565105570537393
+            },
+            "originalName": "ai_attack_1",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -4810808285443595653
+            },
+            "effectiveName": "attack_01",
+            "events": [
+              {
+                "time": 0.5131691694259644,
+                "functionName": "OnFireEvent",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "base.attack.attack_02",
+      "speed": 1.0,
+      "speedParameter": "attack_anim_speed",
+      "transitions": [
+        {
+          "m_DestinationState": 1,
+          "m_FullPathID": 382107548,
+          "m_ID": 2538563388,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.10000000149011612,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.949999988079071,
+          "m_HasExitTime": true,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [],
+          "destinationName": "base.idle"
+        },
+        {
+          "m_DestinationState": 2,
+          "m_FullPathID": 39051991,
+          "m_ID": 3557083175,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.5422244071960449,
+          "m_TransitionOffset": 0.19185452163219452,
+          "m_ExitTime": 0.2527841329574585,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 2533178265,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "chase"
+            }
+          ],
+          "destinationName": "base.chase"
+        },
+        {
+          "m_DestinationState": 3,
+          "m_FullPathID": 3235492570,
+          "m_ID": 3912227641,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20000000298023224,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.75,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 314096118,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "cast"
+            }
+          ],
+          "destinationName": "base.cast_tree"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 15,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 15,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": -120316419690087974
+            },
+            "originalName": "ai_attack_2",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -6767853322786381189
+            },
+            "effectiveName": "attack_02",
+            "events": [
+              {
+                "time": 0.4504537582397461,
+                "functionName": "OnSpawnFXEvent",
+                "data": "whoosh",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              },
+              {
+                "time": 0.5551713705062866,
+                "functionName": "OnFireEvent",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "base.attack.attack_03",
+      "speed": 1.0,
+      "speedParameter": "attack_anim_speed",
+      "transitions": [
+        {
+          "m_DestinationState": 1,
+          "m_FullPathID": 2345246442,
+          "m_ID": 2150921087,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.10000000149011612,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.949999988079071,
+          "m_HasExitTime": true,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [],
+          "destinationName": "base.idle"
+        },
+        {
+          "m_DestinationState": 2,
+          "m_FullPathID": 3148364095,
+          "m_ID": 1002873625,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.5243143439292908,
+          "m_TransitionOffset": 0.1939256191253662,
+          "m_ExitTime": 0.2202920764684677,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 2533178265,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "chase"
+            }
+          ],
+          "destinationName": "base.chase"
+        },
+        {
+          "m_DestinationState": 3,
+          "m_FullPathID": 389755522,
+          "m_ID": 1948269135,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.20000000298023224,
+          "m_TransitionOffset": 0.0,
+          "m_ExitTime": 0.75,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 1,
+              "m_EventID": 314096118,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "cast"
+            }
+          ],
+          "destinationName": "base.cast_tree"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 16,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 16,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 1096436187015962796
+            },
+            "originalName": "ai_attack_3",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": 4088879959924007547
+            },
+            "effectiveName": "attack_03",
+            "events": [
+              {
+                "time": 0.4536709189414978,
+                "functionName": "OnFireEvent",
+                "data": "",
+                "objectReferenceParameter": {
+                  "m_FileID": 0,
+                  "m_PathID": 0
+                },
+                "floatParameter": 0.0,
+                "intParameter": 0,
+                "messageOptions": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "base.attack.decide",
+      "speed": 0.5,
+      "speedParameter": "",
+      "transitions": [
+        {
+          "m_DestinationState": 4,
+          "m_FullPathID": 1956236585,
+          "m_ID": 1011174313,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.05000000074505806,
+          "m_TransitionOffset": 0.007662696298211813,
+          "m_ExitTime": 0.01340523362159729,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ],
+          "destinationName": "base.attack.attack_01"
+        },
+        {
+          "m_DestinationState": 6,
+          "m_FullPathID": 2593631237,
+          "m_ID": 3528141445,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.05000000074505806,
+          "m_TransitionOffset": 0.057473864406347275,
+          "m_ExitTime": 0.0532115213572979,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 2.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ],
+          "destinationName": "base.attack.attack_03"
+        },
+        {
+          "m_DestinationState": 5,
+          "m_FullPathID": 3985677459,
+          "m_ID": 2773228051,
+          "m_UserID": 0,
+          "m_TransitionDuration": 0.05000000074505806,
+          "m_TransitionOffset": 0.029232513159513474,
+          "m_ExitTime": 0.025382716208696365,
+          "m_HasExitTime": false,
+          "m_HasFixedDuration": true,
+          "m_InterruptionSource": 0,
+          "m_OrderedInterruption": true,
+          "m_CanTransitionToSelf": true,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 1.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ],
+          "destinationName": "base.attack.attack_02"
+        }
+      ],
+      "nodes": [
+        {
+          "clipIndex": 4,
+          "blendParameter": null,
+          "children": [],
+          "thresholds": [],
+          "clip": {
+            "index": 4,
+            "original": {
+              "m_FileID": 0,
+              "m_PathID": 1467551794046791881
+            },
+            "originalName": "ai_stand_combat",
+            "override": {
+              "m_FileID": 0,
+              "m_PathID": -1882680100380155269
+            },
+            "effectiveName": "stand",
+            "events": []
+          }
+        }
+      ]
+    }
+  ],
+  "anyStateTransitions": [
+    {
+      "m_DestinationState": 30004,
+      "m_FullPathID": 857759113,
+      "m_ID": 2937115581,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.0,
+      "m_TransitionOffset": 0.10000000149011612,
+      "m_ExitTime": 0.8999999761581421,
+      "m_HasExitTime": false,
+      "m_HasFixedDuration": false,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": true,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 3880244526,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "death"
+        }
+      ],
+      "destinationName": null
+    },
+    {
+      "m_DestinationState": 11,
+      "m_FullPathID": 3848691121,
+      "m_ID": 373557673,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.10000000149011612,
+      "m_TransitionOffset": 0.0,
+      "m_ExitTime": 0.8999999761581421,
+      "m_HasExitTime": false,
+      "m_HasFixedDuration": true,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": false,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 3355538632,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "stun_start"
+        }
+      ],
+      "destinationName": "base.special.stun"
+    },
+    {
+      "m_DestinationState": 12,
+      "m_FullPathID": 4239321604,
+      "m_ID": 162299405,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.10000000149011612,
+      "m_TransitionOffset": 0.0,
+      "m_ExitTime": 0.8999999761581421,
+      "m_HasExitTime": false,
+      "m_HasFixedDuration": true,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": true,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 3697186515,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "stampede_start"
+        }
+      ],
+      "destinationName": "base.special.stampede_begin"
+    },
+    {
+      "m_DestinationState": 7,
+      "m_FullPathID": 1535973459,
+      "m_ID": 1223103004,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.10000000149011612,
+      "m_TransitionOffset": 0.0,
+      "m_ExitTime": 0.05000000074505806,
+      "m_HasExitTime": true,
+      "m_HasFixedDuration": true,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": true,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 1203776827,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "attack"
+        }
+      ],
+      "destinationName": "base.attack.decide"
+    },
+    {
+      "m_DestinationState": 16,
+      "m_FullPathID": 2565069328,
+      "m_ID": 2770626577,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.0,
+      "m_TransitionOffset": 0.0,
+      "m_ExitTime": 0.75,
+      "m_HasExitTime": false,
+      "m_HasFixedDuration": true,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": true,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 3429563881,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "summon"
+        },
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 3256155946,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "summons"
+        }
+      ],
+      "destinationName": "base.summon.summon"
+    },
+    {
+      "m_DestinationState": 15,
+      "m_FullPathID": 3873841367,
+      "m_ID": 4284746584,
+      "m_UserID": 0,
+      "m_TransitionDuration": 0.15000000596046448,
+      "m_TransitionOffset": 0.0,
+      "m_ExitTime": 0.0,
+      "m_HasExitTime": false,
+      "m_HasFixedDuration": true,
+      "m_InterruptionSource": 0,
+      "m_OrderedInterruption": true,
+      "m_CanTransitionToSelf": true,
+      "conditions": [
+        {
+          "m_ConditionMode": 1,
+          "m_EventID": 1282097123,
+          "m_EventThreshold": 0.0,
+          "m_ExitTime": 0.0,
+          "parameter": "special"
+        }
+      ],
+      "destinationName": "base.special.special"
+    }
+  ],
+  "attackSelectors": [
+    {
+      "raw": {
+        "m_TransitionConstantArray": [
+          {
+            "data": {
+              "m_Destination": 4,
+              "m_ConditionConstantArray": [
+                {
+                  "data": {
+                    "m_ConditionMode": 6,
+                    "m_EventID": 1581244933,
+                    "m_EventThreshold": 0.0,
+                    "m_ExitTime": 0.0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "m_Destination": 6,
+              "m_ConditionConstantArray": [
+                {
+                  "data": {
+                    "m_ConditionMode": 6,
+                    "m_EventID": 1581244933,
+                    "m_EventThreshold": 1.0,
+                    "m_ExitTime": 0.0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "m_Destination": 5,
+              "m_ConditionConstantArray": [
+                {
+                  "data": {
+                    "m_ConditionMode": 6,
+                    "m_EventID": 1581244933,
+                    "m_EventThreshold": 2.0,
+                    "m_ExitTime": 0.0
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "m_Destination": 7,
+              "m_ConditionConstantArray": []
+            }
+          }
+        ],
+        "m_FullPathID": 1707044557,
+        "m_IsEntry": true
+      },
+      "transitions": [
+        {
+          "destinationIndexRaw": 4,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 0.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ]
+        },
+        {
+          "destinationIndexRaw": 6,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 1.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ]
+        },
+        {
+          "destinationIndexRaw": 5,
+          "conditions": [
+            {
+              "m_ConditionMode": 6,
+              "m_EventID": 1581244933,
+              "m_EventThreshold": 2.0,
+              "m_ExitTime": 0.0,
+              "parameter": "attack_index"
+            }
+          ]
+        },
+        {
+          "destinationIndexRaw": 7,
+          "conditions": []
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Serialized graph and override mapping only; no Animator evaluation performed.",
+    "Entry selector and decide state have differing raw destination mappings. Do not flatten to a single index map until entry semantics and actual entry route are verified.",
+    "Native attack_index assignment/distribution, animation speed and callback lifecycle are not established by this graph."
+  ]
+}

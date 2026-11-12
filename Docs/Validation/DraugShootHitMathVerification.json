@@ -1,0 +1,7 @@
+{
+  "samples": 2048,
+  "maxAbsoluteError": 5.0067901611328125e-06,
+  "sourceSha256": "46728d9e9ce632932a1cd2c831479a57043442e20238f20db35a5f488ea1536b",
+  "instructionCount": 22,
+  "limits": "CPU surface math only, including 1024 q=.5 cases with DXBC saturate NaN-to-zero semantics; GPU singular behavior unverified; deterministic synthetic texture sampler. Does not test GPU execution, real textures, particle streams, depth, exposure or fog."
+}

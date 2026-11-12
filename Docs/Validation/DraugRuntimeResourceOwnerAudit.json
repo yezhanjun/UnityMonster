@@ -1,0 +1,40 @@
+{
+  "status": "PASS_RUNTIME_RESOURCE_OWNER_NOT_COMBAT_INTEGRATED",
+  "bundle": "Assets/StreamingAssets/Jotunnslayer/Draug/source-controller.bundle",
+  "bundleSHA256": "9dcdc8a71979cf13cf2a6c8b4201b49f20eabfac1eae088489041381b032aef6",
+  "bundleBytes": 30617383,
+  "owners": 3,
+  "loadedBundles": 1,
+  "inputs": [
+    {
+      "path": "Logs/draug-controller-resources.log",
+      "sha256": "d59939cba61ddfa97c4f3f0a29f1c92e3d6804700546136696425a1437d52c2d"
+    },
+    {
+      "path": "Logs/draug-controller-resources-playmode.log",
+      "sha256": "42183aaa15996f28ad6bf143b9e82767a86a893d5fd4a2904f802a00fad92740"
+    },
+    {
+      "path": "Docs/Validation/DraugControllerResourcesVerification.json",
+      "sha256": "0e4027d5fec1b893e3b1849ce26fd82fe24b924913f163317159b70e937e9a7a"
+    },
+    {
+      "path": "Docs/Validation/DraugControllerResourcesPlayModeVerification.json",
+      "sha256": "acd38afcf4139296693dec537fb9a87d9db90e276b352b52cf52576aeb70deb3"
+    }
+  ],
+  "coverage": [
+    "Shared immutable override controller, independent Animator attacks0/1/2",
+    "Duplicate acquisition rejected; duplicate release safe",
+    "One lease released while surviving actor clock advances",
+    "Actor destroyed before lease disposal; last lease unloads",
+    "Reacquire after final unload",
+    "PlayMode deferred controller destruction checked after a subsequent player frame"
+  ],
+  "limits": [
+    "No player build generated; Windows bundle platform only.",
+    "Visual/Combat actual spawn, disable, interruption and damage integration still pending.",
+    "No no-domain-reload transition test or player memory/GC profile.",
+    "Production StreamingAssets copy30.6MB added; Editor candidate retained as WIP."
+  ]
+}

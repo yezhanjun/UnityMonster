@@ -1375,31 +1375,40 @@
     "id": "cultist_miniboss_sur",
     "name": "cultist_miniboss_sur",
     "source": "巨人杀手",
-    "status": "失败",
-    "scope": "UnityMonster 在修未提交",
-    "images": [],
-    "note": "最新程序实测：模型/移动/攻击/12实伤及移除有记录，但攻击音源未播放，音源与监听器峰值为0，判失败。尚未完成本轮画面人工复核，不加入通过或跳过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_miniboss_sur-idle.png",
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_miniboss_sur-signature.png"
+    ],
+    "note": "本体/移动/攻击及5实伤通过；音源/监听器DSP峰值0.033291。待机与招牌画面已复核。事件复测停战2秒lateHits=0，声音停止、预警隐藏、移除通过；祭司另观察实际在飞法球并确认停战销毁。SwingPlaceholder占位音，未人工听辨；旋风及绿色法球为近似表现。整体14条keyword错误仍FAILED，不代表老师签收。日志Logs/cultists-events-final.log。",
+    "order": 1
   },
   {
     "id": "cultist_miniboss_v02_sur",
     "name": "cultist_miniboss_v02_sur",
     "source": "巨人杀手",
-    "status": "失败",
-    "scope": "UnityMonster 在修未提交",
-    "images": [],
-    "note": "最新程序实测：模型/移动/攻击/12实伤及移除有记录，但攻击音源未播放，音源与监听器峰值为0，判失败。尚未完成本轮画面人工复核，不加入通过或跳过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_miniboss_v02_sur-idle.png",
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_miniboss_v02_sur-signature.png"
+    ],
+    "note": "本体/移动/攻击及5实伤通过；音源/监听器DSP峰值0.033212。待机与招牌画面已复核。事件复测停战2秒lateHits=0，声音停止、预警隐藏、移除通过；祭司另观察实际在飞法球并确认停战销毁。SwingPlaceholder占位音，未人工听辨；旋风及绿色法球为近似表现。整体14条keyword错误仍FAILED，不代表老师签收。日志Logs/cultists-events-final.log。",
+    "order": 1
   },
   {
     "id": "cultist_priest_sur",
     "name": "cultist_priest_sur",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "UnityMonster 在修未提交",
-    "images": [],
-    "note": "已接入的本轮程序检查通过：远程法球、7实伤、音源及监听器峰值0.020295，16米外追击及移除有记录；尚未人工检查本轮画面，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_priest_sur-idle.png",
+      "Docs/Validation/CultistAdvancedRetestFrames/cultist_priest_sur-signature.png"
+    ],
+    "note": "本体/移动/攻击及7实伤通过；音源/监听器DSP峰值0.020295。待机与招牌画面已复核。事件复测停战2秒lateHits=0，声音停止、预警隐藏、移除通过；祭司另观察实际在飞法球并确认停战销毁。SwingPlaceholder占位音，未人工听辨；旋风及绿色法球为近似表现。整体14条keyword错误仍FAILED，不代表老师签收。日志Logs/cultists-events-final.log。",
+    "order": 1
   },
   {
     "id": "cultist_woman",
@@ -1408,7 +1417,7 @@
     "status": "待接入／未测",
     "scope": "尚无合格验收记录",
     "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
+    "note": "未找到同名bundle；公共包查询尚未确认映射，不据此认定不存在，保留待验。",
     "order": 4
   },
   {
@@ -1418,28 +1427,34 @@
     "status": "待接入／未测",
     "scope": "尚无合格验收记录",
     "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
+    "note": "已接入并有程序记录；原模型尺度已核对，正常视角和4米近战判定与动作接触尚待完善。见Docs/Validation/海尔海姆恶魔阶段验证.md，未计通过。",
     "order": 4
   },
   {
     "id": "draug_crawler_sur",
-    "name": "draug_crawler_sur",
+    "name": "爬行尸鬼",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/DraugRetestFrames/draug_crawler_sur-idle.png",
+      "Docs/Validation/DraugRetestFrames/draug_crawler_sur-signature.png"
+    ],
+    "note": "原模型与源攻击动作截图已查看；移动、5实伤、DSP音源/监听器峰值0.033219、停战2秒受伤事件0、声音停止/预警隐藏/移除通过。近战参数与红圈为白盒近似，材质基础转换，SwingPlaceholder占位音未人工听辨。Logs/draug-retest.log整体仍14条keyword错误FAILED。非老师签收。",
+    "order": 1
   },
   {
     "id": "draug_sur",
-    "name": "draug_sur",
+    "name": "普通尸鬼",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/DraugRetestFrames/draug_sur-idle.png",
+      "Docs/Validation/DraugRetestFrames/draug_sur-signature.png"
+    ],
+    "note": "原模型与源攻击动作截图已查看；移动、5实伤、DSP音源/监听器峰值0.033275、停战2秒受伤事件0、声音停止/预警隐藏/移除通过。近战参数与红圈为白盒近似，材质基础转换，SwingPlaceholder占位音未人工听辨。Logs/draug-retest.log整体仍14条keyword错误FAILED。非老师签收。",
+    "order": 1
   },
   {
     "id": "draug_thrower_sur",
@@ -1448,7 +1463,7 @@
     "status": "待接入／未测",
     "scope": "尚无合格验收记录",
     "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
+    "note": "已接入；16米追击、7实伤、声音DSP、在飞停战与粒子清理通过。源手部特效遮罩已修，原独立飞行物未恢复，棕球占位仍不合格，未计通过。",
     "order": 4
   },
   {
@@ -1513,23 +1528,29 @@
   },
   {
     "id": "ele_warrior_green_sur",
-    "name": "ele_warrior_green_sur",
+    "name": "绿色元素战士",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/ElementalVariantFrames/ele_warrior_green_sur-idle.png",
+      "Docs/Validation/ElementalVariantFrames/ele_warrior_green_sur-contact.png"
+    ],
+    "note": "独立源模型/材质/4段动作及接触胶囊核对；idle/contact实机画面已查看。移动、接触5实伤、音源/监听器DSP.038673、移除通过。3米范围外1.7秒受伤事件0且计数不增，停战事件0与声音/粒子清理通过。伤害、.8秒间隔及玩家容差为近似，原脚本参数和可能特殊效果未恢复，不宣称完整技能。SwingPlaceholder占位音非人工听辨。Logs/elemental-variants-test.log整体14条keyword错误FAILED，非老师签收。",
+    "order": 1
   },
   {
     "id": "ele_warrior_hel_sur",
-    "name": "ele_warrior_hel_sur",
+    "name": "海尔元素战士",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/ElementalVariantFrames/ele_warrior_hel_sur-idle.png",
+      "Docs/Validation/ElementalVariantFrames/ele_warrior_hel_sur-contact.png"
+    ],
+    "note": "独立源模型/材质/4段动作及接触胶囊核对；idle/contact实机画面已查看。移动、接触5实伤、音源/监听器DSP.038683、移除通过。3米范围外1.7秒受伤事件0且计数不增，停战事件0与声音/粒子清理通过。伤害、.8秒间隔及玩家容差为近似，原脚本参数和可能特殊效果未恢复，不宣称完整技能。SwingPlaceholder占位音非人工听辨。Logs/elemental-variants-test.log整体14条keyword错误FAILED，非老师签收。",
+    "order": 1
   },
   {
     "id": "ele_warrior_poison_sur",
@@ -1568,18 +1589,21 @@
     "status": "待接入／未测",
     "scope": "尚无合格验收记录",
     "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
+    "note": "原模型与4段动作已导入；源enemy_contact_dmg节点偏移到地下-4.85米，缺失脚本机制尚未确认，未接战斗也未计通过。",
     "order": 4
   },
   {
     "id": "ele_warrior_sur",
-    "name": "ele_warrior_sur",
+    "name": "普通元素战士",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/ElementalContactFinalFrames/ele_warrior_sur-idle.png",
+      "Docs/Validation/ElementalContactFinalFrames/ele_warrior_sur-contact.png"
+    ],
+    "note": "源模型、移动/待机/召唤动作及接触胶囊已审查，未伪造源攻击动画。实机移动、接触5实伤、DSP音源/监听器0.038734、移除通过；保持3米外1.7秒受伤事件0且结算计数不增，停战事件0与声音/粒子清理通过。接触半径.65加玩家.4容差、.8秒间隔及伤害为白盒近似，原脚本参数未恢复；SwingPlaceholder占位音非人工听辨。整体14条keyword错误FAILED。日志Logs/elemental-contact-final.log，非老师签收。",
+    "order": 1
   },
   {
     "id": "elemental",
@@ -1723,13 +1747,16 @@
   },
   {
     "id": "goblin_melee_sur",
-    "name": "goblin_melee_sur",
+    "name": "近战哥布林",
     "source": "巨人杀手",
-    "status": "待接入／未测",
-    "scope": "尚无合格验收记录",
-    "images": [],
-    "note": "未测，无合格实机截图，不计通过。",
-    "order": 4
+    "status": "已记录通过",
+    "scope": "UnityMonster 新接入",
+    "images": [
+      "Docs/Validation/GoblinFirstFrames/goblin_melee_sur-idle.png",
+      "Docs/Validation/GoblinFirstFrames/goblin_melee_sur-signature.png"
+    ],
+    "note": "源模型与武器、5段动作每段1400曲线，idle/signature实机已查看。移动、攻击5实伤、DSP音源/监听器.033256、停战事件0/声音/预警/粒子清理和移除通过。Logs/goblin-first.log。材质基础转换、战斗参数与红圈近似；SwingPlaceholder占位音未人工听辨。整体14条keyword错误FAILED，非老师签收。",
+    "order": 1
   },
   {
     "id": "goblin_ranged_portal_sur",

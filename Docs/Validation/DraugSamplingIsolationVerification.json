@@ -1,0 +1,41 @@
+{
+  "status": "ROOT_CAUSE_ISOLATION_AND_FAILED_CANDIDATE",
+  "runs": [
+    {
+      "result": "Docs/Validation/DraugSourceSamplingVerification.json",
+      "log": "Logs/draug-source-sampling.log",
+      "logSha256": "b3ea0dd732ef271df7c4da8bea30c1e77a1935466e3368c05324852ff0918aa2",
+      "failed": 24,
+      "cases": 24,
+      "maxPosition": 0.06363990157842636,
+      "maxRotationDegrees": 109.16737365722656
+    },
+    {
+      "result": "Docs/Validation/DraugSourceAvatarSamplingVerification.json",
+      "log": "Logs/draug-source-avatar-sampling.log",
+      "logSha256": "e2034c2041b4e0f3c9889f1f5a5a772fd0d87ffb792f1fe7230c8e97e868b24f",
+      "failed": 0,
+      "cases": 24,
+      "maxPosition": 2.63417798684884e-09,
+      "maxRotationDegrees": 0.0
+    },
+    {
+      "result": "Docs/Validation/DraugDensePoseVerification.json",
+      "log": "Logs/draug-dense240-pose.log",
+      "logSha256": "7a188ee5c574dfb0e78851fa8e0e8614189667ba6b3fafac8f5cf9ab76b5b7be",
+      "failed": 3,
+      "cases": 24,
+      "maxPosition": 1.7905031199916266e-05,
+      "maxRotationDegrees": 0.5293398499488831
+    }
+  ],
+  "candidateBytes": 215740661,
+  "runtimeResourcesChanged": false,
+  "findings": [
+    "Source SampleAnimation on original avatar matches source Animator in24 cases; same clip sampled on rebuilt avatar failed24/24.",
+    "240fps linear quaternion-continuous source-avatar bake reduces sampled error but fails3/24, maximum .52934deg.",
+    "Current Ceil(length*240) yields273 intervals for nominal1.133333s; the resulting grid does not align with nominal source30Hz key times. This is a next hypothesis, not yet a verified cause.",
+    "Dense candidate is too large and retains constant/redundant curves; not referenced by runtime."
+  ],
+  "next": "Preserve source key boundaries and simplify curves with error checks; expand off-grid validation before switching any resource."
+}

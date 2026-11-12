@@ -1,0 +1,2590 @@
+{
+  "status": "SOURCE_DEATH_MATERIAL_BINDINGS_IDENTIFIED",
+  "sourceSHA256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "materials": {
+    "-7124714516374100868": {
+      "name": "M_mecha_particles",
+      "shaderReference": {
+        "m_FileID": 0,
+        "m_PathID": -7929448088448310157
+      },
+      "unityResolvedShader": "Shader Graphs/S_Shuriken",
+      "properties": {
+        "m_TexEnvs": [
+          [
+            "_mainTexture",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 7203587048031217033
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_Lightmaps",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_LightmapsInd",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_ShadowMasks",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_AddPrecomputedVelocity",
+            0.0
+          ],
+          [
+            "_AlphaCutoffEnable",
+            0.0
+          ],
+          [
+            "_AlphaDstBlend",
+            1.0
+          ],
+          [
+            "_AlphaSrcBlend",
+            1.0
+          ],
+          [
+            "_BlendMode",
+            1.0
+          ],
+          [
+            "_ConservativeDepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_CullMode",
+            2.0
+          ],
+          [
+            "_CullModeForward",
+            2.0
+          ],
+          [
+            "_DepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedGIMode",
+            0.0
+          ],
+          [
+            "_DoubleSidedNormalMode",
+            2.0
+          ],
+          [
+            "_DstBlend",
+            1.0
+          ],
+          [
+            "_DstBlend2",
+            10.0
+          ],
+          [
+            "_EnableBlendModePreserveSpecularLighting",
+            0.0
+          ],
+          [
+            "_EnableFogOnTransparent",
+            1.0
+          ],
+          [
+            "_ExcludeFromTUAndAA",
+            0.0
+          ],
+          [
+            "_Fade",
+            0.0
+          ],
+          [
+            "_Intensity",
+            2.0
+          ],
+          [
+            "_LocalDistortionRotation",
+            0.0
+          ],
+          [
+            "_LocalDistortionStrength",
+            0.0
+          ],
+          [
+            "_OpaqueCullMode",
+            2.0
+          ],
+          [
+            "_PerPixelSorting",
+            0.0
+          ],
+          [
+            "_RenderQueueType",
+            4.0
+          ],
+          [
+            "_SrcBlend",
+            1.0
+          ],
+          [
+            "_StencilRef",
+            0.0
+          ],
+          [
+            "_StencilRefDepth",
+            1.0
+          ],
+          [
+            "_StencilRefDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilRefMV",
+            33.0
+          ],
+          [
+            "_StencilWriteMask",
+            6.0
+          ],
+          [
+            "_StencilWriteMaskDepth",
+            9.0
+          ],
+          [
+            "_StencilWriteMaskDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilWriteMaskMV",
+            43.0
+          ],
+          [
+            "_SurfaceType",
+            1.0
+          ],
+          [
+            "_TransparentBackfaceEnable",
+            0.0
+          ],
+          [
+            "_TransparentCullMode",
+            2.0
+          ],
+          [
+            "_TransparentDepthPostpassEnable",
+            0.0
+          ],
+          [
+            "_TransparentDepthPrepassEnable",
+            0.0
+          ],
+          [
+            "_TransparentSortPriority",
+            0.0
+          ],
+          [
+            "_TransparentWritingMotionVec",
+            0.0
+          ],
+          [
+            "_TransparentZWrite",
+            0.0
+          ],
+          [
+            "_UseShadowThreshold",
+            0.0
+          ],
+          [
+            "_WORLDTYPE",
+            0.0
+          ],
+          [
+            "_ZTestDepthEqualForOpaque",
+            4.0
+          ],
+          [
+            "_ZTestTransparent",
+            4.0
+          ],
+          [
+            "_ZWrite",
+            0.0
+          ],
+          [
+            "_distortionAmount",
+            0.009999999776482582
+          ],
+          [
+            "_noiseScale",
+            25.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_DoubleSidedConstants",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": -1.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EmissionColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LocalDistortionMapTs",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_Tint",
+            {
+              "r": 0.498039186000824,
+              "g": 0.498039186000824,
+              "b": 0.498039186000824,
+              "a": 1.0
+            }
+          ],
+          [
+            "_color",
+            {
+              "r": 127.99999237060547,
+              "g": 127.99999237060547,
+              "b": 127.99999237060547,
+              "a": 1.0
+            }
+          ],
+          [
+            "_mainSpeed",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_noiseSpeed",
+            {
+              "r": 2.0,
+              "g": 2.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ]
+        ]
+      }
+    },
+    "-6099456773788670808": {
+      "name": "M_smoke_earthquake",
+      "shaderReference": {
+        "m_FileID": 4,
+        "m_PathID": -6196057315786485940
+      },
+      "unityResolvedShader": "Legacy Shaders/Particles/Additive",
+      "properties": {
+        "m_TexEnvs": [
+          [
+            "_MainTex",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": -5026882738706249054
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_InvFade",
+            1.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_Color",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_TintColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ]
+        ]
+      }
+    },
+    "-2203740660089463168": {
+      "name": "M_Shaman_Glow",
+      "shaderReference": {
+        "m_FileID": 0,
+        "m_PathID": -7929448088448310157
+      },
+      "unityResolvedShader": "Shader Graphs/S_Shuriken",
+      "properties": {
+        "m_TexEnvs": [
+          [
+            "_mainTexture",
+            {
+              "m_Texture": {
+                "m_FileID": 4,
+                "m_PathID": 5681093337556782924
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_Lightmaps",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_LightmapsInd",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_ShadowMasks",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_AddPrecomputedVelocity",
+            0.0
+          ],
+          [
+            "_AlphaCutoffEnable",
+            0.0
+          ],
+          [
+            "_AlphaDstBlend",
+            1.0
+          ],
+          [
+            "_AlphaSrcBlend",
+            1.0
+          ],
+          [
+            "_BlendMode",
+            1.0
+          ],
+          [
+            "_ConservativeDepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_CullMode",
+            2.0
+          ],
+          [
+            "_CullModeForward",
+            2.0
+          ],
+          [
+            "_DepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedGIMode",
+            0.0
+          ],
+          [
+            "_DoubleSidedNormalMode",
+            2.0
+          ],
+          [
+            "_DstBlend",
+            1.0
+          ],
+          [
+            "_DstBlend2",
+            10.0
+          ],
+          [
+            "_EnableBlendModePreserveSpecularLighting",
+            0.0
+          ],
+          [
+            "_EnableFogOnTransparent",
+            1.0
+          ],
+          [
+            "_ExcludeFromTUAndAA",
+            0.0
+          ],
+          [
+            "_Fade",
+            0.0
+          ],
+          [
+            "_Intensity",
+            2.0
+          ],
+          [
+            "_LocalDistortionRotation",
+            0.0
+          ],
+          [
+            "_LocalDistortionStrength",
+            0.0
+          ],
+          [
+            "_OpaqueCullMode",
+            2.0
+          ],
+          [
+            "_PerPixelSorting",
+            0.0
+          ],
+          [
+            "_RenderQueueType",
+            4.0
+          ],
+          [
+            "_SrcBlend",
+            1.0
+          ],
+          [
+            "_StencilRef",
+            0.0
+          ],
+          [
+            "_StencilRefDepth",
+            1.0
+          ],
+          [
+            "_StencilRefDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilRefMV",
+            33.0
+          ],
+          [
+            "_StencilWriteMask",
+            6.0
+          ],
+          [
+            "_StencilWriteMaskDepth",
+            9.0
+          ],
+          [
+            "_StencilWriteMaskDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilWriteMaskMV",
+            43.0
+          ],
+          [
+            "_SurfaceType",
+            1.0
+          ],
+          [
+            "_TransparentBackfaceEnable",
+            0.0
+          ],
+          [
+            "_TransparentCullMode",
+            2.0
+          ],
+          [
+            "_TransparentDepthPostpassEnable",
+            0.0
+          ],
+          [
+            "_TransparentDepthPrepassEnable",
+            0.0
+          ],
+          [
+            "_TransparentSortPriority",
+            0.0
+          ],
+          [
+            "_TransparentWritingMotionVec",
+            0.0
+          ],
+          [
+            "_TransparentZWrite",
+            0.0
+          ],
+          [
+            "_UseShadowThreshold",
+            0.0
+          ],
+          [
+            "_WORLDTYPE",
+            0.0
+          ],
+          [
+            "_ZTestDepthEqualForOpaque",
+            4.0
+          ],
+          [
+            "_ZTestTransparent",
+            4.0
+          ],
+          [
+            "_ZWrite",
+            0.0
+          ],
+          [
+            "_distortionAmount",
+            0.0
+          ],
+          [
+            "_noiseScale",
+            0.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_DoubleSidedConstants",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": -1.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EmissionColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LocalDistortionMapTs",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_Tint",
+            {
+              "r": 0.498039186000824,
+              "g": 0.498039186000824,
+              "b": 0.498039186000824,
+              "a": 1.0
+            }
+          ],
+          [
+            "_color",
+            {
+              "r": 23.968629837036133,
+              "g": 18.880949020385742,
+              "b": 18.880949020385742,
+              "a": 1.0
+            }
+          ],
+          [
+            "_mainSpeed",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_noiseSpeed",
+            {
+              "r": 20.030000686645508,
+              "g": 5.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ]
+        ]
+      }
+    },
+    "736159808234345581": {
+      "name": "M_Glow_Alpha",
+      "shaderReference": {
+        "m_FileID": 2,
+        "m_PathID": -7746926438441987747
+      },
+      "unityResolvedShader": "Games Farm/HDRP/Unlit/Particles Animated Alpha Blended",
+      "properties": {
+        "m_TexEnvs": [
+          [
+            "_LocalDistortionMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexA",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 538167562245341568
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexB",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexC",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MaskTexture",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_Lightmaps",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_LightmapsInd",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_ShadowMasks",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_AddPrecomputedVelocity",
+            0.0
+          ],
+          [
+            "_AlphaCutoffEnable",
+            0.0
+          ],
+          [
+            "_AlphaDstBlend",
+            10.0
+          ],
+          [
+            "_AlphaSrcBlend",
+            1.0
+          ],
+          [
+            "_BlendMode",
+            0.0
+          ],
+          [
+            "_ConservativeDepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_CullMode",
+            2.0
+          ],
+          [
+            "_CullModeForward",
+            2.0
+          ],
+          [
+            "_DepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedGIMode",
+            0.0
+          ],
+          [
+            "_DoubleSidedNormalMode",
+            2.0
+          ],
+          [
+            "_DstBlend",
+            10.0
+          ],
+          [
+            "_DstBlend2",
+            10.0
+          ],
+          [
+            "_EnableBlendModePreserveSpecularLighting",
+            0.0
+          ],
+          [
+            "_EnableFogOnTransparent",
+            1.0
+          ],
+          [
+            "_ExcludeFromTUAndAA",
+            0.0
+          ],
+          [
+            "_Fade",
+            0.0
+          ],
+          [
+            "_Intensity",
+            2.0
+          ],
+          [
+            "_LocalDistortionRotation",
+            0.0
+          ],
+          [
+            "_LocalDistortionStrength",
+            0.0
+          ],
+          [
+            "_OpaqueCullMode",
+            2.0
+          ],
+          [
+            "_PerPixelSorting",
+            0.0
+          ],
+          [
+            "_RenderQueueType",
+            4.0
+          ],
+          [
+            "_SrcBlend",
+            1.0
+          ],
+          [
+            "_StencilRef",
+            0.0
+          ],
+          [
+            "_StencilRefDepth",
+            1.0
+          ],
+          [
+            "_StencilRefDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilRefMV",
+            33.0
+          ],
+          [
+            "_StencilWriteMask",
+            6.0
+          ],
+          [
+            "_StencilWriteMaskDepth",
+            9.0
+          ],
+          [
+            "_StencilWriteMaskDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilWriteMaskMV",
+            43.0
+          ],
+          [
+            "_SurfaceType",
+            1.0
+          ],
+          [
+            "_TransparentBackfaceEnable",
+            0.0
+          ],
+          [
+            "_TransparentCullMode",
+            2.0
+          ],
+          [
+            "_TransparentDepthPostpassEnable",
+            0.0
+          ],
+          [
+            "_TransparentDepthPrepassEnable",
+            0.0
+          ],
+          [
+            "_TransparentSortPriority",
+            0.0
+          ],
+          [
+            "_TransparentWritingMotionVec",
+            0.0
+          ],
+          [
+            "_TransparentZWrite",
+            0.0
+          ],
+          [
+            "_UseShadowThreshold",
+            0.0
+          ],
+          [
+            "_UseTilingBasedOnDistance",
+            0.0
+          ],
+          [
+            "_WORLDTYPE",
+            0.0
+          ],
+          [
+            "_ZTestDepthEqualForOpaque",
+            4.0
+          ],
+          [
+            "_ZTestTransparent",
+            4.0
+          ],
+          [
+            "_ZWrite",
+            0.0
+          ],
+          [
+            "_distortionAmount",
+            0.0
+          ],
+          [
+            "_noiseScale",
+            0.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_AnimationAB",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_AnimationC",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_DoubleSidedConstants",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": -1.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EmissionColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LocalDistortionMapTs",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureATo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureBTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureCTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MaskTilingTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_TilingAndOffset",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_Tint",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_color",
+            {
+              "r": 256.0,
+              "g": 256.0,
+              "b": 256.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_mainSpeed",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_noiseSpeed",
+            {
+              "r": 20.030000686645508,
+              "g": 5.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ]
+        ]
+      }
+    },
+    "-7955591167523066077": {
+      "name": "draugh_ranged_mat",
+      "shaderReference": {
+        "m_FileID": 2,
+        "m_PathID": -5430072409624284394
+      },
+      "unityResolvedShader": "Games Farm/HDRP/Lit/Actor",
+      "properties": {
+        "m_TexEnvs": [
+          [
+            "Texture2D_B4CC1D39",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_AlbedoMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 8540439691086581132
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_AnimEmMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_AnimEmScrollMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_BloodMaskMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_EmissionMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_NormalMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": -7069841713192903459
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_OcclusionMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": -7289719146056579053
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_Skin_Albedo",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_Skin_Normal",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_Skin_Specular",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_SpecularMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 6170733990446128943
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_Tattoo",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_TintMask",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_Lightmaps",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_LightmapsInd",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_ShadowMasks",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_AddPrecomputedVelocity",
+            0.0
+          ],
+          [
+            "_AlbedoToEmission",
+            0.20000000298023224
+          ],
+          [
+            "_AlphaClip",
+            0.0
+          ],
+          [
+            "_AlphaCutoffEnable",
+            1.0
+          ],
+          [
+            "_AlphaDstBlend",
+            0.0
+          ],
+          [
+            "_AlphaSrcBlend",
+            1.0
+          ],
+          [
+            "_AlphaToMask",
+            0.0
+          ],
+          [
+            "_AlphaToMaskInspectorValue",
+            0.0
+          ],
+          [
+            "_BlackBlend",
+            2.0
+          ],
+          [
+            "_Blend",
+            0.0
+          ],
+          [
+            "_BlendMode",
+            0.0
+          ],
+          [
+            "_BloodMaskStrength",
+            0.0
+          ],
+          [
+            "_BloodOnWreck",
+            0.0
+          ],
+          [
+            "_BumpScale",
+            1.0
+          ],
+          [
+            "_ConservativeDepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_Cull",
+            2.0
+          ],
+          [
+            "_CullMode",
+            0.0
+          ],
+          [
+            "_CullModeForward",
+            0.0
+          ],
+          [
+            "_CutFactor",
+            0.0
+          ],
+          [
+            "_CutOut",
+            0.3499999940395355
+          ],
+          [
+            "_Cutoff",
+            0.5
+          ],
+          [
+            "_Damage_Blick_Power",
+            3.0
+          ],
+          [
+            "_DepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_DirectionalDisolve",
+            0.0
+          ],
+          [
+            "_DoubleSidedEnable",
+            1.0
+          ],
+          [
+            "_DoubleSidedGIMode",
+            0.0
+          ],
+          [
+            "_DoubleSidedNormalMode",
+            2.0
+          ],
+          [
+            "_DstBlend",
+            0.0
+          ],
+          [
+            "_DstBlend2",
+            0.0
+          ],
+          [
+            "_EnableBlendModePreserveSpecularLighting",
+            1.0
+          ],
+          [
+            "_EnableFogOnTransparent",
+            1.0
+          ],
+          [
+            "_EnvironmentReflections",
+            1.0
+          ],
+          [
+            "_ExcludeFromTUAndAA",
+            0.0
+          ],
+          [
+            "_FadeNoiseScale",
+            100.0
+          ],
+          [
+            "_ForceForwardEmissive",
+            0.0
+          ],
+          [
+            "_GlobalBonusLightFactor",
+            1.0
+          ],
+          [
+            "_GlobalCustomLightFactor",
+            0.0
+          ],
+          [
+            "_GlossMapScale",
+            0.0
+          ],
+          [
+            "_Glossiness",
+            0.0
+          ],
+          [
+            "_GlossyReflections",
+            0.0
+          ],
+          [
+            "_Immunity",
+            0.0
+          ],
+          [
+            "_Immunity_Factor",
+            0.0
+          ],
+          [
+            "_IsPartyScreenUnavaiable",
+            0.0
+          ],
+          [
+            "_Locked",
+            0.0
+          ],
+          [
+            "_MaterialID",
+            4.0
+          ],
+          [
+            "_MaterialTypeMask",
+            16.0
+          ],
+          [
+            "_Metallic",
+            0.0
+          ],
+          [
+            "_Mode",
+            1.0
+          ],
+          [
+            "_NORMAL_MAP_PULSE",
+            0.0
+          ],
+          [
+            "_NormalStrength",
+            1.0
+          ],
+          [
+            "_ObjectYPosition",
+            0.0
+          ],
+          [
+            "_OcclusionFactor",
+            0.0
+          ],
+          [
+            "_OcclusionStrength",
+            1.0
+          ],
+          [
+            "_OpaqueCullMode",
+            2.0
+          ],
+          [
+            "_PerPixelSorting",
+            0.0
+          ],
+          [
+            "_QueueOffset",
+            0.0
+          ],
+          [
+            "_RayTracing",
+            0.0
+          ],
+          [
+            "_ReceiveShadows",
+            1.0
+          ],
+          [
+            "_ReceivesSSR",
+            0.0
+          ],
+          [
+            "_ReceivesSSRTransparent",
+            0.0
+          ],
+          [
+            "_RefractionModel",
+            0.0
+          ],
+          [
+            "_RenderQueueType",
+            1.0
+          ],
+          [
+            "_RequireSplitLighting",
+            0.0
+          ],
+          [
+            "_RimSize",
+            2.0
+          ],
+          [
+            "_SKIN_ENABLED",
+            0.0
+          ],
+          [
+            "_Smoothness",
+            0.0
+          ],
+          [
+            "_SmoothnessTextureChannel",
+            0.0
+          ],
+          [
+            "_SpecularHighlights",
+            1.0
+          ],
+          [
+            "_SpecularIntensity",
+            1.0
+          ],
+          [
+            "_SrcBlend",
+            1.0
+          ],
+          [
+            "_StencilRef",
+            0.0
+          ],
+          [
+            "_StencilRefDepth",
+            0.0
+          ],
+          [
+            "_StencilRefDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilRefGBuffer",
+            2.0
+          ],
+          [
+            "_StencilRefMV",
+            32.0
+          ],
+          [
+            "_StencilWriteMask",
+            6.0
+          ],
+          [
+            "_StencilWriteMaskDepth",
+            9.0
+          ],
+          [
+            "_StencilWriteMaskDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilWriteMaskGBuffer",
+            15.0
+          ],
+          [
+            "_StencilWriteMaskMV",
+            41.0
+          ],
+          [
+            "_SupportDecals",
+            0.0
+          ],
+          [
+            "_Surface",
+            0.0
+          ],
+          [
+            "_SurfaceType",
+            0.0
+          ],
+          [
+            "_TATTOO_ENABLED",
+            0.0
+          ],
+          [
+            "_TintMaskStrengthh",
+            0.0
+          ],
+          [
+            "_TransmissionEnable",
+            1.0
+          ],
+          [
+            "_TransparentBackfaceEnable",
+            0.0
+          ],
+          [
+            "_TransparentCullMode",
+            2.0
+          ],
+          [
+            "_TransparentDepthPostpassEnable",
+            0.0
+          ],
+          [
+            "_TransparentDepthPrepassEnable",
+            0.0
+          ],
+          [
+            "_TransparentSortPriority",
+            0.0
+          ],
+          [
+            "_TransparentWritingMotionVec",
+            0.0
+          ],
+          [
+            "_TransparentZWrite",
+            0.0
+          ],
+          [
+            "_UseDirectionalFadeNoise",
+            0.0
+          ],
+          [
+            "_UseShadowThreshold",
+            0.0
+          ],
+          [
+            "_WorkflowMode",
+            1.0
+          ],
+          [
+            "_ZTestDepthEqualForOpaque",
+            3.0
+          ],
+          [
+            "_ZTestGBuffer",
+            3.0
+          ],
+          [
+            "_ZTestTransparent",
+            4.0
+          ],
+          [
+            "_ZWrite",
+            1.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_AlbedoColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_AnimEmCol",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_AnimEmScrollSpeed",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_BaseColor",
+            {
+              "r": 0.5,
+              "g": 0.5,
+              "b": 0.5,
+              "a": 1.0
+            }
+          ],
+          [
+            "_BloodMaskTiling",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_BloodMaskTint",
+            {
+              "r": 1.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_BloodSpecColor",
+            {
+              "r": 0.5499999523162842,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_BloodSpecularColor",
+            {
+              "r": 0.37647056579589844,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_Color",
+            {
+              "r": 0.5,
+              "g": 0.5,
+              "b": 0.5,
+              "a": 1.0
+            }
+          ],
+          [
+            "_DamageBlickColor",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_DisolveDirection",
+            {
+              "r": -1.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_DoubleSidedConstants",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EdgeColor",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EmissionColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_EmmissionColor",
+            {
+              "r": 5.55984354019165,
+              "g": 11.296076774597168,
+              "b": 12.981132507324219,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LightColorThis",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LightDirectionIntensityThis",
+            {
+              "r": 0.5809914469718933,
+              "g": 0.48249781131744385,
+              "b": -0.655472993850708,
+              "a": 0.10000000149011612
+            }
+          ],
+          [
+            "_OutlineRawColor",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_RimColor",
+            {
+              "r": 0.011764705181121826,
+              "g": 0.24285124242305756,
+              "b": 0.35686275362968445,
+              "a": 1.0
+            }
+          ],
+          [
+            "_SpecColor",
+            {
+              "r": 0.19999995827674866,
+              "g": 0.19999995827674866,
+              "b": 0.19999995827674866,
+              "a": 1.0
+            }
+          ],
+          [
+            "_SpecularColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_SpecularColor2",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_Tint2",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_TintMaskTilingOffset",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_WeaponHighlightColor",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "renderers": [
+    {
+      "node": "lod1",
+      "pathId": -4540759046977928890,
+      "type": "ParticleSystemRenderer",
+      "enabled": false,
+      "materials": [],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34,
+        38
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "particles",
+      "pathId": 4071717110184296774,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_mecha_particles"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "smoke",
+      "pathId": -6863685060409212602,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_smoke_earthquake"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow",
+      "pathId": 5458339645245374790,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Shaman_Glow"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow_Dark",
+      "pathId": 5842324142665384262,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Glow_Alpha"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "lod2",
+      "pathId": -131697917774184122,
+      "type": "ParticleSystemRenderer",
+      "enabled": false,
+      "materials": [],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34,
+        38
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "particles",
+      "pathId": -3645394027411652282,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_mecha_particles"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "smoke",
+      "pathId": 8280003499667177798,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_smoke_earthquake"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow",
+      "pathId": 6949860418363605318,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Shaman_Glow"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow_Dark",
+      "pathId": -4497689963933056698,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Glow_Alpha"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "lod3",
+      "pathId": 5978116188562932038,
+      "type": "ParticleSystemRenderer",
+      "enabled": false,
+      "materials": [],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34,
+        38
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "particles",
+      "pathId": 1791849542914949446,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_mecha_particles"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        34
+      ],
+      "useCustomVertexStreams": true
+    },
+    {
+      "node": "smoke",
+      "pathId": 1047055201074430278,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_smoke_earthquake"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow",
+      "pathId": -9072629031228849850,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Shaman_Glow"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "Glow_Dark",
+      "pathId": -679666267160362682,
+      "type": "ParticleSystemRenderer",
+      "enabled": true,
+      "materials": [
+        "M_Glow_Alpha"
+      ],
+      "vertexStreams": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "useCustomVertexStreams": false
+    },
+    {
+      "node": "draug",
+      "pathId": -7674967842349825722,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.002",
+      "pathId": 1864692362546790726,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.003",
+      "pathId": -9046122513097211578,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.004",
+      "pathId": 3345158527076155718,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.005",
+      "pathId": -6841024251977252538,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.006",
+      "pathId": 4859117673119564102,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.007",
+      "pathId": 4640208294957891910,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.009",
+      "pathId": 3568637011747619142,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    },
+    {
+      "node": "draug.010",
+      "pathId": 3133251341593362758,
+      "type": "MeshRenderer",
+      "enabled": true,
+      "materials": [
+        "draugh_ranged_mat"
+      ]
+    }
+  ],
+  "shuriken": [
+    {
+      "name": "M_mecha_particles",
+      "distortionAmount": 0.009999999776482582,
+      "noiseScale": 25.0,
+      "noiseSpeed": {
+        "r": 2.0,
+        "g": 2.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "color": {
+        "r": 127.99999237060547,
+        "g": 127.99999237060547,
+        "b": 127.99999237060547,
+        "a": 1.0
+      },
+      "blendMode": 1.0
+    },
+    {
+      "name": "M_Shaman_Glow",
+      "distortionAmount": 0.0,
+      "noiseScale": 0.0,
+      "noiseSpeed": {
+        "r": 20.030000686645508,
+        "g": 5.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "color": {
+        "r": 23.968629837036133,
+        "g": 18.880949020385742,
+        "b": 18.880949020385742,
+        "a": 1.0
+      },
+      "blendMode": 1.0
+    }
+  ],
+  "forwardBindings": {
+    "_TimeParameters": 1280,
+    "_GlobalMipBias": 1380,
+    "_OffScreenRendering": 3636,
+    "_DeExposureMultiplier": 3692,
+    "_color": 16,
+    "_noiseSpeed": 32,
+    "_noiseScale": 40,
+    "_distortionAmount": 44
+  },
+  "findings": [
+    "Actual Shuriken death materials use One/One and BlendMode1; sampled RGBA is multiplied by material color and particle color, then RGB is multiplied by resulting alpha in the inspected forward program.",
+    "M_mecha_particles enables gradient-noise UV distortion (.01, scale25); M_Shaman_Glow distortion is0.",
+    "Shader metadata ForwardOnly selected explicitly; the first serialized pass is ShadowCaster and does not supply required surface bindings."
+  ],
+  "limits": [
+    "Native shader extraction/static arithmetic evidence, not a compiled URP port or GPU comparison.",
+    "Noise integer hash constants, exact texture/sampler binding records, HDRP fog/exposure and particle stream layout remain to verify before integration.",
+    "Other three material shader families and actor material equivalence remain pending."
+  ],
+  "evidence": [
+    {
+      "path": "Tools/ReadDraugDeathMaterialEvidence.py",
+      "sha256": "0ad2e2d70ca70fbdd48725011eca07d551dcd634428622f236eb0eccd372de4f"
+    },
+    {
+      "path": "Tools/ReadDraugDeathShaders.py",
+      "sha256": "a4327c743ebcee2bb0bf94f34d56735ee820fc3c16f081b79839315aab92ffea"
+    },
+    {
+      "path": "Logs/draug-death-shuriken-13.dxbc",
+      "sha256": "27bdba8cf98c3b33d477100b8f19b9bf9d5fde8fd186d42a57cb05e84003e108"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathUnitySourceImport.json",
+      "sha256": "ad00bb3259e5cac3684ddc147b8bb58f0c634a279658bed43b3282a07ab85507"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathShurikenShaderEvidence.json",
+      "sha256": "eae68e17a0eb0675840cc3744022b5953ee77f91f9bbdaf3eaa5fc1399c3348a"
+    }
+  ]
+}

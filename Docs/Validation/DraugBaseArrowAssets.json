@@ -1,0 +1,168 @@
+{
+  "sourceBundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\enemies_assets_draug_thrower_sur_16b7ef33fa9021746b46ad2bdee25d8e.bundle",
+  "sha256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "projectile": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": -3890105469391422412
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 4484953294080238173
+    },
+    "m_Name": "",
+    "_projectileId": "",
+    "_canPreload": 1,
+    "_showProjectileIndicator": 0,
+    "_speed": 6.0,
+    "_lifeTime": 3.0,
+    "_overrideTargetMask": {
+      "m_Bits": 0
+    },
+    "_returnToCaster": 0,
+    "_returnToCasterMarker": 1,
+    "_hitWhileReturning": 1,
+    "_resetTargetsWhenReturning": 1,
+    "_customReturnToCasterEndRadius": -1.0,
+    "_useReturnToCasterSpeed": 0,
+    "_returnToCasterSpeed": 5.0,
+    "_stayAWhileBeforeReturn": 0,
+    "_stayTime": 0.5,
+    "_bounceChance": 0,
+    "_bounceNoHitDuration": 0.5,
+    "_bounceMaxCount": 0,
+    "_bounceOnlyOnTarget": 0,
+    "_resetTargetsWhenBouncing": 0,
+    "_useBoxCollision": 0,
+    "_boxSize": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "_boxSizeIncrease": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "_boxCenterForwardOffset": 0.0,
+    "_reverseBoxIncreaseWhenReturning": 0,
+    "_increaseRadius": 0.0,
+    "_hitRadius": 0.5,
+    "_innerRadius": 0.0,
+    "_hitOnlyOnce": 1,
+    "_hitOnlyOnEnd": 0,
+    "_canPassThrough": 0,
+    "_canPassThroughTerrain": 0,
+    "_angleBetween": 0.0,
+    "_blockable": 1,
+    "_hitOnlyTerrain": 0,
+    "_attachToFirstHit": 0,
+    "_attachToFirstHitMarker": 3,
+    "_bendDetails": 0,
+    "_bendDetailsFadeInDuration": 0.10000000149011612,
+    "_bendDetailsFadeoutDuration": 0.5,
+    "_bendDetailsSizeBonus": 0.0,
+    "_bendDetailsSizeMultiplier": 1.0,
+    "_bendDetailsOverrideStrength": -1.0,
+    "_bendDetailsBendToGround": 0.0,
+    "_usePhysics": 0,
+    "_explosionForce": 0.0,
+    "_explosionRadius": 0.0,
+    "_upwardsModifier": 0.0,
+    "_onStartFX": [
+      {
+        "<Collection>k__BackingField": {
+          "_vfx": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1010928470288764214
+            }
+          ],
+          "_sfx": []
+        }
+      }
+    ],
+    "_onStartToEndFX": [
+      {
+        "<Collection>k__BackingField": {
+          "_vfx": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2749766515002901700
+            }
+          ],
+          "_sfx": [
+            {
+              "m_FileID": 0,
+              "m_PathID": -1006229299304238387
+            }
+          ]
+        },
+        "<InstantFade>k__BackingField": 0
+      }
+    ],
+    "_onHitFX": [
+      {
+        "<Collection>k__BackingField": {
+          "_vfx": [
+            {
+              "m_FileID": 0,
+              "m_PathID": -2368007096911992863
+            }
+          ],
+          "_sfx": []
+        }
+      }
+    ],
+    "_onEndFX": [
+      {
+        "<Collection>k__BackingField": {
+          "_vfx": [
+            {
+              "m_FileID": 0,
+              "m_PathID": -7012499635603176432
+            }
+          ],
+          "_sfx": []
+        }
+      }
+    ],
+    "_onReturnToCasterFX": [],
+    "_canUseEnviromentHitFx": 0,
+    "_canGetStuckIn": 0,
+    "_stuckInTime": 1.0,
+    "_stuckInLayers": {
+      "m_Bits": 0
+    },
+    "_preciseCollisionCheck": 0,
+    "_precisionType": 2,
+    "_resetTargetInterval": -1.0,
+    "_initialNoHitTime": 0.0,
+    "_particleSystems": [],
+    "copyTerrain": 1
+  },
+  "effects": {
+    "muzzle": {
+      "componentPathId": 1010928470288764214,
+      "gameObjectPathId": -503170234178794186,
+      "sourceName": "fx_skeleton_magicarrow_muzzle"
+    },
+    "projectile": {
+      "componentPathId": 2749766515002901700,
+      "gameObjectPathId": 6586884580824253636,
+      "sourceName": "fx_skeleton_magicarrow_proj"
+    },
+    "hit": {
+      "componentPathId": -2368007096911992863,
+      "gameObjectPathId": 2295539369649104865,
+      "sourceName": "fx_skeleton_magicarrow_hit"
+    },
+    "end": {
+      "componentPathId": -7012499635603176432,
+      "gameObjectPathId": 5880616457483256848,
+      "sourceName": "fx_skeleton_magicarrow_end"
+    }
+  },
+  "limits": "Hidden source VFX exposed in copied bundle; URP material conversion and runtime dispatch require separate verification."
+}

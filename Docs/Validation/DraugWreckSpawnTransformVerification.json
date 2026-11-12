@@ -1,0 +1,202 @@
+{
+  "status": "PASS_NATIVE_ATTACHMENT_GATE_AND_ADDITIVE_SCALE",
+  "gateCases": [
+    {
+      "attachmentCount": 0,
+      "directActivation": true
+    },
+    {
+      "attachmentCount": 1,
+      "directActivation": false
+    },
+    {
+      "attachmentCount": 9,
+      "directActivation": false
+    }
+  ],
+  "scaleCases": [
+    {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta": -0.05000000074505806,
+      "result": [
+        0.949999988079071,
+        0.949999988079071,
+        0.949999988079071
+      ]
+    },
+    {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta": 0.0,
+      "result": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "delta": 0.05000000074505806,
+      "result": [
+        1.0499999523162842,
+        1.0499999523162842,
+        1.0499999523162842
+      ]
+    },
+    {
+      "scale": [
+        0.5,
+        2.0,
+        3.0
+      ],
+      "delta": -0.05000000074505806,
+      "result": [
+        0.44999998807907104,
+        1.9500000476837158,
+        2.950000047683716
+      ]
+    },
+    {
+      "scale": [
+        0.5,
+        2.0,
+        3.0
+      ],
+      "delta": 0.0,
+      "result": [
+        0.5,
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "scale": [
+        0.5,
+        2.0,
+        3.0
+      ],
+      "delta": 0.05000000074505806,
+      "result": [
+        0.550000011920929,
+        2.049999952316284,
+        3.049999952316284
+      ]
+    },
+    {
+      "scale": [
+        0.0,
+        -1.0,
+        0.019999999552965164
+      ],
+      "delta": -0.05000000074505806,
+      "result": [
+        -0.05000000074505806,
+        -1.0499999523162842,
+        -0.030000001192092896
+      ]
+    },
+    {
+      "scale": [
+        0.0,
+        -1.0,
+        0.019999999552965164
+      ],
+      "delta": 0.0,
+      "result": [
+        0.0,
+        -1.0,
+        0.019999999552965164
+      ]
+    },
+    {
+      "scale": [
+        0.0,
+        -1.0,
+        0.019999999552965164
+      ],
+      "delta": 0.05000000074505806,
+      "result": [
+        0.05000000074505806,
+        -0.949999988079071,
+        0.07000000029802322
+      ]
+    },
+    {
+      "scale": [
+        100.0,
+        0.009999999776482582,
+        -10.0
+      ],
+      "delta": -0.05000000074505806,
+      "result": [
+        99.94999694824219,
+        -0.03999999910593033,
+        -10.050000190734863
+      ]
+    },
+    {
+      "scale": [
+        100.0,
+        0.009999999776482582,
+        -10.0
+      ],
+      "delta": 0.0,
+      "result": [
+        100.0,
+        0.009999999776482582,
+        -10.0
+      ]
+    },
+    {
+      "scale": [
+        100.0,
+        0.009999999776482582,
+        -10.0
+      ],
+      "delta": 0.05000000074505806,
+      "result": [
+        100.05000305175781,
+        0.06000000238418579,
+        -9.949999809265137
+      ]
+    }
+  ],
+  "icalls": [
+    "UnityEngine.Transform::get_localScale_Injected(System.IntPtr,UnityEngine.Vector3&)",
+    "UnityEngine.Transform::set_localScale_Injected(System.IntPtr,UnityEngine.Vector3&)"
+  ],
+  "binarySHA256": "b6b483b19effd75c790014f5b90a96befc83c615f467119c9f1dee4f986bf429",
+  "limits": [
+    "Source serialized attachToBones list is empty. This gate does not rule out external runtime mutation.",
+    "Scale sample injected after draw; complete spawn/parent transform and FX lifecycle remain separate integration work."
+  ],
+  "evidence": [
+    {
+      "path": "Tools/VerifyDraugWreckSpawnTransform.py",
+      "sha256": "64179322d1b6374421aa9194b74ce0bc62caa531fc99403b38955343bc5cd464"
+    },
+    {
+      "path": "Docs/Validation/DraugDeathAssetEvidence.json",
+      "sha256": "0960e722363f7d675e4408bc2b97d91b9121837fb41b93b98f10a6593425473b"
+    },
+    {
+      "path": "Logs/WreckSpawner-SpawnWrecks-0xad7420.asm.txt",
+      "sha256": "a12aea6037db7cf1eda828a74aebfee2a717013e0de6c834ec33b20dc624489a"
+    },
+    {
+      "path": "Logs/Wreck-ActivateImpl-0xad45c0.asm.txt",
+      "sha256": "f87a94496aa60076af874a29c4f6562de8d76dbcd386ee2eb69b7a1239d579ca"
+    }
+  ]
+}

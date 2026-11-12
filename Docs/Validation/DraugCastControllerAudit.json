@@ -1,0 +1,117 @@
+{
+  "status": "PASS_SOURCE_CAST_CHAIN_AND_EVENT_DELIVERY_NOT_INTEGRATED",
+  "cases": 40,
+  "frames": 11512,
+  "bones": 37,
+  "maxPosition": 1.3780217159364838e-05,
+  "maxRoot": 0.0004263978044036776,
+  "maxClock": 0.0,
+  "endThresholdNotObservableCases": 16,
+  "fallbackCases": [
+    {
+      "entry": "base.idle",
+      "profile": "30fps",
+      "phase": 0.0
+    },
+    {
+      "entry": "base.idle",
+      "profile": "30fps",
+      "phase": 0.04899999871850014
+    },
+    {
+      "entry": "base.idle",
+      "profile": "30fps",
+      "phase": 0.25
+    },
+    {
+      "entry": "base.idle",
+      "profile": "30fps",
+      "phase": 0.75
+    },
+    {
+      "entry": "base.chase",
+      "profile": "30fps",
+      "phase": 0.0
+    },
+    {
+      "entry": "base.chase",
+      "profile": "30fps",
+      "phase": 0.04899999871850014
+    },
+    {
+      "entry": "base.chase",
+      "profile": "30fps",
+      "phase": 0.25
+    },
+    {
+      "entry": "base.chase",
+      "profile": "30fps",
+      "phase": 0.75
+    },
+    {
+      "entry": "base.idle",
+      "profile": "variable",
+      "phase": 0.0
+    },
+    {
+      "entry": "base.idle",
+      "profile": "variable",
+      "phase": 0.04899999871850014
+    },
+    {
+      "entry": "base.idle",
+      "profile": "variable",
+      "phase": 0.25
+    },
+    {
+      "entry": "base.idle",
+      "profile": "variable",
+      "phase": 0.75
+    },
+    {
+      "entry": "base.chase",
+      "profile": "variable",
+      "phase": 0.0
+    },
+    {
+      "entry": "base.chase",
+      "profile": "variable",
+      "phase": 0.04899999871850014
+    },
+    {
+      "entry": "base.chase",
+      "profile": "variable",
+      "phase": 0.25
+    },
+    {
+      "entry": "base.chase",
+      "profile": "variable",
+      "phase": 0.75
+    }
+  ],
+  "observationRule": "Release threshold matches all40 actual source events. For cast end, observable threshold or source idle settlement when cast state has vanished matches all40 actual source end events.",
+  "maximumRequestTimerLeadSeconds": {
+    "release": 0.041278451681137085,
+    "castEnd": 0.05782151222229004
+  },
+  "inputs": [
+    {
+      "path": "Docs/Validation/DraugCastControllerVerification.json",
+      "sha256": "602b334e5317a2d8119e9747476015ca9ec664e107c5edc95b375c9539b2d0e6"
+    },
+    {
+      "path": "Docs/Validation/DraugCastExitEvidence.json",
+      "sha256": "96e8f7e819e3cce2f4893aea97af8d61059c12fff8ced7acb2cd833dc8a68aed"
+    },
+    {
+      "path": "Logs/draug-cast-controller.log",
+      "sha256": "c6f0063b702de0e772a19425e90abda4265014cce9d0f3685ee6e571158df775"
+    }
+  ],
+  "limits": [
+    "Test receivers capture engine AnimationEvent dispatch; native PawnController and ai_cast code not executed. Static fallback evidence covers selected native branches only.",
+    "Original source bundles loaded for paired comparison; new cast route not yet implemented in Visual/Combat.",
+    "No new battle smoke or player build this batch. Existing arrow integration remains last verified runtime.",
+    "No claim of exact mathematical zero rotation error; Quaternion.Angle float reports0."
+  ]
+}

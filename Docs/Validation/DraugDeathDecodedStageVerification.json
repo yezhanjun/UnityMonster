@@ -1,0 +1,95 @@
+{
+  "status": "STAGED_NATIVE_HIERARCHY_NOT_RUNTIME_READY",
+  "nodes": 26,
+  "particles": 15,
+  "bodies": 9,
+  "colliders": 9,
+  "meshes": 10,
+  "removedMissingScripts": 4,
+  "remappedReferences": 42,
+  "limits": "Existing local body material remains approximate (missing source normal/packed maps). Missing source scripts removed only from staged clone; source behaviour evidence retained separately. No WreckSpawner/audio/lifecycle implementation, particle simulation or final visual parity claim.",
+  "processes": {
+    "isolation": 80584,
+    "meshDiagnostic": 80172,
+    "decodedStage": 74392,
+    "decodedReload": 62920,
+    "decodedPreview": 60884
+  },
+  "finding": "Original local Instantiate/Save unreadable mesh path produced invalid position data while serialized bounds/counts remained plausible. Original source UnityPy streamed decode has finite valid positions. Old metadata-only stage gate did not prove mesh contents.",
+  "geometryGate": "PASS9fragments4303vertices: positions,normals,tangents,UV0,colors and all submesh triangle indices exactly match decoded source records after save and independent reload. Builtin Cube not included in this9mesh gate. Float32 channel storage differs from original packed half/UNorm layout.",
+  "visualReview": "FIX_CONFIRMED for massive occluding geometry: inspected decoded body-only and all preview, fragments now visible and old gray/black background planes absent. Not final death visual acceptance: static fragments, all3LOD branches active, body material approximate, no source WreckSpawner/audio/lifecycle.",
+  "evidence": [
+    {
+      "path": "Tools\\DecodeDraugDeathMeshes.py",
+      "sha256": "c602a847a3052a4654d0ede74387f7eea4837ff72742f92513656d6b278554ef"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathDecodedGeometry.cs",
+      "sha256": "c5da76b1a351df398f5826a0cd887c4d130214930e70ed3a431b571f36ed9c72"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathPrefabStage.cs",
+      "sha256": "109195588cde876ae442906f6c84293fdc1f6bb4c140022750796fec0975cf5e"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Editor\\DraugDeathPreviewIsolation.cs",
+      "sha256": "72ac97a188e17132f71f6061f925aa041c41f07230b9ee4957ba96dca8e8b6bd"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedMeshes.json",
+      "sha256": "d394db1d0de647eaac8ea504f9ea3bcce01d9c5bde40d783c6dcca794ba9bd1b"
+    },
+    {
+      "path": "Assets\\Jotunnslayer\\Enemies\\Resources\\Jotunnslayer\\DraugThrower\\DeathFx\\DraugDeathDecodedStage.prefab",
+      "sha256": "f59efeda9a545d1b2b3d55da68d88029b7630e2e1849530035e0fb12cfbdd690"
+    },
+    {
+      "path": "Logs\\draug-death-preview-isolation.log",
+      "sha256": "0f8c4cd2e492b07360834e82fc0f3267d6771268d41695fa01194838267c655b"
+    },
+    {
+      "path": "Logs\\draug-death-mesh-diagnostic.log",
+      "sha256": "6ec018a41b6c231915ee49f8b61888bde2382a9ec3eb2c3f80aa08ead22a5be3"
+    },
+    {
+      "path": "Logs\\draug-death-decoded-stage.log",
+      "sha256": "e294d8eb9ff965e514b434eed97f69499dbae81f5f307c08f4960d6e90658c6f"
+    },
+    {
+      "path": "Logs\\draug-death-decoded-reload.log",
+      "sha256": "fa9f30d3af1452a4fb74035503f43e4d258791df276e24c17b75eae04b2e9520"
+    },
+    {
+      "path": "Logs\\draug-death-decoded-preview.log",
+      "sha256": "6fb12ad87876d143a6d07222bf8835775b282ae63bd6241ea4014537eca032ed"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\all.png",
+      "sha256": "8e95d83ea17ee954326c2d8c0f5353aeea9e670f3295cfb979e1b7f191bb4433"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\draugh_ranged_mat.png",
+      "sha256": "cafd5132752fb436fe031db2a99311f201c47a36b08f5e9850ba97d714e23b7a"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\empty.png",
+      "sha256": "894fbcc0030b233be12d0309f5754ec6c4c5cefdbe28cfe81d9eeab7abd85918"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\M_Glow_Alpha.png",
+      "sha256": "894fbcc0030b233be12d0309f5754ec6c4c5cefdbe28cfe81d9eeab7abd85918"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\M_mecha_particles.png",
+      "sha256": "4c8073fe26d2c8322054baab4ba4791cec921948206c2224898ca01ff6ccd460"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\M_Shaman_Glow.png",
+      "sha256": "894fbcc0030b233be12d0309f5754ec6c4c5cefdbe28cfe81d9eeab7abd85918"
+    },
+    {
+      "path": "Docs\\Validation\\DraugDeathDecodedPreview\\M_smoke_earthquake.png",
+      "sha256": "67b7e2b42795f75a2b77f95cd32198f0cc1df071bb53627afd6dc9c7b4385303"
+    }
+  ]
+}

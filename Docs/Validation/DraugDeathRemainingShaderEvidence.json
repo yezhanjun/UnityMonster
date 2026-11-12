@@ -1,0 +1,2865 @@
+{
+  "source": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\enemies_assets_draug_thrower_sur_16b7ef33fa9021746b46ad2bdee25d8e.bundle",
+  "sha256": "e836b2a79f93ec28694438e7870b59a19b68c2794ade4f1104923bcfbb349f3a",
+  "shaders": [
+    {
+      "name": "",
+      "pathId": -6196057315786485940,
+      "dependencyBundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\8e51d0f50a9577721d7c4abaef53d7fe_unitybuiltinassets_0420529ac1dbd4e1e57591510315fb45.bundle",
+      "dependencySHA256": "15c796cebbfe7de7dbf3c6c71041cdb57247c20975c50058441f8ec613a35c4b",
+      "properties": {
+        "m_Props": [
+          {
+            "m_Name": "_TintColor",
+            "m_Description": "Tint Color",
+            "m_Attributes": [],
+            "m_Type": 0,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.5,
+            "m_DefValue[1]": 0.5,
+            "m_DefValue[2]": 0.5,
+            "m_DefValue[3]": 0.5,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_MainTex",
+            "m_Description": "Particle Texture",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "white",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_InvFade",
+            "m_Description": "Soft Particles Factor",
+            "m_Attributes": [],
+            "m_Type": 3,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.009999999776482582,
+            "m_DefValue[2]": 3.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          }
+        ]
+      },
+      "materialSavedProperties": {
+        "m_TexEnvs": [
+          [
+            "_MainTex",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": -5026882738706249054
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_InvFade",
+            1.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_Color",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_TintColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ]
+        ]
+      },
+      "fragmentTextureBindings": [],
+      "passNameIndices": [
+        [
+          "$Globals",
+          0
+        ],
+        [
+          "UnityPerDraw",
+          1
+        ],
+        [
+          "UnityPerFrame",
+          2
+        ],
+        [
+          "_MainTex_ST",
+          3
+        ],
+        [
+          "_TintColor",
+          6
+        ],
+        [
+          "unity_MatrixVP",
+          5
+        ],
+        [
+          "unity_ObjectToWorld",
+          4
+        ]
+      ],
+      "passState": {
+        "m_Name": "",
+        "rtBlend0": {
+          "srcBlend": {
+            "val": 5.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 5.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 14.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend1": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend2": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend3": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend4": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend5": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend6": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend7": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtSeparateBlend": false,
+        "zClip": {
+          "val": 1.0,
+          "name": "<noninit>"
+        },
+        "zTest": {
+          "val": 4.0,
+          "name": "<noninit>"
+        },
+        "zWrite": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "culling": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "conservative": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "offsetFactor": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "offsetUnits": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "alphaToMask": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "stencilOp": {
+          "pass": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilOpFront": {
+          "pass": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilOpBack": {
+          "pass": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilReadMask": {
+          "val": 255.0,
+          "name": "<noninit>"
+        },
+        "stencilWriteMask": {
+          "val": 255.0,
+          "name": "<noninit>"
+        },
+        "stencilRef": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "fogStart": {
+          "val": 0.0,
+          "name": "unity_FogStart"
+        },
+        "fogEnd": {
+          "val": 0.0,
+          "name": "unity_FogEnd"
+        },
+        "fogDensity": {
+          "val": 0.0,
+          "name": "unity_FogDensity"
+        },
+        "fogColor": {
+          "x": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "y": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "z": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "w": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "name": "unity_FogColor"
+        },
+        "fogMode": -1,
+        "gpuProgramID": 32118,
+        "m_Tags": {
+          "tags": [
+            [
+              "IGNOREPROJECTOR",
+              "true"
+            ],
+            [
+              "PreviewType",
+              "Plane"
+            ],
+            [
+              "QUEUE",
+              "Transparent"
+            ],
+            [
+              "RenderType",
+              "Transparent"
+            ]
+          ]
+        },
+        "m_LOD": 0,
+        "lighting": false
+      },
+      "fragmentBindings": [
+        {
+          "name": "_TintColor",
+          "byteOffset": 32,
+          "dimensions": 4
+        }
+      ],
+      "programs": [
+        {
+          "path": "Logs\\draug-death-legacy-0.dxbc",
+          "sha256": "adcfcac439a69ac23136adb1cdfc5bad35bbc44d255c309ea4fda755f68fa505"
+        },
+        {
+          "path": "Logs\\draug-death-legacy-1.dxbc",
+          "sha256": "f3d1fe060b172489f12783fd9d42fcbea0414608ae72f42259c02ca32f37bc3f"
+        },
+        {
+          "path": "Logs\\draug-death-legacy-2.dxbc",
+          "sha256": "addcfb2e7d7bfeee566670c17d4c4ab5679924dfa7dcc428745fb13af7f67d25"
+        },
+        {
+          "path": "Logs\\draug-death-legacy-3.dxbc",
+          "sha256": "36a064841963fd7bf5e67a8c6dabd2b8a3e571bbc3ee6ff32387e388daee5d88"
+        }
+      ]
+    },
+    {
+      "name": "",
+      "pathId": -7746926438441987747,
+      "dependencyBundle": "E:\\SteamLibrary\\steamapps\\common\\Jotunnslayer Hordes of Hel\\Jotunnslayer_Data\\StreamingAssets\\aa\\StandaloneWindows64\\duplicateassetisolation1_assets_all_b4fcbc9fa83b62ab12bce32d2651b832.bundle",
+      "dependencySHA256": "9dcdc8a71979cf13cf2a6c8b4201b49f20eabfac1eae088489041381b032aef6",
+      "properties": {
+        "m_Props": [
+          {
+            "m_Name": "_Tint",
+            "m_Description": "Tint",
+            "m_Attributes": [],
+            "m_Type": 0,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.498039186000824,
+            "m_DefValue[1]": 0.498039186000824,
+            "m_DefValue[2]": 0.498039186000824,
+            "m_DefValue[3]": 1.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_MaskTexture",
+            "m_Description": "Mask",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 4,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "white",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_MaskTilingTo",
+            "m_Description": "Mask Tiling (XY) Offset (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_MainTexA",
+            "m_Description": "Main Texture A",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 4,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "white",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_MainTextureATo",
+            "m_Description": "A Tiling (XY) Offset (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_MainTexB",
+            "m_Description": "Main Texture B",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 4,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "white",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_MainTextureBTo",
+            "m_Description": "B Tiling (XY) Offset (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_MainTexC",
+            "m_Description": "Main Texture C",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 4,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "white",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_MainTextureCTo",
+            "m_Description": "C Tiling (XY) Offset (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AnimationAB",
+            "m_Description": "Animation A (XY) B (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AnimationC",
+            "m_Description": "Animation C (XY)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_Fade",
+            "m_Description": "Soft Fade",
+            "m_Attributes": [],
+            "m_Type": 3,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 500.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_Intensity",
+            "m_Description": "Intensity",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_LocalDistortionMap",
+            "m_Description": "Local Distortion Map",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 12,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "bump",
+              "m_TexDim": 2
+            }
+          },
+          {
+            "m_Name": "_LocalDistortionMapTs",
+            "m_Description": "Local Distortion Tiling (XY) Scroll Speed (ZW)",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_LocalDistortionStrength",
+            "m_Description": "Local Distortion Strength",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_LocalDistortionRotation",
+            "m_Description": "Local Distortion Rotation",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TilingAndOffset",
+            "m_Description": "Common Tiling And Offset",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 0,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_WORLDTYPE",
+            "m_Description": "World Type",
+            "m_Attributes": [
+              "KeywordEnum(BOTH, REAL, DREAM)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_UseTilingBasedOnDistance",
+            "m_Description": "UseTilingBasedOnDistance",
+            "m_Attributes": [],
+            "m_Type": 3,
+            "m_Flags": 0,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 1.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_EmissionColor",
+            "m_Description": "Color",
+            "m_Attributes": [],
+            "m_Type": 0,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": 1.0,
+            "m_DefValue[3]": 1.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_RenderQueueType",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 4.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AddPrecomputedVelocity",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DepthOffsetEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_ConservativeDepthOffsetEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentWritingMotionVec",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AlphaCutoffEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentSortPriority",
+            "m_Description": "_TransparentSortPriority",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_UseShadowThreshold",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DoubleSidedEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DoubleSidedNormalMode",
+            "m_Description": "Float",
+            "m_Attributes": [
+              "Enum(Default, 0, Flip, 1, Mirror, 2, None, 3)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 2.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DoubleSidedConstants",
+            "m_Description": "Vector4",
+            "m_Attributes": [],
+            "m_Type": 1,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 1.0,
+            "m_DefValue[2]": -1.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DoubleSidedGIMode",
+            "m_Description": "Float",
+            "m_Attributes": [
+              "Enum(Default, 0, Auto, 1, On, 2, Off, 3)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentDepthPrepassEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentDepthPostpassEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_PerPixelSorting",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_SurfaceType",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_BlendMode",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_SrcBlend",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DstBlend",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_DstBlend2",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AlphaSrcBlend",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_AlphaDstBlend",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_ZWrite",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentZWrite",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_CullMode",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 2.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_EnableFogOnTransparent",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_CullModeForward",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 2.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentCullMode",
+            "m_Description": "Float",
+            "m_Attributes": [
+              "Enum(Default, 0, Front, 1, Back, 2)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 2.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_OpaqueCullMode",
+            "m_Description": "Float",
+            "m_Attributes": [
+              "Enum(UnityEngine.Rendering.HighDefinition.OpaqueCullMode)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 2.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_ZTestDepthEqualForOpaque",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 4.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_ZTestTransparent",
+            "m_Description": "Float",
+            "m_Attributes": [
+              "Enum(UnityEngine.Rendering.CompareFunction)"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 4.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_TransparentBackfaceEnable",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_EnableBlendModePreserveSpecularLighting",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_ExcludeFromTUAndAA",
+            "m_Description": "Boolean",
+            "m_Attributes": [
+              "ToggleUI"
+            ],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilRef",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilWriteMask",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 6.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilRefDepth",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 1.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilWriteMaskDepth",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 9.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilRefMV",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 33.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilWriteMaskMV",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 43.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilRefDistortionVec",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 4.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "_StencilWriteMaskDistortionVec",
+            "m_Description": "Float",
+            "m_Attributes": [],
+            "m_Type": 2,
+            "m_Flags": 1,
+            "m_DefValue[0]": 4.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 1
+            }
+          },
+          {
+            "m_Name": "unity_Lightmaps",
+            "m_Description": "unity_Lightmaps",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 5,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 5
+            }
+          },
+          {
+            "m_Name": "unity_LightmapsInd",
+            "m_Description": "unity_LightmapsInd",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 5,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 5
+            }
+          },
+          {
+            "m_Name": "unity_ShadowMasks",
+            "m_Description": "unity_ShadowMasks",
+            "m_Attributes": [],
+            "m_Type": 4,
+            "m_Flags": 5,
+            "m_DefValue[0]": 0.0,
+            "m_DefValue[1]": 0.0,
+            "m_DefValue[2]": 0.0,
+            "m_DefValue[3]": 0.0,
+            "m_DefTexture": {
+              "m_DefaultName": "",
+              "m_TexDim": 5
+            }
+          }
+        ]
+      },
+      "materialSavedProperties": {
+        "m_TexEnvs": [
+          [
+            "_LocalDistortionMap",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexA",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 538167562245341568
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexB",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MainTexC",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "_MaskTexture",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_Lightmaps",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_LightmapsInd",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ],
+          [
+            "unity_ShadowMasks",
+            {
+              "m_Texture": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              },
+              "m_Scale": {
+                "x": 1.0,
+                "y": 1.0
+              },
+              "m_Offset": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        ],
+        "m_Ints": [],
+        "m_Floats": [
+          [
+            "_AddPrecomputedVelocity",
+            0.0
+          ],
+          [
+            "_AlphaCutoffEnable",
+            0.0
+          ],
+          [
+            "_AlphaDstBlend",
+            10.0
+          ],
+          [
+            "_AlphaSrcBlend",
+            1.0
+          ],
+          [
+            "_BlendMode",
+            0.0
+          ],
+          [
+            "_ConservativeDepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_CullMode",
+            2.0
+          ],
+          [
+            "_CullModeForward",
+            2.0
+          ],
+          [
+            "_DepthOffsetEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedEnable",
+            0.0
+          ],
+          [
+            "_DoubleSidedGIMode",
+            0.0
+          ],
+          [
+            "_DoubleSidedNormalMode",
+            2.0
+          ],
+          [
+            "_DstBlend",
+            10.0
+          ],
+          [
+            "_DstBlend2",
+            10.0
+          ],
+          [
+            "_EnableBlendModePreserveSpecularLighting",
+            0.0
+          ],
+          [
+            "_EnableFogOnTransparent",
+            1.0
+          ],
+          [
+            "_ExcludeFromTUAndAA",
+            0.0
+          ],
+          [
+            "_Fade",
+            0.0
+          ],
+          [
+            "_Intensity",
+            2.0
+          ],
+          [
+            "_LocalDistortionRotation",
+            0.0
+          ],
+          [
+            "_LocalDistortionStrength",
+            0.0
+          ],
+          [
+            "_OpaqueCullMode",
+            2.0
+          ],
+          [
+            "_PerPixelSorting",
+            0.0
+          ],
+          [
+            "_RenderQueueType",
+            4.0
+          ],
+          [
+            "_SrcBlend",
+            1.0
+          ],
+          [
+            "_StencilRef",
+            0.0
+          ],
+          [
+            "_StencilRefDepth",
+            1.0
+          ],
+          [
+            "_StencilRefDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilRefMV",
+            33.0
+          ],
+          [
+            "_StencilWriteMask",
+            6.0
+          ],
+          [
+            "_StencilWriteMaskDepth",
+            9.0
+          ],
+          [
+            "_StencilWriteMaskDistortionVec",
+            4.0
+          ],
+          [
+            "_StencilWriteMaskMV",
+            43.0
+          ],
+          [
+            "_SurfaceType",
+            1.0
+          ],
+          [
+            "_TransparentBackfaceEnable",
+            0.0
+          ],
+          [
+            "_TransparentCullMode",
+            2.0
+          ],
+          [
+            "_TransparentDepthPostpassEnable",
+            0.0
+          ],
+          [
+            "_TransparentDepthPrepassEnable",
+            0.0
+          ],
+          [
+            "_TransparentSortPriority",
+            0.0
+          ],
+          [
+            "_TransparentWritingMotionVec",
+            0.0
+          ],
+          [
+            "_TransparentZWrite",
+            0.0
+          ],
+          [
+            "_UseShadowThreshold",
+            0.0
+          ],
+          [
+            "_UseTilingBasedOnDistance",
+            0.0
+          ],
+          [
+            "_WORLDTYPE",
+            0.0
+          ],
+          [
+            "_ZTestDepthEqualForOpaque",
+            4.0
+          ],
+          [
+            "_ZTestTransparent",
+            4.0
+          ],
+          [
+            "_ZWrite",
+            0.0
+          ],
+          [
+            "_distortionAmount",
+            0.0
+          ],
+          [
+            "_noiseScale",
+            0.0
+          ]
+        ],
+        "m_Colors": [
+          [
+            "_AnimationAB",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_AnimationC",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_DoubleSidedConstants",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": -1.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_EmissionColor",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_LocalDistortionMapTs",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureATo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureBTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureCTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MainTextureTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_MaskTilingTo",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_TilingAndOffset",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_Tint",
+            {
+              "r": 1.0,
+              "g": 1.0,
+              "b": 1.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_color",
+            {
+              "r": 256.0,
+              "g": 256.0,
+              "b": 256.0,
+              "a": 1.0
+            }
+          ],
+          [
+            "_mainSpeed",
+            {
+              "r": 0.0,
+              "g": 0.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ],
+          [
+            "_noiseSpeed",
+            {
+              "r": 20.030000686645508,
+              "g": 5.0,
+              "b": 0.0,
+              "a": 0.0
+            }
+          ]
+        ]
+      },
+      "fragmentTextureBindings": [
+        {
+          "m_NameIndex": 6,
+          "m_Index": 0,
+          "m_SamplerIndex": -1,
+          "m_MultiSampled": false,
+          "m_Dim": 5
+        },
+        {
+          "m_NameIndex": 7,
+          "m_Index": 1,
+          "m_SamplerIndex": -1,
+          "m_MultiSampled": false,
+          "m_Dim": 2
+        }
+      ],
+      "passNameIndices": [
+        [
+          "$Globals",
+          8
+        ],
+        [
+          "ShaderVariablesGlobal",
+          0
+        ],
+        [
+          "UnityPerDraw",
+          1
+        ],
+        [
+          "UnityPerMaterial",
+          9
+        ],
+        [
+          "_AnimationAB",
+          28
+        ],
+        [
+          "_AnimationC",
+          29
+        ],
+        [
+          "_CameraDepthTexture",
+          6
+        ],
+        [
+          "_DeExposureMultiplier",
+          21
+        ],
+        [
+          "_ExposureTexture",
+          7
+        ],
+        [
+          "_Fade",
+          30
+        ],
+        [
+          "_GameRunningInt",
+          11
+        ],
+        [
+          "_GameTime",
+          10
+        ],
+        [
+          "_GlobalMipBias",
+          17
+        ],
+        [
+          "_Intensity",
+          31
+        ],
+        [
+          "_LocalDistortionMapTs",
+          32
+        ],
+        [
+          "_LocalDistortionRotation",
+          34
+        ],
+        [
+          "_LocalDistortionStrength",
+          33
+        ],
+        [
+          "_MainTextureATo",
+          25
+        ],
+        [
+          "_MainTextureBTo",
+          26
+        ],
+        [
+          "_MainTextureCTo",
+          27
+        ],
+        [
+          "_MaskTilingTo",
+          24
+        ],
+        [
+          "_OffScreenDownsampleFactor",
+          19
+        ],
+        [
+          "_OffScreenRendering",
+          20
+        ],
+        [
+          "_ProbeExposureScale",
+          18
+        ],
+        [
+          "_ProjectionParams",
+          14
+        ],
+        [
+          "_ScreenParams",
+          15
+        ],
+        [
+          "_ScreenSize",
+          12
+        ],
+        [
+          "_TilingAndOffset",
+          35
+        ],
+        [
+          "_Time",
+          16
+        ],
+        [
+          "_Tint",
+          23
+        ],
+        [
+          "_ViewMatrix",
+          22
+        ],
+        [
+          "_ViewProjMatrix",
+          3
+        ],
+        [
+          "_WorldSpaceCameraPos_Internal",
+          2
+        ],
+        [
+          "_ZBufferParams",
+          13
+        ],
+        [
+          "unity_ObjectToWorld",
+          4
+        ],
+        [
+          "unity_WorldToObject",
+          5
+        ]
+      ],
+      "passState": {
+        "m_Name": "ForwardOnly",
+        "rtBlend0": {
+          "srcBlend": {
+            "val": 0.0,
+            "name": "_SrcBlend"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "_DstBlend"
+          },
+          "srcBlendAlpha": {
+            "val": 0.0,
+            "name": "_AlphaSrcBlend"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "_AlphaDstBlend"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend1": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 10.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 10.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 0.0,
+            "name": "_ColorMaskTransparentVelOne"
+          }
+        },
+        "rtBlend2": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "_DstBlend2"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "_DstBlend2"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 0.0,
+            "name": "_ColorMaskTransparentVelTwo"
+          }
+        },
+        "rtBlend3": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "_DstBlend2"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "_DstBlend2"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend4": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 10.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 10.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend5": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend6": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtBlend7": {
+          "srcBlend": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlend": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "srcBlendAlpha": {
+            "val": 1.0,
+            "name": "<noninit>"
+          },
+          "destBlendAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOp": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "blendOpAlpha": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "colMask": {
+            "val": 15.0,
+            "name": "<noninit>"
+          }
+        },
+        "rtSeparateBlend": true,
+        "zClip": {
+          "val": 1.0,
+          "name": "<noninit>"
+        },
+        "zTest": {
+          "val": 0.0,
+          "name": "_ZTestDepthEqualForOpaque"
+        },
+        "zWrite": {
+          "val": 0.0,
+          "name": "_ZWrite"
+        },
+        "culling": {
+          "val": 0.0,
+          "name": "_CullModeForward"
+        },
+        "conservative": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "offsetFactor": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "offsetUnits": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "alphaToMask": {
+          "val": 0.0,
+          "name": "<noninit>"
+        },
+        "stencilOp": {
+          "pass": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilOpFront": {
+          "pass": {
+            "val": 2.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilOpBack": {
+          "pass": {
+            "val": 2.0,
+            "name": "<noninit>"
+          },
+          "fail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "zFail": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "comp": {
+            "val": 8.0,
+            "name": "<noninit>"
+          }
+        },
+        "stencilReadMask": {
+          "val": 255.0,
+          "name": "<noninit>"
+        },
+        "stencilWriteMask": {
+          "val": 0.0,
+          "name": "_StencilWriteMask"
+        },
+        "stencilRef": {
+          "val": 0.0,
+          "name": "_StencilRef"
+        },
+        "fogStart": {
+          "val": 0.0,
+          "name": "unity_FogStart"
+        },
+        "fogEnd": {
+          "val": 0.0,
+          "name": "unity_FogEnd"
+        },
+        "fogDensity": {
+          "val": 0.0,
+          "name": "unity_FogDensity"
+        },
+        "fogColor": {
+          "x": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "y": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "z": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "w": {
+            "val": 0.0,
+            "name": "<noninit>"
+          },
+          "name": "unity_FogColor"
+        },
+        "fogMode": -1,
+        "gpuProgramID": 398032,
+        "m_Tags": {
+          "tags": [
+            [
+              "DisableBatching",
+              "False"
+            ],
+            [
+              "LIGHTMODE",
+              "ForwardOnly"
+            ],
+            [
+              "QUEUE",
+              "Transparent+0"
+            ],
+            [
+              "RenderPipeline",
+              "HDRenderPipeline"
+            ],
+            [
+              "RenderType",
+              "HDUnlitShader"
+            ],
+            [
+              "ShaderGraphShader",
+              "true"
+            ],
+            [
+              "ShaderGraphTargetId",
+              "HDUnlitSubTarget"
+            ]
+          ]
+        },
+        "m_LOD": 0,
+        "lighting": false
+      },
+      "fragmentBindings": [
+        {
+          "name": "_GameTime",
+          "byteOffset": 16,
+          "dimensions": 4
+        },
+        {
+          "name": "_GameRunningInt",
+          "byteOffset": 48,
+          "dimensions": 1
+        },
+        {
+          "name": "_ScreenSize",
+          "byteOffset": 800,
+          "dimensions": 4
+        },
+        {
+          "name": "_ZBufferParams",
+          "byteOffset": 912,
+          "dimensions": 4
+        },
+        {
+          "name": "_ProjectionParams",
+          "byteOffset": 928,
+          "dimensions": 4
+        },
+        {
+          "name": "_ScreenParams",
+          "byteOffset": 976,
+          "dimensions": 4
+        },
+        {
+          "name": "_Time",
+          "byteOffset": 1216,
+          "dimensions": 4
+        },
+        {
+          "name": "_GlobalMipBias",
+          "byteOffset": 1380,
+          "dimensions": 1
+        },
+        {
+          "name": "_ProbeExposureScale",
+          "byteOffset": 1892,
+          "dimensions": 1
+        },
+        {
+          "name": "_OffScreenDownsampleFactor",
+          "byteOffset": 3632,
+          "dimensions": 1
+        },
+        {
+          "name": "_OffScreenRendering",
+          "byteOffset": 3636,
+          "dimensions": 1
+        },
+        {
+          "name": "_DeExposureMultiplier",
+          "byteOffset": 3692,
+          "dimensions": 1
+        },
+        {
+          "name": "_Tint",
+          "byteOffset": 0,
+          "dimensions": 4
+        },
+        {
+          "name": "_MaskTilingTo",
+          "byteOffset": 32,
+          "dimensions": 4
+        },
+        {
+          "name": "_MainTextureATo",
+          "byteOffset": 64,
+          "dimensions": 4
+        },
+        {
+          "name": "_MainTextureBTo",
+          "byteOffset": 96,
+          "dimensions": 4
+        },
+        {
+          "name": "_MainTextureCTo",
+          "byteOffset": 128,
+          "dimensions": 4
+        },
+        {
+          "name": "_AnimationAB",
+          "byteOffset": 144,
+          "dimensions": 4
+        },
+        {
+          "name": "_AnimationC",
+          "byteOffset": 160,
+          "dimensions": 4
+        },
+        {
+          "name": "_Fade",
+          "byteOffset": 176,
+          "dimensions": 1
+        },
+        {
+          "name": "_Intensity",
+          "byteOffset": 180,
+          "dimensions": 1
+        },
+        {
+          "name": "_LocalDistortionMapTs",
+          "byteOffset": 208,
+          "dimensions": 4
+        },
+        {
+          "name": "_LocalDistortionStrength",
+          "byteOffset": 224,
+          "dimensions": 1
+        },
+        {
+          "name": "_LocalDistortionRotation",
+          "byteOffset": 228,
+          "dimensions": 1
+        },
+        {
+          "name": "_TilingAndOffset",
+          "byteOffset": 240,
+          "dimensions": 4
+        }
+      ],
+      "programs": [
+        {
+          "path": "Logs\\draug-death-animatedalpha-0.dxbc",
+          "sha256": "1efe722698b83e7e400b8cf6d00b0ff72e30479bea0e37345db6a9d09889fafe"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-1.dxbc",
+          "sha256": "934887eed85d3f1cf75b017f60f749dae0235b8b35919fadb59109548f06e9fd"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-2.dxbc",
+          "sha256": "4132aa594bcffbda28893cfb910e3291bacd42201aef064180ab394eea4153b8"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-3.dxbc",
+          "sha256": "4132aa594bcffbda28893cfb910e3291bacd42201aef064180ab394eea4153b8"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-4.dxbc",
+          "sha256": "00028bf748f96c9a3ea15e9479ab911b5f41a52d384c1c0ec309b6bcd73a6d19"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-5.dxbc",
+          "sha256": "00028bf748f96c9a3ea15e9479ab911b5f41a52d384c1c0ec309b6bcd73a6d19"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-6.dxbc",
+          "sha256": "00028bf748f96c9a3ea15e9479ab911b5f41a52d384c1c0ec309b6bcd73a6d19"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-7.dxbc",
+          "sha256": "884332c06d90d9bc74f825d36fdffadc961f4d03aea2be492397be9ba0564696"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-8.dxbc",
+          "sha256": "eaa469b4361db4e51000a4307e4478901a10fb785d96f69058a5b2c2d5085bf8"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-9.dxbc",
+          "sha256": "1efe722698b83e7e400b8cf6d00b0ff72e30479bea0e37345db6a9d09889fafe"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-10.dxbc",
+          "sha256": "1efe722698b83e7e400b8cf6d00b0ff72e30479bea0e37345db6a9d09889fafe"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-11.dxbc",
+          "sha256": "1efe722698b83e7e400b8cf6d00b0ff72e30479bea0e37345db6a9d09889fafe"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-12.dxbc",
+          "sha256": "915a8000535646d0fcbbb7e13a562203ea10ba427d6b50518a726e13af4b1958"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-13.dxbc",
+          "sha256": "6cca40fb0b69727f31ee69e17fc747cdc06533657b4d3dedbac6d88d4dafd9e4"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-14.dxbc",
+          "sha256": "ffcfcbbc0ebfe84b8401ad1f4d257e68f6af4816a666a3e610e660af70d36830"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-15.dxbc",
+          "sha256": "8d4460f472e064d43e8f7d71523708fa63b33e352032ebebb5cba0b9a7514169"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-16.dxbc",
+          "sha256": "22caea98bdf268d44649dc26aee4eea8b69f70b6574dd1407aba5e553deb4dba"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-17.dxbc",
+          "sha256": "6905766a247687d19bcd3a2e27ae6d049ea9a2e6c2306da4f0a3bc9a9bc3d69b"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-18.dxbc",
+          "sha256": "98a8ddf1a05cce78c6926a5d2e71b2759a8726bd68711171ccfc4d699f94de9c"
+        },
+        {
+          "path": "Logs\\draug-death-animatedalpha-19.dxbc",
+          "sha256": "e54135246f55afc8efafdf67c963c70bd0f8d0a621d385d5116de3326bce84f0"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Source shader bytecode and bindings extracted; shader formula and URP equivalence require separate analysis. No runtime material port or visual pass."
+  ]
+}

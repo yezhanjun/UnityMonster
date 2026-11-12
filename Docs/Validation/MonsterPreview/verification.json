@@ -1,0 +1,60 @@
+{
+  "status": "PASS_RUNTIME_PREVIEW_CONTROLS",
+  "models": 65,
+  "default": "draug_thrower_sur",
+  "checks": [
+    "scene loads",
+    "action selection",
+    "scrub",
+    "effect spawn",
+    "effect cleanup",
+    "switch at least3 other models"
+  ],
+  "limits": "Catalog availability is not full pose or combat fidelity validation of every monster. Range is explicitly marked custom except associated known attack radius.",
+  "process": 62512,
+  "modelEntries": 65,
+  "clipLinks": 440,
+  "effectLinks": 13,
+  "interactiveEditorProcess": 71672,
+  "visualReview": "Inspected rendered model+explosion+range image and visible Unity Game preview panel. User input detected during UI check; stopped UI inputs, no further UI click validation claim.",
+  "initialIssues": [
+    "Initial preview redirected to Startup by Preloader; added exact preview-scene exemption and temporary editor start-scene route.",
+    "Initial camera cropped target effect; revised focus/framing and reran.",
+    "Initial Python edit failed due default GBK decode; corrected UTF8 and stopped unused retry process."
+  ],
+  "goalStatus": "paused",
+  "evidence": [
+    {
+      "path": "Assets/Jotunnslayer/MonsterPreview/MonsterPreviewGallery.cs",
+      "sha256": "fccb8d5f7f5df25bd5b810eb791bd8cdb59b96e7228ac750ae975bcfbe43d87d"
+    },
+    {
+      "path": "Assets/Jotunnslayer/MonsterPreview/MonsterPreviewRoom.cs",
+      "sha256": "f432f2116c4442b76981341b8df2f1c87b2f273cb148ea499f5df7d9c1b91fc6"
+    },
+    {
+      "path": "Assets/Jotunnslayer/MonsterPreview/Editor/MonsterPreviewBuilder.cs",
+      "sha256": "c72a7b57b7bca0da0b63ee2befc6352d68af069ef9a6d4b3ba19f2a005e31bb0"
+    },
+    {
+      "path": "Assets/desNetware/Multiplayer TPS KIT/Scripts/Preloader.cs",
+      "sha256": "d24809b8180701a536de27c74d5f7666b7f4b4f12bdfce7eeef5b9e5148d2b1f"
+    },
+    {
+      "path": "Assets/Jotunnslayer/MonsterPreview/MonsterPreview.unity",
+      "sha256": "2744c84fa2d49369db3598fb7de9a7d15aef3318665b2a74c8834da453b79124"
+    },
+    {
+      "path": "Assets/Jotunnslayer/MonsterPreview/MonsterPreviewGallery.asset",
+      "sha256": "8da3724c5f8379cd80f21090a083b19e3cd4b21adab519b993dcc5aa173a2fc5"
+    },
+    {
+      "path": "Logs/monster-preview-final.log",
+      "sha256": "3a63ced441887aed3d2f6d7c1d10e8be09a0549b7c82ca06cbedc14f8a90ab85"
+    },
+    {
+      "path": "Docs/Validation/MonsterPreview/model-effect.png",
+      "sha256": "4c181d8f4dd259a0c2913ec7c5c2857cb78b6ec7e08f970c19fae816c8b10c48"
+    }
+  ]
+}
