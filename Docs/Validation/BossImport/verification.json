@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "unity": "6000.2.10f1",
+  "processId": 69332,
+  "scenesLoaded": 4,
+  "missingScripts": 0,
+  "darklordClips": 464,
+  "samuraiStates": 11,
+  "checks": [
+    "compile",
+    "scene loading",
+    "two boss activation",
+    "action selection",
+    "cloth initialization",
+    "switch back",
+    "render captures",
+    "normal play-mode exit without NativeArray/TransformAccessArray leak diagnostic"
+  ],
+  "scope": "Smoke validation; not every animation pose, combat hitbox or effect timeline",
+  "logSha256": "61582809f36f07da11f09b1c50ffa2229d3753fa3cf46f27ae5e1362afc851ce"
+}

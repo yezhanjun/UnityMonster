@@ -1,0 +1,1612 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &427244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_Name
+      value: Darklord Sword and Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+--- !u!95 &427245 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dd123fe6aa59c9b4f91855425a94499d, type: 3}
+  m_PrefabInstance: {fileID: 427244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &695820623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695820626}
+  - component: {fileID: 695820624}
+  - component: {fileID: 695820625}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &695820624
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695820623}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.065, g: 0.08, b: 0.11, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.05
+  far clip plane: 1000
+  field of view: 36
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &695820625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695820623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!4 &695820626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695820623}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.014749561, y: 0.9712414, z: -0.062480144, w: -0.229279}
+  m_LocalPosition: {x: 4.634143, y: 3.6052547, z: 9.268286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1011191452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011191454}
+  - component: {fileID: 1011191453}
+  m_Layer: 0
+  m_Name: Key Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1011191453
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011191452}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &1011191454
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011191452}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.32619038, y: -0.28257105, z: 0.102847435, w: 0.89620084}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420430901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420430905}
+  - component: {fileID: 1420430904}
+  - component: {fileID: 1420430903}
+  - component: {fileID: 1420430902}
+  m_Layer: 0
+  m_Name: Preview Ground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1420430902
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420430901}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4161219334db094d816766c1b597497, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1420430903
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420430901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &1420430904
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420430901}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1420430905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420430901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1623179688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623179690}
+  - component: {fileID: 1623179689}
+  m_Layer: 0
+  m_Name: Darklord Animation Preview Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1623179689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623179688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5f54f24c89cd44ca5ac8a99a438acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DarklordPreview.DarklordActionPreview
+  animator: {fileID: 427245}
+  clips:
+  - {fileID: 7400000, guid: 21a690532308444458a065957cc68bfe, type: 2}
+  - {fileID: 7400000, guid: e60d355191780de419d722a5f78778d6, type: 2}
+  - {fileID: 7400000, guid: e6d38a7401966914fa5be105e1c7506d, type: 2}
+  - {fileID: 7400000, guid: b01a7ef6656441d4fb42c763d06e7e5e, type: 2}
+  - {fileID: 7400000, guid: ae2e5bb58b2b95743a77ea5971291fa7, type: 2}
+  - {fileID: 7400000, guid: ad659d05dcbeaa844a211a99626df98c, type: 2}
+  - {fileID: 7400000, guid: 379e5d3d270654a408e31086d3b69fe2, type: 2}
+  - {fileID: 7400000, guid: f1870c5de18a038478793692370620bc, type: 2}
+  - {fileID: 7400000, guid: 560554ddcdd968748bfcc3897560eec9, type: 2}
+  - {fileID: 7400000, guid: 2042ee47693cab849a51bc9788e8959e, type: 2}
+  - {fileID: 7400000, guid: 97a6c4e44977b194dbdef4b1c8571c1e, type: 2}
+  - {fileID: 7400000, guid: ac4d3edc958fc81429b1a7ecb2a90811, type: 2}
+  - {fileID: 7400000, guid: d43d40a2c22553c498c5ea150d9dd8f1, type: 2}
+  - {fileID: 7400000, guid: a01e6633051335c4cbeadc14e723be89, type: 2}
+  - {fileID: 7400000, guid: 138262888d7a7c54189f1464516060ed, type: 2}
+  - {fileID: 7400000, guid: 1a3998ab6197efc4fa43767faf9e37b2, type: 2}
+  - {fileID: 7400000, guid: 71a1bd985c273104a96bba777d788c77, type: 2}
+  - {fileID: 7400000, guid: 9a7e27c8ffba8ae44a431b199e9b5581, type: 2}
+  - {fileID: 7400000, guid: 0287fcdf656ae3b45bda60600431e421, type: 2}
+  - {fileID: 7400000, guid: 074dcd4ffca06c74ab727ca38525714b, type: 2}
+  - {fileID: 7400000, guid: 5d0d5af42ae611e4fa8e990b72546b84, type: 2}
+  - {fileID: 7400000, guid: 0283ab0d172ab2f41af5b3897b9e2719, type: 2}
+  - {fileID: 7400000, guid: 391c26eff98137f4c81f9dfa397a42b9, type: 2}
+  - {fileID: 7400000, guid: 5d60a6f9705acea4eaa2532c831a3179, type: 2}
+  - {fileID: 7400000, guid: c444ab5c5e072ed4ea1f2933b106e3d4, type: 2}
+  - {fileID: 7400000, guid: 44c0d87d1885ed8409b30e2b2d588183, type: 2}
+  - {fileID: 7400000, guid: 6d7ea3ead4de7234587cab56443a9600, type: 2}
+  - {fileID: 7400000, guid: dda1f60d8f7d48b42a4bb007d0e9e231, type: 2}
+  - {fileID: 7400000, guid: d04912234f3e11e4bbb2f1c37524dbd0, type: 2}
+  - {fileID: 7400000, guid: d2bdc730d906b5b45b45ed001b6bff5f, type: 2}
+  - {fileID: 7400000, guid: 4387e639365e0db4caeb716e9696396a, type: 2}
+  - {fileID: 7400000, guid: 28755fe9de9fc1b45bb31ba61d810146, type: 2}
+  - {fileID: 7400000, guid: e66862a33b451f0418d6756830064490, type: 2}
+  - {fileID: 7400000, guid: eb3510a94e3771a4f822a61187130534, type: 2}
+  - {fileID: 7400000, guid: 6a16130159b232c45a521628ec695458, type: 2}
+  - {fileID: 7400000, guid: 82baa5ef4d092d4438e5a7dfd3260d8a, type: 2}
+  - {fileID: 7400000, guid: a5dafd0ae9d7c4d4db4aeb9f44db266b, type: 2}
+  - {fileID: 7400000, guid: 8dee4d6432a5a174da6ccff14d187340, type: 2}
+  - {fileID: 7400000, guid: 43dd3a00724919c428cb5b6d9d5673bf, type: 2}
+  - {fileID: 7400000, guid: af86bd3999f217d4282c1701a88c8d80, type: 2}
+  - {fileID: 7400000, guid: 48e130812847d0b48993ecb7775c3cf7, type: 2}
+  - {fileID: 7400000, guid: 4617cd85221a3f04ba1606ef50f5b012, type: 2}
+  - {fileID: 7400000, guid: 6b346dda43fb60e44a6f839df15e8977, type: 2}
+  - {fileID: 7400000, guid: fd05bc81b60827747bfe13b727675184, type: 2}
+  - {fileID: 7400000, guid: 6dbe167887b25e84992ffd035f3a8504, type: 2}
+  - {fileID: 7400000, guid: 01b5ef8f138365749b67c43c7cdb282b, type: 2}
+  - {fileID: 7400000, guid: b0a4959d205265348aff0095f3869bcc, type: 2}
+  - {fileID: 7400000, guid: 3bdc6d1fe1d12e645b879209a8a43730, type: 2}
+  - {fileID: 7400000, guid: 2989e672371a82f4781e2cae3e23a190, type: 2}
+  - {fileID: 7400000, guid: 8fb357ba2e0d4374ba719bb70881ec13, type: 2}
+  - {fileID: 7400000, guid: 3300d526b66e5884883dfcf34dcf2a15, type: 2}
+  - {fileID: 7400000, guid: 81dc16e0415b280409e9490eb453fdf8, type: 2}
+  - {fileID: 7400000, guid: bb7ecbbe6edc6cc4187cbf3ff4fb756b, type: 2}
+  - {fileID: 7400000, guid: 489ea59c1cfd3854b8f2824e84e684c5, type: 2}
+  - {fileID: 7400000, guid: 4077435373602474d947a4b0a44e850b, type: 2}
+  - {fileID: 7400000, guid: f024f2a334904a44fa85a09861e7e7eb, type: 2}
+  - {fileID: 7400000, guid: f6fbee5fb4454b24a8b5fdaa9c5c2b3a, type: 2}
+  - {fileID: 7400000, guid: 70737f5918e2dc5479c832792d4d8f77, type: 2}
+  - {fileID: 7400000, guid: 20335fbd50ae4bf4ea4d4073893c5b3f, type: 2}
+  - {fileID: 7400000, guid: 53cede0205e47084398859a35448f4ae, type: 2}
+  - {fileID: 7400000, guid: fc79a7e9d16c3af43b648d8f9d7b7869, type: 2}
+  - {fileID: 7400000, guid: 92525c2c7b36d03448caf25257daf5bf, type: 2}
+  - {fileID: 7400000, guid: fd8586d1eaca39046bee69dee4c56de9, type: 2}
+  - {fileID: 7400000, guid: d973440e3eca02346ab15f5d86090739, type: 2}
+  - {fileID: 7400000, guid: 6d2991a669c5b884b98ee26853f6fde5, type: 2}
+  - {fileID: 7400000, guid: 368902516a9ab124497dc6b6fd50c6d5, type: 2}
+  - {fileID: 7400000, guid: f15dfc1884153a04783f6b258a6bc601, type: 2}
+  - {fileID: 7400000, guid: 10cfa08928e8e7946853676a8e0d0126, type: 2}
+  - {fileID: 7400000, guid: 356e9f4338c8ea441bcecd301e3e7d22, type: 2}
+  - {fileID: 7400000, guid: 986568bfd6d678c45900bfe71e6362d2, type: 2}
+  - {fileID: 7400000, guid: 037ad71c84783ca418b8d177436c0423, type: 2}
+  - {fileID: 7400000, guid: 178d08a81b2b85c44b0d56b9f7e11650, type: 2}
+  - {fileID: 7400000, guid: 036e58c1f4e5de74a970d849e2423630, type: 2}
+  - {fileID: 7400000, guid: 6a50b304b2d399142bc1f6284ba17da8, type: 2}
+  - {fileID: 7400000, guid: 4150f066bfe28ab4b91ebaf0e3d20154, type: 2}
+  - {fileID: 7400000, guid: 3fbb9b6714e621140a7e9a7ed93d75cb, type: 2}
+  - {fileID: 7400000, guid: 2ef913290f08ac54994208cfa567e814, type: 2}
+  - {fileID: 7400000, guid: 15bdcba440991d2488b12adc6618b9ee, type: 2}
+  - {fileID: 7400000, guid: 4c5c2cc695add86488205557db70d519, type: 2}
+  - {fileID: 7400000, guid: 5cc4ca23bea110849bf120f64a19ab5f, type: 2}
+  - {fileID: 7400000, guid: b8ff8a2be4318b54887d51e460d6d37f, type: 2}
+  - {fileID: 7400000, guid: 6d731d2e138d4c846b4690bf21596468, type: 2}
+  - {fileID: 7400000, guid: 17f170d0e653aef47817208aac2f5169, type: 2}
+  - {fileID: 7400000, guid: f1a0df1094889ec41bf1ef62adf49387, type: 2}
+  - {fileID: 7400000, guid: 89bf53ac25f3f174e9e81f05aaa0855c, type: 2}
+  - {fileID: 7400000, guid: f3e2b30e58bab9d4fab1fd7610c3cfc3, type: 2}
+  - {fileID: 7400000, guid: 3e6f6a2adf3ad2b4a9f5fcbcadf5287f, type: 2}
+  - {fileID: 7400000, guid: 87826ae5d9e9f6a45ab31710d4177628, type: 2}
+  - {fileID: 7400000, guid: d3b1f95fdf67fcd41b428ab9be881ed9, type: 2}
+  - {fileID: 7400000, guid: 7667befc17de85645a9504aff0af86f1, type: 2}
+  - {fileID: 7400000, guid: 067376fb414c44a41ad830890c2a826b, type: 2}
+  - {fileID: 7400000, guid: 6101e98031b0ff0489280ca887cbd3eb, type: 2}
+  - {fileID: 7400000, guid: 917276761d212954699de198f64a2451, type: 2}
+  - {fileID: 7400000, guid: 13725ac37ffdc9b4cb24d14fd1fe869d, type: 2}
+  - {fileID: 7400000, guid: 86f936e944431bf409c6848a78b241ab, type: 2}
+  - {fileID: 7400000, guid: 5de46464a4db9c34a8c0b68a8987f165, type: 2}
+  - {fileID: 7400000, guid: affdb558e2e052a499d742a324765f7d, type: 2}
+  - {fileID: 7400000, guid: 83586d5465d6976459332297cb967f6b, type: 2}
+  - {fileID: 7400000, guid: e1ded7aaec0a64049818a0e68293ca88, type: 2}
+  - {fileID: 7400000, guid: 14424a00513f76f47a7e336bb617d0b7, type: 2}
+  - {fileID: 7400000, guid: 6e97a9ecb3fe0c54291e3ed552b826c4, type: 2}
+  - {fileID: 7400000, guid: dfd04b873b4ab8e4c95de3e85b771768, type: 2}
+  - {fileID: 7400000, guid: 038b2bd5ccaa8444c917f7c9b6b98e56, type: 2}
+  - {fileID: 7400000, guid: 763e0a7d0d2f5d04d9db6b764dbd50d5, type: 2}
+  - {fileID: 7400000, guid: ec42bd8d73293ff4a875c7cd8b7173d6, type: 2}
+  - {fileID: 7400000, guid: 818f1e49d316c1d4d8a73184a32f6930, type: 2}
+  - {fileID: 7400000, guid: 446ffb5098aa781488af9440e1d2e73a, type: 2}
+  - {fileID: 7400000, guid: ab1e5b00f57487b4294ef9ff02b71d92, type: 2}
+  - {fileID: 7400000, guid: 89ecc7303ebf8c946be30ebf6dbe1dad, type: 2}
+  - {fileID: 7400000, guid: c2f1ec0e2fdba41448cb0d56624b1099, type: 2}
+  - {fileID: 7400000, guid: 135225e4df71b314e8711015cea20473, type: 2}
+  - {fileID: 7400000, guid: 33d05fb0e38b46045901af29d0d4e97b, type: 2}
+  - {fileID: 7400000, guid: 6c3a5660395665c4a87d8b9cd3d6b5ca, type: 2}
+  - {fileID: 7400000, guid: f751d09e5f4ac4a4186e900ab2bbee08, type: 2}
+  - {fileID: 7400000, guid: be3cd43d37e7d9a40ab5c9576a44cde8, type: 2}
+  - {fileID: 7400000, guid: 7b1c0b53f9bbba140bbb935a983e79f5, type: 2}
+  - {fileID: 7400000, guid: 883c409fe19117e4695d4744c5ab7455, type: 2}
+  - {fileID: 7400000, guid: bf2226ea3ac6ef34686423ba51d1b30d, type: 2}
+  - {fileID: 7400000, guid: 598009febb9f2ae44a9481fa2626b036, type: 2}
+  - {fileID: 7400000, guid: 06ecce628f7546a41bc702f93b16d6d7, type: 2}
+  - {fileID: 7400000, guid: 6516ffbcaa575cb44904b46400eff41c, type: 2}
+  - {fileID: 7400000, guid: 0456f21076f0e494fa1f1447770f3b11, type: 2}
+  - {fileID: 7400000, guid: 06c85bbe7b3f5eb429afdd488bd1df78, type: 2}
+  - {fileID: 7400000, guid: b00332d3d4ede2c48a3b5bbf1139fb41, type: 2}
+  - {fileID: 7400000, guid: fffb658b9b8e9484f898c904ce2330ea, type: 2}
+  - {fileID: 7400000, guid: f58f37145435e6545a3c07343d5adc36, type: 2}
+  - {fileID: 7400000, guid: 333c8b08d590ddf4caadc158cca6cdfc, type: 2}
+  - {fileID: 7400000, guid: e563efbc7044ebc4697fc1788415383f, type: 2}
+  - {fileID: 7400000, guid: 895835547e204dc4486cef0ac2182c62, type: 2}
+  - {fileID: 7400000, guid: 353963c9c4b69cb479aee9092bebe512, type: 2}
+  - {fileID: 7400000, guid: 0577854331bfe3742bf04358be85a87e, type: 2}
+  - {fileID: 7400000, guid: d3895c8659083634dbc06fec00be26be, type: 2}
+  - {fileID: 7400000, guid: 7aa72416cf015704b837d5d0bcfb1ed9, type: 2}
+  - {fileID: 7400000, guid: e39d62b4f04f93e4691abec71ce25de8, type: 2}
+  - {fileID: 7400000, guid: 79e35b66eb0a727438c818da3ab077c2, type: 2}
+  - {fileID: 7400000, guid: a932acc2616ce1c4491c3a4db4360fca, type: 2}
+  - {fileID: 7400000, guid: ac3cffda8efa18f48869caaeec51cade, type: 2}
+  - {fileID: 7400000, guid: 8e2a839203f7d1a47a7a5d80d74e97cb, type: 2}
+  - {fileID: 7400000, guid: c5b19f87bf62f494e9bd1fce6cb59b0a, type: 2}
+  - {fileID: 7400000, guid: 867f7b2eb3fcf6a4aaf6e3a434908142, type: 2}
+  - {fileID: 7400000, guid: 39497eae691862d4d9b83c8d975810c7, type: 2}
+  - {fileID: 7400000, guid: 36e9ee0554bcfea4a8ab23ac993b4339, type: 2}
+  - {fileID: 7400000, guid: bfc581cd8e2db0d45932714a1f18fdba, type: 2}
+  - {fileID: 7400000, guid: 379f0509ef3a2c74cb8c59e7c0cf75f5, type: 2}
+  - {fileID: 7400000, guid: 3ae8500cdf1dcea43a0905a02ad624b1, type: 2}
+  - {fileID: 7400000, guid: 3dd068b65c6b65249a3c3f5ca26e5b2c, type: 2}
+  - {fileID: 7400000, guid: e4959ef7913e4fe4fbea703fd61ab489, type: 2}
+  - {fileID: 7400000, guid: ac0b90d373155e64f843263f94661e98, type: 2}
+  - {fileID: 7400000, guid: ead2403a2999c1948adc075f5119ccc4, type: 2}
+  - {fileID: 7400000, guid: 36eb7df3eb648de488e255b39dc5c94d, type: 2}
+  - {fileID: 7400000, guid: 8ac074f5a64ccc5498cb554b025466bd, type: 2}
+  - {fileID: 7400000, guid: 950271f76d1be204f84184cfb9b10e8d, type: 2}
+  - {fileID: 7400000, guid: 2d72708a2a0124b4190e48aac3802b1e, type: 2}
+  - {fileID: 7400000, guid: a574578a6303aea4aa73bb6c4fba4296, type: 2}
+  - {fileID: 7400000, guid: 858e171f182978045905756348eb356f, type: 2}
+  - {fileID: 7400000, guid: d39665decbff35e4caf1a4954210359e, type: 2}
+  - {fileID: 7400000, guid: b77d2372c1d4d6245869f74a9a234ef5, type: 2}
+  - {fileID: 7400000, guid: d7a18fdc1956fb142b090b0330f166c0, type: 2}
+  - {fileID: 7400000, guid: 3fd85143fa712cc48a0d802b7706cba2, type: 2}
+  - {fileID: 7400000, guid: 7c2b3e4a75a0615498d8575b89814ae1, type: 2}
+  - {fileID: 7400000, guid: b7cfa9c7b878b13489b541ae54cbfad4, type: 2}
+  - {fileID: 7400000, guid: e5a6c670cc2538746a3c7b2e8c409b97, type: 2}
+  - {fileID: 7400000, guid: 834f342eba10ca24e8240760aeb23319, type: 2}
+  - {fileID: 7400000, guid: 493cc7f49f9bd5e4ebe0ee62b005a17d, type: 2}
+  - {fileID: 7400000, guid: 4e1a31536899021458420bfd01d0d233, type: 2}
+  - {fileID: 7400000, guid: 57a150315f245ae42a7202a95f74f81b, type: 2}
+  - {fileID: 7400000, guid: bcbb64521d835424984e24d24aa644ad, type: 2}
+  - {fileID: 7400000, guid: 8650cec47346a8140b1bc24f422a0844, type: 2}
+  - {fileID: 7400000, guid: e90acef7e2eb51f4a8b5bbf15874d8c2, type: 2}
+  - {fileID: 7400000, guid: 3b4f3d7858b042840ad093a81fa6a9f1, type: 2}
+  - {fileID: 7400000, guid: 0510b3eb330c4684b8759f65d0174d32, type: 2}
+  - {fileID: 7400000, guid: 8e1e58446e0e08b4484233281285cdd5, type: 2}
+  - {fileID: 7400000, guid: f12825da40b3e664190e077aa4417d7b, type: 2}
+  - {fileID: 7400000, guid: 731f0a51150f41b4cbcbefacf697869a, type: 2}
+  - {fileID: 7400000, guid: d0d503b6b8a9d904d83048afbe5bef17, type: 2}
+  - {fileID: 7400000, guid: 671fb9f2b04d30148a96a69042f7c5a7, type: 2}
+  - {fileID: 7400000, guid: 2ff27a5acd6e24045ade008634d9ab54, type: 2}
+  - {fileID: 7400000, guid: 5e22ac829a1aaa248b1ac42ce8f3049f, type: 2}
+  - {fileID: 7400000, guid: 78e4325298a859e489e11f04c8984494, type: 2}
+  - {fileID: 7400000, guid: 5010cf9b6f057e740994d1b1c329ae4f, type: 2}
+  - {fileID: 7400000, guid: 4610572435615364295e1f7bb2ce9372, type: 2}
+  - {fileID: 7400000, guid: f78cc987b6cae9647837470e1cb6086f, type: 2}
+  - {fileID: 7400000, guid: 8893e12c89adb304d9f2a0db2a499df1, type: 2}
+  - {fileID: 7400000, guid: 5df433321f81bdb4d807feec59a96175, type: 2}
+  - {fileID: 7400000, guid: 2f40943fecf90e449a9f61e84aae39e5, type: 2}
+  - {fileID: 7400000, guid: 9f8ce300579d05c43b47b46f5a26035f, type: 2}
+  - {fileID: 7400000, guid: 65221108ef0ae08499cc23c3af164010, type: 2}
+  - {fileID: 7400000, guid: 13a78a95502107040884dea2732c6f04, type: 2}
+  - {fileID: 7400000, guid: e482077fadd02024bbe6abbb0306576d, type: 2}
+  - {fileID: 7400000, guid: 987b9edfb85bd4a43862a46119430d97, type: 2}
+  - {fileID: 7400000, guid: 67057bacfa06d3f4888f847b311c43eb, type: 2}
+  - {fileID: 7400000, guid: ba0321b5cfdaf404eb957c8bc794b4e8, type: 2}
+  - {fileID: 7400000, guid: e6456ba3c5bfa2c4a88eb23a23a02ccb, type: 2}
+  - {fileID: 7400000, guid: 60f616ca5db95ff4ca6579052c08a48d, type: 2}
+  - {fileID: 7400000, guid: ef0df470527cf2842b9defc4211ace66, type: 2}
+  - {fileID: 7400000, guid: 758ee5e9fb4678844a160264ceb1cdfe, type: 2}
+  - {fileID: 7400000, guid: 78b36f00e8a32a346bbe54cbafcc469c, type: 2}
+  - {fileID: 7400000, guid: c9b7b9819a9a3a74e8be24ba67c0269b, type: 2}
+  - {fileID: 7400000, guid: b1398260fff81da4d8e98b8e8665f7af, type: 2}
+  - {fileID: 7400000, guid: 4d389264e924bca4da551aa7260d3148, type: 2}
+  - {fileID: 7400000, guid: b096f7cdaea438b459ca8cff0163d019, type: 2}
+  - {fileID: 7400000, guid: ff2493bd621d38340870bfbe43ff2b85, type: 2}
+  - {fileID: 7400000, guid: 7f513d17b8c520b47be4981ba0e48aa8, type: 2}
+  - {fileID: 7400000, guid: 34c4a21a3597ac144a30c2effd17e871, type: 2}
+  - {fileID: 7400000, guid: 6106d393b8d5cc248af17aa4812ee933, type: 2}
+  - {fileID: 7400000, guid: 50aa6cc97d3143f43bf73116dd3f7ffa, type: 2}
+  - {fileID: 7400000, guid: d6e28b34bbfb53543be9eff50f54fd5e, type: 2}
+  - {fileID: 7400000, guid: 881b6c974be331b4e9e3db8e95c18953, type: 2}
+  - {fileID: 7400000, guid: b157401eeed179a4c941259eb796baa6, type: 2}
+  - {fileID: 7400000, guid: 1fe63f306f0b66c4186beac632e53a25, type: 2}
+  - {fileID: 7400000, guid: bba39306616c2fa4b8ddf94478aad78f, type: 2}
+  - {fileID: 7400000, guid: ca4e56c94e804e146bb6cee6a1e49d30, type: 2}
+  - {fileID: 7400000, guid: 7ed7a46a9e33473418eec3ae8c1dcffb, type: 2}
+  - {fileID: 7400000, guid: f07637479566419439ac8f49b6348733, type: 2}
+  - {fileID: 7400000, guid: 5dddbefd16b28a340ad3bf68e09edce0, type: 2}
+  - {fileID: 7400000, guid: 6d5f3c66f4a3c054fb9e5e54b4c76948, type: 2}
+  - {fileID: 7400000, guid: 464e5778a66334348808daaf9f94dc36, type: 2}
+  - {fileID: 7400000, guid: c086dd6050b1e2d46b8ebfd5d04370c2, type: 2}
+  - {fileID: 7400000, guid: 21d72a0497a94ae4d91fffa2df549a67, type: 2}
+  - {fileID: 7400000, guid: 4c4f8f20d6755c047b37ce7334cfabf4, type: 2}
+  - {fileID: 7400000, guid: 614f78a27f359f6408994d3b1e233577, type: 2}
+  - {fileID: 7400000, guid: 02296b62645ad774ba54313f0b679085, type: 2}
+  - {fileID: 7400000, guid: 39d2941a93ac03b42ac489022ce7bace, type: 2}
+  - {fileID: 7400000, guid: 0c75ecfc6f39c6f4cb8d9ec19d806a58, type: 2}
+  - {fileID: 7400000, guid: 58bd8c020dd4ee147920fa55d23193f8, type: 2}
+  - {fileID: 7400000, guid: d1396be4898d65744889732be95e2db9, type: 2}
+  - {fileID: 7400000, guid: 44da438611a994e4b81ef79d55b0c5dc, type: 2}
+  - {fileID: 7400000, guid: 7ecb683e20cf1f542bcc05e4ff048607, type: 2}
+  - {fileID: 7400000, guid: 11bd82d1b14e5994db2dacfa2a88c185, type: 2}
+  - {fileID: 7400000, guid: 759a14888bdceee4099ec505752c8ef3, type: 2}
+  - {fileID: 7400000, guid: bd5badf9327a0b44e92511be05c4f8c0, type: 2}
+  - {fileID: 7400000, guid: a70e70ebd0408dc4093dc82ca984143e, type: 2}
+  - {fileID: 7400000, guid: fc69fc38941e6a5458c4e5d24115251f, type: 2}
+  - {fileID: 7400000, guid: be17067a22d7ad7439d10e5d442fb4d0, type: 2}
+  - {fileID: 7400000, guid: bdbc3a452b448be4cbc9c42e88ab1197, type: 2}
+  - {fileID: 7400000, guid: 87d75a1b782831148a456cbe42507159, type: 2}
+  - {fileID: 7400000, guid: bccf797cfccade641bd29e7f2b4b25e9, type: 2}
+  - {fileID: 7400000, guid: da1f0067760ba1545b85b045d33b293a, type: 2}
+  - {fileID: 7400000, guid: 033d8e12c93409b4ba63ad988c52e6a7, type: 2}
+  - {fileID: 7400000, guid: 3e3b4a77bd90caa408cdaceec36c32b4, type: 2}
+  - {fileID: 7400000, guid: 33e1c792372d1ec408c7e5fef5cb133e, type: 2}
+  - {fileID: 7400000, guid: 2292193be2bd35b419085637f00d27bd, type: 2}
+  - {fileID: 7400000, guid: a2df4f6ae170cf241b4b0499f05e16ed, type: 2}
+  - {fileID: 7400000, guid: a91440a47f958154bb330839a960fade, type: 2}
+  - {fileID: 7400000, guid: c18ab23c987141a4a9d5908395dc4779, type: 2}
+  - {fileID: 7400000, guid: 4eb6b130376fbb94e9eec63a5bdaef30, type: 2}
+  - {fileID: 7400000, guid: 0155fee38e1c6204286dff82fb259282, type: 2}
+  - {fileID: 7400000, guid: 048380754d4589847a10b6b1a251f5a6, type: 2}
+  - {fileID: 7400000, guid: 3ac0e79c2ebd13349840a8c2bb541524, type: 2}
+  - {fileID: 7400000, guid: e1bf5f1cf17161a48b11d6115b917b45, type: 2}
+  - {fileID: 7400000, guid: 12b821233f6c1cf47aed0ae2fe1102b1, type: 2}
+  - {fileID: 7400000, guid: 30b847b831132a043b770a835a6980ab, type: 2}
+  - {fileID: 7400000, guid: 71ba439553ba40946908e7ec52f23115, type: 2}
+  - {fileID: 7400000, guid: 7e65ec26ff7cc2141a068b26a690f4ef, type: 2}
+  - {fileID: 7400000, guid: 86770e021481ae447a638a29277cecc3, type: 2}
+  - {fileID: 7400000, guid: 1f52508c44d769941a22d7f43bccdf61, type: 2}
+  - {fileID: 7400000, guid: aeeccc4ee9db98c4b81b2a7c43704dea, type: 2}
+  - {fileID: 7400000, guid: 9738784969e6f5448867ffc9636c1bbf, type: 2}
+  - {fileID: 7400000, guid: ea9ec276e197a1c47a283e896efe7ed0, type: 2}
+  - {fileID: 7400000, guid: 4e518d9d6c5b8b3409664e0f8d6788f2, type: 2}
+  - {fileID: 7400000, guid: af98761fceb4e5e4a9753a1acb7b07ac, type: 2}
+  - {fileID: 7400000, guid: 5056b3cbccd1c494f9abbf6d43dd8f16, type: 2}
+  - {fileID: 7400000, guid: a1384caa3abad8647a592c76dd7ab01b, type: 2}
+  - {fileID: 7400000, guid: 9be17bc1875045e4c90a4ca13825c279, type: 2}
+  - {fileID: 7400000, guid: 6adbfc704f278e9449bf999bc5a5190b, type: 2}
+  - {fileID: 7400000, guid: 23caeb80191b84f41bcdeec1b3c33e1f, type: 2}
+  - {fileID: 7400000, guid: 89035ada632890d46b436add5ae2bc62, type: 2}
+  - {fileID: 7400000, guid: 34c95238ebe546a49b429ef8b2315f95, type: 2}
+  - {fileID: 7400000, guid: e5f5bab7fd7225f4aac608f663b493bb, type: 2}
+  - {fileID: 7400000, guid: edb78502a217ea1498cc8db3171815d8, type: 2}
+  - {fileID: 7400000, guid: b863d406dbb19c147b6ee649bcafaa5a, type: 2}
+  - {fileID: 7400000, guid: ed6e85ca015937442b37cdbeefe82a54, type: 2}
+  - {fileID: 7400000, guid: b68371a748e8e9d49b8f6e3f7c8921d8, type: 2}
+  - {fileID: 7400000, guid: 0a66ab2452a778441b2afa637b00e71b, type: 2}
+  - {fileID: 7400000, guid: 6bb2b1f402e1bec408f6ee1e0274f48f, type: 2}
+  - {fileID: 7400000, guid: ac59ec1436cbaf344ab7c31a4c561a9f, type: 2}
+  - {fileID: 7400000, guid: 9be74e3e4db202340ad02422731f38d0, type: 2}
+  - {fileID: 7400000, guid: 74086dcd51fb64d4a938784f730fe1f7, type: 2}
+  - {fileID: 7400000, guid: 47fcce7c76d1a1c4693685ce84f28607, type: 2}
+  - {fileID: 7400000, guid: 76fe7111b55b3934eaf275b31cb4483b, type: 2}
+  - {fileID: 7400000, guid: b84845954a3f9714bbb30f6bce566366, type: 2}
+  - {fileID: 7400000, guid: 8825ccaf6ba8ac94ea1b329907de5da0, type: 2}
+  - {fileID: 7400000, guid: 98759a50db5b5484b8996263e42594a2, type: 2}
+  - {fileID: 7400000, guid: 86123069d9df4b044bcf572374adbbd5, type: 2}
+  - {fileID: 7400000, guid: acb6793035ef2d04784a29dd6224e11c, type: 2}
+  - {fileID: 7400000, guid: c2ab7e32e5ceca948a9b069900c53908, type: 2}
+  - {fileID: 7400000, guid: 1475f065be6d57846954fbd1f4766c51, type: 2}
+  - {fileID: 7400000, guid: 007cfe88138a8364492b11add4b6fa0b, type: 2}
+  - {fileID: 7400000, guid: ba822f594a56f9745b245da3daaa64a7, type: 2}
+  - {fileID: 7400000, guid: 7292c5c1ff92e6e4e8cbfe6039484012, type: 2}
+  - {fileID: 7400000, guid: 93b5b0aedef404a4aad6d720769cb4f9, type: 2}
+  - {fileID: 7400000, guid: 9dc9c3228e26c614894e5197d803f7a0, type: 2}
+  - {fileID: 7400000, guid: aba49add5df04774d8f910e194da764a, type: 2}
+  - {fileID: 7400000, guid: b16cc26539e50404982206b880c0d85c, type: 2}
+  - {fileID: 7400000, guid: 4387cad95030ba84e82cbf5ec698d2f2, type: 2}
+  - {fileID: 7400000, guid: de51f9bfd5a525446bb2b4e3856f1bae, type: 2}
+  - {fileID: 7400000, guid: 10412dd830eb90140ade3d902fae6ba3, type: 2}
+  - {fileID: 7400000, guid: 7ac481e7d3b2d2e4186d734b2b2f38b7, type: 2}
+  - {fileID: 7400000, guid: b177a996764551a468f8690cd0121d53, type: 2}
+  - {fileID: 7400000, guid: dd2682aabdc815049a4e0a47a9984027, type: 2}
+  - {fileID: 7400000, guid: a5993dfb5c9da524fb63ee502d723a02, type: 2}
+  - {fileID: 7400000, guid: 83fafad8c6252014e900d17de6ec23ac, type: 2}
+  - {fileID: 7400000, guid: 4241768f86777fd4db4a6ab21211f706, type: 2}
+  - {fileID: 7400000, guid: 6159ea2cb07837246a62f21fe5e34fff, type: 2}
+  - {fileID: 7400000, guid: b1b352f92ddad1a4dadb2c0b40ad1cb6, type: 2}
+  - {fileID: 7400000, guid: 10b5ed3b7a3caf94bacc2cb7d49fee9c, type: 2}
+  - {fileID: 7400000, guid: cc17aee8d0fadb446aeebe2c2bf2b31b, type: 2}
+  - {fileID: 7400000, guid: 18330529433d3a7408507d822aac820e, type: 2}
+  - {fileID: 7400000, guid: e54775b0bc358d9478038a5f2b8348f7, type: 2}
+  - {fileID: 7400000, guid: fefe54704a5664f4c968025e33852b31, type: 2}
+  - {fileID: 7400000, guid: 69485c67b94015148a5f1e6860fb6337, type: 2}
+  - {fileID: 7400000, guid: 0991c748a06fdab4d95bc03b37abbf72, type: 2}
+  - {fileID: 7400000, guid: a09c785e655947d4596f0c398edad6e5, type: 2}
+  - {fileID: 7400000, guid: a1b49327278ee334eac6340cdc6035fc, type: 2}
+  - {fileID: 7400000, guid: bee70e0d2b2720144ad3822845989432, type: 2}
+  - {fileID: 7400000, guid: 2634e63171c246d4c976fd35b277f86d, type: 2}
+  - {fileID: 7400000, guid: 7e12a1541450a1e4ca1c488817083def, type: 2}
+  - {fileID: 7400000, guid: 8327f2623b2ddc04cba867b6c5ef8cde, type: 2}
+  - {fileID: 7400000, guid: f21c06fddbe31484f80b0ef5eb1c6a00, type: 2}
+  - {fileID: 7400000, guid: eb4fb47db334e3f469a8d02cebedea71, type: 2}
+  - {fileID: 7400000, guid: 71b5d23bdddae814bbc7eea360eea672, type: 2}
+  - {fileID: 7400000, guid: b54c3ed3c5c0eb64bb5921c2665c6e24, type: 2}
+  - {fileID: 7400000, guid: 80b6b6d6404bf004f8cbeb15c9080829, type: 2}
+  - {fileID: 7400000, guid: bd031824f902c0142b36e3d06cd30132, type: 2}
+  - {fileID: 7400000, guid: cbd8e460dafb62f4991de4493b272120, type: 2}
+  - {fileID: 7400000, guid: b8b899a4fbbe5a949984902cd2d39ea9, type: 2}
+  - {fileID: 7400000, guid: b8834f45247fbba498cd38a38206edd7, type: 2}
+  - {fileID: 7400000, guid: d73e21ba6d8d3784aab3bd6c9968b73c, type: 2}
+  - {fileID: 7400000, guid: 147b9aea6cc29f143a796d3a22156c86, type: 2}
+  - {fileID: 7400000, guid: 87c11b4ac308c754fa525e572e0c1a97, type: 2}
+  - {fileID: 7400000, guid: 63037371cc5383f4cbe6b2431a03215e, type: 2}
+  - {fileID: 7400000, guid: 8b9be65bf94e6e44a94ddc5f793a212e, type: 2}
+  - {fileID: 7400000, guid: bb2e9e8073e34c449b77dd83b699d320, type: 2}
+  - {fileID: 7400000, guid: e95a90c1d218bab4ebc1a03a933cb33f, type: 2}
+  - {fileID: 7400000, guid: a7d353ded8f21734b8c0402fb4f57bc6, type: 2}
+  - {fileID: 7400000, guid: 7bdc16bd91d99054fa505b0cc22985c8, type: 2}
+  - {fileID: 7400000, guid: 1fba37088d03d16409f56db4196881c8, type: 2}
+  - {fileID: 7400000, guid: 1972824777f41cf47964f4918e553d99, type: 2}
+  - {fileID: 7400000, guid: 08e286bfca9a9a24f8ef3558a697a823, type: 2}
+  - {fileID: 7400000, guid: 7ec34861e78e7f04985f6cb25e45c1c0, type: 2}
+  - {fileID: 7400000, guid: 23c873f550b6c2e4e88126e1a1ffd3f2, type: 2}
+  - {fileID: 7400000, guid: 1531c5c933939d74e9c4c924ec93fd61, type: 2}
+  - {fileID: 7400000, guid: 9ff5cf1e70bff08468dd97f2c3ebb07b, type: 2}
+  - {fileID: 7400000, guid: e4237c3d00e2c2f458f3968db84604c1, type: 2}
+  - {fileID: 7400000, guid: d67d377012f94ee4f9ce3eb895527bd2, type: 2}
+  - {fileID: 7400000, guid: ed482738c3540cb42b95caaf7190feb6, type: 2}
+  - {fileID: 7400000, guid: c4903c6f076c15145817924449038d46, type: 2}
+  - {fileID: 7400000, guid: f80bbb588b836834488970b420c62cde, type: 2}
+  - {fileID: 7400000, guid: 2699b48a12867654e91265e19dea00b2, type: 2}
+  - {fileID: 7400000, guid: ce3920f11b2379448a5ecf15e0eb1a32, type: 2}
+  - {fileID: 7400000, guid: 12de2ac24bb861144a961e79b5fe7db2, type: 2}
+  - {fileID: 7400000, guid: 4960acf593f95ba47941146384c44366, type: 2}
+  - {fileID: 7400000, guid: f78bd02f7d26e164b9798d5814c14201, type: 2}
+  - {fileID: 7400000, guid: 5b771c54858048249b5bd5dcb97d582b, type: 2}
+  - {fileID: 7400000, guid: e5fbab2c8653fdf4eb1aa51f9ceaed67, type: 2}
+  - {fileID: 7400000, guid: cacca535ca3b14847b5ed075bc5e624d, type: 2}
+  - {fileID: 7400000, guid: e9f600304d0d81e4ea984a514d14b1b1, type: 2}
+  - {fileID: 7400000, guid: 54aeb2616140f4849822f2e81711147a, type: 2}
+  - {fileID: 7400000, guid: deb7d3536bce7c2428b201b75f50540e, type: 2}
+  - {fileID: 7400000, guid: 307d51042b30f1f469867aea2a6790d8, type: 2}
+  - {fileID: 7400000, guid: 7fcc6d9bd58b72e408f7733c19151c4f, type: 2}
+  - {fileID: 7400000, guid: fe7d74da3c82e024fa848b3bf512bb9c, type: 2}
+  - {fileID: -4989446655626387511, guid: 0f3eb577760666e46a9d986d524d47c2, type: 3}
+  - {fileID: 3855115460598992244, guid: 401e71f9f4cb0fa489d6aae244b84c79, type: 3}
+  - {fileID: 3329941874931248353, guid: 46f505cbc5275114cada5e8fec589f6b, type: 3}
+  - {fileID: 633571823002112669, guid: d6dcddd3b4ae63d48b61ada51bffa382, type: 3}
+  - {fileID: -4426878805012052215, guid: 9939bee4b2f94a44b93dc940a987a4e3, type: 3}
+  - {fileID: -170625710516815676, guid: 3bc3ae514b21f1b4e9dcfc751cf75b4e, type: 3}
+  - {fileID: 3809827188993233949, guid: 7dac4c5497179af429887f8ee4216cbf, type: 3}
+  - {fileID: 2027015583028850056, guid: 73091436d2af5744d804c35a1e175925, type: 3}
+  - {fileID: 4623552030674969496, guid: 515f6d97e2a1f1a4d84861ad038e105d, type: 3}
+  - {fileID: 7943931625464982592, guid: 17b958cc22b02d9438cb5892d6e8d9fd, type: 3}
+  - {fileID: 22249776885536486, guid: 01da1e7c50f19754cb366e5a585ebe64, type: 3}
+  - {fileID: -467134016301961217, guid: c31f7961cd5291242a317c2fb2492ead, type: 3}
+  - {fileID: -3464886123728211159, guid: 039bcd8eab6a46742ab18ed894a6bd23, type: 3}
+  - {fileID: 513463496314825433, guid: 971162dd9c3d573438901a44c3093679, type: 3}
+  - {fileID: 3628331488724247606, guid: 47d50b4f9d1e0e54f8ce787e7ed80a44, type: 3}
+  - {fileID: 5596028881912510969, guid: 9a827dc19423cd04bad985dbd45385a3, type: 3}
+  - {fileID: 3128120734747058683, guid: 7125fec0aecaf3a4eae55c1bcd52398c, type: 3}
+  - {fileID: -4164710857769849234, guid: b271bd53db6703345914d2807b5ce3d6, type: 3}
+  - {fileID: -3454000528944548688, guid: 44b76a121157b1649a57e5c696a6197b, type: 3}
+  - {fileID: -7360044662544159011, guid: a9f1c5a9bba07f84aa87021401f461d0, type: 3}
+  - {fileID: -3339637067183399301, guid: 6ad3325805d99b24e8588438f89f2cba, type: 3}
+  - {fileID: 7415775318860217973, guid: ae015133ac9076e41b38b2c271066afc, type: 3}
+  - {fileID: 4402219232516937646, guid: 0c9b66d783f78534aa7a9d6001d01461, type: 3}
+  - {fileID: -1147698854361209803, guid: dfc161c5ca91fbd4cb5ada11a1dea9df, type: 3}
+  - {fileID: -2523012144793642659, guid: 2bd6ba7d6189cfb439335814408a0d1d, type: 3}
+  - {fileID: 8383680703467187579, guid: 2838aa4fb1ccdbc44b852654d4a1b43b, type: 3}
+  - {fileID: 7422872987789314410, guid: f1a05f332c59f2d45b8d998ad64f2d67, type: 3}
+  - {fileID: 6836469097333393417, guid: 0f745f89975c14b40babc65c2e6fbdd9, type: 3}
+  - {fileID: -7436776389172887691, guid: 8e2714c3352d4f94e91d132d9a0b4d88, type: 3}
+  - {fileID: 2452401316442673886, guid: 17ebffb473921374ab6c45e545787dc0, type: 3}
+  - {fileID: -2849356055088045262, guid: 93760b124fc60a34ea5316e9960f32a1, type: 3}
+  - {fileID: 7574747270522025495, guid: 15d8e24dd92425c449ba5c6d38fdd6e9, type: 3}
+  - {fileID: 1511702856833520528, guid: a28f628bea4ea0c49ae75990b9929747, type: 3}
+  - {fileID: 5578244710490399104, guid: 62e3580cecd510a47b892e8ed3a1100d, type: 3}
+  - {fileID: -1869770916028895607, guid: f2a5256abaf8d034198053a80ff87105, type: 3}
+  - {fileID: -7486241793600480364, guid: 083e6fb769f7ac94792115e5e21c4932, type: 3}
+  - {fileID: -469040526701773352, guid: ac9aa21e4786c094fb1121f7e8f92ef0, type: 3}
+  - {fileID: -2008265402321586047, guid: 978848020cb3da645b2bb41c93563f4b, type: 3}
+  - {fileID: -3956163677813899221, guid: 6e272be48adf2a4429eb08b411324515, type: 3}
+  - {fileID: 1565888469922742939, guid: 247b5c5f4d6176143aaef56905d5d1e6, type: 3}
+  - {fileID: -3901789911667210687, guid: 80547c65c69bf664c8d815be0f100d9b, type: 3}
+  - {fileID: 3225829369188547393, guid: 0b79947f3c7acfa49be63d11ad37ec08, type: 3}
+  - {fileID: 5674119723696745016, guid: e7e3cdafbe8c57b4fba0b28ab4b4d5db, type: 3}
+  - {fileID: -7921039867983109576, guid: 1fa36063529c5744599e562ada2bf88b, type: 3}
+  - {fileID: -3424080879538529316, guid: cd84c89f720848743947cfa7063e2a88, type: 3}
+  - {fileID: 912218716945041136, guid: 180111c27b39c8d438f74972b82e6ac7, type: 3}
+  - {fileID: 7130415331223441807, guid: 404d3ba3c87b37c4da1afc413cea79e7, type: 3}
+  - {fileID: 5673503346559887331, guid: e9d4aaf3c36a4c04287f45080460b99c, type: 3}
+  - {fileID: 2486231298698744248, guid: 9770b2f09b65298458838c12aafd0a92, type: 3}
+  - {fileID: -761815460497797682, guid: ca57583813579d7499effee116260bdf, type: 3}
+  - {fileID: -2964976548925902070, guid: 0820e5809c6651941ae839a41a17229b, type: 3}
+  - {fileID: 3855115460598992244, guid: e90c108e1e8011748b2362ac89a2bcd4, type: 3}
+  - {fileID: -4989446655626387511, guid: 3f3e16e518d82f943a5e8ef283ba6a3e, type: 3}
+  - {fileID: 633571823002112669, guid: f712719a36fce5649a830e7045aeec1e, type: 3}
+  - {fileID: 3329941874931248353, guid: a3b5d41ebd61aaa4f98a9239040d61e9, type: 3}
+  - {fileID: -4426878805012052215, guid: bbb166cb7b747fe438cf7e6fdbe000c1, type: 3}
+  - {fileID: -170625710516815676, guid: 9cf6c1b7aab68d24188e8d4aa00fc4c1, type: 3}
+  - {fileID: 3809827188993233949, guid: 5985889d94dd0cf4f9a80722c895c687, type: 3}
+  - {fileID: 2027015583028850056, guid: a866674afb857c747ba6c0049a3329e2, type: 3}
+  - {fileID: 4623552030674969496, guid: 340f5f6f410644d40b50e4c1cc62026f, type: 3}
+  - {fileID: 7943931625464982592, guid: 7e62055f79fb9894ca8003accd91e093, type: 3}
+  - {fileID: 22249776885536486, guid: 41d798258b0398b46bfbe7047c2e63e1, type: 3}
+  - {fileID: -467134016301961217, guid: e3c93f8bc3b1f62499ed8e64d98ee31e, type: 3}
+  - {fileID: -3464886123728211159, guid: f85559128541faf45957697d3eaa3f44, type: 3}
+  - {fileID: 513463496314825433, guid: 8c5413f838c8d1f448215b60d332c95b, type: 3}
+  - {fileID: -4164710857769849234, guid: 628c501cd1a25f44fa7d90b7acd815f1, type: 3}
+  - {fileID: 3628331488724247606, guid: 0977f05105643924792d6e0bd87042d1, type: 3}
+  - {fileID: 5596028881912510969, guid: 27e56e15c41272843b549765d3e3ab2c, type: 3}
+  - {fileID: 3128120734747058683, guid: d798466cc1960314f8ef33a2e0216e87, type: 3}
+  - {fileID: 7415775318860217973, guid: 4ebbc21fd744b70409a1ac77f546e811, type: 3}
+  - {fileID: -3454000528944548688, guid: 0756da28cca8a2440b65fdfeab073056, type: 3}
+  - {fileID: -7360044662544159011, guid: 8cbc6b2a4549e004d9ae8eb7655ef731, type: 3}
+  - {fileID: -3339637067183399301, guid: 0371be0d9100c964c8ca2a996f251e4b, type: 3}
+  - {fileID: 7422872987789314410, guid: 3630459f0a48ce1408c731fcafe5ab4f, type: 3}
+  - {fileID: 4402219232516937646, guid: 6500fe38cc98ff4439be7852799537c3, type: 3}
+  - {fileID: -1147698854361209803, guid: 5fa84c9667b25294a9b685fae422b70c, type: 3}
+  - {fileID: -2523012144793642659, guid: 93eeecf4aa1798b408ca2f24168569bc, type: 3}
+  - {fileID: 8383680703467187579, guid: df3d4b49cd1b64f4b9441fc817175d91, type: 3}
+  - {fileID: 1511702856833520528, guid: 9daee279d7c5566408e8ad0ed2c89b9c, type: 3}
+  - {fileID: 6836469097333393417, guid: bf86018f0c63a444bb2117981d27591c, type: 3}
+  - {fileID: -7436776389172887691, guid: 46ec5f6a07e01ab45b0775dd4b8b1ddb, type: 3}
+  - {fileID: 2452401316442673886, guid: 1121e96b95e048344961f4d6e7e33fec, type: 3}
+  - {fileID: -2849356055088045262, guid: 778f2a10cae308343ab4cbef9992c542, type: 3}
+  - {fileID: 7574747270522025495, guid: 6a8e1a383d30a6e4fbfb765c7795ece7, type: 3}
+  - {fileID: -1869770916028895607, guid: 5d0639a5e9520504097c98df8b8da329, type: 3}
+  - {fileID: 5578244710490399104, guid: 4a42680ec610a2c448b59c39a4d53a53, type: 3}
+  - {fileID: -7486241793600480364, guid: 2db31d8476da69f41944d08229050b5b, type: 3}
+  - {fileID: -469040526701773352, guid: 34e60976601a26d44a6a15ba37598e47, type: 3}
+  - {fileID: -2008265402321586047, guid: ca231d123fdacb7408c8c2ece56c9acb, type: 3}
+  - {fileID: -3956163677813899221, guid: 934f70eb4d0cfb847a095bf1761fdc26, type: 3}
+  - {fileID: 1565888469922742939, guid: a4f3b8daa596a254da3537a3a1c8dd82, type: 3}
+  - {fileID: -3901789911667210687, guid: 6fdc0b4b81aa69a4fa4a2e24752cd381, type: 3}
+  - {fileID: 3225829369188547393, guid: a7fd0dcc27f3bcb47be3393406fd8cd5, type: 3}
+  - {fileID: 5674119723696745016, guid: 2b3a522480109f841b856cca05b2db39, type: 3}
+  - {fileID: -7921039867983109576, guid: 2f336748b1e29f34892fd7d5f66eb9ad, type: 3}
+  - {fileID: -3424080879538529316, guid: f07ab889c8b20c94db140187afb9877f, type: 3}
+  - {fileID: 912218716945041136, guid: cc7e612705af9ad42984340b480a49ab, type: 3}
+  - {fileID: 7130415331223441807, guid: d027f42f6fc9adc4aa7a4fef47b6d39b, type: 3}
+  - {fileID: 5673503346559887331, guid: f7dbf9e8d532e7d489ccbe453b19f5c9, type: 3}
+  - {fileID: 2486231298698744248, guid: 9a4d6a4f465d46e43afd76fedf1c4a3a, type: 3}
+  - {fileID: -761815460497797682, guid: 2509937985c962b46ae9d8dc964f76a6, type: 3}
+  - {fileID: -2964976548925902070, guid: af54b985184104c4199cf30dd178830d, type: 3}
+  labels:
+  - SwordShield/01_Idle/Idle_Combat.anim
+  - SwordShield/03_Walk/02_Walk_Combat/01_Walk_Combat_F_0/Walk_Combat_Loop_F_0.anim
+  - SwordShield/04_Run/02_Run_Combat/01_Run_Combat_F_0/Run_Combat_Loop_F_0.anim
+  - SwordShield/02_Attack/01_Combo_Attack_01/Combo_Attack_01_All.anim
+  - SwordShield/02_Attack/02_Combo_Attack_02/Combo_Attack_02_All.anim
+  - SwordShield/02_Attack/03_Combo_Attack_03/Combo_Attack_03_All.anim
+  - SwordShield/02_Attack/04_Combo_Attack_04/Combo_Attack_04_All.anim
+  - SwordShield/08_Hit/12_Block/Block_Loop.anim
+  - SwordShield/08_Hit/12_Block/Block_Hit.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_F_0.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_F_0.anim
+  - SwordShield/08_Hit/02_Hit_Combat/Hit_Combat_F.anim
+  - SwordShield/09_Turn/02_Turn_Combat/Turn_Combat_180_R.anim
+  - SwordShield/01_Idle/Idle.anim
+  - SwordShield/01_Idle/Idle_Combat_to_Idle.anim
+  - SwordShield/01_Idle/Idle_to_Idle_Combat.anim
+  - SwordShield/02_Attack/01_Combo_Attack_01/Combo_Attack_01_01.anim
+  - SwordShield/02_Attack/01_Combo_Attack_01/Combo_Attack_01_02.anim
+  - SwordShield/02_Attack/01_Combo_Attack_01/Combo_Attack_01_03.anim
+  - SwordShield/02_Attack/01_Combo_Attack_01/Combo_Attack_01_04.anim
+  - SwordShield/02_Attack/02_Combo_Attack_02/Combo_Attack_02_01.anim
+  - SwordShield/02_Attack/02_Combo_Attack_02/Combo_Attack_02_02.anim
+  - SwordShield/02_Attack/02_Combo_Attack_02/Combo_Attack_02_03.anim
+  - SwordShield/02_Attack/02_Combo_Attack_02/Combo_Attack_02_04.anim
+  - SwordShield/02_Attack/03_Combo_Attack_03/Combo_Attack_03_01.anim
+  - SwordShield/02_Attack/03_Combo_Attack_03/Combo_Attack_03_02.anim
+  - SwordShield/02_Attack/03_Combo_Attack_03/Combo_Attack_03_03.anim
+  - SwordShield/02_Attack/03_Combo_Attack_03/Combo_Attack_03_04.anim
+  - SwordShield/02_Attack/04_Combo_Attack_04/Combo_Attack_04_01.anim
+  - SwordShield/02_Attack/04_Combo_Attack_04/Combo_Attack_04_02.anim
+  - SwordShield/02_Attack/04_Combo_Attack_04/Combo_Attack_04_03.anim
+  - SwordShield/02_Attack/04_Combo_Attack_04/Combo_Attack_04_04.anim
+  - SwordShield/02_Attack/05_Buff/Buff.anim
+  - SwordShield/02_Attack/06_Charge_Run_Attack/Charge_Run_Attack_End.anim
+  - SwordShield/02_Attack/06_Charge_Run_Attack/Charge_Run_Attack_Loop.anim
+  - SwordShield/02_Attack/06_Charge_Run_Attack/Charge_Run_Attack_Start.anim
+  - SwordShield/02_Attack/07_Combo_Attack_Air/Combo_Attack_Air_01.anim
+  - SwordShield/02_Attack/07_Combo_Attack_Air/Combo_Attack_Air_02.anim
+  - SwordShield/02_Attack/07_Combo_Attack_Air/Combo_Attack_Air_03.anim
+  - SwordShield/02_Attack/07_Combo_Attack_Air/Combo_Attack_Air_04.anim
+  - SwordShield/02_Attack/07_Combo_Attack_Air/Combo_Attack_Air_All.anim
+  - SwordShield/02_Attack/08_Buff_Air/Buff_Air.anim
+  - SwordShield/02_Attack/09_Charge_Air_Attack/Charge_Air_Attack_End.anim
+  - SwordShield/02_Attack/09_Charge_Air_Attack/Charge_Air_Attack_Loop.anim
+  - SwordShield/02_Attack/09_Charge_Air_Attack/Charge_Air_Attack_Start.anim
+  - SwordShield/02_Attack/10_Attack_Air_to_Floor_01/Attack_Air_to_Floor_01_End.anim
+  - SwordShield/02_Attack/10_Attack_Air_to_Floor_01/Attack_Air_to_Floor_01_Loop.anim
+  - SwordShield/02_Attack/10_Attack_Air_to_Floor_01/Attack_Air_to_Floor_01_Start.anim
+  - SwordShield/02_Attack/11_Attack_Air_to_Floor_02/Attack_Air_to_Floor_02_End.anim
+  - SwordShield/02_Attack/11_Attack_Air_to_Floor_02/Attack_Air_to_Floor_02_Loop.anim
+  - SwordShield/02_Attack/11_Attack_Air_to_Floor_02/Attack_Air_to_Floor_02_Start.anim
+  - SwordShield/02_Attack/12_Attack_Air_to_Floor_03/Attack_Air_to_Floor_03_End.anim
+  - SwordShield/02_Attack/12_Attack_Air_to_Floor_03/Attack_Air_to_Floor_03_Loop.anim
+  - SwordShield/02_Attack/12_Attack_Air_to_Floor_03/Attack_Air_to_Floor_03_Start.anim
+  - SwordShield/02_Attack/13_Attack_Up/Attack_Up_01.anim
+  - SwordShield/02_Attack/13_Attack_Up/Attack_Up_Air_To_Air_03.anim
+  - SwordShield/02_Attack/13_Attack_Up/Attack_Up_Floor_To_Air_02.anim
+  - SwordShield/02_Attack/14_Run_Attack/Run_Attack_01.anim
+  - SwordShield/02_Attack/14_Run_Attack/Run_Attack_02.anim
+  - SwordShield/02_Attack/15_Parry_Counter_Attack/Parry_Counter_Attack.anim
+  - SwordShield/02_Attack/16_Dash_Air_Attack/Dash_Air_Attack.anim
+  - SwordShield/02_Attack/17_Execution/01_Execution/Execution_01.anim
+  - SwordShield/02_Attack/17_Execution/01_Execution/Execution_02.anim
+  - SwordShield/02_Attack/17_Execution/01_Execution/Execution_03.anim
+  - SwordShield/02_Attack/17_Execution/02_Target/Execution_Target_01.anim
+  - SwordShield/02_Attack/17_Execution/02_Target/Execution_Target_02.anim
+  - SwordShield/02_Attack/17_Execution/02_Target/Execution_Target_03.anim
+  - SwordShield/03_Walk/01_Walk/01_Walk_F_0/Walk_Loop_F_0.anim
+  - SwordShield/03_Walk/01_Walk/01_Walk_F_0/Walk_Start_F_0.anim
+  - SwordShield/03_Walk/01_Walk/01_Walk_F_0/Walk_Stop_F_0.anim
+  - SwordShield/03_Walk/01_Walk/02_Walk_F_L_45/Walk_Loop_F_L_45.anim
+  - SwordShield/03_Walk/01_Walk/02_Walk_F_L_45/Walk_Start_F_L_45.anim
+  - SwordShield/03_Walk/01_Walk/02_Walk_F_L_45/Walk_Stop_F_L_45.anim
+  - SwordShield/03_Walk/01_Walk/03_Walk_F_R_45/Walk_Loop_F_R_45.anim
+  - SwordShield/03_Walk/01_Walk/03_Walk_F_R_45/Walk_Start_F_R_45.anim
+  - SwordShield/03_Walk/01_Walk/03_Walk_F_R_45/Walk_Stop_F_R_45.anim
+  - SwordShield/03_Walk/01_Walk/04_Walk_F_L_90/Walk_Loop_F_L_90.anim
+  - SwordShield/03_Walk/01_Walk/04_Walk_F_L_90/Walk_Start_F_L_90.anim
+  - SwordShield/03_Walk/01_Walk/04_Walk_F_L_90/Walk_Stop_F_L_90.anim
+  - SwordShield/03_Walk/01_Walk/05_Walk_F_R_90/Walk_Loop_F_R_90.anim
+  - SwordShield/03_Walk/01_Walk/05_Walk_F_R_90/Walk_Start_F_R_90.anim
+  - SwordShield/03_Walk/01_Walk/05_Walk_F_R_90/Walk_Stop_F_R_90.anim
+  - SwordShield/03_Walk/01_Walk/06_Walk_B_180/Walk_Loop_B_180.anim
+  - SwordShield/03_Walk/01_Walk/06_Walk_B_180/Walk_Start_B_180.anim
+  - SwordShield/03_Walk/01_Walk/06_Walk_B_180/Walk_Stop_B_180.anim
+  - SwordShield/03_Walk/01_Walk/07_Walk_B_L_45/Walk_Loop_B_L_45.anim
+  - SwordShield/03_Walk/01_Walk/07_Walk_B_L_45/Walk_Start_B_L_45.anim
+  - SwordShield/03_Walk/01_Walk/07_Walk_B_L_45/Walk_Stop_B_L_45.anim
+  - SwordShield/03_Walk/01_Walk/08_Walk_B_R_45/Walk_Loop_B_R_45.anim
+  - SwordShield/03_Walk/01_Walk/08_Walk_B_R_45/Walk_Start_B_R_45.anim
+  - SwordShield/03_Walk/01_Walk/08_Walk_B_R_45/Walk_Stop_B_R_45.anim
+  - SwordShield/03_Walk/01_Walk/09_Walk_B_L_90/Walk_Loop_B_L_90.anim
+  - SwordShield/03_Walk/01_Walk/09_Walk_B_L_90/Walk_Start_B_L_90.anim
+  - SwordShield/03_Walk/01_Walk/09_Walk_B_L_90/Walk_Stop_B_L_90.anim
+  - SwordShield/03_Walk/01_Walk/10_Walk_B_R_90/Walk_Loop_B_R_90.anim
+  - SwordShield/03_Walk/01_Walk/10_Walk_B_R_90/Walk_Start_B_R_90.anim
+  - SwordShield/03_Walk/01_Walk/10_Walk_B_R_90/Walk_Stop_B_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/01_Walk_Combat_F_0/Walk_Combat_Start_F_0.anim
+  - SwordShield/03_Walk/02_Walk_Combat/01_Walk_Combat_F_0/Walk_Combat_Stop_F_0.anim
+  - SwordShield/03_Walk/02_Walk_Combat/02_Walk_Combat_F_L_45/Walk_Combat_Loop_F_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/02_Walk_Combat_F_L_45/Walk_Combat_Start_F_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/02_Walk_Combat_F_L_45/Walk_Combat_Stop_F_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/03_Walk_Combat_F_R_45/Walk_Combat_Loop_F_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/03_Walk_Combat_F_R_45/Walk_Combat_Start_F_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/03_Walk_Combat_F_R_45/Walk_Combat_Stop_F_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/04_Walk_Combat_F_L_90/Walk_Combat_Loop_F_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/04_Walk_Combat_F_L_90/Walk_Combat_Start_F_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/04_Walk_Combat_F_L_90/Walk_Combat_Stop_F_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/05_Walk_Combat_F_R_90/Walk_Combat_Loop_F_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/05_Walk_Combat_F_R_90/Walk_Combat_Start_F_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/05_Walk_Combat_F_R_90/Walk_Combat_Stop_F_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/06_Walk_Combat_B_180/Walk_Combat_Loop_B_180.anim
+  - SwordShield/03_Walk/02_Walk_Combat/06_Walk_Combat_B_180/Walk_Combat_Start_B_180.anim
+  - SwordShield/03_Walk/02_Walk_Combat/06_Walk_Combat_B_180/Walk_Combat_Stop_B_180.anim
+  - SwordShield/03_Walk/02_Walk_Combat/07_Walk_Combat_B_L_45/Walk_Combat_Loop_B_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/07_Walk_Combat_B_L_45/Walk_Combat_Start_B_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/07_Walk_Combat_B_L_45/Walk_Combat_Stop_B_L_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/08_Walk_Combat_B_R_45/Walk_Combat_Loop_B_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/08_Walk_Combat_B_R_45/Walk_Combat_Start_B_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/08_Walk_Combat_B_R_45/Walk_Combat_Stop_B_R_45.anim
+  - SwordShield/03_Walk/02_Walk_Combat/09_Walk_Combat_B_L_90/Walk_Combat_Loop_B_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/09_Walk_Combat_B_L_90/Walk_Combat_Start_B_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/09_Walk_Combat_B_L_90/Walk_Combat_Stop_B_L_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/10_Walk_Combat_B_R_90/Walk_Combat_Loop_B_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/10_Walk_Combat_B_R_90/Walk_Combat_Start_B_R_90.anim
+  - SwordShield/03_Walk/02_Walk_Combat/10_Walk_Combat_B_R_90/Walk_Combat_Stop_B_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/01_Walk_Block_F_0/Walk_Block_Loop_F_0.anim
+  - SwordShield/03_Walk/03_Walk_Block/01_Walk_Block_F_0/Walk_Block_Start_F_0.anim
+  - SwordShield/03_Walk/03_Walk_Block/01_Walk_Block_F_0/Walk_Block_Stop_F_0.anim
+  - SwordShield/03_Walk/03_Walk_Block/02_Walk_BLock_F_L_45/Walk_Block_Loop_F_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/02_Walk_BLock_F_L_45/Walk_Block_Start_F_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/02_Walk_BLock_F_L_45/Walk_Block_Stop_F_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/03_Walk_BLock_F_R_45/Walk_Block_Loop_F_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/03_Walk_BLock_F_R_45/Walk_Block_Start_F_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/03_Walk_BLock_F_R_45/Walk_Block_Stop_F_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/04_Walk_BLock_F_L_90/Walk_Block_Loop_F_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/04_Walk_BLock_F_L_90/Walk_Block_Start_F_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/04_Walk_BLock_F_L_90/Walk_Block_Stop_F_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/05_Walk_BLock_F_R_90/Walk_Block_Loop_F_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/05_Walk_BLock_F_R_90/Walk_Block_Start_F_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/05_Walk_BLock_F_R_90/Walk_Block_Stop_F_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/06_Walk_Block_B_180/Walk_Block_Loop_B_180.anim
+  - SwordShield/03_Walk/03_Walk_Block/06_Walk_Block_B_180/Walk_Block_Start_B_180.anim
+  - SwordShield/03_Walk/03_Walk_Block/06_Walk_Block_B_180/Walk_Block_Stop_B_180.anim
+  - SwordShield/03_Walk/03_Walk_Block/07_Walk_Block_B_L_45/Walk_Block_Loop_B_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/07_Walk_Block_B_L_45/Walk_Block_Start_B_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/07_Walk_Block_B_L_45/Walk_Block_Stop_B_L_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/08_Walk_Block_B_R_45/Walk_Block_Loop_B_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/08_Walk_Block_B_R_45/Walk_Block_Start_B_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/08_Walk_Block_B_R_45/Walk_Block_Stop_B_R_45.anim
+  - SwordShield/03_Walk/03_Walk_Block/09_Walk_Block_B_L_90/Walk_Block_Loop_B_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/09_Walk_Block_B_L_90/Walk_Block_Start_B_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/09_Walk_Block_B_L_90/Walk_Block_Stop_B_L_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/10_Walk_Block_B_R_90/Walk_Block_Loop_B_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/10_Walk_Block_B_R_90/Walk_Block_Start_B_R_90.anim
+  - SwordShield/03_Walk/03_Walk_Block/10_Walk_Block_B_R_90/Walk_Block_Stop_B_R_90.anim
+  - SwordShield/03_Walk/04_Walk_to_Walk_Combat/Walk_to_Walk_Combat.anim
+  - SwordShield/03_Walk/05_Walk_Combat_to_Walk/Walk_Combat_to_Walk.anim
+  - SwordShield/04_Run/01_Run/01_Run_F_0/Run_Loop_F_0.anim
+  - SwordShield/04_Run/01_Run/01_Run_F_0/Run_Start_F_0.anim
+  - SwordShield/04_Run/01_Run/01_Run_F_0/Run_Stop_F_0.anim
+  - SwordShield/04_Run/01_Run/02_Run_F_L_45/Run_Loop_F_L_45.anim
+  - SwordShield/04_Run/01_Run/02_Run_F_L_45/Run_Start_F_L_45.anim
+  - SwordShield/04_Run/01_Run/02_Run_F_L_45/Run_Stop_F_L_45.anim
+  - SwordShield/04_Run/01_Run/03_Run_F_R_45/Run_Loop_F_R_45.anim
+  - SwordShield/04_Run/01_Run/03_Run_F_R_45/Run_Start_F_R_45.anim
+  - SwordShield/04_Run/01_Run/03_Run_F_R_45/Run_Stop_F_R_45.anim
+  - SwordShield/04_Run/01_Run/04_Run_F_L_90/Run_Loop_F_L_90.anim
+  - SwordShield/04_Run/01_Run/04_Run_F_L_90/Run_Start_F_L_90.anim
+  - SwordShield/04_Run/01_Run/04_Run_F_L_90/Run_Stop_F_L_90.anim
+  - SwordShield/04_Run/01_Run/05_Run_F_R_90/Run_Loop_F_R_90.anim
+  - SwordShield/04_Run/01_Run/05_Run_F_R_90/Run_Start_F_R_90.anim
+  - SwordShield/04_Run/01_Run/05_Run_F_R_90/Run_Stop_F_R_90.anim
+  - SwordShield/04_Run/01_Run/06_Run_B_180/Run_Loop_B_180.anim
+  - SwordShield/04_Run/01_Run/06_Run_B_180/Run_Start_B_180.anim
+  - SwordShield/04_Run/01_Run/06_Run_B_180/Run_Stop_B_180.anim
+  - SwordShield/04_Run/01_Run/07_Run_B_L_45/Run_Loop_B_L_45.anim
+  - SwordShield/04_Run/01_Run/07_Run_B_L_45/Run_Start_B_L_45.anim
+  - SwordShield/04_Run/01_Run/07_Run_B_L_45/Run_Stop_B_L_45.anim
+  - SwordShield/04_Run/01_Run/08_Run_B_R_45/Run_Loop_B_R_45.anim
+  - SwordShield/04_Run/01_Run/08_Run_B_R_45/Run_Start_B_R_45.anim
+  - SwordShield/04_Run/01_Run/08_Run_B_R_45/Run_Stop_B_R_45.anim
+  - SwordShield/04_Run/01_Run/09_Run_B_L_90/Run_Loop_B_L_90.anim
+  - SwordShield/04_Run/01_Run/09_Run_B_L_90/Run_Start_B_L_90.anim
+  - SwordShield/04_Run/01_Run/09_Run_B_L_90/Run_Stop_B_L_90.anim
+  - SwordShield/04_Run/01_Run/10_Run_B_R_90/Run_Loop_B_R_90.anim
+  - SwordShield/04_Run/01_Run/10_Run_B_R_90/Run_Start_B_R_90.anim
+  - SwordShield/04_Run/01_Run/10_Run_B_R_90/Run_Stop_B_R_90.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Fast_Loop.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Fast_Start.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Fast_Stop.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Fast_Turn_L.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Fast_Turn_R.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Start_Fast_B_L.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Start_Fast_B_R.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Start_Fast_L.anim
+  - SwordShield/04_Run/01_Run/11_Run_Fast/Run_Start_Fast_R.anim
+  - SwordShield/04_Run/02_Run_Combat/01_Run_Combat_F_0/Run_Combat_Start_F_0.anim
+  - SwordShield/04_Run/02_Run_Combat/01_Run_Combat_F_0/Run_Combat_Stop_F_0.anim
+  - SwordShield/04_Run/02_Run_Combat/02_Run_Combat_F_L_45/Run_Combat_Loop_F_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/02_Run_Combat_F_L_45/Run_Combat_Start_F_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/02_Run_Combat_F_L_45/Run_Combat_Stop_F_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/03_Run_Combat_F_R_45/Run_Combat_Loop_F_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/03_Run_Combat_F_R_45/Run_Combat_Start_F_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/03_Run_Combat_F_R_45/Run_Combat_Stop_F_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/04_Run_Combat_F_L_90/Run_Combat_Loop_F_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/04_Run_Combat_F_L_90/Run_Combat_Start_F_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/04_Run_Combat_F_L_90/Run_Combat_Stop_F_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/05_Run_Combat_F_R_90/Run_Combat_Loop_F_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/05_Run_Combat_F_R_90/Run_Combat_Start_F_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/05_Run_Combat_F_R_90/Run_Combat_Stop_F_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/06_Run_Combat_B_180/Run_Combat_Loop_B_180.anim
+  - SwordShield/04_Run/02_Run_Combat/06_Run_Combat_B_180/Run_Combat_Start_B_180.anim
+  - SwordShield/04_Run/02_Run_Combat/06_Run_Combat_B_180/Run_Combat_Stop_B_180.anim
+  - SwordShield/04_Run/02_Run_Combat/07_Run_Combat_B_L_45/Run_Combat_Loop_B_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/07_Run_Combat_B_L_45/Run_Combat_Start_B_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/07_Run_Combat_B_L_45/Run_Combat_Stop_B_L_45.anim
+  - SwordShield/04_Run/02_Run_Combat/08_Run_Combat_B_R_45/Run_Combat_Loop_B_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/08_Run_Combat_B_R_45/Run_Combat_Start_B_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/08_Run_Combat_B_R_45/Run_Combat_Stop_B_R_45.anim
+  - SwordShield/04_Run/02_Run_Combat/09_Run_Combat_B_L_90/Run_Combat_Loop_B_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/09_Run_Combat_B_L_90/Run_Combat_Start_B_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/09_Run_Combat_B_L_90/Run_Combat_Stop_B_L_90.anim
+  - SwordShield/04_Run/02_Run_Combat/10_Run_Combat_B_R_90/Run_Combat_Loop_B_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/10_Run_Combat_B_R_90/Run_Combat_Start_B_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/10_Run_Combat_B_R_90/Run_Combat_Stop_B_R_90.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Fast_Combat_Loop.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Fast_Combat_Start.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Fast_Combat_Stop.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Start_Fast_Combat_B_L.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Start_Fast_Combat_B_R.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Start_Fast_Combat_L.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Start_Fast_Combat_R.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Turn_Fast_Combat_L.anim
+  - SwordShield/04_Run/02_Run_Combat/11_Run_Fast_Combat/Run_Turn_Fast_Combat_R.anim
+  - SwordShield/04_Run/03_Run_to_Run_Combat/Run_to_Run_Combat.anim
+  - SwordShield/04_Run/04_Run_Combat_to_Run/Run_Combat_to_Run.anim
+  - SwordShield/05_Jump/01_Jump/01_Jump_0/Jump_Combat_End_0.anim
+  - SwordShield/05_Jump/01_Jump/01_Jump_0/Jump_Combat_Loop_0.anim
+  - SwordShield/05_Jump/01_Jump/01_Jump_0/Jump_Combat_Start_0.anim
+  - SwordShield/05_Jump/01_Jump/02_Jump_F_0/Jump_End_F_0.anim
+  - SwordShield/05_Jump/01_Jump/02_Jump_F_0/Jump_Start_F_0.anim
+  - SwordShield/05_Jump/01_Jump/03_Jump_B_180/Jump_End_B_180.anim
+  - SwordShield/05_Jump/01_Jump/03_Jump_B_180/Jump_Start_B_180.anim
+  - SwordShield/05_Jump/01_Jump/04_Jump_L_90/Jump_End_L_90.anim
+  - SwordShield/05_Jump/01_Jump/04_Jump_L_90/Jump_Start_L_90.anim
+  - SwordShield/05_Jump/01_Jump/05_Jump_R_90/Jump_End_R_90.anim
+  - SwordShield/05_Jump/01_Jump/05_Jump_R_90/Jump_Start_R_90.anim
+  - SwordShield/05_Jump/02_Jump_Combat/01_Jump_Combat_0/Jump_Combat_End_0.anim
+  - SwordShield/05_Jump/02_Jump_Combat/01_Jump_Combat_0/Jump_Combat_Loop_0.anim
+  - SwordShield/05_Jump/02_Jump_Combat/01_Jump_Combat_0/Jump_Combat_Start_0.anim
+  - SwordShield/05_Jump/02_Jump_Combat/02_Jump_Combat_F_0/Jump_Combat_End_F_0.anim
+  - SwordShield/05_Jump/02_Jump_Combat/02_Jump_Combat_F_0/Jump_Combat_Start_F_0.anim
+  - SwordShield/05_Jump/02_Jump_Combat/03_Jump_Combat_B_180/Jump_Combat_End_B_180.anim
+  - SwordShield/05_Jump/02_Jump_Combat/03_Jump_Combat_B_180/Jump_Combat_Start_B_180.anim
+  - SwordShield/05_Jump/02_Jump_Combat/04_Jump_Combat_L_90/Jump_Combat_End_L_90.anim
+  - SwordShield/05_Jump/02_Jump_Combat/04_Jump_Combat_L_90/Jump_Combat_Start_L_90.anim
+  - SwordShield/05_Jump/02_Jump_Combat/05_Jump_Combat_R_90/Jump_Combat_End_R_90.anim
+  - SwordShield/05_Jump/02_Jump_Combat/05_Jump_Combat_R_90/Jump_Combat_Start_R_90.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_B_180.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_B_L_45.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_B_R_45.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_F_0.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_F_L_45.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_F_R_45.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_L_90.anim
+  - SwordShield/06_Dodge/01_Dodge/Dodge_R_90.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_B_180.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_B_L_45.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_B_R_45.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_F_L_45.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_F_R_45.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_L_90.anim
+  - SwordShield/06_Dodge/02_Dodge_Combat/Dodge_Combat_R_90.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_B_180.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_B_L_45.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_B_R_45.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_F_0.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_F_L_45.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_F_R_45.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_L_90.anim
+  - SwordShield/06_Dodge/03_Dodge_Air/Dodge_Air_R_90.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_B_180.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_B_L_45.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_B_R_45.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_F_0.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_F_L_45.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_F_R_45.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_L_90.anim
+  - SwordShield/06_Dodge/04_Dodge_Air_Combat/Dodge_Air_Combat_R_90.anim
+  - SwordShield/07_Roll/01_Roll/Roll_B_180.anim
+  - SwordShield/07_Roll/01_Roll/Roll_B_L_45.anim
+  - SwordShield/07_Roll/01_Roll/Roll_B_R_45.anim
+  - SwordShield/07_Roll/01_Roll/Roll_F_0.anim
+  - SwordShield/07_Roll/01_Roll/Roll_F_L_45.anim
+  - SwordShield/07_Roll/01_Roll/Roll_F_R_45.anim
+  - SwordShield/07_Roll/01_Roll/Roll_L_90.anim
+  - SwordShield/07_Roll/01_Roll/Roll_R_90.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_B_180.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_B_L_45.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_B_R_45.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_F_L_45.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_F_R_45.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_L_90.anim
+  - SwordShield/07_Roll/02_Roll_Combat/Roll_Combat_R_90.anim
+  - SwordShield/08_Hit/01_Hit/Hit_B.anim
+  - SwordShield/08_Hit/01_Hit/Hit_Death.anim
+  - SwordShield/08_Hit/01_Hit/Hit_F.anim
+  - SwordShield/08_Hit/01_Hit/Hit_L.anim
+  - SwordShield/08_Hit/01_Hit/Hit_R.anim
+  - SwordShield/08_Hit/02_Hit_Combat/Hit_Combat_B.anim
+  - SwordShield/08_Hit/02_Hit_Combat/Hit_Combat_Death.anim
+  - SwordShield/08_Hit/02_Hit_Combat/Hit_Combat_L.anim
+  - SwordShield/08_Hit/02_Hit_Combat/Hit_Combat_R.anim
+  - SwordShield/08_Hit/03_Hit_Air/Hit_Air_B.anim
+  - SwordShield/08_Hit/03_Hit_Air/Hit_Air_F.anim
+  - SwordShield/08_Hit/03_Hit_Air/Hit_Air_L.anim
+  - SwordShield/08_Hit/03_Hit_Air/Hit_Air_R.anim
+  - SwordShield/08_Hit/04_Hit_Combat_Air/Hit_Combat_Air_B.anim
+  - SwordShield/08_Hit/04_Hit_Combat_Air/Hit_Combat_Air_F.anim
+  - SwordShield/08_Hit/04_Hit_Combat_Air/Hit_Combat_Air_L.anim
+  - SwordShield/08_Hit/04_Hit_Combat_Air/Hit_Combat_Air_R.anim
+  - SwordShield/08_Hit/05_Hit_Large/Hit_Large_B.anim
+  - SwordShield/08_Hit/05_Hit_Large/Hit_Large_Death.anim
+  - SwordShield/08_Hit/05_Hit_Large/Hit_Large_F.anim
+  - SwordShield/08_Hit/05_Hit_Large/Hit_Large_L.anim
+  - SwordShield/08_Hit/05_Hit_Large/Hit_Large_R.anim
+  - SwordShield/08_Hit/06_Hit_Large_Combat/Hit_Combat_Large_B.anim
+  - SwordShield/08_Hit/06_Hit_Large_Combat/Hit_Combat_Large_Death.anim
+  - SwordShield/08_Hit/06_Hit_Large_Combat/Hit_Combat_Large_F.anim
+  - SwordShield/08_Hit/06_Hit_Large_Combat/Hit_Combat_Large_L.anim
+  - SwordShield/08_Hit/06_Hit_Large_Combat/Hit_Combat_Large_R.anim
+  - SwordShield/08_Hit/07_Hit_Air_Large_To_Floor/Hit_Air_Large_To_Floor_End.anim
+  - SwordShield/08_Hit/07_Hit_Air_Large_To_Floor/Hit_Air_Large_To_Floor_Loop.anim
+  - SwordShield/08_Hit/07_Hit_Air_Large_To_Floor/Hit_Air_Large_To_Floor_Start.anim
+  - SwordShield/08_Hit/08_Hit_Combat_Air_Large_To_Floor/Hit_Combat_Air_Large_To_Floor_End.anim
+  - SwordShield/08_Hit/08_Hit_Combat_Air_Large_To_Floor/Hit_Combat_Air_Large_To_Floor_Loop.anim
+  - SwordShield/08_Hit/08_Hit_Combat_Air_Large_To_Floor/Hit_Combat_Air_Large_To_Floor_Start.anim
+  - SwordShield/08_Hit/09_Get_Up/Get_Up.anim
+  - SwordShield/08_Hit/09_Get_Up/Get_Up_Combat.anim
+  - SwordShield/08_Hit/10_Knock_Down/Knock_Down_Death.anim
+  - SwordShield/08_Hit/10_Knock_Down/Knock_Down_End.anim
+  - SwordShield/08_Hit/10_Knock_Down/Knock_Down_Loop.anim
+  - SwordShield/08_Hit/10_Knock_Down/Knock_Down_Start.anim
+  - SwordShield/08_Hit/11_Knock_Down_Combat/Knock_Down_Combat_Death.anim
+  - SwordShield/08_Hit/11_Knock_Down_Combat/Knock_Down_Combat_End.anim
+  - SwordShield/08_Hit/11_Knock_Down_Combat/Knock_Down_Combat_Loop.anim
+  - SwordShield/08_Hit/11_Knock_Down_Combat/Knock_Down_Combat_Start.anim
+  - SwordShield/08_Hit/12_Block/Block_End.anim
+  - SwordShield/08_Hit/12_Block/Block_Hit_Break.anim
+  - SwordShield/08_Hit/12_Block/Block_Start.anim
+  - SwordShield/09_Turn/01_Turn/Turn_180_L.anim
+  - SwordShield/09_Turn/01_Turn/Turn_180_R.anim
+  - SwordShield/09_Turn/01_Turn/Turn_90_L.anim
+  - SwordShield/09_Turn/01_Turn/Turn_90_R.anim
+  - SwordShield/09_Turn/02_Turn_Combat/Turn_Combat_180_L.anim
+  - SwordShield/09_Turn/02_Turn_Combat/Turn_Combat_90_L.anim
+  - SwordShield/09_Turn/02_Turn_Combat/Turn_Combat_90_R.anim
+  - SwordShield/09_Turn/03_Turn_Block/Turn_Block_180_L.anim
+  - SwordShield/09_Turn/03_Turn_Block/Turn_Block_180_R.anim
+  - SwordShield/09_Turn/03_Turn_Block/Turn_Block_90_L.anim
+  - SwordShield/09_Turn/03_Turn_Block/Turn_Block_90_R.anim
+  - Paladin/Humanoid_V2/Inplace/Jump02AllZ0_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/Jump02All_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/Jump02_upZ0_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/Jump02_up_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_06_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_07_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_08_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_09_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_10_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_11_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_12_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_13_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_14_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/attack_15_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo07_1_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo07_2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo07_3_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo07_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo08_1_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo08_2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo08_3_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo08_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo09_1_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo09_2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo09_3_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo09_4_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo09_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_1_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_3_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_4_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_5_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/combo10_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/defense02_end_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/defense02_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/defense02_loop_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/defense02_start_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/equip2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/idle_N2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/jog_heavy_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/jump02_landing_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/jump02_loop_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/run_heavy_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/setmotion_atk_01_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/setmotion_atk_02_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/setmotion_hit_01_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/setmotion_hit_02_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/turn02__90L_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/turn02__90R_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/unequip2_inplace.fbx
+  - Paladin/Humanoid_V2/Inplace/walk_heavy_inplace.fbx
+  - Paladin/Humanoid_V2/Jump02All.fbx
+  - Paladin/Humanoid_V2/Jump02AllZ0.fbx
+  - Paladin/Humanoid_V2/Jump02_up.fbx
+  - Paladin/Humanoid_V2/Jump02_upZ0.fbx
+  - Paladin/Humanoid_V2/attack_06.fbx
+  - Paladin/Humanoid_V2/attack_07.fbx
+  - Paladin/Humanoid_V2/attack_08.fbx
+  - Paladin/Humanoid_V2/attack_09.fbx
+  - Paladin/Humanoid_V2/attack_10.fbx
+  - Paladin/Humanoid_V2/attack_11.fbx
+  - Paladin/Humanoid_V2/attack_12.fbx
+  - Paladin/Humanoid_V2/attack_13.fbx
+  - Paladin/Humanoid_V2/attack_14.fbx
+  - Paladin/Humanoid_V2/attack_15.fbx
+  - Paladin/Humanoid_V2/combo07.fbx
+  - Paladin/Humanoid_V2/combo07_1.fbx
+  - Paladin/Humanoid_V2/combo07_2.fbx
+  - Paladin/Humanoid_V2/combo07_3.fbx
+  - Paladin/Humanoid_V2/combo08.fbx
+  - Paladin/Humanoid_V2/combo08_1.fbx
+  - Paladin/Humanoid_V2/combo08_2.fbx
+  - Paladin/Humanoid_V2/combo08_3.fbx
+  - Paladin/Humanoid_V2/combo09.fbx
+  - Paladin/Humanoid_V2/combo09_1.fbx
+  - Paladin/Humanoid_V2/combo09_2.fbx
+  - Paladin/Humanoid_V2/combo09_3.fbx
+  - Paladin/Humanoid_V2/combo09_4.fbx
+  - Paladin/Humanoid_V2/combo10.fbx
+  - Paladin/Humanoid_V2/combo10_1.fbx
+  - Paladin/Humanoid_V2/combo10_2.fbx
+  - Paladin/Humanoid_V2/combo10_3.fbx
+  - Paladin/Humanoid_V2/combo10_4.fbx
+  - Paladin/Humanoid_V2/combo10_5.fbx
+  - Paladin/Humanoid_V2/defense02.fbx
+  - Paladin/Humanoid_V2/defense02_end.fbx
+  - Paladin/Humanoid_V2/defense02_loop.fbx
+  - Paladin/Humanoid_V2/defense02_start.fbx
+  - Paladin/Humanoid_V2/equip2.fbx
+  - Paladin/Humanoid_V2/idle_N2.fbx
+  - Paladin/Humanoid_V2/jog_heavy.fbx
+  - Paladin/Humanoid_V2/jump02_landing.fbx
+  - Paladin/Humanoid_V2/jump02_loop.fbx
+  - Paladin/Humanoid_V2/run_heavy.fbx
+  - Paladin/Humanoid_V2/setmotion_atk_01.fbx
+  - Paladin/Humanoid_V2/setmotion_atk_02.fbx
+  - Paladin/Humanoid_V2/setmotion_hit_01.fbx
+  - Paladin/Humanoid_V2/setmotion_hit_02.fbx
+  - Paladin/Humanoid_V2/turn02__90L.fbx
+  - Paladin/Humanoid_V2/turn02__90R.fbx
+  - Paladin/Humanoid_V2/unequip2.fbx
+  - Paladin/Humanoid_V2/walk_heavy.fbx
+  previewCamera: {fileID: 695820624}
+  pivotHeight: 2.2665021
+  speed: 1
+  autoCycle: 0
+  paused: 0
+  currentClip: 0
+--- !u!4 &1623179690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623179688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1624587091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624587093}
+  - component: {fileID: 1624587092}
+  m_Layer: 0
+  m_Name: Fill Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1624587092
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624587091}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.7
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &1624587093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624587091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.03378267, y: 0.9576622, z: -0.12607862, w: 0.25660485}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 427244}
+  - {fileID: 695820626}
+  - {fileID: 1623179690}
+  - {fileID: 1420430905}
+  - {fileID: 1011191454}
+  - {fileID: 1624587093}
