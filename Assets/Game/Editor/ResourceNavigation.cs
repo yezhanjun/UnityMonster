@@ -6,6 +6,7 @@ using UnityEngine;
 
 public sealed class ResourceNavigation : EditorWindow
 {
+    Vector2 scroll;
     const string BossScene="Assets/Monsters/Boss/BossSkillPreview.unity";
     const string MonsterScene="Assets/Monsters/Jotunnslayer/MonsterPreview/MonsterPreview.unity";
     [MenuItem("资源导航/打开分类导航", false, 0)]
@@ -14,6 +15,7 @@ public sealed class ResourceNavigation : EditorWindow
     static void Scene(string path){if(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())EditorSceneManager.OpenScene(path);}
     void OnGUI()
     {
+        scroll=EditorGUILayout.BeginScrollView(scroll);
         GUILayout.Space(10);
         GUILayout.Label("UnityMonster 资源分类",EditorStyles.boldLabel);
         GUILayout.Label("按来源找资源，按预览入口查看模型与动作。",EditorStyles.wordWrappedLabel);
@@ -24,14 +26,16 @@ public sealed class ResourceNavigation : EditorWindow
         if(GUILayout.Button("打开已提取怪物预览",GUILayout.Height(28)))Scene(MonsterScene);
         GUILayout.Space(8);
         Category("AssetStore · 完整商店资源包","Assets/AssetStore");
-        foreach(string name in new[]{"KatanaAnimationPack","Sword and Shield Animation Pack","Paladin_Anim_Set"})
+        foreach(string name in new[]{"KatanaAnimationPack","Sword and Shield Animation Pack","Paladin_Anim_Set","Gun and Sword Animation Pack"})
             if(GUILayout.Button(name))Folder("Assets/AssetStore/"+name);
         if(GUILayout.Button("打开 Paladin 原包预览"))Scene("Assets/AssetStore/Paladin_Anim_Set/ScenePreview/Paladin_Anim_Set.unity");
+        if(GUILayout.Button("打开 Gun and Sword 原包预览"))Scene("Assets/AssetStore/Gun and Sword Animation Pack/Scenes/Demo.unity");
         GUILayout.Space(8);
         Category("Game · 项目场景与逻辑","Assets/Game");
         Category("ThirdParty · 插件","Assets/ThirdParty");
         GUILayout.Space(10);
         EditorGUILayout.HelpBox("Resources、StreamingAssets、TextMesh Pro 保留标准目录。怪物预览进入 Play 后使用；商店资源保留完整原包。",MessageType.Info);
+        EditorGUILayout.EndScrollView();
     }
     static void Category(string label,string path){if(GUILayout.Button(label,GUILayout.Height(30)))Folder(path);}
     public static void OpenOrganizedProject(){EditorSceneManager.OpenScene(BossScene);Open();Folder("Assets");}

@@ -24,3 +24,5 @@
 三个完整动画包位于 `Assets/AssetStore/KatanaAnimationPack`、`Assets/AssetStore/Sword and Shield Animation Pack`、`Assets/AssetStore/Paladin_Anim_Set`，没有删减文件。
 
 目录迁移保留原 `.meta` 与 GUID。历史验收报告保留当时路径；当前查找位置以本导航为准。
+
+Gun and Sword 完整包：`Assets/AssetStore/Gun and Sword Animation Pack`；原包预览：其 `Scenes/Demo.unity`。
