@@ -14,7 +14,7 @@ namespace MTPSKIT.BuildTools
         {
             "Assets/VRC/Characters/Wendy/Character/Wendy Current Default.prefab",
             "Assets/VRC/Characters/Shinano/Character/Shinano Current Default.prefab",
-            "Assets/VRC/Characters/Sapphy/Presets/RinN008/00.prefab",
+            "Assets/VRC/Characters/Sapphy/Character/Sapphy.prefab",
             "Assets/VRC/Characters/Milltina/Character/Milltina FC Portable.prefab"
         };
 

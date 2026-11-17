@@ -1,0 +1,617 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6faa2d75ad390b0479e993f9c9073edd, type: 3}
+  m_Name: 00
+  m_EditorClassIdentifier: 
+  slot: Outfit
+  prefab: {fileID: 7278175237250007669, guid: 43815ed8ed8644b49a973b387f91fd46, type: 3}
+  bindSkinDirectlyToAvatar: 0
+  preserveRestRotationOffsets: 1
+  sourceSkeletonPath: Armature
+  targetSkeletonPath: Armature
+  useHumanoidMapping: 0
+  allowUniqueNameFallback: 0
+  requiredSourcePaths:
+  - Armature/Hips
+  - Armature/Hips/Spine
+  preservedSourcePaths: []
+  overrides:
+  - sourcePath: Armature
+    targetPath: Armature
+  - sourcePath: Armature/Hips
+    targetPath: Armature/Hips
+  - sourcePath: Armature/Hips/Left leg
+    targetPath: Armature/Hips/Left leg
+  - sourcePath: Armature/Hips/Left leg/Left knee
+    targetPath: Armature/Hips/Left leg/Left knee
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe/Left toe_end
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe/Left toe_end
+  - sourcePath: Armature/Hips/Right leg
+    targetPath: Armature/Hips/Right leg
+  - sourcePath: Armature/Hips/Right leg/Right knee
+    targetPath: Armature/Hips/Right leg/Right knee
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe/Right toe_end
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe/Right toe_end
+  - sourcePath: Armature/Hips/Spine
+    targetPath: Armature/Hips/Spine
+  - sourcePath: Armature/Hips/Spine/Chest
+    targetPath: Armature/Hips/Spine/Chest
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_L
+    targetPath: Armature/Hips/Spine/Chest/Breast_L
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_L/BreastCollider_L
+    targetPath: Armature/Hips/Spine/Chest/Breast_L/BreastCollider_L
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_R
+    targetPath: Armature/Hips/Spine/Chest/Breast_R
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_R/BreastCollider_R
+    targetPath: Armature/Hips/Spine/Chest/Breast_R/BreastCollider_R
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L/Index_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L/Index_Distal_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L/Little_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L/Little_Distal_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L/Middle_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L/Middle_Distal_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L/Ring_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L/Ring_Distal_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L/Thumb_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L/Thumb_Distal_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Neck
+    targetPath: Armature/Hips/Spine/Chest/Neck
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontLeftRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontLeftRoot
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRightRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRightRoot
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRoot
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_L
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_R
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_L
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_R
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider2
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider2
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R/Index_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R/Index_Distal_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R/Little_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R/Little_Distal_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R/Middle_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R/Middle_Distal_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R/Ring_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R/Ring_Distal_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R/Thumb_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R/Thumb_Distal_R_end
+  - sourcePath: Armature/Hips/Spine/Chest/ChestCollider
+    targetPath: Armature/Hips/Spine/Chest/ChestCollider
+  - sourcePath: Armature/Hips/Spine/Chest/ChestColliderHair
+    targetPath: Armature/Hips/Spine/Chest/ChestColliderHair
+  - sourcePath: Armature/PlaneCollider
+    targetPath: Armature/PlaneCollider
+  restRotationOverrides:
+  - sourcePath: Armature
+    targetPath: Armature
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips
+    targetPath: Armature/Hips
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Left leg
+    targetPath: Armature/Hips/Left leg
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Left leg/Left knee
+    targetPath: Armature/Hips/Left leg/Left knee
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe/Left toe_end
+    targetPath: Armature/Hips/Left leg/Left knee/Left ankle/Left toe/Left toe_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Right leg
+    targetPath: Armature/Hips/Right leg
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Right leg/Right knee
+    targetPath: Armature/Hips/Right leg/Right knee
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe/Right toe_end
+    targetPath: Armature/Hips/Right leg/Right knee/Right ankle/Right toe/Right toe_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine
+    targetPath: Armature/Hips/Spine
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Spine/Chest
+    targetPath: Armature/Hips/Spine/Chest
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_L
+    targetPath: Armature/Hips/Spine/Chest/Breast_L
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_L/BreastCollider_L
+    targetPath: Armature/Hips/Spine/Chest/Breast_L/BreastCollider_L
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_R
+    targetPath: Armature/Hips/Spine/Chest/Breast_R
+    rotation: {x: 0, y: 0, z: 0, w: 0.9999996}
+  - sourcePath: Armature/Hips/Spine/Chest/Breast_R/BreastCollider_R
+    targetPath: Armature/Hips/Spine/Chest/Breast_R/BreastCollider_R
+    rotation: {x: 0, y: 0, z: 0, w: 0.9999996}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L/Index_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Index_Proximal_L/Index_Intermediate_L/Index_Distal_L/Index_Distal_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000005}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L/Little_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Little_Proximal_L/Little_Intermediate_L/Little_Distal_L/Little_Distal_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000005}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L/Middle_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Middle_Proximal_L/Middle_Intermediate_L/Middle_Distal_L/Middle_Distal_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000005}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L/Ring_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Ring_Proximal_L/Ring_Intermediate_L/Ring_Distal_L/Ring_Distal_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000005}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L/Thumb_Distal_L_end
+    targetPath: Armature/Hips/Spine/Chest/Left shoulder/Left arm/Left elbow/Left
+      wrist/Thumb_Proximal_L/Thumb_Intermediate_L/Thumb_Distal_L/Thumb_Distal_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck
+    targetPath: Armature/Hips/Spine/Chest/Neck
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_L/Eye_L_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/Eye_R/Eye_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontLeftRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontLeftRoot
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999976}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRightRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRightRoot
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRoot
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairFrontRoot
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_L
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairSideRoot_R
+    rotation: {x: 0, y: 0, z: 0, w: 0.9999997}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_L
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_L
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_R
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HairTwintailRoot_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider2
+    targetPath: Armature/Hips/Spine/Chest/Neck/Head/HeadCollider2
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist
+    rotation: {x: 0, y: 0, z: 0, w: 0.99999994}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R/Index_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Index_Proximal_R/Index_Intermediate_R/Index_Distal_R/Index_Distal_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R/Little_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Little_Proximal_R/Little_Intermediate_R/Little_Distal_R/Little_Distal_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R
+    rotation: {x: 0.000000044562285, y: 0.000000044689962, z: -0.000000014896643,
+      w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R/Middle_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Middle_Proximal_R/Middle_Intermediate_R/Middle_Distal_R/Middle_Distal_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R/Ring_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Ring_Proximal_R/Ring_Intermediate_R/Ring_Distal_R/Ring_Distal_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000001}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R/Thumb_Distal_R_end
+    targetPath: Armature/Hips/Spine/Chest/Right shoulder/Right arm/Right elbow/Right
+      wrist/Thumb_Proximal_R/Thumb_Intermediate_R/Thumb_Distal_R/Thumb_Distal_R_end
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000004}
+  - sourcePath: Armature/Hips/Spine/Chest/ChestCollider
+    targetPath: Armature/Hips/Spine/Chest/ChestCollider
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  - sourcePath: Armature/Hips/Spine/Chest/ChestColliderHair
+    targetPath: Armature/Hips/Spine/Chest/ChestColliderHair
+    rotation: {x: 0, y: 0, z: 0, w: 1.0000002}
+  - sourcePath: Armature/PlaneCollider
+    targetPath: Armature/PlaneCollider
+    rotation: {x: 0, y: 0, z: 0, w: 1}

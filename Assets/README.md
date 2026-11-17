@@ -26,3 +26,6 @@
 目录迁移保留原 `.meta` 与 GUID。历史验收报告保留当时路径；当前查找位置以本导航为准。
 
 Gun and Sword 完整包：`Assets/AssetStore/Gun and Sword Animation Pack`；原包预览：其 `Scenes/Demo.unity`。
+
+## VRC 角色引用
+四个整装角色的 Resources 路径、来源、布料依赖及重新生成步骤见 [VRC角色接入与引用](../Docs/Resources/VRC角色接入与引用.md)。
