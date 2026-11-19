@@ -53,3 +53,8 @@ animator.runtimeAnimatorController = gameplayController;
 生成工具检查 Humanoid Avatar、Missing Script、材质/Shader、蒙皮网格与带权骨骼，以及布料碰撞引用。运行态还应在正常游戏角色选择流程检查移动、跳跃和停下后的布料表现；编译和静态引用检查不等同于视觉验收。
 
 2026-11-17 验证：Unity 6000.2.10f1 批处理生成四个入口并完成上述引用检查，正常退出（0）。详细计数见 ../Validation/vrc-characters-20261117.json。导入期间 lilToon 报告了 Shader keyword space 断言；本次未完成渲染画面及游戏动作视觉验收，因此不宣称已验证布料动态效果。
+
+
+## SGV2 霰弹枪与 Albatross 背甲（2026-11-19）
+
+作者原件：`Assets/VRC/ImportedEquipment/SGV2Albatross_20261119/`；游戏预制体：`Assets/VRC/Equipment/SGV2Albatross_20261119/`。保留4个霰弹枪版本和1个背甲，未改动现有角色菜单或默认穿搭。展开参数、挂点和引用清单见 [装备交接](SGV2与Albatross导入及交接-20261119.md)。
